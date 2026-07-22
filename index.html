@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIFE · 研經與事奉</title>
+<style>
+  :root{--parchment:#f7f2e7;--card:#fffdf7;--ink:#2b2318;--soft:#6b5d4a;--purple:#66023c;--gold:#b08d3e;--sea:#2e5f74;--deep:#3d5a52;--line:#e2d8c3;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--parchment);color:var(--ink);font-family:"Noto Serif TC","Songti TC","PMingLiU",Georgia,serif;line-height:1.9;min-height:100vh;}
+  .wrap{max-width:860px;margin:0 auto;padding:60px 26px 80px;}
+  header.hero{text-align:center;padding:40px 20px 34px;margin-bottom:24px;}
+  .hero .kicker{letter-spacing:.42em;color:var(--purple);font-size:13px;margin-bottom:16px;}
+  .hero h1{font-size:46px;margin:0 0 16px;letter-spacing:.2em;font-weight:700;}
+  .hero .sub{color:var(--soft);font-size:16.5px;max-width:520px;margin:0 auto;}
+  .hero .verse{margin-top:20px;color:var(--purple);font-style:italic;font-size:15px;}
+  .rule{width:60px;height:3px;background:var(--gold);margin:26px auto 0;}
+  .choose{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px;}
+  @media(max-width:640px){.choose{grid-template-columns:1fr;}}
+  a.area{display:block;text-decoration:none;color:inherit;border-radius:16px;padding:38px 30px 32px;border:1px solid var(--line);background:var(--card);box-shadow:0 3px 14px rgba(60,40,10,.06);transition:.18s;position:relative;overflow:hidden;}
+  a.area:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(102,2,60,.16);}
+  a.area .band{height:5px;border-radius:4px;width:52px;margin-bottom:22px;}
+  a.area.bible .band{background:var(--purple);}
+  a.area.serve .band{background:var(--deep);}
+  a.area .lab{letter-spacing:.3em;font-size:12.5px;color:var(--soft);margin-bottom:10px;}
+  a.area h2{font-size:32px;margin:0 0 14px;letter-spacing:.14em;}
+  a.area.bible h2{color:var(--purple);}
+  a.area.serve h2{color:var(--deep);}
+  a.area p{margin:0 0 20px;font-size:15px;color:var(--soft);line-height:1.85;}
+  a.area .enter{font-size:14.5px;font-weight:600;}
+  a.area.bible .enter{color:var(--purple);}
+  a.area.serve .enter{color:var(--deep);}
+  a.area .note{display:block;margin-top:6px;font-size:12.5px;color:var(--soft);font-weight:400;}
+  footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:var(--soft);font-size:13px;text-align:center;line-height:1.9;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">L　I　F　E</div>
+  <h1>研經 · 事奉</h1>
+  <div class="sub">一處長年累積的地方——一邊是聖經逐卷的研讀，一邊是事奉現場的分享與代禱。</div>
+  <div class="verse">「你的話是我腳前的燈，是我路上的光。」（詩 119:105）</div>
+  <div class="rule"></div>
+</header>
+
+<div class="choose">
+  <a class="area bible" href="bible/">
+    <div class="band"></div>
+    <div class="lab">公 開 分 享</div>
+    <h2>聖經</h2>
+    <p>按書卷分門的解經研究：先知書已開放，摩西五經、利未記、福音書等陸續開展。</p>
+    <div class="enter">進入聖經研究 →</div>
+  </a>
+  <a class="area serve" href="serve/">
+    <div class="band"></div>
+    <div class="lab">私 人 分 享</div>
+    <h2>事奉</h2>
+    <p>宣教與事奉現場的分享與代禱信，僅供受邀的代禱夥伴閱讀。</p>
+    <div class="enter">進入事奉分享 →<span class="note">需共用通關碼</span></div>
+  </a>
+</div>
+
+<footer>
+  研經 · 事奉 · 解經與生活的累積 · 由 Kai 整理<br>
+  願一切榮耀歸於那位「列國的上帝、全人類歷史都為他所關切」的主
+</footer>
+
+</div>
+</body>
+</html>

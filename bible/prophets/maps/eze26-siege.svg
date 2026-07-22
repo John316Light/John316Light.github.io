@@ -1,0 +1,197 @@
+<svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Serif TC',serif">
+<defs>
+<linearGradient id="f2sea" x1="0" y1="0" x2="1" y2="1">
+ <stop offset="0" stop-color="#aacfe4"/><stop offset=".5" stop-color="#8fbdd8"/><stop offset="1" stop-color="#79aecb"/>
+</linearGradient>
+<linearGradient id="f2land" x1="0" y1="0" x2=".6" y2="1">
+ <stop offset="0" stop-color="#efe3c0"/><stop offset=".55" stop-color="#e9d9ae"/><stop offset="1" stop-color="#e3cf9f"/>
+</linearGradient>
+<linearGradient id="f2sand" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#f0e2b8"/><stop offset="1" stop-color="#e2cd97"/>
+</linearGradient>
+<radialGradient id="f2seaglow" cx=".35" cy=".3" r="1">
+ <stop offset="0" stop-color="#cfe6f2"/><stop offset="1" stop-color="#8fbdd8" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="f2titlebg" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#f7efd8"/><stop offset="1" stop-color="#efe0b8"/>
+</linearGradient>
+<filter id="f2soften" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+<filter id="f2coastshadow" x="-20%" y="-20%" width="140%" height="140%">
+ <feDropShadow dx="-3" dy="2" stdDeviation="4" flood-color="#4a6d84" flood-opacity=".45"/>
+</filter>
+<filter id="f2cardshadow" x="-20%" y="-20%" width="140%" height="140%">
+ <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#5a4a28" flood-opacity=".4"/>
+</filter>
+<g id="f2ship">
+ <path d="M 0 0 Q 6 7 15 7 Q 24 7 30 0 L 26 -3 L 4 -3 Z" fill="#3f5e6e"/>
+ <line x1="15" y1="-3" x2="15" y2="-16" stroke="#3f5e6e" stroke-width="1.6"/>
+ <path d="M 15 -15 L 24 -9 L 15 -8 Z" fill="#e8e0cc" stroke="#3f5e6e" stroke-width=".6"/>
+ <g stroke="#3f5e6e" stroke-width=".9"><line x1="5" y1="6" x2="2" y2="10"/><line x1="11" y1="7" x2="9" y2="11"/><line x1="19" y1="7" x2="17" y2="11"/><line x1="25" y1="6" x2="23" y2="10"/></g>
+</g>
+<g id="f2col">
+ <rect x="0" y="4" width="3.4" height="12" fill="#c9b587" stroke="#8d7a55" stroke-width=".6"/>
+ <rect x="7" y="4" width="3.4" height="12" fill="#c9b587" stroke="#8d7a55" stroke-width=".6"/>
+ <rect x="-2" y="0" width="14.5" height="3.6" fill="#c9b587" stroke="#8d7a55" stroke-width=".6"/>
+</g>
+</defs>
+
+<rect width="1000" height="640" fill="#f2e9d0"/>
+
+<!-- ================= PANEL A ================= -->
+<g>
+<clipPath id="f2clipA"><rect x="10" y="10" width="480" height="574" rx="8"/></clipPath>
+<rect x="10" y="10" width="480" height="574" rx="8" fill="url(#f2sea)" stroke="#b39a5e" stroke-width="2.5"/>
+<g clip-path="url(#f2clipA)">
+ <rect x="10" y="10" width="300" height="300" fill="url(#f2seaglow)" opacity=".7"/>
+ <g stroke="#c8e0ee" stroke-width="1.8" fill="none" opacity=".45">
+  <path d="M 40 90 q 32 -8 64 0 t 64 0"/><path d="M 70 170 q 32 -8 64 0 t 64 0"/>
+  <path d="M 40 430 q 32 -8 64 0 t 64 0"/><path d="M 80 520 q 32 -8 64 0 t 64 0"/>
+ </g>
+ <!-- mainland -->
+ <path d="M 402 10 C 394 70 406 130 398 190 C 390 250 402 310 394 370 C 388 430 400 500 394 584 L 490 584 L 490 10 Z"
+       fill="url(#f2land)" stroke="#b9a87e" stroke-width="2" filter="url(#f2coastshadow)"/>
+ <ellipse cx="455" cy="150" rx="22" ry="80" fill="#b7a37b" opacity=".4" filter="url(#f2soften)"/>
+ <!-- Ushu ruins -->
+ <g fill="#a08a5f" stroke="#7c6a45" stroke-width=".7">
+  <rect x="424" y="228" width="13" height="9"/><rect x="444" y="240" width="15" height="8"/>
+  <rect x="430" y="254" width="11" height="8"/><rect x="450" y="220" width="11" height="7"/>
+ </g>
+ <text x="416" y="286" font-size="12.5" fill="#6b4a2a" font-weight="bold">舊推羅（烏樹）</text>
+ <text x="416" y="302" font-size="11" fill="#7c6a45">石頭、木料、塵土</text>
+ <text x="416" y="317" font-size="11" fill="#7c6a45">被拆下填海（結26:12）</text>
+ <path d="M 428 322 C 410 336 392 342 372 346" stroke="#8c5a2a" stroke-width="2" fill="none" stroke-dasharray="5 4" marker-end="none"/>
+ <path d="M 372 346 l 12 -6 l -4 11 Z" fill="#8c5a2a"/>
+
+ <!-- mole -->
+ <path d="M 208 306 L 398 340 L 398 358 L 208 326 Z" fill="#cbb078" stroke="#a5854a" stroke-width="1.5"/>
+ <g fill="#a5854a" opacity=".8">
+  <circle cx="240" cy="318" r="1.6"/><circle cx="262" cy="324" r="1.6"/><circle cx="286" cy="322" r="1.6"/>
+  <circle cx="310" cy="330" r="1.6"/><circle cx="334" cy="336" r="1.6"/><circle cx="358" cy="338" r="1.6"/>
+  <circle cx="252" cy="314" r="1.3"/><circle cx="298" cy="332" r="1.3"/><circle cx="344" cy="330" r="1.3"/>
+ </g>
+ <text x="252" y="376" font-size="13" fill="#6d5426" font-weight="bold" transform="rotate(6 252 376)">堤道（長近1公里・寬約60公尺）</text>
+
+ <!-- siege towers on mole -->
+ <g>
+  <rect x="222" y="282" width="13" height="30" fill="#6b4a26" stroke="#4a3318" stroke-width="1"/>
+  <rect x="240" y="286" width="13" height="30" fill="#6b4a26" stroke="#4a3318" stroke-width="1"/>
+  <path d="M 222 282 h13 M 240 286 h13" stroke="#4a3318" stroke-width="2" stroke-dasharray="2.5 2.5"/>
+  <circle cx="227" cy="314" r="2.5" fill="#4a3318"/><circle cx="245" cy="318" r="2.5" fill="#4a3318"/>
+ </g>
+ <text x="216" y="272" font-size="11.5" fill="#4a3318">攻城塔（高約50公尺）</text>
+
+ <!-- island city -->
+ <ellipse cx="140" cy="310" rx="82" ry="102" fill="#cfe0ea" opacity=".7" filter="url(#f2soften)"/>
+ <path d="M 140 214 C 180 216 202 254 204 306 C 206 360 184 400 142 406 C 100 402 76 362 76 308 C 76 256 100 212 140 214 Z"
+       fill="url(#f2land)" stroke="#8a7a55" stroke-width="2"/>
+ <path d="M 140 228 C 172 230 190 262 192 306 C 194 352 176 388 141 392 C 106 388 88 354 88 308 C 88 264 108 226 140 228 Z"
+       fill="none" stroke="#66023c" stroke-width="3"/>
+ <g fill="#66023c">
+  <rect x="136" y="223" width="7" height="7"/><rect x="185" y="270" width="7" height="7"/>
+  <rect x="188" y="336" width="7" height="7"/><rect x="137" y="388" width="7" height="7"/>
+  <rect x="85" y="336" width="7" height="7"/><rect x="84" y="270" width="7" height="7"/>
+ </g>
+ <!-- inner city blocks -->
+ <g fill="#c8b285" stroke="#9a865e" stroke-width=".6">
+  <rect x="118" y="266" width="14" height="10"/><rect x="140" y="258" width="12" height="12"/><rect x="158" y="272" width="13" height="9"/>
+  <rect x="112" y="292" width="12" height="11"/><rect x="134" y="288" width="16" height="10"/><rect x="160" y="296" width="12" height="10"/>
+  <rect x="120" y="318" width="13" height="10"/><rect x="144" y="314" width="12" height="12"/><rect x="164" y="322" width="11" height="9"/>
+  <rect x="116" y="344" width="15" height="10"/><rect x="142" y="342" width="13" height="10"/>
+ </g>
+ <rect x="128" y="238" width="16" height="11" fill="#b39a5e" stroke="#7c6a45" stroke-width=".8"/>
+ <path d="M 126 238 L 136 231 L 146 238 Z" fill="#8c1f28" stroke="#7c6a45" stroke-width=".6"/>
+ <text x="98" y="252" font-size="10" fill="#6b4a2a">美刻爾神廟</text>
+ <!-- harbors -->
+ <path d="M 118 214 A 22 12 0 0 0 160 216" fill="#5d93b4"/>
+ <text x="112" y="204" font-size="11" fill="#2e5f74">西頓港（北）</text>
+ <path d="M 118 404 A 22 12 0 0 1 160 402" fill="#5d93b4"/>
+ <text x="112" y="428" font-size="11" fill="#2e5f74">埃及港（南）</text>
+ <text x="30" y="330" font-size="11.5" fill="#5a3050" transform="rotate(-90 30 330)">城牆自海中直立・高約45公尺</text>
+
+ <!-- fleet -->
+ <use href="#f2ship" x="52" y="102"/><use href="#f2ship" x="150" y="72"/><use href="#f2ship" x="266" y="120"/>
+ <use href="#f2ship" x="40" y="250"/><use href="#f2ship" x="46" y="470"/><use href="#f2ship" x="160" y="500"/>
+ <use href="#f2ship" x="272" y="452"/>
+ <text x="30" y="58" font-size="12" fill="#33505e">腓尼基・塞浦路斯聯合艦隊 223 艘，封鎖南北兩港</text>
+
+ <!-- breach assault -->
+ <path d="M 150 470 C 148 448 146 428 143 410" stroke="#8c1f28" stroke-width="3" fill="none"/>
+ <path d="M 143 410 l 9 12 l -13 1 Z" fill="#8c1f28"/>
+ <text x="158" y="452" font-size="11.5" fill="#8c1f28" font-weight="bold">南牆缺口・最後總攻</text>
+</g>
+<!-- badge A -->
+<g filter="url(#f2cardshadow)">
+ <rect x="26" y="536" width="260" height="34" rx="6" fill="url(#f2titlebg)" stroke="#b39a5e" stroke-width="1.5"/>
+</g>
+<circle cx="46" cy="553" r="10" fill="#8c1f28"/><text x="46" y="558" text-anchor="middle" font-size="13" fill="#f7efd8" font-weight="bold">A</text>
+<text x="62" y="558" font-size="14.5" font-weight="bold" fill="#2b2318">主前332年・七個月圍城</text>
+</g>
+
+<!-- ================= PANEL B ================= -->
+<g>
+<clipPath id="f2clipB"><rect x="510" y="10" width="480" height="574" rx="8"/></clipPath>
+<rect x="510" y="10" width="480" height="574" rx="8" fill="url(#f2sea)" stroke="#b39a5e" stroke-width="2.5"/>
+<g clip-path="url(#f2clipB)">
+ <rect x="510" y="10" width="300" height="300" fill="url(#f2seaglow)" opacity=".7"/>
+ <g stroke="#c8e0ee" stroke-width="1.8" fill="none" opacity=".45">
+  <path d="M 540 100 q 32 -8 64 0 t 64 0"/><path d="M 570 180 q 32 -8 64 0 t 64 0"/>
+  <path d="M 540 460 q 32 -8 64 0 t 64 0"/><path d="M 580 530 q 32 -8 64 0 t 64 0"/>
+ </g>
+ <!-- mainland -->
+ <path d="M 902 10 C 894 70 906 130 898 190 C 890 250 902 310 894 370 C 888 430 900 500 894 584 L 990 584 L 990 10 Z"
+       fill="url(#f2land)" stroke="#b9a87e" stroke-width="2" filter="url(#f2coastshadow)"/>
+ <!-- tombolo -->
+ <path d="M 700 250 C 760 240 850 288 898 300 L 898 396 C 848 402 762 396 702 380 Z"
+       fill="url(#f2sand)" stroke="#c9b078" stroke-width="1.5" filter="url(#f2coastshadow)"/>
+ <path d="M 700 250 C 760 240 850 288 898 300" stroke="#f4ead0" stroke-width="3" fill="none" opacity=".8"/>
+ <path d="M 702 380 C 762 396 848 402 898 396" stroke="#f4ead0" stroke-width="3" fill="none" opacity=".8"/>
+ <!-- former island, now old town -->
+ <path d="M 640 218 C 680 220 702 256 704 306 C 706 358 684 396 642 402 C 600 398 576 360 576 308 C 576 258 600 216 640 218 Z"
+       fill="url(#f2sand)" stroke="#c9b078" stroke-width="1.5"/>
+ <!-- street grid -->
+ <g stroke="#c0ab80" stroke-width="1" opacity=".8">
+  <path d="M 596 260 L 690 268 M 592 292 L 698 298 M 592 326 L 698 330 M 598 358 L 690 360"/>
+  <path d="M 616 236 L 610 386 M 644 228 L 642 396 M 672 240 L 668 386"/>
+ </g>
+ <!-- ancient shoreline ghost -->
+ <path d="M 640 226 C 676 228 696 260 698 306 C 700 354 680 390 641 394 C 602 390 582 356 582 308 C 582 262 604 224 640 226 Z"
+       fill="none" stroke="#66023c" stroke-width="1.8" stroke-dasharray="7 6" opacity=".65"/>
+ <text x="588" y="212" font-size="11.5" fill="#66023c">古島岸線（虛線）</text>
+ <text x="602" y="316" font-size="14" font-weight="bold" fill="#5a3050">蘇爾舊城</text>
+ <!-- causeway trace -->
+ <path d="M 702 316 C 760 322 830 340 896 348" stroke="#c9a227" stroke-width="4" stroke-dasharray="11 8" fill="none" opacity=".9"/>
+ <text x="742" y="310" font-size="12.5" fill="#8c6d1a" font-weight="bold" transform="rotate(6 742 310)">亞歷山大堤道走向</text>
+ <text x="756" y="372" font-size="12" fill="#8a6d3b" transform="rotate(6 756 372)">沙洲（tombolo）</text>
+ <!-- north harbor -->
+ <path d="M 618 218 A 22 12 0 0 0 662 220" fill="#5d93b4"/>
+ <use href="#f2ship" x="600" y="192"/><use href="#f2ship" x="646" y="184"/>
+ <!-- nets on rocks -->
+ <g stroke="#4a3a2a" stroke-width="1" opacity=".75" fill="none">
+  <path d="M 556 236 l 22 12 M 556 248 l 22 -12 M 556 236 v 12 M 578 236 v 12 M 567 230 v 24"/>
+ </g>
+ <text x="524" y="272" font-size="11" fill="#3d3020">曬網的礁石</text>
+ <!-- ruins -->
+ <use href="#f2col" x="612" y="410"/>
+ <text x="560" y="446" font-size="11.5" fill="#4a3a2a">海濱考古區（羅馬柱廊）</text>
+ <use href="#f2col" x="806" y="356"/>
+ <path d="M 830 368 a 7 7 0 0 1 14 0 l 0 4 l -3 0 l 0 -4 a 4 4 0 0 0 -8 0 l 0 4 l -3 0 Z" fill="#c9b587" stroke="#8d7a55" stroke-width=".6"/>
+ <ellipse cx="842" cy="392" rx="26" ry="8" fill="none" stroke="#8d7a55" stroke-width="1.2" stroke-dasharray="3 3"/>
+ <text x="778" y="416" font-size="11.5" fill="#4a3a2a">巴斯遺址：凱旋門・競技場</text>
+ <!-- modern city -->
+ <g fill="#d8c8a0" stroke="#b39f78" stroke-width=".5" opacity=".9">
+  <rect x="912" y="220" width="12" height="9"/><rect x="930" y="226" width="13" height="9"/><rect x="948" y="218" width="11" height="9"/>
+  <rect x="916" y="244" width="12" height="9"/><rect x="936" y="248" width="12" height="9"/><rect x="954" y="240" width="11" height="9"/>
+  <rect x="912" y="430" width="12" height="9"/><rect x="932" y="436" width="13" height="9"/><rect x="916" y="456" width="12" height="9"/>
+ </g>
+ <text x="922" y="286" font-size="11.5" fill="#7a6a4e">今日市區</text>
+</g>
+<!-- badge B -->
+<g filter="url(#f2cardshadow)">
+ <rect x="526" y="536" width="280" height="34" rx="6" fill="url(#f2titlebg)" stroke="#b39a5e" stroke-width="1.5"/>
+</g>
+<circle cx="546" cy="553" r="10" fill="#2e5f74"/><text x="546" y="558" text-anchor="middle" font-size="13" fill="#f7efd8" font-weight="bold">B</text>
+<text x="562" y="558" font-size="14.5" font-weight="bold" fill="#2b2318">今日・島已成半島（蘇爾）</text>
+</g>
+
+<text x="500" y="622" text-anchor="middle" font-size="13.5" fill="#6b5d4a">亞歷山大的堤道攔沙淤積，兩千三百年後島城成了半島——地貌本身成為歷史的見證</text>
+</svg>

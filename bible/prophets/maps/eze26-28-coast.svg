@@ -1,0 +1,156 @@
+<svg viewBox="0 0 1000 720" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Serif TC',serif">
+<defs>
+<linearGradient id="f1sea" x1="0" y1="0" x2="1" y2="1">
+ <stop offset="0" stop-color="#aacfe4"/><stop offset=".5" stop-color="#8fbdd8"/><stop offset="1" stop-color="#79aecb"/>
+</linearGradient>
+<linearGradient id="f1land" x1="0" y1="0" x2=".6" y2="1">
+ <stop offset="0" stop-color="#efe3c0"/><stop offset=".55" stop-color="#e9d9ae"/><stop offset="1" stop-color="#e3cf9f"/>
+</linearGradient>
+<linearGradient id="f1desertE" x1="0" y1="0" x2="1" y2=".3">
+ <stop offset="0" stop-color="#e7d3a0" stop-opacity="0"/><stop offset="1" stop-color="#dab97a" stop-opacity=".85"/>
+</linearGradient>
+<radialGradient id="f1seaglow" cx=".3" cy=".3" r="1">
+ <stop offset="0" stop-color="#cfe6f2"/><stop offset="1" stop-color="#8fbdd8" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="f1titlebg" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#f7efd8"/><stop offset="1" stop-color="#efe0b8"/>
+</linearGradient>
+<filter id="f1soften" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="f1coastshadow" x="-20%" y="-20%" width="140%" height="140%">
+ <feDropShadow dx="-4" dy="3" stdDeviation="5" flood-color="#4a6d84" flood-opacity=".45"/>
+</filter>
+<filter id="f1cardshadow" x="-20%" y="-20%" width="140%" height="140%">
+ <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#5a4a28" flood-opacity=".4"/>
+</filter>
+<g id="f1mt">
+ <path d="M 0 0 L 13 -22 L 26 0 Z" fill="#c3ad82" stroke="#8d7a55" stroke-width=".8"/>
+ <path d="M 13 -22 L 26 0 L 13 0 Z" fill="#a58c62"/>
+</g>
+</defs>
+
+<!-- parchment & sea -->
+<rect width="1000" height="720" fill="#f2e9d0"/>
+<rect x="0" y="0" width="1000" height="720" fill="url(#f1sea)"/>
+<rect x="0" y="0" width="560" height="420" fill="url(#f1seaglow)" opacity=".7"/>
+<g stroke="#c8e0ee" stroke-width="2" fill="none" opacity=".45">
+ <path d="M 60 150 q 45 -10 90 0 t 90 0 t 90 0"/>
+ <path d="M 110 250 q 45 -10 90 0 t 90 0 t 90 0"/>
+ <path d="M 60 350 q 45 -10 90 0 t 90 0 t 90 0"/>
+ <path d="M 120 460 q 45 -10 90 0 t 90 0 t 90 0"/>
+ <path d="M 70 570 q 45 -10 90 0 t 90 0 t 90 0"/>
+ <path d="M 150 660 q 45 -10 90 0 t 90 0 t 90 0"/>
+</g>
+
+<!-- landmass -->
+<path d="M 588 0 C 580 45 592 85 584 125 C 576 165 590 205 578 245
+         C 566 285 574 325 566 365 C 558 400 564 435 572 470
+         C 580 510 596 540 606 580 C 616 622 606 672 612 720
+         L 1000 720 L 1000 0 Z"
+      fill="url(#f1land)" stroke="#b9a87e" stroke-width="2" filter="url(#f1coastshadow)"/>
+<rect x="860" y="0" width="140" height="720" fill="url(#f1desertE)"/>
+
+<!-- terrain shading -->
+<ellipse cx="702" cy="165" rx="42" ry="125" fill="#b7a37b" opacity=".45" filter="url(#f1soften)"/>
+<ellipse cx="795" cy="620" rx="55" ry="60" fill="#c0aa7e" opacity=".4" filter="url(#f1soften)"/>
+
+<!-- Lebanon range -->
+<g>
+ <use href="#f1mt" x="672" y="88"/><use href="#f1mt" x="694" y="118"/><use href="#f1mt" x="676" y="150"/>
+ <use href="#f1mt" x="700" y="180"/><use href="#f1mt" x="682" y="212"/><use href="#f1mt" x="706" y="242"/>
+ <use href="#f1mt" x="688" y="272"/>
+ <text x="736" y="150" font-size="15" fill="#7a6a4e" letter-spacing="5" transform="rotate(72 736 150)">黎巴嫩山脈</text>
+ <text x="668" y="66" font-size="11.5" fill="#8d7a55">香柏樹之地</text>
+</g>
+<!-- Hermon -->
+<path d="M 772 268 L 790 234 L 808 268 Z" fill="#cdbb96" stroke="#8d7a55" stroke-width="1"/>
+<path d="M 785 244 L 790 234 L 795 244 L 790 248 Z" fill="#f4efe2"/>
+<text x="812" y="262" font-size="12.5" fill="#7a6a4e">黑門山</text>
+<!-- Carmel -->
+<path d="M 604 592 L 616 572 L 628 592 Z" fill="#c3ad82" stroke="#8d7a55" stroke-width=".8"/>
+<text x="632" y="590" font-size="12.5" fill="#7a6a4e">迦密山</text>
+
+<!-- rivers & lake -->
+<path d="M 706 292 C 700 320 680 335 640 348 C 606 358 580 364 566 370" stroke="#6fa8c8" stroke-width="3" fill="none" opacity=".85"/>
+<text x="624" y="340" font-size="11" fill="#4d86ab" transform="rotate(-12 624 340)">利他尼河</text>
+<ellipse cx="716" cy="512" rx="15" ry="22" fill="#6fa8c8" stroke="#4d86ab" stroke-width="1"/>
+<text x="736" y="512" font-size="12" fill="#4d86ab">加利利海</text>
+<path d="M 790 272 C 780 320 722 420 716 490" stroke="#6fa8c8" stroke-width="2.2" fill="none" opacity=".8"/>
+<path d="M 716 534 C 714 580 726 650 730 720" stroke="#6fa8c8" stroke-width="2.6" fill="none" opacity=".85"/>
+<text x="737" y="628" font-size="11" fill="#4d86ab" transform="rotate(84 737 628)">約旦河</text>
+
+<!-- Damascus oasis -->
+<ellipse cx="836" cy="198" rx="26" ry="14" fill="#a8bf7e" opacity=".55" filter="url(#f1soften)"/>
+
+<!-- region labels -->
+<text x="636" y="330" font-size="19" fill="#7c6a3f" letter-spacing="6" transform="rotate(-72 636 330)" opacity=".9">腓 尼 基</text>
+<text x="672" y="556" font-size="15" fill="#7a6a4e" letter-spacing="4">加利利</text>
+<text x="856" y="248" font-size="14" fill="#7a6a4e" letter-spacing="3">亞蘭（大馬士革）</text>
+<text x="806" y="700" font-size="14" fill="#7a6a4e" letter-spacing="3">猶大山地</text>
+
+<!-- cities -->
+<g font-size="15" fill="#2b2318">
+ <circle cx="588" cy="78" r="6" fill="#8a6d3b" stroke="#f7f2e7" stroke-width="1.5"/><text x="600" y="84">迦巴勒（比布羅斯）</text>
+ <circle cx="582" cy="178" r="5.5" fill="#8a6d3b" stroke="#f7f2e7" stroke-width="1.5"/><text x="594" y="184">貝魯特</text>
+ <circle cx="572" cy="268" r="7" fill="#8a6d3b" stroke="#f7f2e7" stroke-width="1.5"/><text x="586" y="274" font-weight="bold">西頓</text>
+ <circle cx="566" cy="330" r="4.5" fill="#8a6d3b" stroke="#f7f2e7" stroke-width="1.2"/><text x="578" y="336" font-size="12.5">撒勒法（王上17:9）</text>
+ <circle cx="600" cy="540" r="6" fill="#8a6d3b" stroke="#f7f2e7" stroke-width="1.5"/><text x="613" y="546">亞柯</text>
+ <circle cx="836" cy="198" r="7" fill="#8a6d3b" stroke="#f7f2e7" stroke-width="1.5"/><text x="850" y="204" font-weight="bold">大馬士革</text>
+ <circle cx="790" cy="655" r="7" fill="#8a6d3b" stroke="#f7f2e7" stroke-width="1.5"/><text x="804" y="661" font-weight="bold">耶路撒冷</text>
+</g>
+
+<!-- TYRE island -->
+<ellipse cx="512" cy="398" rx="34" ry="26" fill="#cfe0ea" opacity=".8" filter="url(#f1soften)"/>
+<ellipse cx="512" cy="398" rx="24" ry="18" fill="url(#f1land)" stroke="#8a7a55" stroke-width="1.5"/>
+<ellipse cx="512" cy="398" rx="18" ry="13" fill="none" stroke="#66023c" stroke-width="2.5"/>
+<g fill="#66023c">
+ <rect x="509" y="382.5" width="5" height="5"/><rect x="493" y="395" width="5" height="5"/>
+ <rect x="526" y="395" width="5" height="5"/><rect x="509" y="408" width="5" height="5"/>
+</g>
+<text x="404" y="390" font-size="24" font-weight="bold" fill="#66023c">推羅</text>
+<text x="398" y="410" font-size="12" fill="#66023c" letter-spacing="2" font-style="italic">TYRE（島城）</text>
+<circle cx="570" cy="412" r="5" fill="#a05b78" stroke="#f7f2e7" stroke-width="1.2"/>
+<text x="580" y="430" font-size="12.5" fill="#6b4a5a">舊推羅（烏樹）</text>
+
+<!-- trade routes -->
+<g stroke="#66023c" stroke-width="2.2" stroke-dasharray="9 7" fill="none" opacity=".7">
+ <path d="M 478 392 C 380 360 250 320 130 300"/>
+ <path d="M 486 416 C 420 490 340 590 265 655"/>
+</g>
+<path d="M 130 300 l 18 -3 l -13 13 Z" fill="#66023c" opacity=".85" transform="rotate(188 130 300)"/>
+<path d="M 265 655 l 18 -3 l -13 13 Z" fill="#66023c" opacity=".85" transform="rotate(128 265 655)"/>
+<text x="52" y="282" font-size="13.5" fill="#66023c">往迦太基・他施（西班牙）</text>
+<text x="180" y="686" font-size="13.5" fill="#66023c">往埃及・挪弗</text>
+
+<!-- Cyprus -->
+<path d="M 96 96 C 116 86 152 88 166 98 C 178 108 150 118 126 116 C 106 114 88 106 96 96 Z" fill="url(#f1land)" stroke="#b9a87e" stroke-width="1.5" filter="url(#f1coastshadow)"/>
+<text x="94" y="140" font-size="12.5" fill="#7a6a4e">基提（塞浦路斯）</text>
+
+<!-- sea label -->
+<text x="230" y="420" font-size="27" fill="#5a86a0" letter-spacing="14" font-style="italic" opacity=".9">大　海</text>
+<text x="212" y="450" font-size="14" fill="#6d95ac" font-style="italic" letter-spacing="2">The Great Sea（地中海）</text>
+
+<!-- compass -->
+<g transform="translate(88 600)">
+ <circle r="26" fill="#f7efd8" stroke="#b39a5e" stroke-width="2" filter="url(#f1cardshadow)"/>
+ <circle r="20" fill="none" stroke="#c9b587" stroke-width="1"/>
+ <path d="M 0 -17 L 4 0 L 0 17 L -4 0 Z" fill="#8c1f28"/>
+ <path d="M -17 0 L 0 4 L 17 0 L 0 -4 Z" fill="#7a6a4e"/>
+ <text y="-32" text-anchor="middle" font-size="12" fill="#7a6a4e">北</text>
+</g>
+
+<!-- scale -->
+<g transform="translate(770 694)">
+ <rect x="0" y="0" width="60" height="6" fill="#2b2318"/><rect x="60" y="0" width="60" height="6" fill="#f7efd8" stroke="#2b2318" stroke-width="1"/>
+ <text x="0" y="-6" font-size="11" fill="#5a4a28">0</text><text x="52" y="-6" font-size="11" fill="#5a4a28">25</text><text x="106" y="-6" font-size="11" fill="#5a4a28">50 公里</text>
+ <text x="128" y="6" font-size="10.5" fill="#8d7a55">（示意）</text>
+</g>
+
+<!-- title cartouche -->
+<g filter="url(#f1cardshadow)">
+ <rect x="28" y="26" width="342" height="92" rx="8" fill="url(#f1titlebg)" stroke="#b39a5e" stroke-width="2"/>
+ <rect x="34" y="32" width="330" height="80" rx="5" fill="none" stroke="#d3c193" stroke-width="1"/>
+</g>
+<text x="48" y="62" font-size="23" font-weight="bold" fill="#2b2318" letter-spacing="2">推羅與腓尼基海岸</text>
+<text x="48" y="86" font-size="13.5" fill="#66023c" font-style="italic" letter-spacing="1">Tyre and the Phoenician Coast</text>
+<text x="48" y="105" font-size="11.5" fill="#7a6a4e">約主前9世紀｜城市位置與距離為示意重繪</text>
+</svg>

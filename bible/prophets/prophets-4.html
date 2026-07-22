@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>先知書導讀系列</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:      #f6f1e6;
+    --panel:      rgba(78,56,34,0.045);
+    --panel-line: rgba(78,56,34,0.18);
+    --ink:        #2e251b;
+    --ink-soft:   #59493a;
+    --ink-faint:  #8d7c66;
+    --zion:       #58784f;
+    --ochre:      #9c721f;
+    --crimson:    #93392c;
+    --ob:         #a9532a;
+    --joel:       #96690f;
+    --jonah:      #2f6b78;
+    --accent:     var(--ob);
+    --accent-dim: rgba(169,83,42,0.10);
+  }
+  .bk-ob   { --accent: var(--ob);    --accent-dim: rgba(169,83,42,0.10); }
+  .bk-joel { --accent: var(--joel);  --accent-dim: rgba(150,105,15,0.10); }
+  .bk-jonah{ --accent: var(--jonah); --accent-dim: rgba(47,107,120,0.10); }
+  .bk-home { --accent: var(--zion);  --accent-dim: rgba(88,120,79,0.09); }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Noto Serif TC','Songti TC',Georgia,serif;
+    line-height: 1.85;
+    padding-bottom: 80px;
+  }
+  .wrap{ max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ── 固定頁首：系列名 + 書卷按鍵 ── */
+  .masthead{
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(246,241,230,0.97);
+    border-bottom: 1px solid var(--panel-line);
+    backdrop-filter: blur(4px);
+    padding: 14px 0 12px;
+  }
+  .masthead .in{ max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  .masthead .brand{
+    font-family:'Noto Sans TC',sans-serif; font-size:11.5px;
+    letter-spacing:4px; color:var(--ink-faint); margin-bottom:10px;
+  }
+  .booknav{ display:flex; flex-wrap:wrap; gap:7px; font-family:'Noto Sans TC',sans-serif; font-size:12.5px; }
+  .booknav button{
+    padding: 5px 12px; border-radius: 3px;
+    border: 1px solid var(--panel-line);
+    color: var(--ink-faint);
+    background: rgba(255,255,255,0.35);
+    font-family:inherit; font-size:inherit;
+    cursor: default;
+  }
+  .booknav button.avail{ cursor:pointer; color:var(--ink-soft); border-color: rgba(78,56,34,0.35); }
+  .booknav button.avail:hover{ background: var(--panel); }
+  .booknav button.home.avail{ color: var(--zion); }
+  .booknav button.active[data-view="view-home"]{ color:#fdfaf4; background:var(--zion); border-color:var(--zion); font-weight:700; }
+  .booknav button.active[data-view="view-ob"]{ color:#fdfaf4; background:var(--ob); border-color:var(--ob); font-weight:700; }
+  .booknav button.active[data-view="view-joel"]{ color:#fdfaf4; background:var(--joel); border-color:var(--joel); font-weight:700; }
+  .booknav button.active[data-view="view-jonah"]{ color:#fdfaf4; background:var(--jonah); border-color:var(--jonah); font-weight:700; }
+
+  /* ── 分頁顯示邏輯 ── */
+  .view{ display:none; }
+  .view.active{ display:block; animation: fadein .25s ease; }
+  @keyframes fadein{ from{ opacity:0; } to{ opacity:1; } }
+  @media (prefers-reduced-motion: reduce){ .view.active{ animation:none; } }
+
+  /* ── 共用元件 ── */
+  .bookhead{
+    margin: 38px 0 34px;
+    padding: 26px 28px;
+    border: 1px solid var(--panel-line);
+    border-left: 5px solid var(--accent);
+    background: #fbf8f0;
+  }
+  .bookhead .no{ font-family:'Noto Sans TC',sans-serif; font-size:12px; letter-spacing:4px; color:var(--accent); margin-bottom:8px; }
+  .bookhead h1{ font-weight:900; font-size:clamp(26px,4.5vw,36px); letter-spacing:4px; color:var(--ink); }
+  .bookhead small{ display:block; font-weight:400; font-size:14px; letter-spacing:2px; color:var(--ink-soft); margin-top:8px; }
+  .bookhead .toc{ margin-top:14px; display:flex; gap:14px; flex-wrap:wrap; font-family:'Noto Sans TC',sans-serif; font-size:12.5px; }
+  .bookhead .toc a{ color:var(--accent); text-decoration:none; letter-spacing:2px; border-bottom:1px dotted var(--accent); }
+
+  .quick{
+    display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap:1px; background: var(--panel-line);
+    border: 1px solid var(--panel-line);
+    margin-bottom: 44px;
+  }
+  .quick div{ background: #fbf8f0; padding: 14px 16px; }
+  .quick .k{ font-family:'Noto Sans TC',sans-serif; font-size:11px; letter-spacing:3px; color:var(--accent); margin-bottom:4px; }
+  .quick .v{ font-size:15px; font-weight:600; color:var(--ink); }
+  .quick .v small{ display:block; font-weight:400; font-size:12px; color:var(--ink-soft); }
+
+  section{ margin-bottom: 54px; }
+  h2{
+    font-size: 21px; font-weight: 700; letter-spacing: 3px;
+    padding-bottom: 10px; margin-bottom: 22px;
+    border-bottom: 1.5px solid var(--panel-line);
+    display:flex; align-items:baseline; gap:12px; color:var(--ink);
+  }
+  h2 .no{ font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:400; letter-spacing:2px; color:var(--accent); }
+  h3{ font-size:16.5px; font-weight:700; letter-spacing:1.5px; margin:26px 0 10px; color:var(--ink); }
+  h3 .sub{ font-family:'Noto Sans TC',sans-serif; font-weight:400; font-size:12px; color:var(--ink-soft); letter-spacing:2px; margin-left:8px; }
+  p{ font-family:'Noto Sans TC',sans-serif; font-weight:300; font-size:14.5px; color:var(--ink-soft); margin-bottom:14px; max-width:720px; }
+  p b, li b, td b{ font-weight:500; color:var(--ink); }
+  p em{ font-style:normal; color:var(--accent); }
+
+  a.xref{ color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  a.xref:hover{ background: var(--accent-dim); }
+  a.xref .arrow{ font-family:'Noto Sans TC',sans-serif; font-size:11px; }
+
+  blockquote{
+    border-left: 3px solid var(--accent);
+    background: var(--accent-dim);
+    padding: 14px 20px; margin: 18px 0;
+    font-size: 15.5px; max-width: 720px; color: var(--ink);
+  }
+  blockquote .ref{ display:block; margin-top:8px; font-family:'Noto Sans TC',sans-serif; font-size:11.5px; letter-spacing:2px; color:var(--ink-soft); }
+  blockquote em{ font-style:normal; border-bottom:1px dotted var(--accent); }
+  blockquote.hope{ border-color: var(--zion); background: rgba(88,120,79,0.09); }
+  blockquote.hope em{ border-color: var(--zion); }
+  blockquote.doom{ border-color: var(--crimson); background: rgba(147,57,44,0.08); }
+  blockquote.doom em{ border-color: var(--crimson); }
+
+  .field{ display:flex; gap:14px; align-items:baseline; margin-bottom:10px; max-width:720px; }
+  .field .tag{
+    flex: 0 0 96px;
+    font-family:'Noto Sans TC',sans-serif; font-size:11.5px; letter-spacing:2px;
+    color: var(--accent); text-align:right;
+    border-right: 1px solid var(--panel-line);
+    padding-right: 14px; padding-top:3px;
+  }
+  .field .val{ flex:1; font-family:'Noto Sans TC',sans-serif; font-weight:300; font-size:14.5px; color:var(--ink-soft); }
+
+  table{
+    width:100%; border-collapse:collapse;
+    font-family:'Noto Sans TC',sans-serif; font-size:13.5px; font-weight:300;
+    margin: 18px 0; background: #fbf8f0;
+    border: 1px solid var(--panel-line);
+  }
+  th{
+    text-align:left; font-weight:500; font-size:12px; letter-spacing:2px;
+    color: #fdfaf4; background: var(--accent);
+    padding: 10px 14px;
+  }
+  td{ padding: 11px 14px; color: var(--ink-soft); vertical-align:top; border-bottom:1px solid var(--panel-line); }
+  tbody tr:nth-child(odd){ background: var(--panel); }
+
+  details{ border: 1px solid var(--panel-line); margin-bottom: 10px; max-width: 740px; background: #fbf8f0; }
+  summary{
+    cursor: pointer; list-style: none;
+    padding: 14px 18px;
+    font-size: 15.5px; font-weight: 600; letter-spacing: 1px;
+    display:flex; justify-content:space-between; align-items:center;
+    transition: background .15s; color: var(--ink);
+  }
+  summary::-webkit-details-marker{ display:none; }
+  summary:hover{ background: var(--accent-dim); }
+  summary .range{ font-family:'Noto Sans TC',sans-serif; font-size:11.5px; font-weight:400; letter-spacing:2px; color:var(--ink-soft); }
+  details[open] summary{ border-bottom:1px solid var(--panel-line); background: var(--accent-dim); }
+  details .body{ padding: 16px 20px 20px; }
+  details .body p{ max-width:660px; }
+  details .body blockquote{ max-width:660px; }
+
+  .lens{ border-left:3px solid var(--panel-line); padding-left:18px; margin-bottom:24px; max-width:720px; }
+  .lens.h{ border-color: var(--ochre); }
+  .lens.l{ border-color: var(--accent); }
+  .lens.t{ border-color: var(--zion); }
+  .lens h3{ margin-top:0; }
+
+  .days{
+    display:grid; grid-template-columns: repeat(auto-fit, minmax(128px,1fr));
+    gap:1px; background: var(--panel-line);
+    border:1px solid var(--panel-line);
+    margin: 18px 0; max-width: 740px;
+    font-family:'Noto Sans TC',sans-serif;
+  }
+  .days div{ background:#fbf8f0; padding:12px 14px; }
+  .days .ref{ font-size:12px; letter-spacing:2px; color:var(--accent); font-weight:500; margin-bottom:4px; }
+  .days .txt{ font-size:12.5px; font-weight:300; color:var(--ink-soft); line-height:1.6; }
+
+  /* 討論題與回應 */
+  .qa{ border:1px solid var(--panel-line); background:#fbf8f0; margin-bottom:14px; max-width:740px; }
+  .qa .q{ padding:15px 18px 13px; display:flex; gap:13px; align-items:baseline; }
+  .qa .q .badge{
+    flex:0 0 auto; font-family:'Noto Sans TC',sans-serif; font-size:11.5px;
+    letter-spacing:2px; color:#fdfaf4; background:var(--accent);
+    padding:2px 9px; border-radius:3px;
+  }
+  .qa .q .txt{ font-size:15px; font-weight:600; color:var(--ink); line-height:1.75; }
+  .qa .a{ border-top:1px dashed var(--panel-line); padding:13px 18px 15px; }
+  .qa .a .lab{
+    font-family:'Noto Sans TC',sans-serif; font-size:11px; letter-spacing:3px;
+    color:var(--accent); margin-bottom:6px;
+  }
+  .qa .a .txt{ font-family:'Noto Sans TC',sans-serif; font-weight:300; font-size:14px; color:var(--ink-soft); line-height:1.85; }
+  .qa .a.pending .txt{ color:var(--ink-faint); }
+  .qa .fb{ border-top:1px dashed var(--panel-line); padding:13px 18px 15px; background:rgba(88,120,79,0.05); }
+  .qa .fb .lab{
+    font-family:'Noto Sans TC',sans-serif; font-size:11px; letter-spacing:3px;
+    color:var(--zion); margin-bottom:6px;
+  }
+  .qa .fb .txt{ font-family:'Noto Sans TC',sans-serif; font-weight:300; font-size:14px; color:var(--ink-soft); line-height:1.85; }
+
+  .bib{ max-width: 740px; }
+  .bib .trad{ font-family:'Noto Sans TC',sans-serif; font-size:12px; letter-spacing:3px; color:var(--accent); margin: 22px 0 10px; }
+  .bib p.entry{
+    font-family:'Noto Serif TC',Georgia,serif; font-weight:400;
+    font-size:14px; color:var(--ink);
+    padding-left: 2.5em; text-indent: -2.5em;
+    margin-bottom: 12px; line-height: 1.9;
+  }
+  .bib p.note{
+    font-family:'Noto Sans TC',sans-serif; font-weight:300; font-size:13px;
+    color: var(--ink-faint); padding-left: 2.5em; margin: -6px 0 16px;
+  }
+  .bib i{ font-style: italic; }
+
+  /* 總覽頁 */
+  .hero{ padding: 40px 0 6px; }
+  .hero h1{ font-weight:900; font-size:clamp(28px,5vw,42px); letter-spacing:4px; line-height:1.35; }
+  .hero h1 small{ display:block; font-weight:400; font-size:14.5px; letter-spacing:2px; color:var(--ink-soft); margin-top:10px; }
+  .hero .t-ob{ color:var(--ob); } .hero .t-jl{ color:var(--joel); } .hero .t-jn{ color:var(--jonah); } .hero .x{ color:var(--ink-faint); font-weight:400; margin:0 8px; }
+  .homecards{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:14px; margin: 28px 0 10px;
+  }
+  .homecards .card{
+    border:1px solid var(--panel-line); border-left:5px solid var(--ob);
+    background:#fbf8f0; padding:20px 22px; cursor:pointer;
+    transition: background .15s;
+  }
+  .homecards .card:hover{ background: var(--panel); }
+  .homecards .card.jl{ border-left-color: var(--joel); }
+  .homecards .card.jn{ border-left-color: var(--jonah); }
+  .homecards .card .t{ font-size:19px; font-weight:900; letter-spacing:3px; margin-bottom:4px; }
+  .homecards .card.ob-c .t{ color:var(--ob); } .homecards .card.jl .t{ color:var(--joel); } .homecards .card.jn .t{ color:var(--jonah); }
+  .homecards .card .d{ font-family:'Noto Sans TC',sans-serif; font-size:12.5px; font-weight:300; color:var(--ink-soft); line-height:1.7; }
+  .navnote{ font-family:'Noto Sans TC',sans-serif; font-size:11.5px; color:var(--ink-faint); letter-spacing:1px; margin: 8px 0 30px; }
+
+  footer{
+    margin-top: 60px; padding-top: 20px;
+    border-top: 1px solid var(--panel-line);
+    font-family:'Noto Sans TC',sans-serif; font-weight:300;
+    font-size: 12px; color: var(--ink-faint); letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead"><div class="in">
+  <div class="brand">先知書導讀系列 · 按早期定年排序 · 點選書卷載入對應資料</div>
+  <div class="booknav" id="booknav">
+    <button class="home avail" data-view="view-home">總覽 / 互文網絡</button>
+    <button class="avail" data-view="view-ob">俄巴底亞</button>
+    <button class="avail" data-view="view-joel">約珥</button>
+    <button class="avail" data-view="view-jonah">約拿</button><button disabled>阿摩司</button><button disabled>何西阿</button><button disabled>以賽亞</button><button disabled>彌迦</button><button disabled>那鴻</button><button disabled>西番雅</button><button disabled>耶利米</button><button disabled>哈巴谷</button><button disabled>但以理</button><button disabled>以西結</button><button disabled>哈該</button><button disabled>撒迦利亞</button><button disabled>瑪拉基</button>
+  </div>
+</div></div>
+
+<div class="wrap">
+
+<!-- ════════════════ 總覽頁 ════════════════ -->
+<div class="view bk-home" id="view-home">
+
+  <header class="hero">
+    <h1><span class="t-ob">俄巴底亞書</span><span class="x">×</span><span class="t-jl">約珥書</span><span class="x">×</span><span class="t-jn">約拿書</span>
+      <small>前兩卷的終點在錫安，第三卷走向尼尼微 · 「耶和華的日子」在此奠基 · 恩典信經在此分岔</small></h1>
+    <div class="navnote">灰色書卷將隨導讀進度陸續加入 · 系列按早期定年排序：俄巴底亞（約前 845）→ 約珥（約前 835）→ 約拿（約前 780–750）</div>
+  </header>
+
+  <div class="homecards">
+    <div class="card ob-c" data-view="view-ob">
+      <div class="t">第一卷 · 俄巴底亞書</div>
+      <div class="d">約主前 845 年 · 猶大王約蘭年間<br>舊約最短的一卷，二十一節的大反轉：驕傲的高處被拉下、旁觀即同謀的八階控罪、國度歸耶和華。</div>
+    </div>
+    <div class="card jl" data-view="view-joel">
+      <div class="t">第二卷 · 約珥書</div>
+      <div class="d">約主前 835 年 · 約阿施幼年 · 祭司耶何耶大攝政<br>蝗災中的號角：「耶和華的日子」五響、撕裂心腸的悔改、聖靈普降，以及反創造走向新創造的宇宙尺度。</div>
+    </div>
+    <div class="card jn" data-view="view-jonah">
+      <div class="t">第三卷 · 約拿書</div>
+      <div class="d">約主前 780–750 年 · 耶羅波安二世年間（王下 14:25）<br>逃跑的先知與追趕的神：四幕鏡像敘事、五個字掀動全城的悔改、恩典信經成為控訴，全書停在一個沒有答案的問句。</div>
+    </div>
+  </div>
+
+  <section id="network">
+    <h2><span class="no">總覽</span>兩卷書的互文網絡</h2>
+    <p>俄巴底亞與約珥相隔約十年，共享同一套神學座標。下表的經文皆可點擊，會切換至該卷並跳到對應段落；讀任何一卷時遇到互文標記，也可循超連結跳回另一卷。</p>
+    <table>
+      <thead><tr><th style="width:26%">主題</th><th style="width:32%">俄巴底亞書</th><th style="width:32%">約珥書</th><th>關係</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>耶和華的日子</b></td>
+          <td><a class="xref" href="#ob-arg">俄 15「降罰的日子臨近萬國」</a></td>
+          <td><a class="xref" href="#joel-arg">珥 1:15 起共五次，密度全舊約之冠</a></td>
+          <td>俄巴底亞首度指向「萬國」，約珥展開為全卷骨幹</td>
+        </tr>
+        <tr>
+          <td><b>逃脫的人（pālîṭ）</b></td>
+          <td><a class="xref" href="#ob-arg">俄 17「在錫安山必有逃脫的人」</a></td>
+          <td><a class="xref" href="#joel-arg">珥 2:32「正如耶和華所說的」</a></td>
+          <td>約珥明示引用；本系列判定俄巴底亞在先</td>
+        </tr>
+        <tr>
+          <td><b>錫安的終點</b></td>
+          <td><a class="xref" href="#ob-arg">俄 21「國度就歸耶和華了」</a></td>
+          <td><a class="xref" href="#joel-arg">珥 3:21「耶和華住在錫安」</a></td>
+          <td>王權宣告 ↔ 同在宣告：國度的骨與肉</td>
+        </tr>
+        <tr>
+          <td><b>以東的結局</b></td>
+          <td><a class="xref" href="#ob-lens">全卷主題：「歸於無有」</a></td>
+          <td><a class="xref" href="#joel-arg">珥 3:19「以東必成為淒涼的曠野」</a></td>
+          <td>俄巴底亞的以東事件（前 845）是約珥的近期記憶</td>
+        </tr>
+        <tr>
+          <td><b>反轉的軸線</b></td>
+          <td><a class="xref" href="#ob-arg">空間性：高處被拉下，低處被高舉</a></td>
+          <td><a class="xref" href="#joel-disc">時間性：反創造走向新創造</a></td>
+          <td>兩種反轉合起來，構成完整的座標系</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>約拿書加入後的新接點<span class="sub">恩典信經的分岔 · 同一句「也未可知」</span></h3>
+    <table>
+      <thead><tr><th style="width:26%">主題</th><th style="width:32%">前兩卷</th><th style="width:32%">約拿書</th><th>關係</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>恩典信經＋「後悔不降所說的災」</b></td>
+          <td><a class="xref" href="#joel-arg">珥 2:13——作為呼召悔改的根據</a></td>
+          <td><a class="xref" href="#jonah-arg">拿 4:2——作為逃跑的理由</a></td>
+          <td>舊約唯二在出 34:6 信經後加此句的經文；同一信經，一邊是盼望，一邊成控訴</td>
+        </tr>
+        <tr>
+          <td><b>「或者……也未可知」（מִי יוֹדֵעַ）</b></td>
+          <td><a class="xref" href="#joel-arg">珥 2:14——先知向選民發出</a></td>
+          <td><a class="xref" href="#jonah-arg">拿 3:9——外邦王向尼尼微發出</a></td>
+          <td>同一句悔改語法；引用方向之爭正是定年之爭的縮影</td>
+        </tr>
+        <tr>
+          <td><b>列邦主題的兩面</b></td>
+          <td><a class="xref" href="#ob-lens">俄巴底亞：以東受審判</a></td>
+          <td><a class="xref" href="#jonah-lens">約拿：尼尼微蒙憐憫</a></td>
+          <td>同一位神對列邦的兩種面貌：審判驕傲者，憐憫悔改者——合起來才是完整的列邦神學</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+
+<!-- ════════════════ 俄巴底亞書 ════════════════ -->
+<div class="view bk-ob" id="view-ob">
+
+  <div class="bookhead">
+    <div class="no">第一卷 · 約主前 845 年</div>
+    <h1>俄巴底亞書</h1>
+    <small>עֹבַדְיָה「耶和華的僕人」 · 舊約最短的一卷 · 二十一節的大反轉</small>
+    <div class="toc">
+      <a href="#ob-history">壹 歷史背景</a><a href="#ob-arg">貳 論述脈絡</a><a href="#ob-lens">參 三重視角</a><a href="#ob-comp">肆 兩家導論對照</a><a href="#ob-qa">伍 討論題與回應</a><a href="#ob-bib">陸 學術資料</a>
+    </div>
+  </div>
+
+  <div class="quick">
+    <div><div class="k">定年</div><div class="v">約主前 845 年<small>早期定年 · Busenitz 立場</small></div></div>
+    <div><div class="k">在位君王</div><div class="v">猶大王約蘭<small>王下 8:16–24</small></div></div>
+    <div><div class="k">批判對象</div><div class="v">以東<small>兼及「萬國」（15 節）</small></div></div>
+    <div><div class="k">全書骨幹</div><div class="v">報應原則<small>「你怎樣行，他也必照樣向你行」</small></div></div>
+    <div><div class="k">同代世界</div><div class="v">撒縵以色三世 · 周厲王<small>黑色方尖碑 · 國人暴動</small></div></div>
+  </div>
+
+  <section id="ob-history">
+    <h2><span class="no">壹</span>歷史背景</h2>
+
+    <p>按早期定年，俄巴底亞的處境是猶大王<b>約蘭</b>年間（約主前 848–841 年在位）。以東在約蘭手下背叛獨立（王下 8:20–22），隨後非利士人與阿拉伯人入侵、劫掠耶路撒冷（代下 21:16–17）。以東人在這場災難中袖手旁觀，甚至趁火打劫——這解釋了 11 節「你竟站在一旁，像與他們同夥」的指控。</p>
+
+    <p>這場背叛的重量來自血緣：以東與以色列是<b>以掃與雅各</b>的後裔，是「兄弟」（10 節）。兩兄弟本人在雅博渡口和解了（創 33），兩個民族的歷史卻沒有。俄巴底亞書因此可以讀成創世記兄弟敘事的先知性續篇——審判帶著家庭法庭的性質。</p>
+
+    <div class="field"><div class="tag">地理處境</div><div class="val">以東居西珥山岩石要塞（今佩特拉一帶），天險地勢餵養出「誰能將我拉下地去」（3 節）的地理性安全感——這是全書解剖的驕傲的根源。</div></div>
+    <div class="field"><div class="tag">世仇脈絡</div><div class="val">民 20 拒絕過境 → 撒上 14 掃羅征伐 → 王下 8 叛變 → 詩 137:7 → 瑪 1:2–4「以掃是我所惡的」。俄巴底亞書是這條線索最集中的表述。</div></div>
+    <div class="field"><div class="tag">定年爭議</div><div class="val">批判學界（Wolff、Barton）主張主前 587 年之後，以耶路撒冷陷落為背景，證據取自詩 137:7 與哀 4:21–22。本系列採早期定年，兩造論證見書目與討論筆記；兩本中文導論的正面交鋒，見 <a class="xref" href="#ob-comp">肆・兩家導論對照<span class="arrow"> ↓</span></a>。</div></div>
+
+    <h3>東西年表平行<span class="sub">亞述霸權 · 地中海文明前夜 · 西周晚期</span></h3>
+    <table>
+      <thead><tr><th style="width:10%">年代</th><th style="width:30%">以色列 / 猶大</th><th style="width:32%">西方世界</th><th>中國 · 西周</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>前 853</b></td>
+          <td>北國亞哈王加入亞蘭聯軍，於夸夸抵禦亞述</td>
+          <td><b>夸夸之戰</b>（Qarqar）：亞述王撒縵以色三世西征，其銘文首次提及以色列君王</td>
+          <td>周厲王在位，重用榮夷公「專利」，壟斷山澤之利</td>
+        </tr>
+        <tr>
+          <td><b>前 848</b></td>
+          <td>約蘭登基，行亞哈家的惡，殺眾兄弟（代下 21:4）</td>
+          <td>亞述霸權鼎盛，連年西征敘利亞諸邦；希臘處於幾何時期（Geometric），荷馬史詩尚未成文</td>
+          <td>厲王以衛巫監謗，「國人莫敢言，道路以目」</td>
+        </tr>
+        <tr>
+          <td><b>前 845</b></td>
+          <td>以東叛變獨立；非利士、阿拉伯人劫掠耶路撒冷；<b>俄巴底亞發預言</b></td>
+          <td>撒縵以色三世第十四次西征，動員空前兵力渡幼發拉底河</td>
+          <td>召公諫「防民之口，甚於防川」，厲王不聽</td>
+        </tr>
+        <tr>
+          <td><b>前 841</b></td>
+          <td>約蘭病死，「無人思慕」（代下 21:20）；其後亞她利雅篡位（王下 11）——<a class="xref" href="#joel-history">約珥書的背景由此展開<span class="arrow"> ↘</span></a></td>
+          <td>北國耶戶向撒縵以色三世進貢——<b>黑色方尖碑</b>，現存唯一以色列君王的同時代圖像</td>
+          <td><b>國人暴動</b>，厲王出奔彘，共和行政——中國信史確切紀年的起點</td>
+        </tr>
+        <tr>
+          <td><b>其後</b></td>
+          <td>以東最終被拿巴提人逐出故土（主前六至四世紀），應驗「歸於無有」</td>
+          <td>迦太基建城（前 814）、首屆奧林匹亞賽會（前 776）、羅馬建城（傳統前 753）——希臘羅馬文明的紀年起點緊隨其後</td>
+          <td>宣王中興（前 827 起），西周進入最後的振作</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>三個世界在同一個十年間交會：耶路撒冷被劫掠、黑色方尖碑刻下以色列王屈膝的身影、鎬京爆發國人暴動。俄巴底亞發預言的年代，恰好落在中國信史紀年起點與希臘羅馬紀年起點（首屆奧運會、羅馬建城）之間的前夜——自恃高處的權力被拉下來，是這個時代東西共同的劇本。</p>
+  </section>
+
+  <section id="ob-arg">
+    <h2><span class="no">貳</span>論述脈絡：三個階段的反轉</h2>
+
+    <p>全書的骨幹是 15 節的報應原則，整卷書就是這個原則展開的一場<em>大反轉</em>：自以為高的被拉下來，落井下石的自己落入井中，被踐踏的錫安反而成為聖所與產業。</p>
+
+    <blockquote>「耶和華降罰的日子臨近萬國。<em>你怎樣行，他也必照樣向你行</em>；你的報應必歸到你頭上。」<span class="ref">俄巴底亞書 15 節 · 全書樞紐 · <a class="xref" href="#joel-arg">「耶和華的日子」在約珥書展開為五響號角<span class="arrow"> ↘</span></a></span></blockquote>
+
+    <details open>
+      <summary>第一階段 · 驕傲的高處被拉下<span class="range">1–9 節</span></summary>
+      <div class="body">
+        <p>以東的地理就是它的神學問題：岩石要塞生出地理性的安全感，高處餵養了屬靈的錯覺。</p>
+        <blockquote>「你雖如大鷹高飛，<em>在星宿之間搭窩</em>，我必從那裡拉下你來。這是耶和華說的。」<span class="ref">俄巴底亞書 4 節</span></blockquote>
+        <p>留意 5–6 節的修辭：盜賊偷竊尚且「夠了就止」，摘葡萄的還會剩下些果子——以東的被掠卻是<b>徹底的</b>，連隱藏的寶物都被搜出。報應原則第一次運作：怎樣徹底洗劫兄弟，自己也必被徹底洗劫。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>第二階段 · 控罪的階梯<span class="range">10–14 節</span></summary>
+      <div class="body">
+        <p>全書修辭最精彩的段落。10–11 節先立總罪名，12–14 節用連續<b>八個「不當」</b>（希伯來文 <b>ʾal</b> + 未完成式）構成一道下行階梯：<b>瞪眼看 → 歡樂 → 誇口 → 進城門 → 瞪眼看災禍 → 搶財物 → 堵截逃亡者 → 交出倖存者</b>。從被動的幸災樂禍，一步一步滑到主動的殺害。</p>
+        <blockquote>「你兄弟遭難的日子，你竟站在一旁，……<em>你也好像他們中間的一個</em>。」<span class="ref">俄巴底亞書 11 節 · 中立即同謀</span></blockquote>
+        <p>倫理洞見：在兄弟遭難的日子，袖手旁觀已經是同謀的第一級台階。文法細節：這八個禁令形式上是即時的喝止語氣，彷彿先知站在災難現場當下制止——但事情早已發生。以現在式追述過去，使控罪帶著目擊者的力度。</p>
+        <p>（此段落另有互動式階梯圖一份：《俄巴底亞書_八階控罪階梯.html》，可逐階展開經文與註解。）</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>第三階段 · 日子臨到，國度歸位<span class="range">15–21 節</span></summary>
+      <div class="body">
+        <p>15 節把鏡頭從以東一國拉開到「萬國」：以東成為萬國的<b>原型</b>，它的結局預告一切敵擋神國之勢力的結局。16 節以「喝杯」意象完成交換：怎樣在聖山上狂歡踐踏地「喝」，也必怎樣「喝」神忿怒的杯。然後是反轉的頂點：</p>
+        <blockquote class="hope">「在錫安山必有<em>逃脫的人</em>，那山也必成聖；雅各家必得原有的產業。」<span class="ref">俄巴底亞書 17 節 · <a class="xref" href="#joel-arg">約珥書 2:32 引用此節：「正如耶和華所說的」<span class="arrow"> ↘</span></a></span></blockquote>
+        <blockquote class="hope">「必有拯救者上到錫安山，審判以掃山；<em>國度就歸耶和華了</em>。」<span class="ref">俄巴底亞書 21 節 · 全書終點 · <a class="xref" href="#joel-arg">約珥書止於同一座標：「耶和華住在錫安」（珥 3:21）<span class="arrow"> ↘</span></a></span></blockquote>
+        <p>全書停在王權歸位。加爾文與 Robertson 都抓住 21 節：表面是對外邦的審判詩，骨子裡是一篇<b>國度神學</b>的宣告。</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="ob-lens">
+    <h2><span class="no">參</span>三重視角</h2>
+
+    <div class="lens h">
+      <h3>歷史視角</h3>
+      <p>以東最終在主前六至四世紀被拿巴提人（Nabataeans）逐出故土，殘餘族群（以土買人）在兩約之間被強制歸化——歷史上以東確實「歸於無有」（16 節）。出人意料的新約尾聲：希律大帝正是以土買人，以掃與雅各之爭在伯利恆的嬰孩屠殺中迴響最後一次。</p>
+    </div>
+
+    <div class="lens l">
+      <h3>文學視角</h3>
+      <p>兩組關鍵平行。其一，與<b>耶利米書 49:7–22</b> 的大段重疊（俄 1–9 ≈ 耶 49:9–10, 14–16），誰引用誰是學界長期論題。其二，直接連向約珥書：俄 17「在錫安山必有逃脫的人」與 <a class="xref" href="#joel-arg">珥 2:32「在錫安山……必有逃脫的人，正如耶和華所說的」<span class="arrow"> ↘</span></a> 幾乎逐字對應——按本系列的排序，「正如耶和華所說的」指向俄巴底亞，約珥引用之。</p>
+    </div>
+
+    <div class="lens t">
+      <h3>神學視角</h3>
+      <p>三個支柱。<b>兄弟盟約的違背</b>：以東的罪超出暴力本身，是對血緣—盟約關係的背叛，使審判帶著家庭法庭的性質。<b>驕傲的解剖</b>：3 節「心中狂傲自欺」把驕傲定義為自我欺騙的認知失調，地理的高處餵養屬靈的錯覺。<b>耶和華的日子與國度</b>：終點明確落在王權歸位（21 節），為十二小先知書的國度主線定調——這個「日子」主題交棒給約珥，<a class="xref" href="#joel-disc">在反創造與新創造的框架中被展開到宇宙的尺度<span class="arrow"> ↘</span></a>。</p>
+    </div>
+  </section>
+
+  <section id="ob-comp">
+    <h2><span class="no">肆</span>兩家導論對照：傅理曼 × 麥康維爾</h2>
+
+    <p>研讀資料夾中的兩本中文導論，恰好站在定年之爭的兩端：<b>傅理曼</b>（Hobart E. Freeman）《舊約先知書導論》主張俄巴底亞為「聖經中最早的先知書」（約前 845 年），與本系列採用的 Busenitz 立場相互補強；<b>麥康維爾</b>（Gordon McConville）《先知書》則審慎傾向 587 年。以下為兩書俄巴底亞專章的五組正面交鋒（頁碼皆為中譯本印刷頁）。</p>
+
+    <table>
+      <thead><tr><th style="width:18%">大綱分段</th><th style="width:40%">傅理曼（三分法，頁 142）</th><th>麥康維爾（四分法，頁 357–58）</th></tr></thead>
+      <tbody>
+        <tr><td><b>審判宣告</b></td><td>一、預言以東的毀滅（1–9）</td><td>一、驕傲受審（1–4）＋二、徹底毀滅（5–10）</td></tr>
+        <tr><td><b>控罪</b></td><td>二、以東被毀滅的原因（10–14）</td><td>三、重點指控以東擄掠猶大（11–14）</td></tr>
+        <tr><td><b>那日子</b></td><td>三、主的日子：審判和復興（15–21）</td><td>四、耶和華的日子審判列國；以色列重獲地土（15–21）</td></tr>
+      </tbody>
+    </table>
+
+    <details open>
+      <summary>一 · 定年之爭：前 845 年或 587 年<span class="range">呼應 問二</span></summary>
+      <div class="body">
+        <p><b>傅理曼</b>（頁 139）：以東正是在約蘭年間背叛猶大（王下 8:20–22）；書中未提全民族被擄，被擄者往腓尼基與西方（俄 20）而非巴比倫；論及 586 年的晚期先知均指名巴比倫與尼布甲尼撒，俄巴底亞卻對敵人隻字不提；書中亦無聖城聖殿全毀的痕跡；且阿摩司（前 760）與耶利米（前 627）似已熟識此書。</p>
+        <p><b>麥康維爾</b>承認線索稀少，但認為 11–14 節的幸災樂禍與趁火打劫，「587年的局勢最切合這境況」（頁 356）。</p>
+        <p><b>方法論觀察</b>：兩家用的是同一組經文——傅理曼由書中<em>沒有說什麼</em>（不提巴比倫、不提聖殿）論證早期，麥康維爾由書中<em>說了什麼</em>（11–14 節的臨場感）論證晚期。論證方法往往先於結論；這正是 <a class="xref" href="#ob-qa">問二<span class="arrow"> ↓</span></a> 的評估練習。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>二 · 耶利米書四十九章的引用方向<span class="range">牽動 問一</span></summary>
+      <div class="body">
+        <p>俄 1–9 與耶 49:7–16 大段重疊。傅理曼主張<b>耶利米引用俄巴底亞</b>，此點同時支持早期成書（頁 139）。麥康維爾引 Allen 與 Stuart：方向無法確定，兩者或同出一個更早的反以東傳統（頁 356）；他另提一條鏈——俄 15–16 呼應哀歌的信念、約珥又引用俄巴底亞——如此則成書落於第六世紀（頁 357）。這條鏈的關鍵一環（珥 2:32 與俄 17 的方向）正是<a class="xref" href="#ob-qa">問一<span class="arrow"> ↓</span></a>所問；本系列取俄巴底亞在先。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>三 · 報應原則的律法根源<span class="range">俄 15</span></summary>
+      <div class="body">
+        <p>兩家皆以俄 15 下為全書公義原則。麥康維爾將它連於<b>申命記 19:16–19 作假見證的律法</b>——想加給別人的懲罰，終將落在自己身上——並強調這並非幸災樂禍式的同態報復，而是「神審判人類敗壞的正確性」；他並拋出討論題：俄 15 上可否反轉為規範人際關係的積極倫理（參太 7:12）？（頁 360）這給<a class="xref" href="#ob-arg">貳・報應原則<span class="arrow"> ↖</span></a>補上了律法傳統的地基。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>四 · 「憤怒的國家主義」難題</summary>
+      <div class="body">
+        <p>評論者稱本書為「一篇憤怒的演說」「激烈的國家主義」。傅理曼的回應：此審判以創 12:3 的應許為根基，且血統關係使以東的罪狀「更形昭彰」（俄 10）（頁 142）。麥康維爾以申 23:7–8 說明同一要點：以東人本是「弟兄」，第三代可入耶和華的會——正因關係親近，背叛才格外沉重（頁 359–60）。兩者可與「受害者的公義呼求」的讀法互補：權力盡失者將伸冤權交還給神，同時放棄自行報復（參詩 137）。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>五 · 批判學術史備忘<span class="range">傅理曼「難題」節</span></summary>
+      <div class="body">
+        <p>傅理曼（頁 141）整理了分層說諸家：Eichhorn 以本書完成於 586 年後、俄 17–21 為附錄；Pfeiffer 以俄 1–14、15 下為前 460 年；Ewald 視本書為被擄期先知取材古預言之作；Wellhausen 將俄 2–9 定於前五世紀。諸家唯一共識：<b>俄 1–9 屬最古老的層次</b>。此頁可作本卷批判學術史的速查地圖，與 Wolff、Barton、Ben Zvi（見書目）互相參照。</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="ob-qa">
+    <h2><span class="no">伍</span>討論題與回應</h2>
+    <p>導讀後留下的三個討論題。回應整理後收錄於此，形成「導讀—作業—回饋」的完整記錄。</p>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問一</span><span class="txt">俄 17 與珥 2:32 的引用方向該如何判斷？「正如耶和華所說的」若指向俄巴底亞，需要什麼證據支持？這直接牽動本系列俄巴底亞第一、約珥第二的排序。</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問二</span><span class="txt">Wolff 的主前 587 年定年與「聖殿哀悼禮儀」處境假說，證據強度如何？詩 137:7 與哀 4:21–22 能否必然指向被擄後，或九世紀的劫掠事件同樣可以解釋？</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問三</span><span class="txt">12–14 節「旁觀即同謀」的倫理，可否與約珥書「撕裂心腸」的真悔改主題對讀？以東的罪從眼目開始，約珥的悔改從心腸開始——這兩條內在化的線索是否指向同一種先知倫理觀？</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+  </section>
+
+  <section id="ob-bib">
+    <h2><span class="no">陸</span>學術資料<span style="font-family:'Noto Sans TC',sans-serif;font-size:12px;font-weight:400;letter-spacing:2px;color:var(--ink-soft)">Chicago 書目格式</span></h2>
+
+    <div class="bib">
+      <div class="trad">中文導論（本次研讀底本）</div>
+      <p class="entry">傅理曼。《舊約先知書導論》。梁潔瓊譯。新北市：中華福音神學院出版社，1986。</p>
+      <p class="note">俄巴底亞專章見頁 137–43：主張本書為聖經中最早的先知書（約前 845 年）；「難題」一節（頁 141）為批判學術史速查。</p>
+      <p class="entry">麥康維爾。《先知書》。紀榮神譯。香港：天道書樓，2008。</p>
+      <p class="note">俄巴底亞專章見頁 355–63：審慎傾向 587 年；「審判的公正」專欄與申 19 的連結尤具課堂價值；章末附進深書目（Allen、Baker、Raabe、Stuart 等）。</p>
+
+      <div class="trad">改革宗 / 加爾文派</div>
+      <p class="entry">Busenitz, Irvin A. <i>Commentary on Joel and Obadiah</i>. Mentor Commentary. Fearn, Ross-shire: Christian Focus, 2003.</p>
+      <p class="note">當代少數正面論證早期定年（約主前 845 年）的學術注釋，逐一回應晚期定年派的證據；與約珥書同冊——本系列前兩卷的改革宗主注釋。</p>
+      <p class="entry">Calvin, John. <i>Commentaries on the Twelve Minor Prophets</i>. Vol. 2, <i>Joel, Amos, Obadiah</i>. Translated by John Owen. Edinburgh: Calvin Translation Society, 1846. Reprint, Grand Rapids: Baker, 2003.</p>
+      <p class="note">以東作為「逼迫教會之世界勢力」的預表；21 節被視為全書釋經鑰匙。</p>
+      <p class="entry">Block, Daniel I. <i>Obadiah: The Kingship Belongs to YHWH</i>. Hearing the Message of Scripture. Grand Rapids: Zondervan, 2013.</p>
+      <p class="note">話語分析進路，逐節處理希伯來文修辭；書名即取自 21 節。</p>
+      <p class="entry">Robertson, O. Palmer. <i>The Christ of the Prophets</i>. Phillipsburg, NJ: P&amp;R, 2004.</p>
+      <p class="note">聖約神學框架下的俄巴底亞專章，國度主線的系統整合。</p>
+
+      <div class="trad">批判 / 自由派</div>
+      <p class="entry">Barton, John. <i>Joel and Obadiah: A Commentary</i>. Old Testament Library. Louisville: Westminster John Knox, 2001.</p>
+      <p class="note">與 Busenitz 完美鏡像：同冊涵蓋約珥與俄巴底亞，但主張 587 年後成書，並以編修批判論證 15–21 節為後期末世論擴充層。</p>
+      <p class="entry">Wolff, Hans Walter. <i>Obadiah and Jonah: A Commentary</i>. Translated by Margaret Kohl. Continental Commentaries. Minneapolis: Augsburg, 1986.</p>
+      <p class="note">形式批判進路，主張全書源自聖殿哀悼禮儀中的先知性回應。</p>
+      <p class="entry">Ben Zvi, Ehud. <i>A Historical-Critical Study of the Book of Obadiah</i>. BZAW 242. Berlin: de Gruyter, 1996.</p>
+      <p class="note">三百餘頁處理二十一節經文，歷史批判方法的極限展示；延伸研究書目。</p>
+      <p class="entry">Raabe, Paul R. <i>Obadiah: A New Translation with Introduction and Commentary</i>. Anchor Bible 24D. New York: Doubleday, 1996.</p>
+      <p class="note">目前篇幅最完整的英文注釋，語文學與經文鑑別的標準參考。</p>
+    </div>
+  </section>
+
+</div><!-- /view-ob -->
+
+<!-- ════════════════ 約珥書 ════════════════ -->
+<div class="view bk-joel" id="view-joel">
+
+  <div class="bookhead">
+    <div class="no">第二卷 · 約主前 835 年</div>
+    <h1>約珥書</h1>
+    <small>יוֹאֵל「耶和華是神」 · 蝗災中的號角 · 「耶和華的日子」的奠基之卷</small>
+    <div class="toc">
+      <a href="#joel-history">壹 歷史背景</a><a href="#joel-arg">貳 論述脈絡</a><a href="#joel-lens">參 三重視角</a><a href="#joel-disc">肆 討論延伸</a><a href="#joel-qa">伍 討論題與回應</a><a href="#joel-bib">陸 學術資料</a>
+    </div>
+  </div>
+
+  <div class="quick">
+    <div><div class="k">定年</div><div class="v">約主前 835 年<small>早期定年 · 約阿施幼年時期</small></div></div>
+    <div><div class="k">在位君王</div><div class="v">猶大王約阿施<small>七歲登基 · 祭司耶何耶大攝政</small></div></div>
+    <div><div class="k">批判對象</div><div class="v">猶大全民<small>全書未指名具體罪行</small></div></div>
+    <div><div class="k">全書骨幹</div><div class="v">耶和華的日子<small>יוֹם יְהוָה · 出現五次</small></div></div>
+    <div><div class="k">同代世界</div><div class="v">共和行政 · 耶何耶大攝政<small>東西兩個「無王而治」的時代</small></div></div>
+  </div>
+
+  <section id="joel-history">
+    <h2><span class="no">壹</span>歷史背景</h2>
+
+    <p>按早期定年，約珥的處境是猶大王<b>約阿施</b>幼年時期（約主前 835 年）。前 841 年亞她利雅屠殺王室、篡奪王位——<a class="xref" href="#ob-history">正是俄巴底亞書年表結束的那一年<span class="arrow"> ↖</span></a>；前 835 年祭司<b>耶何耶大</b>發動政變，立七歲的約阿施為王（王下 11），此後多年由耶何耶大實際攝政。這個背景解釋了約珥書一個顯眼的沉默：全書<b>從未提及君王</b>——對一卷先知書而言極不尋常——卻反覆呼喚祭司、長老與聖殿（珥 1:9, 13–14; 2:17）。一個由祭司攝政的時代，正是這幅圖像最自然的落點。</p>
+
+    <p>觸發預言的是一場空前的<b>蝗災</b>（珥 1:2–4「你們的日子，或你們列祖的日子，曾有這樣的事嗎」），四種蝗蟲名接力吞吃，加上旱災（1:19–20），農業社會的整個生存基礎被掏空——連獻給耶和華的素祭和奠祭都斷絕了（1:9），災難切斷的是敬拜本身。</p>
+
+    <div class="field"><div class="tag">定年線索</div><div class="val">未提君王、祭司地位突出、提及的外敵是非利士、腓尼基、埃及、以東（3:4, 19）而非亞述巴比倫——符合九世紀處境。<a class="xref" href="#ob-history">俄巴底亞的以東事件（前 845）<span class="arrow"> ↖</span></a>記憶猶新，正是 3:19「以東必成為淒涼的曠野」的近因。</div></div>
+    <div class="field"><div class="tag">定年爭議</div><div class="val">批判學界（Wolff、Barton、Crenshaw）主張被擄後（約前 500–350 年），證據包括 3:1–2 的分散用語、大量引用其他先知書。本系列採早期定年，兩造論證見書目。</div></div>
+    <div class="field"><div class="tag">災難性質</div><div class="val">第一章是實際的蝗災，第二章的描寫（馬兵、攻城、地震天變）將蝗群放大為「耶和華的軍隊」（2:11, 25）——實災成為那日子的預演與號角。</div></div>
+
+    <h3>東西年表平行<span class="sub">兩個「無王而治」的攝政時代</span></h3>
+    <table>
+      <thead><tr><th style="width:10%">年代</th><th style="width:30%">以色列 / 猶大</th><th style="width:32%">西方世界</th><th>中國 · 西周</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>前 841</b></td>
+          <td>亞她利雅屠殺王室、篡位（王下 11:1–3）；約阿施被藏於聖殿六年</td>
+          <td>北國耶戶向撒縵以色三世進貢——<b>黑色方尖碑</b>，現存唯一以色列君王的同時代圖像</td>
+          <td><b>國人暴動</b>，厲王出奔彘，<b>共和行政</b>開始——中國信史確切紀年的起點</td>
+        </tr>
+        <tr>
+          <td><b>前 835</b></td>
+          <td>耶何耶大政變，七歲約阿施登基，<b>祭司攝政</b>；蝗災與<b>約珥發預言</b>約在此期</td>
+          <td>撒縵以色三世晚年，亞述陷入王子內亂，西方霸權暫歇</td>
+          <td><b>共和行政</b>進行中——周公、召公（一說共伯和）代掌王政，<b>無王而治</b>十四年</td>
+        </tr>
+        <tr>
+          <td><b>前 827</b></td>
+          <td>約阿施在耶何耶大教導下行耶和華眼中看為正的事，修葺聖殿（王下 12）</td>
+          <td>亞述進入數十年的衰弱期，敘利亞—巴勒斯坦諸邦獲得喘息</td>
+          <td>共和結束，<b>宣王即位</b>，任用賢臣，「宣王中興」</td>
+        </tr>
+        <tr>
+          <td><b>其後</b></td>
+          <td>耶何耶大死後，約阿施背道、殺先知撒迦利亞（代下 24）——攝政結束，信仰隨之傾斜</td>
+          <td>首屆奧林匹亞賽會（前 776）、羅馬建城（傳統前 753）——希臘羅馬紀年起點</td>
+          <td>宣王晚年用兵失利；其子幽王失國（前 771），西周終結</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>這張表最值得注意的是前 835 年那一列：耶路撒冷與鎬京<b>同時處於「無王而治」的攝政狀態</b>——一邊是祭司耶何耶大代掌幼主的王權，一邊是共和行政代掌出奔天子的王政。約珥書不提君王的沉默，放在這個東西平行裡格外立體。兩邊的後續也同樣可堪對照：約阿施在導師死後背道，宣王中興之後緊接著幽王失國——攝政能撐住一時的秩序，撐不住人心的方向。</p>
+  </section>
+
+  <section id="joel-arg">
+    <h2><span class="no">貳</span>論述脈絡：從蝗災到那日子</h2>
+
+    <p>全書的骨幹是「<em>耶和華的日子</em>」（יוֹם יְהוָה），在短短三章（希伯來文分四章）中出現<b>五次</b>，密度為全舊約之冠。這個主題由<a class="xref" href="#ob-arg">俄巴底亞書 15 節首度指向「萬國」<span class="arrow"> ↖</span></a>，約珥將它接過來，展開為全卷的推演：眼前的蝗災是那日子的預演，那日子既是審判也是拯救，分界線只有一條——「凡求告耶和華名的」。</p>
+
+    <div class="days">
+      <div><div class="ref">珥 1:15</div><div class="txt">「耶和華的日子臨近了」——從蝗災中第一次吹響</div></div>
+      <div><div class="ref">珥 2:1</div><div class="txt">「耶和華的日子將到，已經臨近」——號角在錫安吹響</div></div>
+      <div><div class="ref">珥 2:11</div><div class="txt">「耶和華的日子大而可畏，誰能當得起呢」</div></div>
+      <div><div class="ref">珥 2:31</div><div class="txt">「耶和華大而可畏的日子未到以前」——天象翻轉</div></div>
+      <div><div class="ref">珥 3:14</div><div class="txt">「耶和華的日子臨近斷定谷」——萬民受審</div></div>
+    </div>
+
+    <details open>
+      <summary>第一階段 · 蝗災作為號角<span class="range">1:1–2:11</span></summary>
+      <div class="body">
+        <p>第一章是災情的實錄：四種蝗蟲接力吞吃（1:4），素祭奠祭斷絕（1:9），田野荒涼，喜樂從人間止息（1:12）。約珥召聚祭司禁食哀求，然後說出全書第一聲驚雷：</p>
+        <blockquote>「哀哉！耶和華的日子臨近了。這日來到，好像<em>毀滅從全能者來到</em>。」<span class="ref">約珥書 1:15</span></blockquote>
+        <p>第二章將鏡頭放大：蝗群成了奔騰的馬兵、攻城的大軍，日月昏暗，大地震動——而最駭人的一句是 2:11：這攻來的竟是「<b>耶和華的軍隊</b>」。災難的元兇被揭開：問題從來不是蝗蟲，而是蝗蟲背後那位發令的主。眼前的實災因此成為那終極之日的預演。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>第二階段 · 撕裂心腸的悔改<span class="range">2:12–17</span></summary>
+      <div class="body">
+        <p>全書的樞紐，也是舊約悔改神學最凝練的表述：</p>
+        <blockquote>「你們要<em>撕裂心腸，不撕裂衣服</em>，歸向耶和華你們的神；因為他有恩典，有憐憫，不輕易發怒，有豐盛的慈愛。」<span class="ref">約珥書 2:13 · 引出埃及記 34:6 的神性格公式</span></blockquote>
+        <p>兩個要點。其一，悔改的定義：撕裂衣服是儀式，撕裂心腸是實質——約珥拒絕停在儀式層面的宗教動作。其二，悔改的根據：不在人的表現，而在神的性格。2:13 逐字引用出埃及記 34:6 耶和華向摩西宣告的自我啟示，把西奈山的恩典公式搬進災難現場。而 2:14「或者他轉意後悔……<b>也未可知</b>」保留了神的主權：真悔改不是操縱神的技術，是把自己交在祂性格的手中。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>第三階段 · 日子的兩面：復還、澆灌、審判<span class="range">2:18–3:21</span></summary>
+      <div class="body">
+        <p>神的回應分三波推進。第一波是物質的復還（2:18–27），其中 2:25 是全書最溫柔的一句：</p>
+        <blockquote class="hope">「我打發到你們中間的大軍隊，就是蝗蟲……<em>那些年所吃的，我要補還你們</em>。」<span class="ref">約珥書 2:25</span></blockquote>
+        <p>第二波是聖靈的澆灌（2:28–32）：「我要將我的靈澆灌<b>凡有血氣的</b>」——兒女、老少、僕婢無別。先知的靈從此不再是少數人的專利，這是舊約中聖靈最徹底的「普降」宣告。段落結束於那條分界線：</p>
+        <blockquote class="hope">「到那時候，<em>凡求告耶和華名的就必得救</em>；因為照耶和華所說的，在錫安山，耶路撒冷必有逃脫的人，在剩下的人中必有耶和華所召的。」<span class="ref">約珥書 2:32 · <a class="xref" href="#ob-arg">「正如耶和華所說的」——指向俄巴底亞書 17 節<span class="arrow"> ↖</span></a></span></blockquote>
+        <p>第三波是萬民的審判（3 章）：列國被召集到「約沙法谷」（意即「耶和華審判」之谷），3:10「要將犁頭打成刀劍」倒轉了以賽亞書 2:4 的名句；3:19 宣告「以東必成為淒涼的曠野」——<a class="xref" href="#ob-lens">呼應俄巴底亞書的以東結局<span class="arrow"> ↖</span></a>。全書停在與俄巴底亞書相同的座標上——錫安：「耶和華住在錫安」（3:21），與<a class="xref" href="#ob-arg">俄 21「國度就歸耶和華了」<span class="arrow"> ↖</span></a>互為表裡。</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="joel-lens">
+    <h2><span class="no">參</span>三重視角</h2>
+
+    <div class="lens h">
+      <h3>歷史視角</h3>
+      <p>五旬節那天，彼得站起來宣告「這正是先知約珥所說的」（徒 2:16–21），整段引用珥 2:28–32——約珥書因此成為新約聖靈論的出生證明。九世紀猶大聖殿院中的一篇蝗災講章，八百多年後在同一座城成為教會誕生的釋經根據；「凡求告耶和華名的就必得救」再經保羅之手（羅 10:13）成為外邦宣教的憲章。一卷小書的接受史，橫跨了整部救恩史。</p>
+    </div>
+
+    <div class="lens l">
+      <h3>文學視角</h3>
+      <p>約珥書是十二小先知書的「引用樞紐」：珥 2:32 引用<a class="xref" href="#ob-arg">俄 17<span class="arrow"> ↖</span></a>；珥 3:16「耶和華必從錫安吼叫」與摩 1:2 逐字相同，成為約珥—阿摩司的書卷接縫；珥 3:10 倒轉賽 2:4／彌 4:3 的「刀劍打成犁頭」。這個引用密度使約珥書成為定年論戰的主戰場：早期定年讀作「被眾人引用的源頭」，晚期定年讀作「引用眾人的文選」。</p>
+    </div>
+
+    <div class="lens t">
+      <h3>神學視角</h3>
+      <p>三個支柱。<b>耶和華的日子</b>：同一個日子，對悖逆者是黑暗（2:11），對求告者是拯救（2:32），日子本身不變，人的位置決定它的面貌。<b>真悔改的解剖</b>：心腸與衣服之別，把悔改從儀式拉回關係，根據放在神的性格（出 34:6）。<b>聖靈的普降</b>：凡有血氣的都受澆灌，預告了一個先知職分民主化的群體——與俄巴底亞書相對照：俄巴底亞停在「國度歸耶和華」的王權宣告，約珥描寫這國度裡的子民被聖靈充滿的樣子，兩卷書合起來是國度的骨與肉。</p>
+    </div>
+  </section>
+
+  <section id="joel-disc">
+    <h2><span class="no">肆</span>討論延伸：反創造與新創造</h2>
+
+    <p>這是約珥書研讀中值得單獨展開的一個讀法：把全書放在<b>創世記 1–3 章的座標</b>上讀。蝗災段落的意象系統，逐項對應創造敘事的逐項<em>倒轉</em>——學界稱之為「反創造」（un-creation，語出 Michael Fishbane 對耶利米書 4:23–26 的經典分析，那裡創世記第一章的秩序逐日退回混沌）。而約珥書比耶利米走得更遠：它不停在倒轉，還讓歷史穿過反創造，走向一個<b>超過伊甸的新創造</b>。</p>
+
+    <h3>反創造：創造敘事的倒帶<span class="sub">珥 1:1–2:11</span></h3>
+
+    <blockquote class="doom">「他們未到以先，地如<em>伊甸園</em>；過去以後，成了<em>荒涼的曠野</em>，沒有一樣能躲避他們的。」<span class="ref">約珥書 2:3 · 反創造的題句</span></blockquote>
+
+    <p>2:3 是整個讀法的鑰匙：蝗軍所到之處，創世記 2 章的園子退回創世記 1:2 的荒蕪。順著這條線往回看第一章，倒帶是全面的——光體昏暗（2:10「日月昏暗，星宿無光」，第四日的倒轉）、走獸哀鳴（1:18「牲畜哀鳴，牛群混亂」，第六日受造的活物一同承受咒詛）、溪水乾涸（1:20，伊甸的河流倒轉）、土地悲哀（1:10，אֲדָמָה 這個創世記造人所用的土壤在哀哭）。創造是神說「有」就有的秩序；反創造是這秩序在罪與審判之下逐項熄燈。</p>
+
+    <h3>新創造：不止於修復的復還<span class="sub">珥 2:18–3:21</span></h3>
+
+    <blockquote class="hope">「到那日，大山要滴<em>甜酒</em>，小山要流<em>奶子</em>，猶大溪河都有水流。必有<em>泉源從耶和華的殿中流出來</em>，滋潤什亭谷。」<span class="ref">約珥書 3:18 · 新創造的題句</span></blockquote>
+
+    <p>神的回應同樣是創造性的，而且刻意<b>超額</b>：不只把蝗蟲吃掉的補還（2:25），更讓大山滴酒、小山流奶——伊甸園原本沒有的豐盛。3:18「泉源從耶和華的殿中流出」直接呼應創世記 2:10「有河從伊甸流出滋潤那園子」，只是水源換了位置：從園子換成聖殿。這條水線往後貫穿整本聖經——以西結書 47 章殿中湧出的活水、撒迦利亞書 14:8、直到啟示錄 22:1 從寶座流出的生命河。而 2:28 的靈澆灌「凡有血氣的」，讓創世記 1:2 運行在水面上的那靈（רוּחַ）運行在<b>人</b>的身上——新創造從物質世界開始，完成在被靈充滿的群體裡。</p>
+
+    <h3>對照表：創造 → 反創造 → 新創造</h3>
+    <table>
+      <thead><tr><th style="width:22%">創造的元素</th><th style="width:26%">創世記</th><th style="width:26%">反創造（珥 1:1–2:11）</th><th>新創造（珥 2:18–3:21）</th></tr></thead>
+      <tbody>
+        <tr><td><b>光體</b></td><td>日月星辰管理晝夜（創 1:14–18）</td><td>日月昏暗，星宿無光（2:10, 31）</td><td>耶和華作子民的光與避難所（3:15–16）</td></tr>
+        <tr><td><b>園子</b></td><td>耶和華在伊甸立園（創 2:8）</td><td>「地如伊甸園……成了荒涼的曠野」（2:3）</td><td>大山滴甜酒，小山流奶子（3:18）</td></tr>
+        <tr><td><b>河流</b></td><td>河從伊甸流出滋潤園子（創 2:10）</td><td>溪水乾涸，火燒曠野（1:20）</td><td>泉源從耶和華殿中流出（3:18 → 結 47 → 啟 22）</td></tr>
+        <tr><td><b>活物</b></td><td>各從其類，神看為好（創 1:24–25）</td><td>牲畜哀鳴，牛群混亂（1:18）</td><td>「田野的走獸啊，不要懼怕」（2:22）</td></tr>
+        <tr><td><b>靈</b></td><td>神的靈運行在水面上（創 1:2）</td><td>——</td><td>靈澆灌凡有血氣的（2:28–29）</td></tr>
+      </tbody>
+    </table>
+
+    <p>表中「靈」一列的反創造欄刻意留白：這是約珥書結構上最深的一筆。反創造可以倒轉光體、園子、河流、活物——受造界的每一項——卻碰不到神的靈。靈不在倒帶的範圍內，反而在倒帶結束之後，成為新創造的第一因：正如創世記的混沌之上先有靈運行，約珥的荒蕪之後也是靈先澆灌下來，然後才有錫安的泉源與滴酒的大山。</p>
+
+    <p>最後把兩卷書放回同一個座標系：<a class="xref" href="#ob-arg">俄巴底亞的反轉是<b>空間性</b>的<span class="arrow"> ↖</span></a>——高處被拉下（俄 4），低處的錫安被高舉（俄 17, 21），軸線是垂直的；約珥的反轉是<b>時間性</b>的——創造被倒帶成荒蕪，再前進成超過伊甸的新創造，軸線是水平的。一個處理權力的高低，一個處理歷史的來去。十二小先知書的頭兩卷（按本系列排序），合起來給了「耶和華的日子」一個完整的座標系：那日子臨到時，空間要翻轉，時間要更新。</p>
+  </section>
+
+  <section id="joel-qa">
+    <h2><span class="no">伍</span>討論題與回應</h2>
+    <p>導讀後的三個討論題。（原研讀時的問答記錄暫不可考，以下為補出的新題；若原始問答尋回，將以原版替換。）</p>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問一</span><span class="txt">珥 2:13 把出埃及記 34:6 的西奈恩典公式搬進蝗災現場——災難中的呼籲不訴諸人的表現，而訴諸神的性格。這對「災難中的神學語言」有什麼含意？對照今日教會面對災難時慣用的因果解釋，約珥的做法有何不同？</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問二</span><span class="txt">反創造對照表中「靈」一欄的反創造格刻意留白，理由是「反創造倒轉得了受造界的每一項，碰不到神的靈」。你同意這個結構判斷嗎？創 6:3「我的靈就不永遠住在他裡面」算不算反例？</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問三</span><span class="txt">彼得在五旬節說「這正是先知約珥所說的」（徒 2:16）——但珥 2:30–31 的天象異兆（血、火、日變黑暗）當天並未按字面發生。五旬節是珥 2:28–32 的完全應驗、開始應驗，還是預表式的挪用？你的判斷會如何影響對 3 章列國審判的讀法？</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+  </section>
+
+  <section id="joel-bib">
+    <h2><span class="no">陸</span>學術資料<span style="font-family:'Noto Sans TC',sans-serif;font-size:12px;font-weight:400;letter-spacing:2px;color:var(--ink-soft)">Chicago 書目格式</span></h2>
+
+    <div class="bib">
+      <div class="trad">改革宗 / 加爾文派</div>
+      <p class="entry">Calvin, John. <i>Commentaries on the Twelve Minor Prophets</i>. Vol. 2, <i>Joel, Amos, Obadiah</i>. Translated by John Owen. Edinburgh: Calvin Translation Society, 1846. Reprint, Grand Rapids: Baker, 2003.</p>
+      <p class="note">加爾文以 2:28–32 與五旬節的關係為釋經重心；「撕裂心腸」段落是其論真悔改的經典文本。與俄巴底亞同冊。</p>
+      <p class="entry">Busenitz, Irvin A. <i>Commentary on Joel and Obadiah</i>. Mentor Commentary. Fearn, Ross-shire: Christian Focus, 2003.</p>
+      <p class="note">正面論證約珥書早期定年（九世紀）的學術注釋，與俄巴底亞合為一冊——本系列前兩卷的改革宗主注釋。</p>
+      <p class="entry">Robertson, O. Palmer. <i>Prophet of the Coming Day of the Lord: The Message of Joel</i>. Darlington: Evangelical Press, 1995.</p>
+      <p class="note">聖約神學進路的約珥書專論，以「耶和華的日子」為全卷統一主題。</p>
+
+      <div class="trad">批判 / 自由派</div>
+      <p class="entry">Wolff, Hans Walter. <i>Joel and Amos: A Commentary on the Books of the Prophets Joel and Amos</i>. Translated by Waldemar Janzen, S. Dean McBride Jr., and Charles A. Muenchow. Hermeneia. Philadelphia: Fortress, 1977.</p>
+      <p class="note">形式批判的標竿之作，主張被擄後定年，並以「哀悼禮儀」重構全書的禮儀處境——與 Busenitz 的正面交鋒對象。</p>
+      <p class="entry">Barton, John. <i>Joel and Obadiah: A Commentary</i>. Old Testament Library. Louisville: Westminster John Knox, 2001.</p>
+      <p class="note">主張約珥書為兩層文本：1–2 章的蝗災詩與後期加入的末世論層（2:28–3:21）——直接挑戰全書的統一性。</p>
+      <p class="entry">Crenshaw, James L. <i>Joel: A New Translation with Introduction and Commentary</i>. Anchor Bible 24C. New York: Doubleday, 1995.</p>
+      <p class="note">語文學上最詳盡的英文注釋，定年於波斯時期；對 2:13 神性格公式的傳統史分析尤具參考價值。</p>
+
+      <div class="trad">主題研究：反創造</div>
+      <p class="entry">Fishbane, Michael. &ldquo;Jeremiah IV 23&ndash;26 and Job III 3&ndash;13: A Recovered Use of the Creation Pattern.&rdquo; <i>Vetus Testamentum</i> 21, no. 2 (1971): 151&ndash;67.</p>
+      <p class="note">「反創造」（un-creation）讀法的奠基論文：論證耶 4:23–26 按創世記第一章的順序逐項倒轉。本導讀將此模式延伸應用於約珥書。</p>
+      <p class="entry">Simkins, Ronald A. <i>Yahweh&rsquo;s Activity in History and Nature in the Book of Joel</i>. Ancient Near Eastern Texts and Studies 10. Lewiston, NY: Edwin Mellen, 1991.</p>
+      <p class="note">專論約珥書中歷史與自然（創造）的神學交織，是「創造神學讀約珥」的代表性研究。</p>
+    </div>
+  </section>
+
+</div><!-- /view-joel -->
+
+<!-- ════════════════ 約拿書 ════════════════ -->
+<div class="view bk-jonah" id="view-jonah">
+
+  <div class="bookhead">
+    <div class="no">第三卷 · 約前 780–750 年</div>
+    <h1>約拿書</h1>
+    <small>יוֹנָה「鴿子」 · 先知書中唯一以問句作結的一卷 · 逃跑的先知與追趕的神</small>
+    <div class="toc">
+      <a href="#jonah-history">壹 歷史背景</a><a href="#jonah-arg">貳 論述脈絡</a><a href="#jonah-lens">參 三重視角</a><a href="#jonah-theme">肆 神學專題</a><a href="#jonah-qa">伍 討論題與回應</a><a href="#jonah-bib">陸 學術資料</a>
+    </div>
+  </div>
+
+  <div class="quick">
+    <div><div class="k">定年</div><div class="v">約前 780–750 年<small>早期定年 · 王下 14:25 定錨</small></div></div>
+    <div><div class="k">在位君王</div><div class="v">耶羅波安二世<small>北國版圖極盛</small></div></div>
+    <div><div class="k">信息對象</div><div class="v">尼尼微<small>——與書外的讀者以色列</small></div></div>
+    <div><div class="k">全書骨幹</div><div class="v">恩典信經<small>出 34:6 → 拿 4:2 · גָּדוֹל「大」十四次</small></div></div>
+    <div><div class="k">同代世界</div><div class="v">亞述衰弱間歇 · 西周崩解<small>Bur-Sagale 日蝕 · 平王東遷</small></div></div>
+  </div>
+
+  <section id="jonah-history">
+    <h2><span class="no">壹</span>歷史背景</h2>
+
+    <p>約拿是十六卷先知書中唯一在歷史書留有獨立紀錄的先知：王下 14:25 記載「迦特希弗人亞米太的兒子先知約拿」，服事於<b>耶羅波安二世</b>年間（約前 793–753）——北國版圖最盛的時代。系列因此定位：俄巴底亞（約前 845）→ 約珥（約前 835）→ 約拿（約前 780–750）。</p>
+
+    <p>但約拿書的定年之爭比前兩卷更尖銳，因為爭的其實是<b>文體</b>：改革宗傳統（加爾文、Stuart、Alexander）視之為八世紀的歷史敘事；批判學界主流（Wolff、Sasson、Ben Zvi）視之為後被擄時期（約前五至四世紀）的教導性敘事，以八世紀先知為主角回望亞述。這個張力是本卷三重視角的主軸。</p>
+
+    <div class="field"><div class="tag">歷史定錨</div><div class="val">王下 14:25 使約拿有先知書中最堅實的歷史錨點；書中「尼尼微大城」與 3:3 的過去式敘述，則各有兩套解釋，成為文體之爭的攻防點。</div></div>
+    <div class="field"><div class="tag">衰弱間歇期</div><div class="val">約拿的年代恰落在亞述的衰弱間歇：亞達尼拉里三世死後（前 783）至提革拉毘列色三世即位（前 745）之間，內亂頻仍、兩度瘟疫（前 765、759），加上前 763 年 6 月 15 日的 <b>Bur-Sagale 日全蝕</b>（亞述名年官檔案明確記載，近東年代學的定錨點）。</div></div>
+    <div class="field"><div class="tag">心理土壤</div><div class="val">Stuart 據上述背景論證：尼尼微全城悔改，在瘟疫、內亂與日蝕交疊的心理土壤上有歷史可信度——凶兆連連的城，聽得進「再等四十日」。</div></div>
+
+    <h3>東西年表平行<span class="sub">亞述的間歇 · 希臘羅馬紀年起點 · 西周的終結</span></h3>
+    <table>
+      <thead><tr><th style="width:10%">年代</th><th style="width:30%">以色列 / 猶大</th><th style="width:32%">西方世界</th><th>中國 · 周</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>前 793–753</b></td>
+          <td>耶羅波安二世在位，北國版圖極盛（王下 14:25）</td>
+          <td><b>亞述衰弱間歇期</b>（前 783–745）：內亂頻仍，兩度瘟疫（前 765、759）</td>
+          <td>宣王中興結束（前 782）</td>
+        </tr>
+        <tr>
+          <td><b>前 781–771</b></td>
+          <td><b>約拿服事</b>約在此期間</td>
+          <td>——</td>
+          <td>幽王在位，烽火戲諸侯</td>
+        </tr>
+        <tr>
+          <td><b>前 776</b></td>
+          <td>——</td>
+          <td><b>首屆奧林匹亞賽會</b>——希臘紀年起點</td>
+          <td>——</td>
+        </tr>
+        <tr>
+          <td><b>前 771–770</b></td>
+          <td>——</td>
+          <td>——</td>
+          <td><b>犬戎破鎬京，西周亡</b>；平王東遷，春秋開始</td>
+        </tr>
+        <tr>
+          <td><b>前 763</b></td>
+          <td>或與摩 8:9「日頭在午間落下」相關</td>
+          <td><b>Bur-Sagale 日全蝕</b>（6 月 15 日），亞述檔案記載</td>
+          <td>東周初年</td>
+        </tr>
+        <tr>
+          <td><b>前 753</b></td>
+          <td>——</td>
+          <td>羅馬建城（傳統紀年）</td>
+          <td>——</td>
+        </tr>
+        <tr>
+          <td><b>前 745</b></td>
+          <td>一個世代後：亞述滅北國（<b>前 722</b>）</td>
+          <td>提革拉毘列色三世即位，帝國再起</td>
+          <td>——</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><a class="xref" href="#ob-history">俄巴底亞卷的年表<span class="arrow"> ↖</span></a>說過，到八世紀奧運會與羅馬建城就會進正表——就是這一卷。而這張表有前兩卷沒有的戲劇性：約拿服事的年代，正是西周崩解、東周開始的十年，東西兩個世界同時站在舊秩序瓦解的門檻上。表格最後一列則藏著全卷最沉重的歷史反諷，收在<a class="xref" href="#jonah-arg">論述脈絡的結尾<span class="arrow"> ↓</span></a>。</p>
+  </section>
+
+  <section id="jonah-arg">
+    <h2><span class="no">貳</span>論述脈絡：四幕鏡像</h2>
+
+    <p>全書結構高度對稱（Landes 的經典分析）：一至二章與三至四章互為鏡像——蒙召、回應、外邦人的反應、約拿與神的獨處。關鍵詞 <b>גָּדוֹל</b>（大）出現十四次，貫穿「大城、大風、大魚、大怒」。而全書的神學引爆點在 4:2：</p>
+
+    <blockquote>「我知道你是<em>有恩典、有憐憫的神，不輕易發怒，有豐盛的慈愛</em>，並且後悔不降所說的災。」<span class="ref">約拿書 4:2 · 引出埃及記 34:6 · <a class="xref" href="#joel-arg">珥 2:13 引用同一信經、加同一句——一邊是盼望，一邊成控訴<span class="arrow"> ↖</span></a></span></blockquote>
+
+    <details open>
+      <summary>第一幕 · 下行<span class="range">1 章</span></summary>
+      <div class="body">
+        <p>動詞 <b>יָרַד</b>（下去）四次推進：下到約帕、下到船上、下到艙底、（2:6）下到山根——逃避呼召在敘事文法上就是一路向下。反諷的第一層：外邦水手比先知更敬畏耶和華。</p>
+        <blockquote class="hope">「那些人便大大敬畏耶和華，向耶和華獻祭，並且許願。」<span class="ref">約拿書 1:16 · 全書第一批歸拜的外邦人——透過先知的逃跑，而非宣講</span></blockquote>
+      </div>
+    </details>
+
+    <details>
+      <summary>第二幕 · 魚腹之詩<span class="range">2 章</span></summary>
+      <div class="body">
+        <p>一首由詩篇語彙拼貼成的感恩詩。學界爭論它是否原屬本書（Trible 認為結構上不可少；Wolff 視為插入）。反諷的第二層：約拿感謝拯救，卻對使他落海的悖逆隻字未提。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>第三幕 · 尼尼微悔改<span class="range">3 章</span></summary>
+      <div class="body">
+        <p>史上最短的先知信息（希伯來文五個字），引發全書最大規模的悔改——從王到牲畜都披上麻布。</p>
+        <blockquote>「或者神轉意後悔，不發烈怒，使我們不致滅亡，<em>也未可知</em>。」<span class="ref">約拿書 3:9 · 尼尼微王 · <a class="xref" href="#joel-arg">與珥 2:14 同一句 מִי יוֹדֵעַ——引用方向之爭正是定年之爭的縮影<span class="arrow"> ↖</span></a></span></blockquote>
+      </div>
+    </details>
+
+    <details>
+      <summary>第四幕 · 蓖麻與問句<span class="range">4 章</span></summary>
+      <div class="body">
+        <p>4:2 的信經引用揭開扣留了三章的逃跑動機。神不再用言語辯論，改用一棵蓖麻樹、一條蟲、一陣東風做了一場先知性的行動教學，然後全書停在一個沒有答案的問句——十六卷先知書中唯一以問句作結的一卷。</p>
+        <blockquote class="hope">「何況這尼尼微大城，其中不能分辨左手右手的有十二萬多人，並有許多牲畜，<em>我豈能不愛惜呢</em>？」<span class="ref">約拿書 4:11 · 全書終點 · 留白的回答見 <a class="xref" href="#jonah-theme">肆・神學專題<span class="arrow"> ↓</span></a></span></blockquote>
+      </div>
+    </details>
+
+    <p>收尾的歷史反諷：約拿在 4:2 說他早知道神會赦免尼尼微——而被赦免的尼尼微，一個世代之後（前 722）成為滅掉約拿祖國的帝國。他的恐懼在歷史上「應驗」了。這個事實不解消全書的信息，反而使 4:11 的問句更沉重：神的憐憫沒有向歷史的後果買保險。</p>
+  </section>
+
+  <section id="jonah-lens">
+    <h2><span class="no">參</span>三重視角</h2>
+
+    <div class="lens h">
+      <h3>歷史視角</h3>
+      <p><b>定年即文體之爭</b>。語言學證據（若干亞蘭文成分、晚期用語）被批判學派用來支持後被擄定年，但 Stuart 與 Alexander 指出北國方言本就含亞蘭語成分，證據雙向可讀。「尼尼微大城，走三日的路程」（3:3）的過去式敘述與城市規模，也各有兩套解釋——每一項證據都站在文體之爭的前線。</p>
+    </div>
+
+    <div class="lens l">
+      <h3>文學視角</h3>
+      <p>本卷是先知書中敘事藝術最精密的一卷：對稱結構、關鍵詞編織、層層反諷——水手勝過先知、牲畜披麻、先知為一棵樹發怒卻不為十二萬人動心。「諷刺文學」（satire）的定性自 Trible、Magonet 之後成為主流讀法；它與歷史性之間是否必然衝突，值得在課堂上正面處理。</p>
+    </div>
+
+    <div class="lens t">
+      <h3>神學視角</h3>
+      <p>核心是 4:2。整本舊約只有兩處在恩典信經（出 34:6）後面加上「後悔不降所說的災」：<a class="xref" href="#joel-arg">珥 2:13<span class="arrow"> ↖</span></a> 與拿 4:2。約珥把它作為呼召悔改的根據；約拿把它作為逃跑的理由——神的憐憫在一位先知口中是盼望，在另一位口中成了控訴。全書真正的問題因此浮現：不是尼尼微會不會悔改，而是<b>選民能不能承受神的自由</b>。</p>
+    </div>
+  </section>
+
+  <section id="jonah-theme">
+    <h2><span class="no">肆</span>神學專題：逃避的先知與留白的回答</h2>
+
+    <p>本專題出自導讀後的延伸討論，處理「選民能不能承受神的自由」的另一面：<b>神能不能使用一個不能接受祂憐憫的僕人</b>。兩問實為同一問題的兩面。全卷的論證是一條五段的弧線。</p>
+
+    <details open>
+      <summary>一 · 唯一不發一言就走的先知<span class="range">1:3</span></summary>
+      <div class="body">
+        <p>舊約先知抗拒呼召不是新鮮事——摩西推辭四次（出 3–4）、耶利米稱自己年幼（耶 1:6）、以利亞逃往何烈山（王上 19）——但約拿是唯一<b>一句話都不說就走</b>的先知。1:3 沒有任何對話，只有一連串動詞：起來、逃往、下到、找到、付了、上了。摩西和耶利米用言語抗辯，神用言語回應；約拿用行動抗辯，神就用行動回應——風、海、魚、蓖麻、蟲、東風。他的抗議遲至 4:2 才用言語補上：敘事者刻意把逃跑的動機扣留到最後一章，讀者陪著約拿跑了三章，才知道他在逃什麼。這個結構安排本身就是神學。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>二 · 被徵用的逃避<span class="range">1:16</span></summary>
+      <div class="body">
+        <p>外邦人的歸信在書中發生了<b>兩次</b>。第三章尼尼微悔改是透過約拿勉強的宣講；第一章水手「大大敬畏耶和華，向耶和華獻祭許願」（1:16），卻是透過約拿的<b>逃跑本身</b>。他的悖逆沒有攔阻宣教，反而成了第一批外邦人敬拜的場合。神不只越過先知的不順服工作，甚至徵用了那個不順服——這比「神的旨意不受攔阻」更尖銳：<em>連攔阻本身都被編進了旨意</em>。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>三 · 第二次臨到的話<span class="range">3:1</span></summary>
+      <div class="body">
+        <p>「耶和華的話<b>第二次</b>臨到約拿。」逃跑沒有取消呼召，呼召重新臨到——這是「第二次呼召的神」。新約最近的平行：約翰福音 21 章，復活的主三問彼得。「逃避不能終結蒙召」在這節有最直接的字面根據。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>四 · 留白的回答：兩種讀法，殊途同歸<span class="range">4:11 之後</span></summary>
+      <div class="body">
+        <p>4:11 之後是沉默，敘事刻意不記載約拿的回答。「他終究回應了」的證據因此不在敘事之內，而在敘事之外——<b>這卷書存在本身就是答案</b>。第四章的內容（約拿與神獨處的對話、他心裡的怒氣）只可能出自約拿自己的交代；一個至死不肯回轉的人，不會留下一份把自己寫成全書最不堪角色的自供狀。約拿把水手寫得比自己敬虔、把尼尼微王寫得比自己柔軟、把自己寫成為一棵樹發怒的人——這份自我控訴的坦白，就是他遲來的「是」。</p>
+        <p>批判學派會走另一條路：若作者是後代的匿名敘事者，4:11 的問句就不是等約拿回答，而是等<b>以色列</b>回答——約拿是被擄群體的鏡像。兩條路殊途同歸：問句總要有人接，若不是約拿以寫作回應，就是讀者以生命回應。差別只在「答案」的位置——一個在文本的來歷裡，一個在文本的前方。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>五 · 弧線的終點：最後一個悔改的「外邦人」</summary>
+      <div class="body">
+        <p>完整的弧線：逃避的先知（1 章）→ 被徵用的逃避（1:16）→ 第二次的呼召（3:1）→ 扣留到最後的動機（4:2）→ 留白的回答（4:11）→ 以全書的存在作為回答。它與「選民能不能承受神的自由」是同一問題的兩面：4:2 問約拿能不能接受神的憐憫臨到仇敵，這條弧線問神能不能使用一個不能接受的僕人——答案是能，而且最終連那個僕人也被憐憫收服。蓖麻樹的教訓對象從來不是尼尼微，是約拿；<em>全書最後一個悔改的外邦人，其實是這位先知心裡那個抗拒的以色列</em>。</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="jonah-qa">
+    <h2><span class="no">伍</span>討論題與回應</h2>
+    <p>導讀後的四個討論題。問三與問四關係密切，日後或合併為一題；回應整理後收錄於此。</p>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問一</span><span class="txt">珥 2:13 與拿 4:2 是舊約唯二在恩典信經後加上「後悔不降所說的災」的經文。同一句信經，何以成為約珥的盼望、約拿的憤怒？「認識神的屬性」與「接受神的屬性施行在仇敵身上」之間的落差，對今日教會的民族情感與福音普世性說了什麼？</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問二</span><span class="txt">若約拿書是教導性敘事而非史實記錄，其神學信息是否受損？太 12:39–41 耶穌引用約拿與尼尼微人，在這場文體之爭中應承擔多大的證據重量——它證明的是事件的歷史性，還是文本的權威性？</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問三</span><span class="txt">4:11 的問句沒有記載約拿的回答。敘事者為何把結尾留白？當尼尼微在一個世代後（前 722）成為滅北國的刀，這個未回答的問句對以色列——以及對每一個接替約拿位置的讀者——意味著什麼？</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+
+    <div class="qa">
+      <div class="q"><span class="badge">問四</span><span class="txt">「神能不能使用一個不能接受祂憐憫的僕人？」順著肆・神學專題的弧線：若「全書的存在即約拿的回答」成立，這對「事奉者的失敗」有什麼神學含意？神徵用約拿的逃跑使水手歸拜（1:16），這與「目的使手段成聖」有何分別？</span></div>
+      <div class="a pending"><div class="lab">研讀回應</div><div class="txt">（待回應——回覆後將整理收錄於此）</div></div>
+    </div>
+  </section>
+
+  <section id="jonah-bib">
+    <h2><span class="no">陸</span>學術資料<span style="font-family:'Noto Sans TC',sans-serif;font-size:12px;font-weight:400;letter-spacing:2px;color:var(--ink-soft)">Chicago 書目格式</span></h2>
+
+    <div class="bib">
+      <div class="trad">改革宗 / 福音派</div>
+      <p class="entry">Calvin, John. <i>Commentaries on the Twelve Minor Prophets</i>. Vol. 3, <i>Jonah, Micah, Nahum</i>. Translated by John Owen. Edinburgh: Calvin Translation Society, 1847. Reprint, Grand Rapids: Baker, 2003.</p>
+      <p class="note">堅持歷史性讀法；以約拿為「福音臨到外邦的預演」，對 4:2 信經的講解是其恩典論的縮影。</p>
+      <p class="entry">Stuart, Douglas. <i>Hosea&ndash;Jonah</i>. Word Biblical Commentary 31. Waco: Word Books, 1987.</p>
+      <p class="note">早期定年與歷史敘事立場的主力：以亞述衰弱間歇期（瘟疫、內亂、Bur-Sagale 日蝕）論證尼尼微悔改的歷史可信度。</p>
+      <p class="entry">Alexander, T. Desmond. &ldquo;Jonah.&rdquo; In D. W. Baker, T. D. Alexander, and B. K. Waltke, <i>Obadiah, Jonah and Micah: An Introduction and Commentary</i>. Tyndale Old Testament Commentaries. Leicester: IVP, 1988.</p>
+      <p class="note">對語言學定年證據的雙向可讀性有簡潔有力的整理；與俄巴底亞卷的 Baker 同冊。</p>
+
+      <div class="trad">批判 / 自由派</div>
+      <p class="entry">Wolff, Hans Walter. <i>Obadiah and Jonah: A Commentary</i>. Translated by Margaret Kohl. Continental Commentaries. Minneapolis: Augsburg, 1986.</p>
+      <p class="note">後被擄教導性敘事立場的代表；視魚腹之詩為後期插入——與俄巴底亞卷同冊，兩卷的批判學主注釋。</p>
+      <p class="entry">Sasson, Jack M. <i>Jonah: A New Translation with Introduction, Commentary, and Interpretation</i>. Anchor Bible 24B. New York: Doubleday, 1990.</p>
+      <p class="note">語文學最詳盡的英文注釋；對文體問題刻意保持開放，是兩造都引用的中間參照點。</p>
+      <p class="entry">Trible, Phyllis. <i>Rhetorical Criticism: Context, Method, and the Book of Jonah</i>. Guides to Biblical Scholarship. Minneapolis: Fortress, 1994.</p>
+      <p class="note">修辭批判的教科書級示範，以約拿書全卷為分析對象；主張魚腹之詩在結構上不可少。</p>
+      <p class="entry">Limburg, James. <i>Jonah: A Commentary</i>. Old Testament Library. Louisville: Westminster John Knox, 1993.</p>
+      <p class="note">簡明的批判學注釋，對約拿書的接受史（猶太傳統、新約、藝術史）整理尤佳。</p>
+      <p class="entry">Magonet, Jonathan. <i>Form and Meaning: Studies in Literary Techniques in the Book of Jonah</i>. 2nd ed. Sheffield: Almond Press, 1983.</p>
+      <p class="note">與 Trible 並列的文學讀法奠基之作：關鍵詞編織（גדול、ירד）與「引用詩篇的拼貼技法」之分析出於此。</p>
+    </div>
+  </section>
+
+</div><!-- /view-jonah -->
+
+<footer>先知書導讀系列 · 資料庫現有：第一卷 俄巴底亞書 · 第二卷 約珥書 · 第三卷 約拿書 · 經文引自《和合本》 · 定年與排序依系列採用之早期定年 · 後續書卷陸續加入</footer>
+
+</div><!-- /wrap -->
+
+<script>
+/* ── 分頁切換系統 ──
+   每卷書是一個 .view 資料區塊；按鍵切換顯示。
+   新增書卷的步驟：(1) 複製一個 .view 區塊填入內容
+   (2) 在 .booknav 加一顆按鍵，data-view 對應區塊 id
+   (3) 若有跨卷連結，錨點 id 以書卷代號開頭（如 jonah-arg），
+       並在下方 viewOf() 加一行對應。 */
+
+function viewOf(anchorId){
+  if(anchorId.indexOf('ob-')===0)    return 'view-ob';
+  if(anchorId.indexOf('joel-')===0)  return 'view-joel';
+  if(anchorId.indexOf('jonah-')===0) return 'view-jonah';
+  if(anchorId==='network')           return 'view-home';
+  return null;
+}
+
+function showView(viewId, anchorId){
+  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
+  var v = document.getElementById(viewId);
+  if(!v) return;
+  v.classList.add('active');
+  document.querySelectorAll('.booknav button').forEach(function(b){
+    b.classList.toggle('active', b.dataset.view===viewId);
+  });
+  if(anchorId){
+    var t = document.getElementById(anchorId);
+    if(t){
+      var d = t.closest('details'); if(d) d.open = true;
+      setTimeout(function(){ t.scrollIntoView({behavior:'smooth', block:'start'}); }, 60);
+    }
+  } else {
+    window.scrollTo({top:0});
+  }
+}
+
+/* 書卷按鍵與總覽卡 */
+document.querySelectorAll('[data-view]').forEach(function(el){
+  el.addEventListener('click', function(){
+    if(el.tagName==='BUTTON' && el.disabled) return;
+    showView(el.dataset.view);
+  });
+});
+
+/* 卷內與跨卷錨點連結 */
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click', function(e){
+    e.preventDefault();
+    var id = a.getAttribute('href').slice(1);
+    var vw = viewOf(id);
+    if(vw){ showView(vw, id); }
+  });
+});
+
+/* 預設載入總覽 */
+showView('view-home');
+</script>
+</body>
+</html>
