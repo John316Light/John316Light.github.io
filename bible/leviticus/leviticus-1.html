@@ -134,6 +134,30 @@ li{
 li::before{content:"❖";position:absolute;left:0;color:var(--line);font-size:14px;top:.4em}
 li strong{color:var(--ink);font-weight:700}
 
+/* ── 應用要點：發光燈泡 ─────────────────── */
+ul.apply li{padding-left:46px;min-height:34px}
+ul.apply li::before{content:none}
+ul.apply .ico{
+  position:absolute;left:0;top:.12em;
+  display:inline-block;width:32px;height:32px;border-radius:50%;
+  background-color:#f4ecd8;border:1px solid var(--line);
+  animation:bulbglow 2.8s ease-in-out infinite;
+}
+ul.apply .ico svg{
+  position:absolute;left:50%;top:50%;width:17px;height:17px;
+  transform:translate(-50%,-50%);fill:var(--gold);
+}
+@keyframes bulbglow{
+  0%,100%{background-color:#f4ecd8;box-shadow:0 0 0 0 rgba(156,122,38,0)}
+  50%{background-color:#fbeec6;box-shadow:0 0 12px 3px rgba(156,122,38,.34)}
+}
+@media (prefers-reduced-motion:reduce){
+  ul.apply .ico{
+    animation:none;background-color:#fbeec6;border-color:var(--gold);
+    box-shadow:0 0 10px 2px rgba(156,122,38,.28);
+  }
+}
+
 /* ── 討論 ───────────────────────────────── */
 .q{
   background:#fff;border:1px solid var(--edge);border-left:3px solid var(--gold);
@@ -174,6 +198,7 @@ tbody tr:last-child td{border-bottom:none}
 @media print{
   body{background:#fff;padding:0}
   .stage{box-shadow:none;break-inside:avoid}
+  ul.apply .ico{animation:none;background-color:#fbeec6;border-color:var(--gold);box-shadow:none}
 }
 @media (max-width:760px){
   body{padding:34px 14px 60px;font-size:17.5px}
@@ -185,6 +210,9 @@ tbody tr:last-child td{border-bottom:none}
   .explain{font-size:17px;line-height:1.95}
   .q{font-size:17.5px;padding:14px 16px}
   li{font-size:17px}
+  ul.apply li{padding-left:40px}
+  ul.apply .ico{width:28px;height:28px}
+  ul.apply .ico svg{width:15px;height:15px}
   .meta{padding:16px 18px;font-size:16.5px}
 }
 @media (max-width:400px){
@@ -422,10 +450,10 @@ tbody tr:last-child td{border-bottom:none}
     <div class="ic"><svg viewBox="0 0 24 24"><path d="m12 4 2.2 4.8 5.3.6-4 3.6 1.1 5.2L12 15.6 7.4 18.2l1.1-5.2-4-3.6 5.3-.6z"/></svg></div>
     <h2>七、應用要點</h2>
   </div>
-  <ul>
-    <li><strong>歸屬的提醒</strong>：「分別」提醒我們，跟隨神有清楚的歸屬——某些事、某些時間被認定「屬神」，我們便以不同的態度對待（安息、奉獻、聚會）。</li>
-    <li><strong>次序的校正</strong>：「聖潔＝歸屬」校正一個常見的誤解。並不是我們先靠自己的力量變好，神才勉強接納；而是神先分別我、稱我屬祂，我再學習活得配得這身分。</li>
-    <li><strong>親近的道路</strong>：拿答、亞比戶以俗為聖、憑己意親近神而喪命，印證「聽命勝於獻祭」。今日親近神同樣須循神所指示的路（在新約即藉著基督），而不是憑一時熱心自定方法。</li>
+  <ul class="apply">
+    <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.1 1 1.8l.1.5h5.8l.1-.5c.1-.7.4-1.3 1-1.8A7 7 0 0 0 12 2zm-3 16.5h6v1.2H9v-1.2zm.8 2.4h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg></span><strong>歸屬的提醒</strong>：「分別」提醒我們，跟隨神有清楚的歸屬——某些事、某些時間被認定「屬神」，我們便以不同的態度對待（安息、奉獻、聚會）。</li>
+    <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.1 1 1.8l.1.5h5.8l.1-.5c.1-.7.4-1.3 1-1.8A7 7 0 0 0 12 2zm-3 16.5h6v1.2H9v-1.2zm.8 2.4h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg></span><strong>次序的校正</strong>：「聖潔＝歸屬」校正一個常見的誤解。並不是我們先靠自己的力量變好，神才勉強接納；而是神先分別我、稱我屬祂，我再學習活得配得這身分。</li>
+    <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.1 1 1.8l.1.5h5.8l.1-.5c.1-.7.4-1.3 1-1.8A7 7 0 0 0 12 2zm-3 16.5h6v1.2H9v-1.2zm.8 2.4h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg></span><strong>親近的道路</strong>：拿答、亞比戶以俗為聖、憑己意親近神而喪命，印證「聽命勝於獻祭」。今日親近神同樣須循神所指示的路（在新約即藉著基督），而不是憑一時熱心自定方法。</li>
   </ul>
 </section>
 
