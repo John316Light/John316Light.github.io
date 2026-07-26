@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《利未記》八堂主日學　第一堂：導論與主軸——分別聖俗、潔與不潔（學員版）</title>
+<meta name="description" content="《利未記》八堂主日學第一堂學員講義，含全課程總覽：以利 10:10「將聖的、俗的，潔淨的、不潔淨的，分別出來」為全卷詮釋之鑰。2026 年 8 月 1 日開課。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+:root{
+  --ink:#1f2831;
+  --sub:#4d5967;
+  --line:#c9b98f;
+  --gold:#9c7a26;
+  --bg:#f7f4ed;
+  --card:#fffefa;
+  --edge:#e6dfcd;
+  --accent:#37585d;
+  --holy:#2f5257;
+  --common:#8d7043;
+  --serif:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --display:"Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+em,i,cite,address{font-style:normal}
+body{
+  font-family:var(--serif);
+  background:var(--bg);
+  color:var(--ink);
+  font-size:18px;
+  line-height:1.95;
+  padding:56px 20px 84px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto}
+.back{margin-bottom:10px;font-size:15px}
+.back a{color:var(--sub);text-decoration:none;border-bottom:1px dotted var(--edge)}
+.back a:first-child{color:var(--accent);border-bottom-color:var(--accent)}
+.back a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* ── 頁首 ───────────────────────────────── */
+header{text-align:center;margin-bottom:10px}
+.kicker{
+  letter-spacing:.5em;color:var(--gold);font-size:14.5px;
+  margin-bottom:16px;text-indent:.5em;
+}
+header h1{
+  font-family:var(--display);font-size:34px;font-weight:900;
+  letter-spacing:.18em;line-height:1.42;text-indent:.18em;
+}
+.subtitle{
+  font-family:var(--display);font-size:20px;color:var(--accent);
+  margin-top:14px;letter-spacing:.16em;font-weight:500;text-indent:.16em;
+}
+.rule{
+  width:120px;height:0;margin:28px auto 34px;
+  border-top:1px solid var(--line);position:relative;
+}
+.rule::after{
+  content:"❧";position:absolute;left:50%;top:-15px;
+  transform:translateX(-50%);background:var(--bg);padding:0 12px;
+  font-size:16.5px;color:var(--gold);
+}
+
+/* ── 資訊列 ─────────────────────────────── */
+.meta{
+  background:#fcfaf3;border:1px solid var(--edge);border-radius:14px;
+  padding:18px 26px;font-size:17px;color:var(--sub);
+  margin:0 auto 36px;line-height:1.9;
+}
+.meta .mi{margin-right:26px;white-space:nowrap;display:inline-block}
+
+/* ── 區塊 ───────────────────────────────── */
+.stage{
+  background:var(--card);border:1px solid var(--edge);border-radius:18px;
+  padding:30px 34px 32px;margin:0 auto 24px;
+  box-shadow:0 8px 24px rgba(60,50,20,.05);
+}
+.stage.bookend{background:#f4f8f7;border-color:#d3e2de}
+.stage-head{display:flex;align-items:center;gap:15px;margin-bottom:20px}
+.stage-head .ic{
+  flex:0 0 44px;width:44px;height:44px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);
+  display:flex;align-items:center;justify-content:center;color:var(--gold);
+}
+.stage.bookend .stage-head .ic{background:#e8f0ed;color:var(--accent)}
+.stage-head .ic svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.stage h2{
+  font-family:var(--display);font-size:23px;font-weight:900;
+  letter-spacing:.13em;text-indent:.13em;line-height:1.6;
+}
+
+/* ── 小標 ───────────────────────────────── */
+.label{
+  display:flex;align-items:center;gap:9px;
+  font-family:var(--display);font-weight:700;font-size:16.5px;
+  letter-spacing:.14em;text-indent:.14em;color:var(--gold);
+  margin:26px 0 12px;
+}
+.label svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:0 0 16px}
+.label.a{color:var(--accent)}
+
+/* ── 經文 ───────────────────────────────── */
+.verse{
+  font-family:var(--serif);background:#fbf7ee;
+  border-left:3px solid var(--line);border-radius:0 12px 12px 0;
+  padding:17px 24px;margin:0 0 14px;
+  font-size:21px;font-weight:600;line-height:2.1;
+  letter-spacing:.07em;color:#1a222a;
+}
+.verse .ref{color:var(--gold);font-weight:700;letter-spacing:.05em}
+
+/* ── 說明 ───────────────────────────────── */
+.explain{color:var(--sub);font-size:17.5px;line-height:2.05;font-weight:400;letter-spacing:.02em}
+.explain p{margin:0 0 14px}
+.explain p:last-child{margin-bottom:0}
+.explain p.keynote{
+  background:#f4f8f7;border-left:3px solid var(--accent);
+  border-radius:0 12px 12px 0;padding:13px 20px;margin:0 0 14px;
+  color:#2b474b;font-size:18px;letter-spacing:.03em;
+}
+.explain strong{color:var(--ink);font-weight:700}
+.explain em{font-style:normal;color:var(--holy);font-weight:600}
+
+/* ── 條列 ───────────────────────────────── */
+ul{list-style:none;margin-top:12px}
+li{
+  position:relative;padding-left:22px;margin-bottom:12px;
+  font-size:17px;color:var(--sub);line-height:1.95;
+}
+li::before{content:"❖";position:absolute;left:0;color:var(--line);font-size:14px;top:.4em}
+li strong{color:var(--ink);font-weight:700}
+
+/* ── 討論 ───────────────────────────────── */
+.q{
+  background:#fff;border:1px solid var(--edge);border-left:3px solid var(--gold);
+  border-radius:0 12px 12px 0;padding:16px 20px;
+  font-size:17.5px;color:var(--ink);line-height:1.95;letter-spacing:.03em;
+}
+.q ol{list-style:none;counter-reset:qq;margin:0}
+.q ol li{
+  counter-increment:qq;padding-left:34px;margin-bottom:16px;color:var(--ink);
+}
+.q ol li:last-child{margin-bottom:0}
+.q ol li::before{
+  content:counter(qq);position:absolute;left:0;top:.28em;
+  width:22px;height:22px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);color:var(--gold);
+  font-size:14px;font-weight:700;line-height:20px;text-align:center;
+}
+.q .lines{display:block;margin-top:6px;border-bottom:1px dashed #d8cfb6;height:26px}
+
+/* ── 表格 ───────────────────────────────── */
+.tablewrap{overflow-x:auto;margin:16px 0 4px}
+table{width:100%;border-collapse:collapse;font-size:16.5px;color:var(--sub)}
+th{
+  font-family:var(--display);text-align:left;padding:10px 12px;
+  border-bottom:2px solid var(--line);font-weight:700;
+  color:var(--ink);white-space:nowrap;letter-spacing:.08em;
+}
+td{padding:10px 12px;border-bottom:1px solid var(--edge);vertical-align:top;line-height:1.9}
+td:first-child{white-space:nowrap;color:var(--gold);font-weight:700;text-align:center}
+tbody tr:last-child td{border-bottom:none}
+
+/* ── 頁尾 ───────────────────────────────── */
+.foot{
+  text-align:center;color:#a89c80;font-size:14.5px;
+  margin-top:46px;letter-spacing:.32em;text-indent:.32em;
+}
+
+@media print{
+  body{background:#fff;padding:0}
+  .stage{box-shadow:none;break-inside:avoid}
+}
+@media (max-width:760px){
+  body{padding:34px 14px 60px;font-size:17.5px}
+  header h1{font-size:26px;letter-spacing:.12em;text-indent:.12em}
+  .subtitle{font-size:17px}
+  .stage{padding:24px 20px 26px;border-radius:14px}
+  .stage h2{font-size:20px}
+  .verse{font-size:18.5px;padding:14px 16px;letter-spacing:.03em;line-height:2}
+  .explain{font-size:17px;line-height:1.95}
+  .q{font-size:17.5px;padding:14px 16px}
+  li{font-size:17px}
+  .meta{padding:16px 18px;font-size:16.5px}
+}
+@media (max-width:400px){
+  body{padding:26px 10px 48px}
+  header h1{font-size:22px}
+  .verse{font-size:17.5px;padding:13px 14px;letter-spacing:.02em}
+  .explain{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="back"><a href="./">← 回利未記研究</a>　<a href="../">聖經研究</a></div>
+
+<header>
+  <div class="kicker">2026 年 8 月 1 日 · 學 員 版</div>
+  <h1>《利未記》八堂主日學</h1>
+  <p class="subtitle">第一堂　導論與主軸——分別聖俗、潔與不潔</p>
+  <div class="rule"></div>
+</header>
+
+<div class="meta">
+  <p><span class="mi">經文版本：《和合本》</span><span class="mi">帶領：鄧凱光弟兄</span><span class="mi">第一堂／共八堂</span></p>
+  <p>姓名：＿＿＿＿＿＿＿＿＿＿</p>
+</div>
+
+<!-- 課程總覽 -->
+<section class="stage bookend">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+    <h2>課程總覽</h2>
+  </div>
+  <div class="explain">
+    <p>這一套課程按《利未記》自己的章節次序走，讓這卷書按它本來的編排說話。全卷的鑰匙在十章十節：把聖的與俗的分開，把潔淨的與不潔淨的分開，再把這分別教導給百姓。八堂的路線，就是沿著這把鑰匙走完二十七章。新約的部分放在每堂末尾，用來看這些條例如何在基督裡得著成全，篇幅較輕。</p>
+  </div>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>堂次</th><th>主題</th><th>經文</th></tr></thead>
+    <tbody>
+      <tr><td>一</td><td>導論與主軸：分別聖俗、潔與不潔</td><td>利 10:10–11、全卷鳥瞰</td></tr>
+      <tr><td>二</td><td>五祭與親近神</td><td>利 1–7</td></tr>
+      <tr><td>三</td><td>祭司職、榮光與凡火</td><td>利 6–10</td></tr>
+      <tr><td>四</td><td>潔與不潔：身體與飲食</td><td>利 11–15</td></tr>
+      <tr><td>五</td><td>贖罪日：潔淨的高峰</td><td>利 16</td></tr>
+      <tr><td>六</td><td>血與聖潔的生活</td><td>利 17–20</td></tr>
+      <tr><td>七</td><td>祭司的聖潔與節期</td><td>利 21–24</td></tr>
+      <tr><td>八</td><td>安息年、禧年與立約（附全課總結）</td><td>利 25–27</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="explain" style="margin-top:18px">
+    <p class="keynote"><strong>開課日期：第一堂訂於 2026 年 8 月 1 日</strong>，其餘各堂的日期另行公布。每堂約一個半小時。</p>
+    <p>貫穿八堂的五個主題——血、得勝、榮耀、王的寶座、勝過權柄——沒有另闢專堂，而是散落在利未記自己提起它們的地方，讀到哪裡就在哪裡點出來。每堂的節奏大致是：回顧、經文釋讀、聖俗與潔不潔的主軸收攏、新約的成全與應用，最後留下討論的時間。</p>
+  </div>
+</section>
+
+<!-- 本堂經文主軸 -->
+<section class="stage bookend">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M4 8h16"/><path d="M6 8v10h12V8"/></svg></div>
+    <h2>本堂經文主軸</h2>
+  </div>
+  <div class="verse">
+    <span class="ref">利未記 10:10–11</span>　使你們可以將聖的、俗的，潔淨的、不潔淨的，分別出來，又使你們可以將耶和華藉摩西曉諭以色列人的一切律例教訓他們。
+  </div>
+  <div class="explain">
+    <p>本堂涵蓋出 40:34–35、利 1:1、利 9:23–24、利 10:1–11，並鳥瞰利未記全卷結構。</p>
+  </div>
+</section>
+
+<!-- 一 -->
+<section class="stage">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h7a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-7a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h7z"/></svg></div>
+    <h2>一、導論：一卷居妥拉之中的「訓誨」</h2>
+  </div>
+  <div class="explain">
+    <p>在基督徒的讀經經驗裡，《利未記》常是半途擱淺之處：出埃及記的敘事張力到此轉為一連串獻祭與潔淨條例，讀者每每翻過。然而就正典結構而言，這卷書恰居摩西五經正中央；它的希伯來文書名取自開卷第一個字，意思是「他呼叫」，而中文與英文所用的「利未記／Leviticus」則承自七十士譯本。</p>
+    <p class="keynote">本課把整卷利未記的主題定為「<strong>聖潔的子民</strong>」，並把全卷的核心信息概括為「<strong>聽命勝於獻祭</strong>」。</p>
+    <p>這一命題有兩層作用。其一，呼應撒母耳的名言「聽命勝於獻祭，順從勝於公羊的脂油」（撒上 15:22）——利未記雖以獻祭為大宗，其真正指向卻是子民的順服與聖潔，而不停在祭儀本身。其二，「妥拉」一詞在舊約中的意思是「訓誨、教導」，而不僅是冷硬的「律法」。這與利 10:11 的吩咐——祭司要「將……一切律例<strong>教訓</strong>」百姓——完全吻合：利未記本是一份要被「教導、領受、順從」的訓誨，目的是造就一群「聖潔的子民」。以此進入主日學的教導事奉，名正言順。</p>
+    <p>一般讀者對這卷書的難處是實在的：利未記「對許多的人來說，是一卷非常奇怪的書，裡面的文字、內容、儀式等等，看起來非常千篇一律、非常公式性」。但這正提示我們要轉換讀法——這卷書的重點不止於理解，更在於<strong>參與和感受</strong>。主日學若只把利未記講成一套資料，便錯過了它原本要求的東西。若從全卷收尾處回望，這卷書的功能定位也就清楚了：利未記讓以色列百姓有一個對未來的藍圖，是合神心意的。開卷與收卷合看，正好框住本課八堂：從一卷「奇怪的書」，讀到一份按「合神心意的生命建造藍圖」。</p>
+    <p>與此相關的還有一個教學法上的提醒。利未記的表達方式是一種<strong>儀式語言</strong>，由此帶出一個與現代習慣相反的期待：儀式語言不必指望第一次一聽就懂。太快懂得的東西往往不值錢；有的時候敬拜越是看似枯燥越好，因為敬拜的深度是神量給我們的深度，而不是我們的感官所期許的深度。這與「參與和感受」的說法從兩端相會：儀式語言要求的是反覆進入，而非一次性的資訊掌握。因此八堂的安排不追求「每一堂都講明白」，而容許某些畫面——火、血、按手、代罪羊——在心裡沉澱之後再發生作用。</p>
+  </div>
+</section>
+
+<!-- 二 -->
+<section class="stage">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3 4 20h16z"/><path d="M12 3v17"/></svg></div>
+    <h2>二、文學位置：從出 40 到利 1:1 的過渡</h2>
+  </div>
+  <div class="explain">
+    <p>出埃及記結束於帳幕落成、榮耀充滿：</p>
+  </div>
+  <div class="verse">
+    <span class="ref">出 40:34–35</span>　當時，雲彩遮蓋會幕，耶和華的榮光就充滿了帳幕。摩西不能進會幕，因為雲彩停在其上，並且耶和華的榮光充滿了帳幕。
+  </div>
+  <div class="explain">
+    <p>這是西奈之約的高峰——神真的「搬進」營中住下；但同一段經文埋下張力：連中保摩西都「不能進會幕」。神既臨在，聖潔的重量使親近成為攸關生死之事。利未記緊接著以一句承續此景：</p>
+  </div>
+  <div class="verse">
+    <span class="ref">利 1:1</span>　耶和華從會幕中呼叫摩西，對他說……
+  </div>
+  <div class="explain">
+    <p class="keynote">神現在「從會幕中」發言——祂已在其內。於是全卷核心問題浮現：<strong>一位聖潔的神既已住在營中，蒙揀選卻有罪、易沾不潔的百姓，如何能親近祂、與祂同住而不致滅亡？</strong></p>
+    <p>利未記的獻祭與潔淨條例，正是圍繞這一關切而組織起來的整體。</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg>上帝搬家了</div>
+  <div class="explain">
+    <p>從出 40 到利 1:1 的轉折，可以用一個極平實的說法概括：<strong>上帝搬家了</strong>。西奈山的顯現模式是這樣的——祂本來在山上，顯現的方式是烈火與大聲，令人恐懼，人不能靠近，靠近就沒有命了。會幕落成之後情況改變：這位神不再是住山上的神，祂成為一位搭帳篷的神，跟著以色列到處流浪，這是祂的心意。</p>
+    <p>這個說法的價值在於它同時保住了兩件事。神的臨在確實移近了——由山頂移到營中；而那使人不能靠近的性質並未因此改變。會幕本身是<strong>層層包裹</strong>的結構：最內層是至聖所，其中有約櫃、兩個基路伯，以及中間一個空的座位，即神的寶座；外圍是聖所，再外是院子，再外是利未人的營，最外是十二支派。神既住在營的正中央，整個營的空間就依與祂的距離而分層。這正是利 10:10「分別聖俗」在空間上的具體形態，也讓「王的寶座」這一主題從一開始就有了文本與空間的落點。</p>
+    <p>會幕門口的祭壇在此結構中有其位置。一種常見的讀法是：那個祭壇代表那位神把自己隱藏起來以後，那團火就燒在會幕的門口，它代表一種邀請。西奈山上那使人喪命的火，如今被收在門口的壇上——同一團火，改變的是它的位置與功能。這也提醒我們留意一種被馴化的神觀：今日的神學常把這位神馴服了，使祂像聖誕老公公一般；而實情是，禮拜堂裡住著一隻獅子。這一點與利 10:1–2 拿答、亞比戶之死互為表裡，第三堂會再回到這裡。</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8 6h8M8 12h8M8 18h8"/></svg>聖所作為「天地相通之點」</div>
+  <div class="explain">
+    <p>另有一個框架可把會幕接回列祖的敘事：聖所是<strong>天地相通的那一點</strong>。列祖遇見神的地方有三處可舉——亞伯拉罕在摩利的橡樹（創 12:6–7）、以撒在別是巴（創 26:23–25）、雅各在伯特利所見那架連接天地的梯子（創 28:12）。由此可歸納：聖所很重要的含義就是天地相通之點；那個中心點就是天與地的中心點，也就是生命源頭的起點。</p>
+    <p>把這一點與「搬家」合看，利未記的問題便更清楚：神把天地相通的那一點安置在以色列營的中間，於是「如何親近」不再只是宗教情感的問題，而是一個關乎生死與秩序的實際問題。整卷書的條例正是這個問題的答案。</p>
+  </div>
+</section>
+
+<!-- 三 -->
+<section class="stage">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 14l9 5 9-5"/></svg></div>
+    <h2>三、全卷結構鳥瞰</h2>
+  </div>
+  <div class="explain">
+    <p>為使弟兄姊妹掌握八堂的落點，先給骨架：</p>
+  </div>
+  <ul>
+    <li><strong>利 1–7</strong>　獻祭條例（五祭）——本課第二、三堂</li>
+    <li><strong>利 8–10</strong>　祭司承接聖職、榮光顯現、拿答亞比戶事件——第三堂</li>
+    <li><strong>利 11–15</strong>　潔與不潔——第四堂</li>
+    <li><strong>利 16</strong>　贖罪日——第五堂</li>
+    <li><strong>利 17–20</strong>　血的條例與聖潔法典——第六堂</li>
+    <li><strong>利 21–24</strong>　祭司的聖潔與節期——第七堂</li>
+    <li><strong>利 25–27</strong>　安息年、禧年、祝福咒詛、許願——第八堂</li>
+  </ul>
+  <div class="explain" style="margin-top:14px">
+    <p class="keynote">利 16（贖罪日）居全卷中央，前有獻祭與潔淨的鋪陳，後接聖潔生活的要求，因此常被視為全卷的樞紐。</p>
+  </div>
+</section>
+
+<!-- 四 -->
+<section class="stage">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-2 1-3 2-4 .5 1 1 1.5 2 2 0-3 1-5 1-7z"/></svg></div>
+    <h2>四、主軸經文釋讀：利未記 10:1–11</h2>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M12 3l2 7 7 2-7 2-2 7-2-7-7-2 7-2z"/></svg>敘事脈絡：兩次「火從耶和華面前出來」</div>
+  <div class="explain">
+    <p>利 8–9 記祭司承接聖職的高潮。亞倫獻上首次的祭之後——</p>
+  </div>
+  <div class="verse">
+    <span class="ref">利 9:23–24</span>　……耶和華的榮光就向眾民顯現。有火從耶和華面前出來，在壇上燒盡燔祭和脂油。眾民一見，就都歡呼，俯伏在地。
+  </div>
+  <div class="explain">
+    <p>火出於神、悅納了祭，是榮耀的一刻。緊接著，敘事以幾乎相同的措辭急轉直下：</p>
+  </div>
+  <div class="verse">
+    <span class="ref">利 10:1–2</span>　亞倫的兒子拿答、亞比戶各拿自己的香爐，盛上火，加上香，在耶和華面前獻上凡火，是耶和華沒有吩咐他們的，就有火從耶和華面前出來，把他們燒滅，他們就死在耶和華面前。
+  </div>
+  <div class="explain">
+    <p>同是「火從耶和華面前出來」，前一刻帶來歡呼，此刻帶來死亡。這一對比恰好印證「<strong>聽命勝於獻祭</strong>」的命題：拿答、亞比戶並非不獻祭，而是<strong>照自己的意思獻</strong>、未照神所吩咐——有祭儀卻無順服，於是招來神的嚴厲。關鍵詞是「凡火」，希伯來原文直譯為「外來之火／陌生之火」，指未經神吩咐、不合聖所規制的火。「凡」與「聖」相對：他們把不屬聖所之物擅引到至聖之處，混淆了界線。摩西隨即引神的話點明分量：</p>
+  </div>
+  <div class="verse">
+    <span class="ref">利 10:3</span>　我在親近我的人中要顯為聖；在眾民面前，我要得榮耀。
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4 12h16"/></svg>「分別」的動詞與創世的回響</div>
+  <div class="explain">
+    <p>就在此悲劇之後，神親自對亞倫說話，給出祭司——實則整卷書——的使命：</p>
+  </div>
+  <div class="verse">
+    <span class="ref">利 10:10–11</span>　使你們可以將聖的、俗的，潔淨的、不潔淨的，分別出來，又使你們可以將耶和華藉摩西曉諭以色列人的一切律例教訓他們。
+  </div>
+  <div class="explain">
+    <p>「分別出來」這個動詞的意思是「使分開、劃分」。它正是創世記第一章描述神創造時反覆使用的同一個字：神「分開」光暗、上下之水、晝夜（創 1:4、6、7、14、18）。兩處用同一個字並非偶然：祭司在聖所「分別」聖俗潔淨，呼應神在創造中「分別」以立秩序的作為。混淆界線，等同逆反創造、趨向混沌。順此可以推論，利未記的潔淨體系是一種「維護受造秩序」的參與，而不是一份任意的禁忌清單。</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M12 4v16"/><path d="M5 8h4M5 16h4M15 8h4M15 16h4"/></svg>兩組界線：聖與俗、潔淨與不潔淨</div>
+  <div class="explain">
+    <p>利 10:10 擺出兩組對立、四個術語（依經文次序）：</p>
+  </div>
+  <ul>
+    <li><strong>聖／俗（凡）</strong>：屬神、被分別歸神使用的，相對於平常、一般用途的——這是「歸屬」的範疇。</li>
+    <li><strong>潔淨／不潔淨</strong>：適合進到聖所、親近神的狀態，相對於暫時不宜靠近的——這是「狀態」的範疇。</li>
+  </ul>
+  <div class="explain" style="margin-top:14px">
+    <p>祭司職責因此有兩面：<strong>分別</strong>界線（10:10），並<strong>教導</strong>百姓認得界線（10:11）。10:10–11 把「分別」與「教導」並置，正為主日學這類教導事奉提供聖經根據，也與「妥拉即訓誨」的定位一脈相承。</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16M12 4v16"/></svg>界線圖</div>
+  <div class="explain">
+    <p>釋經上有一個廣被引用的圖式可作補充：人、事、物皆處於「聖／潔淨／不潔淨」三者之一；「使成聖／褻瀆」連繫聖與潔淨，「潔淨／玷污」連繫潔淨與不潔。由此可見利未記體系的方向性流動：<strong>由俗入聖、由不潔轉潔</strong>，好使百姓能夠親近，榮耀能夠長留。另有一種常見的主張認為，禮儀不潔的核心與<strong>死亡</strong>相繫。</p>
+  </div>
+</section>
+
+<!-- 五 -->
+<section class="stage">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"/><path d="M12 4a8 8 0 0 1 0 16"/></svg></div>
+    <h2>五、神學收攏：聖潔為歸屬，潔淨為親近的條件</h2>
+  </div>
+  <div class="explain">
+    <p>「聖潔」在利未記首先指<strong>歸屬</strong>：被神分別、歸屬於神。器皿、日子、祭司、百姓被稱為聖，是因為神將之從一般用途中分別歸己。所以聖潔的首要意義是「屬神」這一既定身分，以及隨之而來、要活得配得的呼召——利未記反覆的命令「你們要聖潔，因為我耶和華你們的神是聖潔的」（利 19:2；參 11:44–45）即立於此，也正是「聖潔的子民」所指。</p>
+    <p>「潔淨」則指<strong>狀態</strong>：人因死亡、疾病、生育、某些接觸而暫時進入不潔，多屬象徵而非道德之罪，利未記提供由不潔回到潔淨、重獲親近的途徑。整卷書因而呈現一種朝向「與神同住」的運動。</p>
+  </div>
+</section>
+
+<!-- 六 -->
+<section class="stage">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M6 9h12"/></svg></div>
+    <h2>六、新約的成全</h2>
+  </div>
+  <div class="explain">
+    <p>利未記所劃的界線，在新約於基督裡被帶向成全。第一堂先立總的連結：利未記那根基性的命令「你們要聖潔，因為我……是聖潔的」（利 19:2），被彼得整句移用為信徒生活的根基（彼前 1:15–16）。本課用作「成全」主軸的《羅馬書》，開篇即把人置於利未記的問題中：人如何能在聖潔的神面前被算為潔淨、蒙接納？</p>
+  </div>
+  <div class="verse">
+    <span class="ref">羅 5:10–11</span>　因為我們作仇敵的時候，且藉著神兒子的死，得與神和好；既已和好，就更要因他的生得救了。不但如此，我們既藉著我主耶穌基督得與神和好，也就藉著他以神為樂。
+  </div>
+  <div class="explain">
+    <p>其結尾勸信徒「將身體獻上，當作活祭，是聖潔的，是神所喜悅的」（羅 12:1），所用正是利未記獻祭與聖潔的語彙，與「獻為活祭」的主題遙相呼應。</p>
+  </div>
+</section>
+
+<!-- 七 -->
+<section class="stage">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="m12 4 2.2 4.8 5.3.6-4 3.6 1.1 5.2L12 15.6 7.4 18.2l1.1-5.2-4-3.6 5.3-.6z"/></svg></div>
+    <h2>七、應用要點</h2>
+  </div>
+  <ul>
+    <li><strong>歸屬的提醒</strong>：「分別」提醒我們，跟隨神有清楚的歸屬——某些事、某些時間被認定「屬神」，我們便以不同的態度對待（安息、奉獻、聚會）。</li>
+    <li><strong>次序的校正</strong>：「聖潔＝歸屬」校正一個常見的誤解。並不是我們先靠自己的力量變好，神才勉強接納；而是神先分別我、稱我屬祂，我再學習活得配得這身分。</li>
+    <li><strong>親近的道路</strong>：拿答、亞比戶以俗為聖、憑己意親近神而喪命，印證「聽命勝於獻祭」。今日親近神同樣須循神所指示的路（在新約即藉著基督），而不是憑一時熱心自定方法。</li>
+  </ul>
+</section>
+
+<!-- 討論 -->
+<section class="stage bookend">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M20 4H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4v4l4-4h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/></svg></div>
+    <h2>討論問題</h2>
+  </div>
+  <div class="q">
+    <ol>
+      <li>讀利未記之前，你對這卷書的印象是什麼？「神搬進營中、人如何親近」這一角度是否改變了你的看法？<span class="lines"></span></li>
+      <li>本課把利未記的核心信息概括為「聽命勝於獻祭」。從拿答、亞比戶的事看，這句話對今天的敬拜有什麼提醒？<span class="lines"></span></li>
+      <li>「聖潔就是被神分別、歸屬於神」——這與你原本的理解有何異同？<span class="lines"></span></li>
+      <li>「分別」這個動詞把創世的「分開」與祭司的「分別」連結起來，對你理解「聖潔生活」有何啟發？<span class="lines"></span></li>
+      <li>「上帝搬家了」——祂由山上移到營中，而那使人不能靠近的性質並未改變。這對今天的敬拜有什麼提醒？<span class="lines"></span></li>
+      <li>本課提到「太快懂得的東西不值錢」。對於利未記這樣一卷書，你願意用什麼樣的節奏去讀？<span class="lines"></span></li>
+    </ol>
+  </div>
+</section>
+
+<p class="foot">《利 未 記》 八 堂 主 日 學 · 學 員 講 義</p>
+
+</div>
+</body>
+</html>
