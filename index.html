@@ -29,7 +29,7 @@
   a.area h2{font-size:39px;margin:0 0 14px;letter-spacing:.14em;}
   a.area.bible h2{color:var(--purple);}
   a.area.serve h2{color:var(--deep);}
-  a.area.school h2{color:#8a6a2a;font-size:31.5px;letter-spacing:.06em;}
+  a.area.school h2{color:#8a6a2a;font-size:28px;letter-spacing:.03em;}
   a.area p{margin:0 0 20px;font-size:20px;color:var(--soft);line-height:1.85;}
   a.area .enter{font-size:19.5px;font-weight:600;}
   a.area.bible .enter{color:var(--purple);}
@@ -37,6 +37,19 @@
   a.area.school .enter{color:#8a6a2a;}
   a.area .note{display:block;margin-top:6px;font-size:17.5px;color:var(--soft);font-weight:400;}
   footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:var(--soft);font-size:17.5px;text-align:center;line-height:1.9;}
+
+  @media (max-width:480px){
+    /* 手機：保住字級，靠字距與內距讓短標題維持單行 */
+    .hero h1{letter-spacing:.1em;}          /* 尺寸不縮，收窄字距即可單行 */
+    a.area h2{font-size:30px;letter-spacing:.08em;}
+    a.area.school h2{font-size:25px;letter-spacing:.03em;}
+    .wrap{padding:44px 18px 60px;}
+  }
+  @media (max-width:380px){
+    .hero h1{font-size:44px;letter-spacing:.06em;}
+    a.area.school h2{font-size:23px;letter-spacing:.02em;}
+    .wrap{padding:38px 14px 54px;}
+  }
 </style>
 </head>
 <body>
