@@ -16,9 +16,13 @@
   .back a:hover{color:var(--purple);}
   header.hero{text-align:center;padding:42px 18px 32px;border-bottom:3px double var(--gold);margin-bottom:16px;}
   .hero .kicker{letter-spacing:.38em;color:var(--amber);font-size:18px;margin-bottom:14px;}
-  .hero h1{font-size:42.5px;margin:0 0 12px;letter-spacing:.1em;font-weight:700;display:inline-block;}
-  .hero h1 .loc{display:flex;justify-content:space-between;font-size:21px;letter-spacing:0;color:var(--amber);font-weight:600;margin-bottom:8px;}
-  .hero h1 .main{display:block;margin-right:-.1em;}
+  .hero h1{font-size:42.5px;margin:0 0 12px;letter-spacing:0;font-weight:700;display:inline-block;}
+  .hero h1 .l1,.hero h1 .l2,.hero h1 .l3{display:flex;justify-content:space-between;}
+  .hero h1 .l1{font-size:20px;color:var(--amber);font-weight:600;margin-bottom:8px;align-items:baseline;}
+  .hero h1 .l1 .imc{margin-left:14px;font-size:21px;}
+  .hero h1 .l1 sup{font-size:14px;line-height:1;vertical-align:super;}
+  .hero h1 .l2{font-size:42.5px;}
+  .hero h1 .l3{font-size:29px;margin-top:4px;color:var(--amber);}
   .hero .sub{color:var(--soft);font-size:21px;max-width:540px;margin:0 auto;}
   .tl{position:relative;margin:26px 0 0;padding-left:26px;border-left:3px solid var(--gold);}
   .node{position:relative;margin:0 0 22px;}
@@ -30,9 +34,11 @@
   a.lesson p{margin:0;font-size:20px;color:var(--soft);line-height:1.8;}
   footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:var(--soft);font-size:18px;text-align:center;letter-spacing:.2em;}
   @media(max-width:480px){
-    .hero h1{font-size:32.5px;letter-spacing:.05em;}
-    .hero h1 .loc{font-size:16px;margin-bottom:6px;}
-    .hero h1 .main{margin-right:-.05em;}
+    .hero h1{font-size:32.5px;}
+    .hero h1 .l1{font-size:15.5px;margin-bottom:6px;}
+    .hero h1 .l1 .imc{margin-left:10px;font-size:16.5px;}
+    .hero h1 .l2{font-size:32.5px;}
+    .hero h1 .l3{font-size:22px;}
     .wrap{padding:26px 16px 70px;}
     .tl{padding-left:20px;}
     .node::before{left:-28px;}
@@ -46,7 +52,7 @@
 
 <header class="hero">
   <div class="kicker">門 徒 訓 練 · 講 義</div>
-  <h1><span class="loc"><span>德</span><span>國</span><span>杜</span><span>塞</span><span>道</span><span>夫</span></span><span class="main">城光使命教會主日學</span></h1>
+  <h1><span class="l1"><span>德</span><span>國</span><span>杜</span><span>塞</span><span>道</span><span>夫</span><span class="imc">IMC<sup>2</sup></span></span><span class="l2"><span>城</span><span>光</span><span>使</span><span>命</span><span>教</span><span>會</span></span><span class="l3"><span>成</span><span>人</span><span>主</span><span>日</span><span>學</span></span></h1>
   <div class="sub">門徒訓練課程的學員講義，按日期累積；歡迎課後複習、填寫與默想。</div>
 </header>
 

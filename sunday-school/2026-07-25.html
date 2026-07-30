@@ -24,6 +24,12 @@ body{
 header{text-align:center;margin-bottom:10px;}
 .kicker{letter-spacing:.5em;color:var(--gold);font-size:16.5px;margin-bottom:16px;text-indent:.5em;}
 h1{font-family:var(--display);font-size:39px;font-weight:900;letter-spacing:.18em;line-height:1.42;text-indent:.18em;}
+h1{display:inline-block;letter-spacing:0;text-indent:0;}
+h1 .l1,h1 .l2,h1 .l3{display:flex;justify-content:space-between;}
+h1 .l1{font-size:18px;font-weight:600;color:var(--gold);margin-bottom:8px;align-items:baseline;}
+h1 .l1 .imc{margin-left:12px;letter-spacing:.02em;}
+h1 .l1 sup{font-size:14px;line-height:1;vertical-align:super;}
+h1 .l3{font-size:25px;margin-top:6px;color:var(--gold);font-weight:700;}
 .subtitle{font-family:var(--display);font-size:23px;color:var(--accent);margin-top:14px;letter-spacing:.16em;font-weight:500;text-indent:.16em;}
 .rule{width:0;height:0;margin:28px auto 34px;border-top:1px solid var(--line);width:120px;position:relative;}
 .rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);
@@ -123,7 +129,9 @@ li b{color:var(--ink);}
   .stage-head{gap:12px;}
   .stage-head .ic{width:38px;height:38px;flex:0 0 38px;}
   .stage-head .ic svg{width:19px;height:19px;}
-  h1{font-size:31px;letter-spacing:.14em;text-indent:.14em;line-height:1.45;}
+  h1{font-size:31px;line-height:1.45;}
+  h1 .l1{font-size:15px;}
+  h1 .l3{font-size:20px;}
   .subtitle{font-size:20.5px;letter-spacing:.08em;text-indent:.08em;}
   h2{font-size:23px;letter-spacing:.06em;text-indent:.06em;}
   .kicker{font-size:16px;letter-spacing:.3em;text-indent:.3em;}
@@ -148,7 +156,9 @@ li b{color:var(--ink);}
 @media (max-width:400px){
   body{padding:26px 10px 48px;}
   section.stage{padding:20px 15px 22px;}
-  h1{font-size:27.5px;letter-spacing:.1em;text-indent:.1em;}
+  h1{font-size:27.5px;}
+  h1 .l1{font-size:14px;}
+  h1 .l3{font-size:18px;}
   .subtitle{font-size:19.5px;}
   h2{font-size:21px;}
   .verse{font-size:20px;padding:13px 14px;letter-spacing:.02em;}
@@ -161,7 +171,7 @@ li b{color:var(--ink);}
 <div class="wrap">
 <header>
   <div class="kicker">2026 年 7 月 25 日 · 學 員 版</div>
-  <h1>城光使命教會<br>門徒訓練課程</h1>
+  <h1><span class="l1"><span>德</span><span>國</span><span>杜</span><span>塞</span><span>道</span><span>夫</span><span class="imc">IMC<sup>2</sup></span></span><span class="l2"><span>城</span><span>光</span><span>使</span><span>命</span><span>教</span><span>會</span></span><span class="l3"><span>門</span><span>徒</span><span>訓</span><span>練</span><span>課</span><span>程</span></span></h1>
   <p class="subtitle">分別聖與俗，潔與不潔</p>
   <div class="rule"></div>
 </header>
