@@ -11,7 +11,11 @@
   *{box-sizing:border-box;}
   body{margin:0;background:var(--parchment);color:var(--ink);font-family:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;line-height:1.9;}
   .wrap{max-width:860px;margin:0 auto;padding:34px 24px 90px;}
-  .back{margin-bottom:8px;}
+  .back{margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline;}
+  .back .site{font-size:18px;color:var(--amber);text-decoration:none;letter-spacing:.05em;font-weight:600;}
+  .back .site:hover{color:var(--purple);}
+  footer a.sitef{color:var(--amber);text-decoration:none;font-weight:600;letter-spacing:.05em;}
+  footer a.sitef:hover{color:var(--purple);}
   .back a{font-size:19.5px;color:var(--soft);text-decoration:none;}
   .back a:hover{color:var(--purple);}
   header.hero{text-align:center;padding:42px 18px 32px;border-bottom:3px double var(--gold);margin-bottom:16px;}
@@ -48,7 +52,7 @@
 <body>
 <div class="wrap">
 
-<div class="back"><a href="../">← 首頁（LIFE）</a></div>
+<div class="back"><a href="../">← 首頁（LIFE）</a><a class="site" href="https://imc2.org/">IMC2.org</a></div>
 
 <header class="hero">
   <div class="kicker">門 徒 訓 練 · 講 義</div>
@@ -85,7 +89,7 @@
 
 </div>
 
-<footer>城 光 使 命 教 會 · 門 徒 訓 練</footer>
+<footer>城 光 使 命 教 會 · 門 徒 訓 練 · <a class="sitef" href="https://imc2.org/">IMC2.org</a></footer>
 
 </div>
 </body>
