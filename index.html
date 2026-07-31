@@ -16,6 +16,7 @@
   .hero h1{font-size:56px;margin:0 0 16px;letter-spacing:.2em;font-weight:700;}
   .hero .sub{color:var(--soft);font-size:21px;max-width:520px;margin:0 auto;}
   .hero .verse{margin-top:20px;color:var(--purple);font-size:20px;}
+  .cl{white-space:nowrap;}
   .rule{width:60px;height:3px;background:var(--gold);margin:26px auto 0;}
   .choose{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:34px;}
   @media(max-width:640px){.choose{grid-template-columns:1fr;}}
@@ -48,6 +49,7 @@
   .langbar a{text-decoration:none;color:var(--soft);}
   .langbar a:hover{color:var(--purple);}
   .langbar .cur{color:var(--gold);font-weight:700;}
+  .langbar .site{color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:.05em;margin-left:8px;}
   footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:var(--soft);font-size:17.5px;text-align:center;line-height:1.9;}
 
   @media (max-width:480px){
@@ -73,13 +75,13 @@
 <body>
 <div class="wrap">
 
-<div class="langbar"><span class="cur">中文</span><span class="sep">·</span><a href="de/">Deutsch</a><span class="sep">·</span><a href="en/">English</a></div>
+<div class="langbar"><span class="cur">中文</span><span class="sep">·</span><a href="de/">Deutsch</a><span class="sep">·</span><a href="en/">English</a><a class="site" href="https://imc2.org/">IMC2.org</a></div>
 
 <header class="hero">
   <div class="kicker">L　I　F　E</div>
   <h1>研經 · 事奉</h1>
   <div class="sub">聖經逐卷的研讀，事奉現場的分享。</div>
-  <div class="verse">「你的話是我腳前的燈，是我路上的光。」（詩 119:105）</div>
+  <div class="verse"><span class="cl">「你的話是我腳前的燈，</span><span class="cl">是我路上的光。」</span><span class="cl">（詩 119:105）</span></div>
   <div class="rule"></div>
 </header>
 
@@ -106,11 +108,6 @@
     <div class="enter">進入事奉分享 →<span class="note">需共用通關碼</span></div>
   </a>
 </div>
-
-<footer>
-  研經 · 事奉 · 解經與生活的累積 · 由 Kai 整理<br>
-  願一切榮耀歸於那位「列國的上帝、全人類歷史都為他所關切」的主
-</footer>
 
 </div>
 </body>
