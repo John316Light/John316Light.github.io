@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>《利未記》研究 · 分別聖俗、潔與不潔</title>
+<title>LIFE · Levitikus · heilig und unheilig, rein und unrein</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap');
 
@@ -53,18 +53,6 @@
   .intro p:last-child{margin-bottom:0;}
   .intro p.motif{font-family:var(--display);color:var(--purple);font-size:22px;
     letter-spacing:.08em;padding-top:14px;border-top:1px solid var(--line);}
-  .back{margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;}
-  .back-l{display:inline-flex;align-items:baseline;gap:16px;}
-  .back a{font-size:17.5px;color:var(--soft);text-decoration:none;}
-  .back a:hover{color:var(--purple);}
-  .back .site{font-size:17px;color:var(--gold);text-decoration:none;letter-spacing:.05em;font-weight:600;}
-  .back-r{display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
-  .langs{display:inline-flex;align-items:baseline;gap:9px;font-size:17px;}
-  .langs .sep{color:#cfc7b6;font-size:14px;}
-  .langs a{font-size:17px;color:var(--soft);text-decoration:none;}
-  .langs a:hover{color:var(--purple);}
-  .langs .cur{color:var(--gold);font-weight:700;}
-  @media (max-width:560px){.back{flex-direction:column;align-items:center;gap:8px;}}
   footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);
     color:var(--soft);font-size:17.5px;text-align:center;line-height:1.9;letter-spacing:.06em;}
   @media (max-width:760px){
@@ -85,80 +73,98 @@
   @media (max-width:400px){
     .hero h1{font-size:26.5px;}
   }
+
+/* ── Rahmen der lateinischen Ausgabe ── */
+.back{margin:0 auto 18px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.back-l{display:inline-flex;align-items:baseline;gap:16px;}
+.back a{font-size:18px;color:var(--soft,#6b5d4a);text-decoration:none;letter-spacing:.03em;border-bottom:none;}
+.back a:hover{color:var(--gold,#b08d3e);}
+.back .site{font-size:17px;color:var(--gold,#b08d3e);text-decoration:none;letter-spacing:.05em;font-weight:600;}
+.back-r{display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+.langs{display:inline-flex;align-items:baseline;gap:9px;font-size:17px;}
+.langs .sep{color:#cfc7b6;font-size:14px;}
+.langs a{font-size:17px;color:var(--soft,#6b5d4a);text-decoration:none;border-bottom:none;}
+.langs a:hover{color:var(--gold,#b08d3e);}
+.langs .cur{color:var(--gold,#b08d3e);font-weight:700;}
+@media (max-width:560px){.back{flex-direction:column;align-items:center;gap:8px;}}
+/* Lateinische Feinjustierung: Sperrsatz der CJK-Vorlage zurücknehmen */
+.hero .kicker,.kicker{letter-spacing:.2em;text-indent:.2em;}
+.hero h1,header h1{letter-spacing:.06em;text-indent:.06em;}
+.subtitle{letter-spacing:.04em;text-indent:0;}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<div class="back"><span class="back-l"><a href="../">← 聖經研究</a><a href="../../">首頁（LIFE）</a></span><span class="back-r"><span class="langs"><span class="cur">中文</span><span class="sep">·</span><a href="../../de/bible/leviticus/">Deutsch</a><span class="sep">·</span><a href="../../en/bible/leviticus/">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
+<div class="back"><span class="back-l"><a href="../">← Bibelstudium</a><a href="../../">Startseite (LIFE)</a></span><span class="back-r"><span class="langs"><a href="../../../bible/leviticus/">中文</a><span class="sep">·</span><span class="cur">Deutsch</span><span class="sep">·</span><a href="../../../en/bible/leviticus/">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
 
 <header class="hero">
-  <div class="kicker">聖 經 研 究</div>
-  <h1>《利未記》</h1>
-  <div class="sub">聖潔、獻祭、祭司神學。</div>
-  <div class="verse">「使你們可以將聖的、俗的，潔淨的、不潔淨的，分別出來。」（利 10:10）</div>
+  <div class="kicker">Bibelstudium</div>
+  <h1>Levitikus</h1>
+  <div class="sub">Heiligkeit, Opfer, Priestertheologie.</div>
+  <div class="verse">„Ihr sollt unterscheiden, was heilig und unheilig, was unrein und rein ist.“ (3. Mose 10,10)</div>
   <div class="rule"></div>
 </header>
 
 <div class="intro">
-  <p>全卷的鑰匙在十章十節：把聖的與俗的分開，把潔淨的與不潔淨的分開。</p>
-  <p class="motif">五個主題——血、得勝、榮耀、王的寶座、勝過權柄</p>
+  <p>Der Schlüssel zum ganzen Buch liegt in Kapitel 10, Vers 10: das Heilige vom Unheiligen scheiden, das Reine vom Unreinen.</p>
+  <p class="motif">Fünf Leitmotive — Blut, Sieg, Herrlichkeit, der Thron des Königs, Macht über die Mächte</p>
 </div>
 
-<h2 class="sec">已開放的講義<span></span></h2>
-<div class="sec-note">點入即可閱讀學員版講義；各堂隨課程推進陸續補上。</div>
+<h2 class="sec">Verfügbare Lektionsblätter<span></span></h2>
+<div class="sec-note">Zum Lesen anklicken; die weiteren Lektionen folgen mit dem Kurs.</div>
 <div class="grid">
   <a class="card" href="leviticus-1.html">
-    <span class="tag">第 一 堂</span>
-    <h3>導論與主軸——分別聖俗</h3>
-    <p>利 10:10–11 與全卷鳥瞰：上帝搬家了，與百姓一同進入曠野；百姓學習分別的功課開始了。</p>
-    <span class="when">2026 年 8 月 1 日 · 學員版</span>
+    <span class="tag">Lektion 1</span>
+    <h3>Einführung und Leitmotiv — Heiliges und Unheiliges unterscheiden</h3>
+    <p>3. Mose 10,10–11 und ein Überblick über das ganze Buch: Gott ist umgezogen und zieht mit seinem Volk in die Wüste; das Volk beginnt, das Unterscheiden zu lernen.</p>
+    <span class="when">1. August 2026 · Teilnehmerblatt</span>
   </a>
 </div>
 
-<h2 class="sec">課程總覽<span></span></h2>
-<div class="sec-note">共八堂，每堂約一個半小時；第二堂之後的日期另行公布。</div>
+<h2 class="sec">Kursübersicht<span></span></h2>
+<div class="sec-note">Acht Lektionen, je etwa anderthalb Stunden; die Termine ab Lektion 2 werden noch bekannt gegeben.</div>
 <div class="grid">
   <div class="card soon">
-    <span class="tag">第 二 堂</span>
-    <h3>五祭與親近神</h3>
-    <p>利 1–7：燔祭、素祭、平安祭、贖罪祭、贖愆祭，五道走近上帝的門。（籌備中）</p>
+    <span class="tag">Lektion 2</span>
+    <h3>Die fünf Opfer und das Nahen zu Gott</h3>
+    <p>3. Mose 1–7: Brandopfer, Speisopfer, Dankopfer, Sündopfer, Schuldopfer — fünf Türen des Nahens zu Gott. (In Vorbereitung)</p>
   </div>
   <div class="card soon">
-    <span class="tag">第 三 堂</span>
-    <h3>祭司職、榮光與凡火</h3>
-    <p>利 6–10：承接聖職、榮光顯現，以及拿答亞比戶所獻的凡火。（籌備中）</p>
+    <span class="tag">Lektion 3</span>
+    <h3>Priesteramt, Herrlichkeit und fremdes Feuer</h3>
+    <p>3. Mose 6–10: Die Einsetzung ins heilige Amt, das Erscheinen der Herrlichkeit und das fremde Feuer Nadabs und Abihus. (In Vorbereitung)</p>
   </div>
   <div class="card soon">
-    <span class="tag">第 四 堂</span>
-    <h3>潔與不潔：身體與飲食</h3>
-    <p>利 11–15：食物、生育、皮膚病與漏症的條例，如何構成一套分別的生活。（籌備中）</p>
+    <span class="tag">Lektion 4</span>
+    <h3>Rein und unrein: Körper und Speise</h3>
+    <p>3. Mose 11–15: Die Ordnungen über Speise, Geburt, Hautkrankheit und Ausfluss — wie sie zusammen ein Leben des Unterscheidens formen. (In Vorbereitung)</p>
   </div>
   <div class="card soon">
-    <span class="tag">第 五 堂</span>
-    <h3>贖罪日：潔淨的高峰</h3>
-    <p>利 16：全卷的中心，一年一次進入至聖所的那一天。（籌備中）</p>
+    <span class="tag">Lektion 5</span>
+    <h3>Der Versöhnungstag: Höhepunkt der Reinigung</h3>
+    <p>3. Mose 16: Die Mitte des Buches — der eine Tag im Jahr, an dem das Allerheiligste betreten wird. (In Vorbereitung)</p>
   </div>
   <div class="card soon">
-    <span class="tag">第 六 堂</span>
-    <h3>血與聖潔的生活</h3>
-    <p>利 17–20：血歸於壇，聖潔法典把祭壇的分別帶進日常倫理。（籌備中）</p>
+    <span class="tag">Lektion 6</span>
+    <h3>Das Blut und das heilige Leben</h3>
+    <p>3. Mose 17–20: Das Blut gehört auf den Altar; das Heiligkeitsgesetz trägt das Unterscheiden des Altars in den Alltag. (In Vorbereitung)</p>
   </div>
   <div class="card soon">
-    <span class="tag">第 七 堂</span>
-    <h3>祭司的聖潔與節期</h3>
-    <p>利 21–24：祭司自身的界線，以及一年之中被分別出來的時間。（籌備中）</p>
+    <span class="tag">Lektion 7</span>
+    <h3>Die Heiligkeit der Priester und die Feste</h3>
+    <p>3. Mose 21–24: Die Grenzen der Priester selbst und die Zeiten, die im Jahr ausgesondert sind. (In Vorbereitung)</p>
   </div>
   <div class="card soon">
-    <span class="tag">第 八 堂</span>
-    <h3>安息年、禧年與立約</h3>
-    <p>利 25–27：土地的安息、產業的歸回，與全卷的祝福與咒詛（附全課總結）。（籌備中）</p>
+    <span class="tag">Lektion 8</span>
+    <h3>Sabbatjahr, Erlassjahr und Bund</h3>
+    <p>3. Mose 25–27: Die Ruhe des Landes, die Rückkehr des Erbes, Segen und Fluch des ganzen Buches (mit Gesamtrückblick). (In Vorbereitung)</p>
   </div>
 </div>
 
 <footer>
-  《利未記》研究 · 八堂主日學 · 由 Kai 整理<br>
-  經文版本：《和合本》
+  Studien zum Levitikus · Acht Lektionen der Sonntagsschule · zusammengestellt von Kai<br>
+  Bibelübersetzung: Lutherbibel 2017
 </footer>
 
 </div>

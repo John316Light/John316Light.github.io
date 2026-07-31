@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LIFE · Levitikus · Lektion 1: Einführung und Leitmotiv (Teilnehmerblatt)</title>
+<meta name="description" content="《利未記》第一堂學員講義，含全課程總覽與利未記／羅馬書經文對照：以利 10:10「將聖的、俗的，潔淨的、不潔淨的，分別出來」為全卷詮釋之鑰。2026 年 8 月 1 日開課。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+:root{
+  --ink:#1f2831;
+  --sub:#4d5967;
+  --line:#c9b98f;
+  --gold:#9c7a26;
+  --bg:#f7f4ed;
+  --card:#fffefa;
+  --edge:#e6dfcd;
+  --accent:#37585d;
+  --holy:#2f5257;
+  --common:#8d7043;
+  --serif:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --display:"Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+em,i,cite,address{font-style:normal}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--serif);
+  background:var(--bg);
+  color:var(--ink);
+  font-size:21px;
+  line-height:1.95;
+  padding:56px 20px 84px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto}
+.back{margin-bottom:10px;font-size:17.5px}
+.back a{color:var(--sub);text-decoration:none;border-bottom:1px dotted var(--edge)}
+.back a:first-child{color:var(--accent);border-bottom-color:var(--accent)}
+.back a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* ── 頁首 ───────────────────────────────── */
+header{text-align:center;margin-bottom:10px}
+.kicker{
+  letter-spacing:.5em;color:var(--gold);font-size:17px;
+  margin-bottom:16px;text-indent:.5em;
+}
+header h1{
+  font-family:var(--display);font-size:40px;font-weight:900;
+  letter-spacing:.18em;line-height:1.42;text-indent:.18em;
+}
+.subtitle{
+  font-family:var(--display);font-size:23.5px;color:var(--accent);text-align:center;
+  margin:0 auto 12px;letter-spacing:.16em;font-weight:500;text-indent:.16em;
+}
+.rule{
+  width:120px;height:0;margin:26px auto 40px;
+  border-top:1px solid var(--line);position:relative;
+}
+.rule::after{
+  content:"❧";position:absolute;left:50%;top:-15px;
+  transform:translateX(-50%);background:var(--bg);padding:0 12px;
+  font-size:19.5px;color:var(--gold);
+}
+
+/* ── 資訊列 ─────────────────────────────── */
+.meta{
+  background:#fcfaf3;border:1px solid var(--edge);border-radius:14px;
+  padding:18px 26px;font-size:20px;color:var(--sub);
+  margin:0 auto 20px;line-height:1.9;
+}
+.meta .mi{margin-right:26px;white-space:nowrap;display:inline-block}
+
+/* ── 本堂目次 ───────────────────────────── */
+nav.toc{
+  display:flex;flex-wrap:wrap;gap:8px;
+  margin:0 auto 34px;padding:16px 18px;
+  background:var(--card);border:1px solid var(--edge);border-radius:14px;
+}
+nav.toc .tl{
+  width:100%;font-family:var(--display);font-size:17px;font-weight:700;
+  letter-spacing:.28em;text-indent:.28em;color:var(--gold);margin-bottom:4px;
+}
+nav.toc a{
+  display:inline-block;text-decoration:none;
+  font-size:17.5px;color:var(--sub);letter-spacing:.04em;
+  background:#f6f1e5;border:1px solid var(--edge);border-radius:20px;
+  padding:4px 14px;transition:.16s;
+}
+nav.toc a:hover{color:#fff;background:var(--accent);border-color:var(--accent)}
+
+/* ── 區塊 ───────────────────────────────── */
+.stage{
+  background:var(--card);border:1px solid var(--edge);border-radius:18px;
+  padding:30px 34px 32px;margin:0 auto 24px;
+  box-shadow:0 8px 24px rgba(60,50,20,.05);
+  scroll-margin-top:18px;
+}
+.stage.bookend{background:#f4f8f7;border-color:#d3e2de}
+.stage-head{display:flex;align-items:center;gap:15px;margin-bottom:20px}
+.stage-head .ic{
+  flex:0 0 44px;width:44px;height:44px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);
+  display:flex;align-items:center;justify-content:center;color:var(--gold);
+}
+.stage.bookend .stage-head .ic{background:#e8f0ed;color:var(--accent)}
+.stage-head .ic svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.stage-head .ic.num{
+  font-family:var(--display);font-size:23.5px;font-weight:900;
+  border-color:var(--line);background:#f7efe0;
+}
+.stage h2{
+  font-family:var(--display);font-size:27px;font-weight:900;
+  letter-spacing:.13em;text-indent:.13em;line-height:1.6;
+}
+
+/* ── 小標 ───────────────────────────────── */
+.label{
+  display:flex;align-items:center;gap:9px;
+  font-family:var(--display);font-weight:700;font-size:19.5px;
+  letter-spacing:.14em;text-indent:.14em;color:var(--gold);
+  margin:26px 0 12px;
+}
+.label svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:0 0 16px}
+.label.a{color:var(--accent)}
+
+/* ── 經文 ───────────────────────────────── */
+.verse{
+  font-family:var(--serif);background:#fbf7ee;
+  border-left:3px solid var(--line);border-radius:0 12px 12px 0;
+  padding:17px 24px;margin:0 0 14px;
+  font-size:24.5px;font-weight:600;line-height:2.1;
+  letter-spacing:.07em;color:#1a222a;
+}
+.verse .ref{color:var(--gold);font-weight:700;letter-spacing:.05em}
+
+/* ── 說明 ───────────────────────────────── */
+.explain{color:var(--sub);font-size:20.5px;line-height:2.05;font-weight:400;letter-spacing:.02em}
+.explain p{margin:0 0 14px}
+.explain p:last-child{margin-bottom:0}
+.explain p.keynote{
+  background:#f4f8f7;border-left:3px solid var(--accent);
+  border-radius:0 12px 12px 0;padding:13px 20px;margin:0 0 14px;
+  color:#2b474b;font-size:21px;letter-spacing:.03em;
+}
+.explain strong{color:var(--ink);font-weight:700}
+.explain em{font-style:normal;color:var(--holy);font-weight:600}
+
+/* ── 條列 ───────────────────────────────── */
+ul{list-style:none;margin-top:12px}
+li{
+  position:relative;padding-left:22px;margin-bottom:12px;
+  font-size:20px;color:var(--sub);line-height:1.95;
+}
+li::before{content:"❖";position:absolute;left:0;color:var(--line);font-size:16.5px;top:.4em}
+li strong{color:var(--ink);font-weight:700}
+
+/* ── 應用要點：發光燈泡 ─────────────────── */
+ul.apply li{padding-left:46px;min-height:34px}
+ul.apply li::before{content:none}
+ul.apply .ico{
+  position:absolute;left:0;top:.12em;
+  display:inline-block;width:32px;height:32px;border-radius:50%;
+  background-color:#f4ecd8;border:1px solid var(--line);
+  animation:bulbglow 2.8s ease-in-out infinite;
+}
+ul.apply .ico svg{
+  position:absolute;left:50%;top:50%;width:17px;height:17px;
+  transform:translate(-50%,-50%);fill:var(--gold);
+}
+@keyframes bulbglow{
+  0%,100%{background-color:#f4ecd8;box-shadow:0 0 0 0 rgba(156,122,38,0)}
+  50%{background-color:#fbeec6;box-shadow:0 0 12px 3px rgba(156,122,38,.34)}
+}
+@media (prefers-reduced-motion:reduce){
+  ul.apply .ico{
+    animation:none;background-color:#fbeec6;border-color:var(--gold);
+    box-shadow:0 0 10px 2px rgba(156,122,38,.28);
+  }
+}
+
+/* ── 討論 ───────────────────────────────── */
+.q{
+  background:#fff;border:1px solid var(--edge);border-left:3px solid var(--gold);
+  border-radius:0 12px 12px 0;padding:16px 20px;
+  font-size:20.5px;color:var(--ink);line-height:1.95;letter-spacing:.03em;
+}
+.q ol{list-style:none;counter-reset:qq;margin:0}
+.q ol li{
+  counter-increment:qq;padding-left:34px;margin-bottom:18px;color:var(--ink);
+}
+.q ol li:last-child{margin-bottom:0}
+.q ol li::before{
+  content:counter(qq);position:absolute;left:0;top:.28em;
+  width:22px;height:22px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);color:var(--gold);
+  font-size:16.5px;font-weight:700;line-height:20px;text-align:center;
+}
+.q .lines{display:block;margin-top:6px;border-bottom:1px dashed #d8cfb6;height:26px}
+
+/* ── 表格 ───────────────────────────────── */
+.tablewrap{overflow-x:auto;margin:16px 0 4px}
+table{width:100%;border-collapse:collapse;font-size:19.5px;color:var(--sub)}
+th{
+  font-family:var(--display);text-align:left;padding:10px 12px;
+  border-bottom:2px solid var(--line);font-weight:700;
+  color:var(--ink);white-space:nowrap;letter-spacing:.08em;
+}
+td{padding:10px 12px;border-bottom:1px solid var(--edge);vertical-align:top;line-height:1.9}
+td:first-child{white-space:nowrap;color:var(--gold);font-weight:700;text-align:center}
+tbody tr:last-child td{border-bottom:none}
+
+/* ── 利未記×羅馬書對照表 ────────────────── */
+table.cmp{min-width:520px}
+table.cmp th{text-align:center;letter-spacing:.14em;text-indent:.14em}
+table.cmp th:last-child{text-align:left}
+table.cmp td{white-space:nowrap;text-align:center;font-weight:600}
+table.cmp td:first-child{color:var(--gold)}
+table.cmp td:nth-child(2){color:var(--accent)}
+table.cmp td:last-child{
+  white-space:normal;text-align:left;color:var(--sub);font-weight:400;
+}
+table.cmp tbody tr:nth-child(odd){background:#faf6ec}
+table.cmp tbody tr:last-child td{border-bottom:none}
+.scrollhint{
+  display:none;font-size:16.5px;color:var(--common);
+  letter-spacing:.06em;margin-top:8px;
+}
+
+/* ── 頁尾 ───────────────────────────────── */
+.foot{
+  text-align:center;color:#a89c80;font-size:17px;
+  margin-top:46px;letter-spacing:.32em;text-indent:.32em;
+}
+
+@media print{
+  body{background:#fff;padding:0}
+  .stage{box-shadow:none;break-inside:avoid}
+  nav.toc{display:none}
+  ul.apply .ico{animation:none;background-color:#fbeec6;border-color:var(--gold);box-shadow:none}
+}
+@media (max-width:760px){
+  body{padding:34px 14px 60px;font-size:20.5px}
+  header h1{font-size:30.5px;letter-spacing:.12em;text-indent:.12em}
+  .subtitle{font-size:20px}
+  .stage{padding:24px 20px 26px;border-radius:14px}
+  .stage h2{font-size:23.5px}
+  .stage-head{gap:12px}
+  .stage-head .ic{flex:0 0 38px;width:38px;height:38px}
+  .stage-head .ic.num{font-size:21px}
+  .verse{font-size:22px;padding:14px 16px;letter-spacing:.03em;line-height:2}
+  .explain{font-size:20px;line-height:1.95}
+  .q{font-size:20.5px;padding:14px 16px}
+  li{font-size:20px}
+  ul.apply li{padding-left:40px}
+  ul.apply .ico{width:28px;height:28px}
+  ul.apply .ico svg{width:15px;height:15px}
+  .meta{padding:16px 18px;font-size:19.5px}
+  nav.toc{padding:14px 14px;gap:7px}
+  nav.toc a{font-size:17px;padding:3px 12px}
+  .scrollhint{display:block}
+}
+@media (max-width:560px){
+  /* 對照表在窄螢幕改為卡片式，三欄同時可見，不必左右滑動 */
+  .tablewrap{overflow-x:visible}
+  .scrollhint{display:none}
+  table.cmp{min-width:0}
+  table.cmp thead{display:none}
+  table.cmp tbody,table.cmp tr,table.cmp td{display:block;width:auto}
+  table.cmp tr{padding:12px 6px;border-bottom:1px solid var(--edge)}
+  table.cmp tbody tr:last-child{border-bottom:none}
+  table.cmp td{border:none;padding:0;text-align:left;white-space:normal;line-height:1.7}
+  table.cmp td:first-child,table.cmp td:nth-child(2){display:inline;font-size:20px}
+  table.cmp td:first-child::after{
+    content:"　·　";color:var(--common);font-weight:400;letter-spacing:0;
+  }
+  table.cmp td:last-child{margin-top:3px;font-size:19.5px;font-weight:600;color:var(--ink)}
+}
+@media (max-width:400px){
+  body{padding:26px 10px 48px}
+  header h1{font-size:26px}
+  .verse{font-size:20.5px;padding:13px 14px;letter-spacing:.02em}
+  .explain{font-size:20px}
+}
+
+/* ── Rahmen der lateinischen Ausgabe ── */
+.back{margin:0 auto 18px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.back-l{display:inline-flex;align-items:baseline;gap:16px;}
+.back a{font-size:18px;color:var(--soft,#6b5d4a);text-decoration:none;letter-spacing:.03em;border-bottom:none;}
+.back a:hover{color:var(--gold,#b08d3e);}
+.back .site{font-size:17px;color:var(--gold,#b08d3e);text-decoration:none;letter-spacing:.05em;font-weight:600;}
+.back-r{display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+.langs{display:inline-flex;align-items:baseline;gap:9px;font-size:17px;}
+.langs .sep{color:#cfc7b6;font-size:14px;}
+.langs a{font-size:17px;color:var(--soft,#6b5d4a);text-decoration:none;border-bottom:none;}
+.langs a:hover{color:var(--gold,#b08d3e);}
+.langs .cur{color:var(--gold,#b08d3e);font-weight:700;}
+@media (max-width:560px){.back{flex-direction:column;align-items:center;gap:8px;}}
+/* Lateinische Feinjustierung: Sperrsatz der CJK-Vorlage zurücknehmen */
+.hero .kicker,.kicker{letter-spacing:.2em;text-indent:.2em;}
+.hero h1,header h1{letter-spacing:.06em;text-indent:.06em;}
+.subtitle{letter-spacing:.04em;text-indent:0;}
+@media (max-width:560px){
+  /* Kursübersicht: schmale Bildschirme — Schrift und Innenabstand leicht reduziert */
+  table:not(.cmp){font-size:18px;}
+  table:not(.cmp) th,table:not(.cmp) td{padding:8px 8px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="back"><span class="back-l"><a href="./">← Levitikus-Übersicht</a><a href="../">Bibelstudium</a></span><span class="back-r"><span class="langs"><a href="../../../bible/leviticus/leviticus-1.html">中文</a><span class="sep">·</span><span class="cur">Deutsch</span><span class="sep">·</span><a href="../../../en/bible/leviticus/leviticus-1.html">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
+
+<header>
+  <div class="kicker">1. August 2026 · Teilnehmerblatt</div>
+  <h1>Levitikus</h1>
+  <div class="rule"></div>
+</header>
+
+<p class="subtitle">Lektion 1 · Einführung und Leitmotiv — Heiliges und Unheiliges unterscheiden</p>
+
+<div class="meta">
+  <p><span class="mi">Bibelübersetzung: Lutherbibel 2017</span><span class="mi">Leitung: Bruder Kai</span><span class="mi">Lektion 1 von 8</span></p>
+  <p>Name: ＿＿＿＿＿＿＿＿＿＿</p>
+</div>
+
+<nav class="toc">
+  <div class="tl">Diese Lektion</div>
+  <a href="#s-overview">Kursübersicht</a>
+  <a href="#s-romans">Levitikus und Römerbrief</a>
+  <a href="#s-key">Der Leittext</a>
+  <a href="#s1">1. Einführung</a>
+  <a href="#s2">2. Literarischer Ort</a>
+  <a href="#s3">3. Aufbau des Buches</a>
+  <a href="#s4">4. Auslegung des Leittextes</a>
+  <a href="#s5">5. Heiligkeit und Reinheit</a>
+  <a href="#s6">6. Die Erfüllung im NT</a>
+  <a href="#s7">7. Zur Anwendung</a>
+  <a href="#s-q">Gesprächsfragen</a>
+</nav>
+
+<!-- Kursübersicht -->
+<section class="stage bookend" id="s-overview">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+    <h2>Kursübersicht</h2>
+  </div>
+  <div class="explain">
+    <p>Der Schlüssel zum ganzen Buch steht in Kapitel 10, Vers 10: das Heilige vom Unheiligen scheiden, das Reine vom Unreinen — und dieses Unterscheiden dem Volk weitergeben. Die acht Lektionen fragen: Wer darf Gott nahen? Wann darf er nahen? Und auf welchem Weg?</p>
+  </div>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Lektion</th><th>Thema</th><th>Text</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Einführung und Leitmotiv: Heiliges und Unheiliges unterscheiden</td><td>3. Mose 10,10–11; Überblick</td></tr>
+      <tr><td>2</td><td>Die fünf Opfer und das Nahen zu Gott</td><td>3. Mose 1–7</td></tr>
+      <tr><td>3</td><td>Priesteramt, Herrlichkeit und fremdes Feuer</td><td>3. Mose 6–10</td></tr>
+      <tr><td>4</td><td>Rein und unrein: Körper und Speise</td><td>3. Mose 11–15</td></tr>
+      <tr><td>5</td><td>Der Versöhnungstag: Höhepunkt der Reinigung</td><td>3. Mose 16</td></tr>
+      <tr><td>6</td><td>Das Blut und das heilige Leben</td><td>3. Mose 17–20</td></tr>
+      <tr><td>7</td><td>Die Heiligkeit der Priester und die Feste</td><td>3. Mose 21–24</td></tr>
+      <tr><td>8</td><td>Sabbatjahr, Erlassjahr und Bund (mit Gesamtrückblick)</td><td>3. Mose 25–27</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="explain" style="margin-top:18px">
+    <p class="keynote"><strong>Beginn: Lektion 1 am 1. August 2026</strong>; die weiteren Termine werden noch bekannt gegeben. Jede Lektion dauert etwa anderthalb Stunden.</p>
+  </div>
+</section>
+
+<!-- Levitikus und Römerbrief -->
+<section class="stage bookend" id="s-romans">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h6a2 2 0 0 1 2 2v12"/><path d="M20 5h-6a2 2 0 0 0-2 2"/><path d="M4 5v14h6M20 5v14h-6"/></svg></div>
+    <h2>Levitikus und Römerbrief: wichtige Parallelstellen</h2>
+  </div>
+  <div class="explain">
+    <p>Fünf Leitmotive ziehen sich durch die acht Lektionen — Blut, Sieg, Herrlichkeit, der Thron des Königs, Macht über die Mächte — und verbinden sich mit dem Römerbrief.</p>
+  </div>
+  <div class="tablewrap">
+  <table class="cmp">
+    <thead><tr><th>Levitikus</th><th>Römer</th><th>Theologisches Thema</th></tr></thead>
+    <tbody>
+      <tr><td>3. Mose 1,3–9</td><td>Röm 12,1</td><td>Ganzhingabe</td></tr>
+      <tr><td>3. Mose 1,4</td><td>Röm 3,24–26</td><td>Annahme und Sühne</td></tr>
+      <tr><td>3. Mose 4</td><td>Röm 3,23–25</td><td>Sühne</td></tr>
+      <tr><td>3. Mose 5</td><td>Röm 13,7–10</td><td>Gerechtigkeit und Erstattung</td></tr>
+      <tr><td>3. Mose 10,1–3</td><td>Röm 6,17–18</td><td>Gehorsam gegen Gott statt Eigenwille</td></tr>
+      <tr><td>3. Mose 11,44–45</td><td>Röm 6,19; 12,1</td><td>Heiligkeit</td></tr>
+      <tr><td>3. Mose 16</td><td>Röm 5,1–11</td><td>Versöhnung mit Gott</td></tr>
+      <tr><td>3. Mose 17,11</td><td>Röm 5,9</td><td>Blut und Leben, Rechtfertigung</td></tr>
+      <tr><td>3. Mose 18–20</td><td>Röm 6</td><td>Heiliges Leben</td></tr>
+      <tr><td>3. Mose 19,2</td><td>Röm 12,1–2</td><td>Heilig werden</td></tr>
+      <tr><td>3. Mose 26</td><td>Röm 8</td><td>Gottes Wohnen, Erneuerung des Lebens</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="scrollhint">* Die Tabelle lässt sich seitlich verschieben</p>
+</section>
+
+<!-- Der Leittext -->
+<section class="stage bookend" id="s-key">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M4 8h16"/><path d="M6 8v10h12V8"/></svg></div>
+    <h2>Der Leittext dieser Lektion</h2>
+  </div>
+  <div class="verse">
+    <span class="ref">3. Mose 10,10–11</span> „Ihr sollt unterscheiden, was heilig und unheilig, was unrein und rein ist, und Israel lehren alle Ordnungen, die der HERR ihnen durch Mose verkündet hat.“
+  </div>
+  <div class="explain">
+    <p>Diese Lektion behandelt 2. Mose 40,34–35; 3. Mose 1,1; 9,23–24; 10,1–11 und gibt einen Überblick über den Aufbau des ganzen Buches.</p>
+  </div>
+</section>
+
+<!-- 1 -->
+<section class="stage" id="s1">
+  <div class="stage-head">
+    <div class="ic num">1</div>
+    <h2>Einführung: die „Weisung“ in der Mitte der Tora</h2>
+  </div>
+  <div class="explain">
+    <p>Levitikus ist kein leichtes Buch. Nach der Erzählung des Buches Exodus folgt hier eine lange Reihe von Opfer- und Reinheitsordnungen, in denen Gott selbst offenbart, auf welchem Weg man ihm nahen darf. Im Aufbau des Kanons steht das Buch jedoch genau in der Mitte der fünf Bücher Mose; sein hebräischer Name ist das erste Wort des Buches und bedeutet „er rief“ — der Titel „Levitikus“, den die deutsche wie die englische Bibel verwenden, stammt aus der Septuaginta.</p>
+    <p class="keynote">Das Thema des ganzen Buches: <strong>ein heiliges Volk</strong>. Seine Kernbotschaft in einem Satz: <strong>Gehorsam ist besser als Opfer</strong>.</p>
+    <p>Dieser Satz leistet zweierlei. Zum einen nimmt er das Wort Samuels auf: „Gehorsam ist besser als Opfer und Aufmerken besser als das Fett von Widdern“ (1. Samuel 15,22). Levitikus handelt zwar überwiegend vom Opfer; sein eigentliches Ziel aber sind der Gehorsam und die Heiligkeit des Volkes — es bleibt nicht beim Ritus stehen.</p>
+    <p>Zum anderen bedeutet „Tora“ im Alten Testament „Weisung, Belehrung“ — nicht bloß ein kaltes „Gesetz“. Das deckt sich genau mit dem Auftrag in 3. Mose 10,11: Die Priester sollen dem Volk „alle Ordnungen … <strong>lehren</strong>“. Levitikus ist eine Weisung, die gelehrt, empfangen und befolgt werden will, damit ein „heiliges Volk“ heranwächst. Mit diesem Buch in den Dienst der Sonntagsschule zu gehen, ist darum ganz folgerichtig.</p>
+    <p>Die Schwierigkeit, die viele Leser mit diesem Buch haben, ist real: Levitikus ist „für viele ein sehr fremdes Buch — Sprache, Inhalt und Riten wirken eintönig und formelhaft“. Gerade das weist auf eine andere Leseweise hin: Es geht in diesem Buch nicht nur ums Verstehen, sondern ums <strong>Teilnehmen und Empfinden</strong>. Wer Levitikus in der Sonntagsschule nur als Stoff vorträgt, verfehlt, was das Buch eigentlich verlangt. Levitikus gab Israel einen Bauplan für ein künftiges Leben der Anbetung nach Gottes Herzen.</p>
+    <p>Levitikus spricht die <strong>Sprache des Rituals</strong> — und die weckt eine Erwartung, die unseren heutigen Gewohnheiten zuwiderläuft: Ritualsprache muss man nicht beim ersten Hören verstehen. Was zu schnell durchs Leben geht, hinterlässt selten Spuren. Die Anbetung, die Levitikus zeichnet, wirkt spröde; doch gerade darin lehrt Gott uns eine Tiefe der Nähe nach seinem Sinn — nicht die Pracht, die unsere Sinne erwarten. Diese Sprache verlangt wiederholtes Einüben: über Feuer, Blut, das Aufstemmen der Hand und den Sündenbock nachzudenken — was sie in unserem Leben der Anbetung wirklich bedeuten.</p>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="stage" id="s2">
+  <div class="stage-head">
+    <div class="ic num">2</div>
+    <h2>Literarischer Ort: der Übergang von 2. Mose 40 zu 3. Mose 1,1</h2>
+  </div>
+  <div class="explain">
+    <p>Das Buch Exodus endet mit der fertigen Stiftshütte und der einziehenden Herrlichkeit:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">2. Mose 40,34–35</span> „Da bedeckte die Wolke die Stiftshütte, und die Herrlichkeit des HERRN erfüllte die Wohnung. Und Mose konnte nicht in die Stiftshütte hineingehen, weil die Wolke darauf ruhte und die Herrlichkeit des HERRN die Wohnung erfüllte.“
+  </div>
+  <div class="explain">
+    <p>Das ist der Höhepunkt des Sinaibundes — Gott „zieht wirklich ein“ und wohnt mitten unter seinem Volk. Doch derselbe Text zeigt die tatsächliche Lage: Mitten in der Herrlichkeit „konnte Mose“, der Mittler, „nicht in die Stiftshütte hineingehen“. Levitikus schließt unmittelbar an dieses Bild an:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">3. Mose 1,1</span> „Und der HERR rief Mose und redete mit ihm aus der Stiftshütte und sprach:“
+  </div>
+  <div class="explain">
+    <p class="keynote">Gott redet jetzt „aus der Stiftshütte“ — er ist bereits darin. Damit tritt die Kernfrage des ganzen Buches hervor: <strong>Wenn der heilige Gott mitten im Lager wohnt — wie kann das erwählte, aber sündige, so leicht verunreinigte Volk ihm nahen und bei ihm wohnen, ohne umzukommen?</strong></p>
+    <p>Die Opfer- und Reinheitsordnungen des Levitikus sind die Weisung, die um genau diese Frage herum entstanden ist.</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg>Gott ist umgezogen</div>
+  <div class="explain">
+    <p>Den Übergang von 2. Mose 40 zu 3. Mose 1,1 kann man ganz schlicht so fassen: <strong>Gott ist umgezogen</strong>. Am Sinai war das Muster dies: Er war oben auf dem Berg und erschien in Feuer und gewaltigem Schall; die Menschen fürchteten sich, niemand durfte sich nähern — wer sich näherte, verlor das Leben. Mit der fertigen Stiftshütte ändert sich die Lage: Dieser Gott ist nicht mehr der Gott, der auf dem Berg wohnt. Er wird ein Gott, der im Zelt wohnt und mit Israel umherzieht — das ist sein Wille.</p>
+    <p>Der Wert dieser Formel liegt darin, dass sie zwei Dinge zugleich festhält. Gottes Gegenwart ist wirklich näher gerückt — vom Gipfel mitten ins Lager; und das, was den Zugang unmöglich macht, hat sich dabei nicht geändert. Die Stiftshütte ist <strong>Schicht um Schicht</strong> gebaut: Zuinnerst das Allerheiligste mit der Lade, den beiden Cherubim und dazwischen einem leeren Sitz — dem Thron Gottes; darum herum das Heilige, dann der Vorhof, dann das Lager der Leviten, zuäußerst die zwölf Stämme. Weil Gott genau in der Mitte des Lagers wohnt, ordnet sich der ganze Raum nach der Nähe zu ihm. Das ist die räumliche Gestalt des „Scheidens von Heiligem und Unheiligem“ aus 3. Mose 10,10 — und das Leitmotiv <strong>„Thron des Königs“</strong> hat damit von Anfang an seinen Ort in Text und Raum.</p>
+    <p>Auch der Altar am Eingang der Stiftshütte hat in dieser Ordnung seinen Platz. Eine verbreitete Lesart: Nachdem Gott sich verborgen hat, brennt jenes Feuer nun am Eingang — es steht für eine Einladung. Das Feuer vom Sinai, das Menschen das Leben kostete, liegt jetzt auf dem Altar am Eingang — dasselbe Feuer; verändert haben sich sein Ort und seine Funktion. Das warnt zugleich vor einem gezähmten Gottesbild: Die Theologie unserer Tage macht diesen Gott gern zahm, beinahe zu einem Weihnachtsmann. In Wahrheit wohnt im Allerheiligsten dauerhaft ein Gott, dessen Feuer „ausbrechen“ kann — ihn dürfen wir nicht geringachten und nicht verachten.</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8 6h8M8 12h8M8 18h8"/></svg>Das Heiligtum: wo Himmel und Erde sich berühren</div>
+  <div class="explain">
+    <p>Ein zweiter Rahmen bindet die Stiftshütte an die Erzählungen der Väter zurück: Das Heiligtum ist <strong>der Punkt, an dem Himmel und Erde sich berühren</strong>. Drei Orte der Begegnung lassen sich nennen — Abraham bei der Eiche More (1. Mose 12,6–7), Isaak in Beerscheba (1. Mose 26,23–25), Jakob in Bethel mit der Leiter, die Himmel und Erde verbindet (1. Mose 28,12). Daraus lässt sich folgern: Zum Heiligtum gehört wesentlich, Berührungspunkt von Himmel und Erde zu sein; dieser Mittelpunkt ist der Mittelpunkt von Himmel und Erde — der Ursprungsort des Lebens.</p>
+    <p>Nimmt man das mit dem „Umzug“ zusammen, wird die Frage des Levitikus noch klarer: Gott hat den Punkt, an dem Himmel und Erde sich berühren, mitten in Israels Lager gesetzt. „Wie nahen wir?“ ist darum eine ganz praktische Frage der heiligen Ordnung — und die Ordnungen des ganzen Buches sind die Antwort auf diese Frage.</p>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="stage" id="s3">
+  <div class="stage-head">
+    <div class="ic num">3</div>
+    <h2>Der Aufbau des Buches im Überblick</h2>
+  </div>
+  <ul>
+    <li><strong>3. Mose 1–7</strong> Opferordnungen (die fünf Opfer) — Lektion 2 und 3</li>
+    <li><strong>3. Mose 8–10</strong> Einsetzung der Priester, Erscheinen der Herrlichkeit, Nadab und Abihu — Lektion 3</li>
+    <li><strong>3. Mose 11–15</strong> Rein und unrein — Lektion 4</li>
+    <li><strong>3. Mose 16</strong> Der Versöhnungstag — Lektion 5</li>
+    <li><strong>3. Mose 17–20</strong> Blutordnungen und Heiligkeitsgesetz — Lektion 6</li>
+    <li><strong>3. Mose 21–24</strong> Heiligkeit der Priester und Feste — Lektion 7</li>
+    <li><strong>3. Mose 25–27</strong> Sabbatjahr, Erlassjahr, Segen und Fluch, Gelübde — Lektion 8</li>
+  </ul>
+  <div class="explain" style="margin-top:14px">
+    <p class="keynote">3. Mose 16 (der Versöhnungstag) steht in der Mitte des Buches: davor die Opfer und die Reinigung, danach die Forderung des heiligen Lebens — darum gilt dieses Kapitel vielen als der Angelpunkt des Ganzen.</p>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="stage" id="s4">
+  <div class="stage-head">
+    <div class="ic num">4</div>
+    <h2>Auslegung des Leittextes: 3. Mose 10,1–11</h2>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M12 3l2 7 7 2-7 2-2 7-2-7-7-2 7-2z"/></svg>Der Erzählzusammenhang: zweimal „Feuer ging aus von dem HERRN“</div>
+  <div class="explain">
+    <p>3. Mose 8–9 erzählt den Höhepunkt der Einsetzung der Priester. Nachdem Aaron die ersten Opfer dargebracht hat —</p>
+  </div>
+  <div class="verse">
+    <span class="ref">3. Mose 9,23–24</span> „… Da erschien die Herrlichkeit des HERRN allem Volk. Und ein Feuer ging aus von dem HERRN und verzehrte das Brandopfer und das Fett auf dem Altar. Da alles Volk das sah, frohlockten sie und fielen auf ihr Antlitz.“
+  </div>
+  <div class="explain">
+    <p>Das Feuer kommt von Gott, das Opfer ist angenommen — ein Augenblick der Herrlichkeit. Unmittelbar darauf kippt die Erzählung, mit beinahe denselben Worten:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">3. Mose 10,1–2</span> „Und Aarons Söhne Nadab und Abihu nahmen ein jeder seine Pfanne und taten Feuer hinein und legten Räucherwerk darauf und brachten so ein fremdes Feuer vor den HERRN, das er ihnen nicht geboten hatte. Da fuhr ein Feuer aus von dem HERRN und verzehrte sie, dass sie starben vor dem HERRN.“
+  </div>
+  <div class="explain">
+    <p>Beide Male „ging Feuer aus von dem HERRN“ — eben noch brachte es Jubel, jetzt bringt es den Tod. Genau dieser Gegensatz bestätigt den Satz „<strong>Gehorsam ist besser als Opfer</strong>“: Nadab und Abihu haben ja geopfert — aber <strong>nach eigenem Sinn</strong>, nicht nach Gottes Gebot; so brach das heilige Feuer vom Thron her aus. Das Schlüsselwort ist das „fremde Feuer“: wörtlich ein „fremdes“, von außen kommendes Feuer — von Gott nicht geboten, der Ordnung des Heiligtums fremd. „Fremd/gewöhnlich“ steht dem „Heiligen“ gegenüber: Sie trugen, was nicht zum Heiligtum gehört, eigenmächtig an den heiligsten Ort und verwischten die Grenze. Mose bringt es sogleich mit Gottes eigenem Wort auf den Punkt:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">3. Mose 10,3</span> „Ich erzeige mich heilig an denen, die mir nahe sind, und vor allem Volk erweise ich mich herrlich.“
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4 12h16"/></svg>Das Verb „scheiden“ und das Echo der Schöpfung</div>
+  <div class="explain">
+    <p>Unmittelbar nach dieser Tragödie redet Gott selbst mit Aaron und gibt den Priestern ihren Auftrag:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">3. Mose 10,10–11</span> „Ihr sollt unterscheiden, was heilig und unheilig, was unrein und rein ist, und Israel lehren alle Ordnungen, die der HERR ihnen durch Mose verkündet hat.“
+  </div>
+  <div class="explain">
+    <p>Das Verb „unterscheiden“ bedeutet „trennen, eine Scheidung setzen“. Es ist dasselbe Wort, das 1. Mose 1 immer wieder für Gottes Schaffen gebraucht: Gott „schied“ Licht und Finsternis, die Wasser oben und unten, Tag und Nacht (1. Mose 1,4.6.7.14.18). Dass beide Stellen dasselbe Wort verwenden, ist kein Zufall: Wenn die Priester im Heiligtum Heiliges und Reines scheiden, entspricht das dem Scheiden, mit dem Gott in der Schöpfung Ordnung gesetzt hat. Grenzen zu verwischen heißt darum, der Schöpfung entgegenzuhandeln — zurück ins Chaos. Daraus lässt sich folgern: Das Reinheitssystem des Levitikus ist eine Teilhabe an der <strong>Bewahrung der Schöpfungsordnung</strong>; es regelt, wie der Mensch nach Gottes Ordnung ihm nahen darf.</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M12 4v16"/><path d="M5 8h4M5 16h4M15 8h4M15 16h4"/></svg>Zwei Grenzlinien: heilig und gewöhnlich, rein und unrein</div>
+  <div class="explain">
+    <p>3. Mose 10,10 stellt zwei Gegensatzpaare auf — vier Begriffe (in der Reihenfolge des Verses):</p>
+  </div>
+  <ul>
+    <li><strong>Heilig / gewöhnlich</strong>: was Gott gehört und für seinen Gebrauch ausgesondert ist, gegenüber dem Alltäglichen, dem allgemeinen Gebrauch — die Kategorie der <strong>Zugehörigkeit</strong>.</li>
+    <li><strong>Rein / unrein</strong>: der Zustand, in dem man das Heiligtum betreten und Gott nahen kann, gegenüber dem Zustand, vorerst fernbleiben zu müssen — die Kategorie des <strong>Zustands</strong>.</li>
+  </ul>
+  <div class="explain" style="margin-top:14px">
+    <p>Der Dienst der Priester hat darum zwei Seiten: die Grenze <strong>ziehen</strong> (10,10) und das Volk lehren, die Grenze <strong>zu erkennen</strong> (10,11). Dass „scheiden“ und „lehren“ hier nebeneinanderstehen, begründet zugleich den Unterricht der Sonntagsschule: Geschwister sollen lernen, im Hause Gottes zu dienen — Tora ist Weisung, ist Lehre.</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16M12 4v16"/></svg>Das Schema der Grenzen</div>
+  <div class="explain">
+    <p>Ein vielzitiertes Schema ergänzt die Auslegung: Menschen, Dinge und Zeiten stehen je in einem von drei Bereichen — heilig, rein, unrein. „Heiligen/entweihen“ verbindet das Heilige mit dem Reinen; „reinigen/verunreinigen“ verbindet das Reine mit dem Unreinen. Daran wird die gerichtete Bewegung des levitischen Systems sichtbar: <strong>vom Gewöhnlichen zum Heiligen, vom Unreinen zum Reinen</strong> — damit das Volk nahen kann und die Herrlichkeit bleibt. Nach einer verbreiteten These hängt die rituelle Unreinheit im Kern mit dem <strong>Tod</strong> zusammen.</p>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="stage" id="s5">
+  <div class="stage-head">
+    <div class="ic num">5</div>
+    <h2>Heiligkeit heißt Zugehörigkeit, Reinheit ist die Bedingung der Nähe</h2>
+  </div>
+  <div class="explain">
+    <p>„Heilig“ meint im Levitikus zuerst <strong>Zugehörigkeit</strong>: von Gott ausgesondert, Gott gehörig. Geräte, Tage, Priester und das Volk heißen heilig, weil Gott sie aus dem allgemeinen Gebrauch für sich ausgesondert hat. Heiligkeit ist darum zuerst ein geschenkter Stand — „Gott gehörig“ — und dann die Berufung, diesem Stand gemäß zu leben. Darauf ruht das immer wiederkehrende Gebot: „Ihr sollt heilig sein, denn ich bin heilig, der HERR, euer Gott“ (3. Mose 19,2; vgl. 11,44–45) — genau das meint „ein heiliges Volk“.</p>
+    <p>„Rein“ dagegen meint einen <strong>Zustand</strong>: Durch Tod, Krankheit, Geburt oder bestimmte Berührungen gerät ein Mensch zeitweise in Unreinheit — meist symbolisch, nicht als moralische Schuld. Levitikus zeigt den Weg aus der Unreinheit zurück in die Reinheit, in die wiedergewonnene Nähe. So zeigt das ganze Buch eine Bewegung auf das <strong>Wohnen bei Gott</strong> hin.</p>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="stage" id="s6">
+  <div class="stage-head">
+    <div class="ic num">6</div>
+    <h2>Die Erfüllung im Neuen Testament</h2>
+  </div>
+  <div class="explain">
+    <p>Die Grenzen, die Levitikus zieht, werden im Neuen Testament in Christus zur Erfüllung geführt. Die erste Lektion setzt zunächst die Hauptverbindung: Das Grundgebot des Levitikus — „Ihr sollt heilig sein, denn ich … bin heilig“ (3. Mose 19,2) — nimmt Petrus als Ganzes auf und macht es zum Fundament des Glaubenslebens (1. Petrus 1,15–16). Der Römerbrief, in diesem Kurs der Leitfaden der „Erfüllung“, stellt den Menschen gleich zu Beginn vor die Frage des Levitikus: Wie kann ein Mensch vor dem heiligen Gott als rein gelten und angenommen werden?</p>
+  </div>
+  <div class="verse">
+    <span class="ref">Römer 5,10–11</span> „Denn wenn wir mit Gott versöhnt worden sind durch den Tod seines Sohnes, als wir noch Feinde waren, um wie viel mehr werden wir selig werden durch sein Leben, nachdem wir nun versöhnt sind. Nicht allein aber das, sondern wir rühmen uns auch Gottes durch unsern Herrn Jesus Christus, durch den wir jetzt die Versöhnung empfangen haben.“
+  </div>
+  <div class="explain">
+    <p>Und am Ende mahnt derselbe Brief, „dass ihr euren Leib hingebt als ein Opfer, das lebendig, heilig und Gott wohlgefällig sei“ (Römer 12,1) — das ist die Sprache des Opfers und der Heiligkeit aus dem Levitikus, und sie klingt im Thema „als lebendiges Opfer dargebracht“ von ferne wieder an.</p>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="stage" id="s7">
+  <div class="stage-head">
+    <div class="ic num">7</div>
+    <h2>Zur Anwendung</h2>
+  </div>
+  <ul class="apply">
+    <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.1 1 1.8l.1.5h5.8l.1-.5c.1-.7.4-1.3 1-1.8A7 7 0 0 0 12 2zm-3 16.5h6v1.2H9v-1.2zm.8 2.4h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg></span><strong>Die Erinnerung an die Zugehörigkeit</strong>: Das „Aussondern“ erinnert uns, dass die Nachfolge klare Zugehörigkeiten kennt — manche Dinge und manche Zeiten sind als „Gott gehörig“ bestimmt, und wir gehen anders mit ihnen um (Ruhe, Gabe, Versammlung).</li>
+    <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.1 1 1.8l.1.5h5.8l.1-.5c.1-.7.4-1.3 1-1.8A7 7 0 0 0 12 2zm-3 16.5h6v1.2H9v-1.2zm.8 2.4h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg></span><strong>Die Korrektur der Reihenfolge</strong>: „Heiligkeit = Zugehörigkeit“ heißt nicht, dass wir uns erst aus eigener Kraft bessern und Gott uns dann widerwillig annimmt. Es ist umgekehrt: Gott sondert mich zuerst aus und nennt mich sein — dann lerne ich, diesem Stand gemäß zu leben.</li>
+    <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.1 1 1.8l.1.5h5.8l.1-.5c.1-.7.4-1.3 1-1.8A7 7 0 0 0 12 2zm-3 16.5h6v1.2H9v-1.2zm.8 2.4h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg></span><strong>Der Weg der Nähe</strong>: Nadab und Abihu hielten Gewöhnliches für heilig und nahten Gott nach eigenem Sinn — es kostete sie das Leben und bestätigt: „Gehorsam ist besser als Opfer.“ Auch heute führt der Weg zu Gott nur über das, was er selbst gewiesen hat — im Neuen Bund: durch Christus —, nicht über Methoden, die ein eifriger Augenblick sich selbst zurechtlegt.</li>
+  </ul>
+</section>
+
+<!-- Gespräch -->
+<section class="stage bookend" id="s-q">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M20 4H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4v4l4-4h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/></svg></div>
+    <h2>Gesprächsfragen</h2>
+  </div>
+  <div class="q">
+    <ol>
+      <li>Welchen Eindruck hatten Sie vom Levitikus, bevor Sie es lasen? Verändert der Blickwinkel „Gott zieht ins Lager ein — wie kann der Mensch ihm nahen?“ Ihre Sicht?<span class="lines"></span><span class="lines"></span></li>
+      <li>Diese Lektion fasst die Kernbotschaft des Buches so zusammen: „Gehorsam ist besser als Opfer.“ Was sagt dieser Satz — von Nadab und Abihu her gesehen — unserem Leben der Anbetung und unserem Alltag heute?<span class="lines"></span><span class="lines"></span></li>
+      <li>„Heilig sein heißt: von Gott ausgesondert, Gott gehörig.“ Worin gleicht das Ihrem bisherigen Verständnis — und worin nicht?<span class="lines"></span><span class="lines"></span></li>
+      <li>Das Verb „scheiden“ verbindet das Scheiden der Schöpfung mit dem Scheiden der Priester. Was erschließt Ihnen das für ein „heiliges Leben“?<span class="lines"></span><span class="lines"></span></li>
+      <li>„Gott ist umgezogen“ — vom Berg mitten ins Lager; und das, was den Zugang unmöglich macht, blieb. Was sagt das unserer Anbetung heute?<span class="lines"></span><span class="lines"></span></li>
+      <li>Was zu schnell verstanden ist, geht auch schnell wieder verloren. In welchem Tempo wollen Sie ein so sperriges Buch wie Levitikus lesen?<span class="lines"></span><span class="lines"></span></li>
+    </ol>
+  </div>
+</section>
+
+<p class="foot">Levitikus · Teilnehmerblatt</p>
+
+</div>
+</body>
+</html>

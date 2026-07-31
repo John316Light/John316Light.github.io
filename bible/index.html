@@ -11,9 +11,18 @@
   *{box-sizing:border-box;}
   body{margin:0;background:var(--parchment);color:var(--ink);font-family:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;line-height:1.9;}
   .wrap{max-width:900px;margin:0 auto;padding:34px 26px 90px;}
-  .back{margin-bottom:8px;}
-  .back a{font-size:19.5px;color:var(--soft);text-decoration:none;}
+  .back{margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .back-l{display:inline-flex;align-items:baseline;gap:16px;}
+  .back a{font-size:17.5px;color:var(--soft);text-decoration:none;}
   .back a:hover{color:var(--purple);}
+  .back .site{font-size:17px;color:var(--gold);text-decoration:none;letter-spacing:.05em;font-weight:600;}
+  .back-r{display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+  .langs{display:inline-flex;align-items:baseline;gap:9px;font-size:17px;}
+  .langs .sep{color:#cfc7b6;font-size:14px;}
+  .langs a{font-size:17px;color:var(--soft);text-decoration:none;}
+  .langs a:hover{color:var(--purple);}
+  .langs .cur{color:var(--gold);font-weight:700;}
+  @media (max-width:560px){.back{flex-direction:column;align-items:center;gap:8px;}}
   header.hero{text-align:center;padding:44px 20px 6px;margin-bottom:30px;}
   .hero .rule{width:120px;height:0;margin:28px auto 0;border-top:1px solid var(--line);position:relative;}
   .hero .rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);background:var(--parchment);padding:0 12px;color:var(--gold);font-size:19px;}
@@ -36,7 +45,7 @@
 <body>
 <div class="wrap">
 
-<div class="back"><a href="../">← 首頁（LIFE）</a></div>
+<div class="back"><a href="../">← 首頁（LIFE）</a><span class="back-r"><span class="langs"><span class="cur">中文</span><span class="sep">·</span><a href="../de/bible/">Deutsch</a><span class="sep">·</span><a href="../en/bible/">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
 
 <header class="hero">
   <div class="kicker">研 讀 · 逐 卷 累 積</div>
@@ -54,9 +63,9 @@
     <p>十二小先知與以西結的導讀系列、推羅背景研究與四張古典地圖。</p>
   </a>
   <a class="card" href="leviticus/">
-    <span class="tag">利未記</span>
-    <h3>利未記研究</h3>
-    <p>八堂主日學講義：聖潔、獻祭、祭司神學，按利未記自身章節次序讀完二十七章。</p>
+    <span class="tag">《利未記》</span>
+    <h3>《利未記》研究</h3>
+    <p>八堂主日學講義：聖潔、獻祭、祭司神學，按《利未記》自身章節次序讀完二十七章。</p>
   </a>
 </div>
 

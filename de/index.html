@@ -11,14 +11,13 @@
   *{box-sizing:border-box;}
   body{margin:0;background:var(--parchment);color:var(--ink);font-family:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;font-size:20px;line-height:1.85;min-height:100vh;}
   .wrap{max-width:760px;margin:0 auto;padding:34px 26px 80px;}
-  .back{margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;}
-  .langs{display:inline-flex;align-items:baseline;gap:9px;font-size:17px;}
-  .langs .sep{color:#cfc7b6;font-size:14px;}
-  .langs a{text-decoration:none;color:var(--soft);}
-  .langs a:hover{color:var(--purple);}
-  .langs .cur{color:var(--amber);font-weight:700;}
-  .back .site{font-size:18px;color:var(--amber);text-decoration:none;letter-spacing:.05em;font-weight:600;}
-  .back .site:hover{color:var(--purple);}
+  .langbar{display:flex;justify-content:flex-end;align-items:baseline;gap:9px;font-size:17px;margin-bottom:4px;}
+  .langbar .langs{display:inline-flex;align-items:baseline;gap:9px;}
+  .langbar .sep{color:#cfc7b6;font-size:14px;}
+  .langbar a{text-decoration:none;color:var(--soft);}
+  .langbar a:hover{color:var(--purple);}
+  .langbar .cur{color:var(--gold);font-weight:700;}
+  .langbar .site{color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:.05em;margin-left:8px;}
   header.hero{text-align:center;padding:40px 20px 34px;margin-bottom:20px;}
   .hero .kicker{letter-spacing:.42em;color:var(--purple);font-size:17.5px;margin-bottom:10px;text-indent:.42em;}
   .hero h1{font-size:46px;margin:0 0 10px;letter-spacing:.03em;font-weight:700;}
@@ -47,16 +46,12 @@
     a.area .lab{letter-spacing:.16em;font-size:15px;}
     .wrap{padding:26px 17px 60px;}
   }
-@media (max-width:560px){.back{flex-direction:column;align-items:center;gap:8px;}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<div class="back">
-  <span class="langs"><a href="../">中文</a><span class="sep">·</span><span class="cur">Deutsch</span><span class="sep">·</span><a href="../en/">English</a></span>
-  <a class="site" href="https://imc2.org/">IMC2.org</a>
-</div>
+<div class="langbar"><span class="langs"><a href="../">中文</a><span class="sep">·</span><span class="cur">Deutsch</span><span class="sep">·</span><a href="../en/">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></div>
 
 <header class="hero">
   <div class="kicker">L　I　F　E</div>
@@ -66,7 +61,15 @@
 </header>
 
 <div class="choose">
-  <a class="area" href="sunday-school/">
+  <a class="area" href="bible/">
+    <div class="band"></div>
+    <div class="lab">BIBELSTUDIUM</div>
+    <h2>Die Bibel, Buch für Buch</h2>
+    <p class="h2sub">Öffentlich</p>
+    <p>Studien nach Büchern geordnet: Levitikus auf Deutsch verfügbar; die Prophetenreihe zurzeit auf Chinesisch.</p>
+    <div class="enter">Zum Bibelstudium →</div>
+  </a>
+  <a class="area" href="sunday-school/" style="margin-top:22px">
     <div class="band"></div>
     <div class="lab">DÜSSELDORF IMC²</div>
     <h2>International Missionary City Church</h2>
@@ -77,8 +80,7 @@
 </div>
 
 <div class="zhnote">
-  Weitere Bereiche bestehen bisher <b>nur auf Chinesisch</b>:
-  das Bibelstudium und der Dienst-Rundbrief (mit Zugangscode).
+  Der Dienst-Rundbrief (mit Zugangscode) besteht bisher <b>nur auf Chinesisch</b>.
 </div>
 
 

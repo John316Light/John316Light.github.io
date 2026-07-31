@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LIFE · Leviticus · Lesson 1: Introduction and Main Theme (Student Edition)</title>
+<meta name="description" content="《利未記》第一堂學員講義，含全課程總覽與利未記／羅馬書經文對照：以利 10:10「將聖的、俗的，潔淨的、不潔淨的，分別出來」為全卷詮釋之鑰。2026 年 8 月 1 日開課。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+:root{
+  --ink:#1f2831;
+  --sub:#4d5967;
+  --line:#c9b98f;
+  --gold:#9c7a26;
+  --bg:#f7f4ed;
+  --card:#fffefa;
+  --edge:#e6dfcd;
+  --accent:#37585d;
+  --holy:#2f5257;
+  --common:#8d7043;
+  --serif:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --display:"Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+em,i,cite,address{font-style:normal}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--serif);
+  background:var(--bg);
+  color:var(--ink);
+  font-size:21px;
+  line-height:1.95;
+  padding:56px 20px 84px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto}
+.back{margin-bottom:10px;font-size:17.5px}
+.back a{color:var(--sub);text-decoration:none;border-bottom:1px dotted var(--edge)}
+.back a:first-child{color:var(--accent);border-bottom-color:var(--accent)}
+.back a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* ── 頁首 ───────────────────────────────── */
+header{text-align:center;margin-bottom:10px}
+.kicker{
+  letter-spacing:.5em;color:var(--gold);font-size:17px;
+  margin-bottom:16px;text-indent:.5em;
+}
+header h1{
+  font-family:var(--display);font-size:40px;font-weight:900;
+  letter-spacing:.18em;line-height:1.42;text-indent:.18em;
+}
+.subtitle{
+  font-family:var(--display);font-size:23.5px;color:var(--accent);text-align:center;
+  margin:0 auto 12px;letter-spacing:.16em;font-weight:500;text-indent:.16em;
+}
+.rule{
+  width:120px;height:0;margin:26px auto 40px;
+  border-top:1px solid var(--line);position:relative;
+}
+.rule::after{
+  content:"❧";position:absolute;left:50%;top:-15px;
+  transform:translateX(-50%);background:var(--bg);padding:0 12px;
+  font-size:19.5px;color:var(--gold);
+}
+
+/* ── 資訊列 ─────────────────────────────── */
+.meta{
+  background:#fcfaf3;border:1px solid var(--edge);border-radius:14px;
+  padding:18px 26px;font-size:20px;color:var(--sub);
+  margin:0 auto 20px;line-height:1.9;
+}
+.meta .mi{margin-right:26px;white-space:nowrap;display:inline-block}
+
+/* ── 本堂目次 ───────────────────────────── */
+nav.toc{
+  display:flex;flex-wrap:wrap;gap:8px;
+  margin:0 auto 34px;padding:16px 18px;
+  background:var(--card);border:1px solid var(--edge);border-radius:14px;
+}
+nav.toc .tl{
+  width:100%;font-family:var(--display);font-size:17px;font-weight:700;
+  letter-spacing:.28em;text-indent:.28em;color:var(--gold);margin-bottom:4px;
+}
+nav.toc a{
+  display:inline-block;text-decoration:none;
+  font-size:17.5px;color:var(--sub);letter-spacing:.04em;
+  background:#f6f1e5;border:1px solid var(--edge);border-radius:20px;
+  padding:4px 14px;transition:.16s;
+}
+nav.toc a:hover{color:#fff;background:var(--accent);border-color:var(--accent)}
+
+/* ── 區塊 ───────────────────────────────── */
+.stage{
+  background:var(--card);border:1px solid var(--edge);border-radius:18px;
+  padding:30px 34px 32px;margin:0 auto 24px;
+  box-shadow:0 8px 24px rgba(60,50,20,.05);
+  scroll-margin-top:18px;
+}
+.stage.bookend{background:#f4f8f7;border-color:#d3e2de}
+.stage-head{display:flex;align-items:center;gap:15px;margin-bottom:20px}
+.stage-head .ic{
+  flex:0 0 44px;width:44px;height:44px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);
+  display:flex;align-items:center;justify-content:center;color:var(--gold);
+}
+.stage.bookend .stage-head .ic{background:#e8f0ed;color:var(--accent)}
+.stage-head .ic svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.stage-head .ic.num{
+  font-family:var(--display);font-size:23.5px;font-weight:900;
+  border-color:var(--line);background:#f7efe0;
+}
+.stage h2{
+  font-family:var(--display);font-size:27px;font-weight:900;
+  letter-spacing:.13em;text-indent:.13em;line-height:1.6;
+}
+
+/* ── 小標 ───────────────────────────────── */
+.label{
+  display:flex;align-items:center;gap:9px;
+  font-family:var(--display);font-weight:700;font-size:19.5px;
+  letter-spacing:.14em;text-indent:.14em;color:var(--gold);
+  margin:26px 0 12px;
+}
+.label svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:0 0 16px}
+.label.a{color:var(--accent)}
+
+/* ── 經文 ───────────────────────────────── */
+.verse{
+  font-family:var(--serif);background:#fbf7ee;
+  border-left:3px solid var(--line);border-radius:0 12px 12px 0;
+  padding:17px 24px;margin:0 0 14px;
+  font-size:24.5px;font-weight:600;line-height:2.1;
+  letter-spacing:.07em;color:#1a222a;
+}
+.verse .ref{color:var(--gold);font-weight:700;letter-spacing:.05em}
+
+/* ── 說明 ───────────────────────────────── */
+.explain{color:var(--sub);font-size:20.5px;line-height:2.05;font-weight:400;letter-spacing:.02em}
+.explain p{margin:0 0 14px}
+.explain p:last-child{margin-bottom:0}
+.explain p.keynote{
+  background:#f4f8f7;border-left:3px solid var(--accent);
+  border-radius:0 12px 12px 0;padding:13px 20px;margin:0 0 14px;
+  color:#2b474b;font-size:21px;letter-spacing:.03em;
+}
+.explain strong{color:var(--ink);font-weight:700}
+.explain em{font-style:normal;color:var(--holy);font-weight:600}
+
+/* ── 條列 ───────────────────────────────── */
+ul{list-style:none;margin-top:12px}
+li{
+  position:relative;padding-left:22px;margin-bottom:12px;
+  font-size:20px;color:var(--sub);line-height:1.95;
+}
+li::before{content:"❖";position:absolute;left:0;color:var(--line);font-size:16.5px;top:.4em}
+li strong{color:var(--ink);font-weight:700}
+
+/* ── 應用要點：發光燈泡 ─────────────────── */
+ul.apply li{padding-left:46px;min-height:34px}
+ul.apply li::before{content:none}
+ul.apply .ico{
+  position:absolute;left:0;top:.12em;
+  display:inline-block;width:32px;height:32px;border-radius:50%;
+  background-color:#f4ecd8;border:1px solid var(--line);
+  animation:bulbglow 2.8s ease-in-out infinite;
+}
+ul.apply .ico svg{
+  position:absolute;left:50%;top:50%;width:17px;height:17px;
+  transform:translate(-50%,-50%);fill:var(--gold);
+}
+@keyframes bulbglow{
+  0%,100%{background-color:#f4ecd8;box-shadow:0 0 0 0 rgba(156,122,38,0)}
+  50%{background-color:#fbeec6;box-shadow:0 0 12px 3px rgba(156,122,38,.34)}
+}
+@media (prefers-reduced-motion:reduce){
+  ul.apply .ico{
+    animation:none;background-color:#fbeec6;border-color:var(--gold);
+    box-shadow:0 0 10px 2px rgba(156,122,38,.28);
+  }
+}
+
+/* ── 討論 ───────────────────────────────── */
+.q{
+  background:#fff;border:1px solid var(--edge);border-left:3px solid var(--gold);
+  border-radius:0 12px 12px 0;padding:16px 20px;
+  font-size:20.5px;color:var(--ink);line-height:1.95;letter-spacing:.03em;
+}
+.q ol{list-style:none;counter-reset:qq;margin:0}
+.q ol li{
+  counter-increment:qq;padding-left:34px;margin-bottom:18px;color:var(--ink);
+}
+.q ol li:last-child{margin-bottom:0}
+.q ol li::before{
+  content:counter(qq);position:absolute;left:0;top:.28em;
+  width:22px;height:22px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);color:var(--gold);
+  font-size:16.5px;font-weight:700;line-height:20px;text-align:center;
+}
+.q .lines{display:block;margin-top:6px;border-bottom:1px dashed #d8cfb6;height:26px}
+
+/* ── 表格 ───────────────────────────────── */
+.tablewrap{overflow-x:auto;margin:16px 0 4px}
+table{width:100%;border-collapse:collapse;font-size:19.5px;color:var(--sub)}
+th{
+  font-family:var(--display);text-align:left;padding:10px 12px;
+  border-bottom:2px solid var(--line);font-weight:700;
+  color:var(--ink);white-space:nowrap;letter-spacing:.08em;
+}
+td{padding:10px 12px;border-bottom:1px solid var(--edge);vertical-align:top;line-height:1.9}
+td:first-child{white-space:nowrap;color:var(--gold);font-weight:700;text-align:center}
+tbody tr:last-child td{border-bottom:none}
+
+/* ── 利未記×羅馬書對照表 ────────────────── */
+table.cmp{min-width:520px}
+table.cmp th{text-align:center;letter-spacing:.14em;text-indent:.14em}
+table.cmp th:last-child{text-align:left}
+table.cmp td{white-space:nowrap;text-align:center;font-weight:600}
+table.cmp td:first-child{color:var(--gold)}
+table.cmp td:nth-child(2){color:var(--accent)}
+table.cmp td:last-child{
+  white-space:normal;text-align:left;color:var(--sub);font-weight:400;
+}
+table.cmp tbody tr:nth-child(odd){background:#faf6ec}
+table.cmp tbody tr:last-child td{border-bottom:none}
+.scrollhint{
+  display:none;font-size:16.5px;color:var(--common);
+  letter-spacing:.06em;margin-top:8px;
+}
+
+/* ── 頁尾 ───────────────────────────────── */
+.foot{
+  text-align:center;color:#a89c80;font-size:17px;
+  margin-top:46px;letter-spacing:.32em;text-indent:.32em;
+}
+
+@media print{
+  body{background:#fff;padding:0}
+  .stage{box-shadow:none;break-inside:avoid}
+  nav.toc{display:none}
+  ul.apply .ico{animation:none;background-color:#fbeec6;border-color:var(--gold);box-shadow:none}
+}
+@media (max-width:760px){
+  body{padding:34px 14px 60px;font-size:20.5px}
+  header h1{font-size:30.5px;letter-spacing:.12em;text-indent:.12em}
+  .subtitle{font-size:20px}
+  .stage{padding:24px 20px 26px;border-radius:14px}
+  .stage h2{font-size:23.5px}
+  .stage-head{gap:12px}
+  .stage-head .ic{flex:0 0 38px;width:38px;height:38px}
+  .stage-head .ic.num{font-size:21px}
+  .verse{font-size:22px;padding:14px 16px;letter-spacing:.03em;line-height:2}
+  .explain{font-size:20px;line-height:1.95}
+  .q{font-size:20.5px;padding:14px 16px}
+  li{font-size:20px}
+  ul.apply li{padding-left:40px}
+  ul.apply .ico{width:28px;height:28px}
+  ul.apply .ico svg{width:15px;height:15px}
+  .meta{padding:16px 18px;font-size:19.5px}
+  nav.toc{padding:14px 14px;gap:7px}
+  nav.toc a{font-size:17px;padding:3px 12px}
+  .scrollhint{display:block}
+}
+@media (max-width:560px){
+  /* 對照表在窄螢幕改為卡片式，三欄同時可見，不必左右滑動 */
+  .tablewrap{overflow-x:visible}
+  .scrollhint{display:none}
+  table.cmp{min-width:0}
+  table.cmp thead{display:none}
+  table.cmp tbody,table.cmp tr,table.cmp td{display:block;width:auto}
+  table.cmp tr{padding:12px 6px;border-bottom:1px solid var(--edge)}
+  table.cmp tbody tr:last-child{border-bottom:none}
+  table.cmp td{border:none;padding:0;text-align:left;white-space:normal;line-height:1.7}
+  table.cmp td:first-child,table.cmp td:nth-child(2){display:inline;font-size:20px}
+  table.cmp td:first-child::after{
+    content:"　·　";color:var(--common);font-weight:400;letter-spacing:0;
+  }
+  table.cmp td:last-child{margin-top:3px;font-size:19.5px;font-weight:600;color:var(--ink)}
+}
+@media (max-width:400px){
+  body{padding:26px 10px 48px}
+  header h1{font-size:26px}
+  .verse{font-size:20.5px;padding:13px 14px;letter-spacing:.02em}
+  .explain{font-size:20px}
+}
+
+/* ── Rahmen der lateinischen Ausgabe ── */
+.back{margin:0 auto 18px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.back-l{display:inline-flex;align-items:baseline;gap:16px;}
+.back a{font-size:18px;color:var(--soft,#6b5d4a);text-decoration:none;letter-spacing:.03em;border-bottom:none;}
+.back a:hover{color:var(--gold,#b08d3e);}
+.back .site{font-size:17px;color:var(--gold,#b08d3e);text-decoration:none;letter-spacing:.05em;font-weight:600;}
+.back-r{display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+.langs{display:inline-flex;align-items:baseline;gap:9px;font-size:17px;}
+.langs .sep{color:#cfc7b6;font-size:14px;}
+.langs a{font-size:17px;color:var(--soft,#6b5d4a);text-decoration:none;border-bottom:none;}
+.langs a:hover{color:var(--gold,#b08d3e);}
+.langs .cur{color:var(--gold,#b08d3e);font-weight:700;}
+@media (max-width:560px){.back{flex-direction:column;align-items:center;gap:8px;}}
+/* Lateinische Feinjustierung: Sperrsatz der CJK-Vorlage zurücknehmen */
+.hero .kicker,.kicker{letter-spacing:.2em;text-indent:.2em;}
+.hero h1,header h1{letter-spacing:.06em;text-indent:.06em;}
+.subtitle{letter-spacing:.04em;text-indent:0;}
+@media (max-width:560px){
+  /* Kursübersicht: schmale Bildschirme — Schrift und Innenabstand leicht reduziert */
+  table:not(.cmp){font-size:18px;}
+  table:not(.cmp) th,table:not(.cmp) td{padding:8px 8px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="back"><span class="back-l"><a href="./">← Leviticus Overview</a><a href="../">Bible Study</a></span><span class="back-r"><span class="langs"><a href="../../../bible/leviticus/leviticus-1.html">中文</a><span class="sep">·</span><a href="../../../de/bible/leviticus/leviticus-1.html">Deutsch</a><span class="sep">·</span><span class="cur">English</span></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
+
+<header>
+  <div class="kicker">August 1, 2026 · Student Edition</div>
+  <h1>Leviticus</h1>
+  <div class="rule"></div>
+</header>
+
+<p class="subtitle">Lesson 1 · Introduction and Main Theme — Distinguishing the Holy from the Common</p>
+
+<div class="meta">
+  <p><span class="mi">Bible: New International Version (NIV)</span><span class="mi">Led by: Brother Kai</span><span class="mi">Lesson 1 of 8</span></p>
+  <p>Name: ＿＿＿＿＿＿＿＿＿＿</p>
+</div>
+
+<nav class="toc">
+  <div class="tl">This Lesson</div>
+  <a href="#s-overview">Course Overview</a>
+  <a href="#s-romans">Leviticus and Romans</a>
+  <a href="#s-key">The Key Text</a>
+  <a href="#s1">1. Introduction</a>
+  <a href="#s2">2. Literary Setting</a>
+  <a href="#s3">3. Structure of the Book</a>
+  <a href="#s4">4. Reading the Key Text</a>
+  <a href="#s5">5. Holiness and Cleanness</a>
+  <a href="#s6">6. Fulfillment in the NT</a>
+  <a href="#s7">7. Application</a>
+  <a href="#s-q">Discussion Questions</a>
+</nav>
+
+<!-- Course Overview -->
+<section class="stage bookend" id="s-overview">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+    <h2>Course Overview</h2>
+  </div>
+  <div class="explain">
+    <p>The key to the whole book is chapter 10, verse 10: separate the holy from the common and the clean from the unclean — and then teach that distinction to the people. Across eight lessons the course asks: Who may draw near to God? When may they draw near? And by what way?</p>
+  </div>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Lesson</th><th>Theme</th><th>Text</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Introduction and main theme: distinguishing the holy from the common</td><td>Lev 10:10–11; book overview</td></tr>
+      <tr><td>2</td><td>The five offerings and drawing near to God</td><td>Lev 1–7</td></tr>
+      <tr><td>3</td><td>The priesthood, the glory, and unauthorized fire</td><td>Lev 6–10</td></tr>
+      <tr><td>4</td><td>Clean and unclean: body and food</td><td>Lev 11–15</td></tr>
+      <tr><td>5</td><td>The Day of Atonement: the summit of cleansing</td><td>Lev 16</td></tr>
+      <tr><td>6</td><td>Blood and the holy life</td><td>Lev 17–20</td></tr>
+      <tr><td>7</td><td>The holiness of the priests and the feasts</td><td>Lev 21–24</td></tr>
+      <tr><td>8</td><td>Sabbath year, Jubilee, and covenant (with course review)</td><td>Lev 25–27</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="explain" style="margin-top:18px">
+    <p class="keynote"><strong>The course begins with Lesson 1 on August 1, 2026</strong>; dates for the remaining lessons will be announced. Each lesson runs about an hour and a half.</p>
+  </div>
+</section>
+
+<!-- Leviticus and Romans -->
+<section class="stage bookend" id="s-romans">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h6a2 2 0 0 1 2 2v12"/><path d="M20 5h-6a2 2 0 0 0-2 2"/><path d="M4 5v14h6M20 5v14h-6"/></svg></div>
+    <h2>Leviticus and Romans: Key Parallel Passages</h2>
+  </div>
+  <div class="explain">
+    <p>Five themes run through the eight lessons — blood, victory, glory, the throne of the King, and triumph over the powers — and they interlock with the letter to the Romans.</p>
+  </div>
+  <div class="tablewrap">
+  <table class="cmp">
+    <thead><tr><th>Leviticus</th><th>Romans</th><th>Theological Theme</th></tr></thead>
+    <tbody>
+      <tr><td>Lev 1:3–9</td><td>Rom 12:1</td><td>Total offering</td></tr>
+      <tr><td>Lev 1:4</td><td>Rom 3:24–26</td><td>Acceptance and atonement</td></tr>
+      <tr><td>Lev 4</td><td>Rom 3:23–25</td><td>Atonement</td></tr>
+      <tr><td>Lev 5</td><td>Rom 13:7–10</td><td>Justice and restitution</td></tr>
+      <tr><td>Lev 10:1–3</td><td>Rom 6:17–18</td><td>Obeying God rather than self</td></tr>
+      <tr><td>Lev 11:44–45</td><td>Rom 6:19; 12:1</td><td>Holiness</td></tr>
+      <tr><td>Lev 16</td><td>Rom 5:1–11</td><td>Reconciliation with God</td></tr>
+      <tr><td>Lev 17:11</td><td>Rom 5:9</td><td>Blood and life, justification</td></tr>
+      <tr><td>Lev 18–20</td><td>Rom 6</td><td>Holy living</td></tr>
+      <tr><td>Lev 19:2</td><td>Rom 12:1–2</td><td>Becoming holy</td></tr>
+      <tr><td>Lev 26</td><td>Rom 8</td><td>God dwelling with us, renewed life</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="scrollhint">* The table scrolls sideways</p>
+</section>
+
+<!-- The Key Text -->
+<section class="stage bookend" id="s-key">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M4 8h16"/><path d="M6 8v10h12V8"/></svg></div>
+    <h2>The Key Text of This Lesson</h2>
+  </div>
+  <div class="verse">
+    <span class="ref">Leviticus 10:10–11</span> “... so that you can distinguish between the holy and the common, between the unclean and the clean, and so you can teach the Israelites all the decrees the Lord has given them through Moses.”
+  </div>
+  <div class="explain">
+    <p>This lesson covers Exodus 40:34–35; Leviticus 1:1; 9:23–24; 10:1–11, and surveys the structure of the whole book.</p>
+  </div>
+</section>
+
+<!-- 1 -->
+<section class="stage" id="s1">
+  <div class="stage-head">
+    <div class="ic num">1</div>
+    <h2>Introduction: “Instruction” at the Center of the Torah</h2>
+  </div>
+  <div class="explain">
+    <p>Leviticus is not an easy book. After the narrative of Exodus, it turns into a long series of regulations for sacrifice and purity, through which God himself reveals how he may be approached. Yet within the shape of the canon, this book sits at the exact center of the five books of Moses. Its Hebrew name is simply the book’s first word, meaning “and he called”; the title “Leviticus,” used in English and other languages, comes from the Septuagint.</p>
+    <p class="keynote">The theme of the whole book: <strong>a holy people</strong>. Its core message in one sentence: <strong>to obey is better than sacrifice</strong>.</p>
+    <p>That sentence does two things. First, it echoes Samuel’s famous word: “To obey is better than sacrifice, and to heed is better than the fat of rams” (1 Samuel 15:22). Though Leviticus is mostly about offerings, its real aim is the obedience and holiness of the people — it does not stop at ritual itself.</p>
+    <p>Second, in the Old Testament the word “Torah” means “instruction, teaching,” not merely cold “law.” This matches the charge of Leviticus 10:11 exactly: the priests are to <strong>teach</strong> the people “all the decrees.” Leviticus is instruction meant to be taught, received, and obeyed, so that a “holy people” may be formed. To bring this book into the teaching ministry of Sunday school is therefore entirely fitting.</p>
+    <p>The difficulty ordinary readers feel is real: to many people Leviticus is “a very strange book — its language, contents, and rituals look monotonous and formulaic.” But that is precisely the cue to change how we read: the point of this book is not only to be understood but to be <strong>entered into and felt</strong>. If Sunday school turns Leviticus into a stack of information, it misses what the book itself asks for. Leviticus gave Israel a blueprint for building a life of worship after God’s own heart.</p>
+    <p>Leviticus speaks a <strong>language of ritual</strong>, and that carries an expectation opposite to our modern habits: ritual language is not meant to be grasped at first hearing. What passes through life too quickly rarely leaves a mark. The worship Leviticus depicts looks dry, yet in it God teaches us a depth of communion on his own terms — not the splendor our senses expect. The language of ritual calls for repeated practice: pondering what fire, blood, the laying on of hands, and the scapegoat really mean in our life of worship.</p>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="stage" id="s2">
+  <div class="stage-head">
+    <div class="ic num">2</div>
+    <h2>Literary Setting: the Transition from Exodus 40 to Leviticus 1:1</h2>
+  </div>
+  <div class="explain">
+    <p>Exodus ends with the tabernacle completed and the glory filling it:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">Exodus 40:34–35</span> “Then the cloud covered the tent of meeting, and the glory of the Lord filled the tabernacle. Moses could not enter the tent of meeting because the cloud had settled on it, and the glory of the Lord filled the tabernacle.”
+  </div>
+  <div class="explain">
+    <p>This is the climax of the Sinai covenant — God really has “moved in” to dwell among his people. Yet the same passage shows the actual situation: in the midst of the glory, Moses the mediator “could not enter the tent of meeting.” Leviticus picks up the scene with its very first sentence:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">Leviticus 1:1</span> “The Lord called to Moses and spoke to him from the tent of meeting. He said,”
+  </div>
+  <div class="explain">
+    <p class="keynote">God now speaks “from the tent of meeting” — he is already inside. And so the book’s central question surfaces: <strong>if the holy God now dwells in the middle of the camp, how can a chosen yet sinful people, so easily defiled, draw near to him and live with him without being destroyed?</strong></p>
+    <p>The sacrificial and purity regulations of Leviticus are the instruction that grew up around precisely this question.</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg>God Has Moved House</div>
+  <div class="explain">
+    <p>The turn from Exodus 40 to Leviticus 1:1 can be put very plainly: <strong>God has moved house</strong>. The pattern at Sinai was this: he was up on the mountain, appearing in fire and overwhelming sound; the people were terrified, no one could come near — whoever did would not live. Once the tabernacle was finished, the situation changed: this God is no longer a God who dwells on a mountain. He has become a God who pitches a tent and wanders with Israel wherever they go — and this is his own desire.</p>
+    <p>The value of this way of putting it is that it holds two things together. God’s presence truly has come closer — down from the summit into the middle of the camp; and yet the thing that makes approach impossible has not changed at all. The tabernacle is built <strong>layer upon layer</strong>: innermost, the Most Holy Place, with the ark, the two cherubim, and between them an empty seat — the throne of God; around it the Holy Place, then the courtyard, then the camp of the Levites, and outermost the twelve tribes. Since God dwells at the exact center of the camp, the entire space is ranked by distance from him. This is Leviticus 10:10’s “separating the holy from the common” in spatial form — and it gives the theme of <strong>the throne of the King</strong> a footing in text and space from the very start.</p>
+    <p>The altar at the entrance of the tent has its own place in this arrangement. One common reading: once God had hidden himself within, that fire now burns at the doorway of the tabernacle — and it stands for an invitation. The fire on Sinai that cost people their lives has been gathered onto the altar at the entrance — the same fire; what changed is its place and its function. This also warns us against a domesticated view of God: the theology of our day likes to tame this God into something like a Santa Claus. In truth, one who can “blaze out” dwells permanently in the Most Holy Place — he is not to be treated lightly or despised.</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8 6h8M8 12h8M8 18h8"/></svg>The Sanctuary as the Meeting Point of Heaven and Earth</div>
+  <div class="explain">
+    <p>A second frame ties the tabernacle back to the stories of the patriarchs: the sanctuary is <strong>the point where heaven and earth meet</strong>. Three meeting places can be named — Abraham at the great tree of Moreh (Genesis 12:6–7), Isaac at Beersheba (Genesis 26:23–25), and Jacob at Bethel, where he saw the stairway joining heaven and earth (Genesis 28:12). From these we may conclude: an essential meaning of the sanctuary is that it is the meeting point of heaven and earth; that center point is the center of heaven and earth — the wellspring of life.</p>
+    <p>Put this together with the “move,” and the question of Leviticus becomes still clearer: God has planted the meeting point of heaven and earth in the middle of Israel’s camp. “How do we draw near?” is therefore a practical question of holy order — and the regulations of the whole book are the answer to that question.</p>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="stage" id="s3">
+  <div class="stage-head">
+    <div class="ic num">3</div>
+    <h2>The Structure of the Book at a Glance</h2>
+  </div>
+  <ul>
+    <li><strong>Lev 1–7</strong> The offerings (five kinds) — Lessons 2 and 3</li>
+    <li><strong>Lev 8–10</strong> The ordination of the priests, the appearing of the glory, Nadab and Abihu — Lesson 3</li>
+    <li><strong>Lev 11–15</strong> Clean and unclean — Lesson 4</li>
+    <li><strong>Lev 16</strong> The Day of Atonement — Lesson 5</li>
+    <li><strong>Lev 17–20</strong> The blood regulations and the Holiness Code — Lesson 6</li>
+    <li><strong>Lev 21–24</strong> The holiness of the priests and the feasts — Lesson 7</li>
+    <li><strong>Lev 25–27</strong> Sabbath year, Jubilee, blessing and curse, vows — Lesson 8</li>
+  </ul>
+  <div class="explain" style="margin-top:14px">
+    <p class="keynote">Leviticus 16 (the Day of Atonement) stands at the center of the book — preceded by sacrifice and cleansing, followed by the call to holy living — and so is often regarded as the hinge of the whole.</p>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="stage" id="s4">
+  <div class="stage-head">
+    <div class="ic num">4</div>
+    <h2>Reading the Key Text: Leviticus 10:1–11</h2>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M12 3l2 7 7 2-7 2-2 7-2-7-7-2 7-2z"/></svg>The Narrative Context: Twice “Fire Came Out from the Presence of the Lord”</div>
+  <div class="explain">
+    <p>Leviticus 8–9 recounts the climax of the priests’ ordination. After Aaron offers the first sacrifices —</p>
+  </div>
+  <div class="verse">
+    <span class="ref">Leviticus 9:23–24</span> “... and the glory of the Lord appeared to all the people. Fire came out from the presence of the Lord and consumed the burnt offering and the fat portions on the altar. And when all the people saw it, they shouted for joy and fell facedown.”
+  </div>
+  <div class="explain">
+    <p>Fire from God, the offering accepted — a moment of glory. Immediately afterward the narrative turns, in almost identical words:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">Leviticus 10:1–2</span> “Aaron’s sons Nadab and Abihu took their censers, put fire in them and added incense; and they offered unauthorized fire before the Lord, contrary to his command. So fire came out from the presence of the Lord and consumed them, and they died before the Lord.”
+  </div>
+  <div class="explain">
+    <p>Both times “fire came out from the presence of the Lord” — a moment ago it brought shouts of joy; now it brings death. The contrast confirms the thesis that <strong>to obey is better than sacrifice</strong>: Nadab and Abihu were not failing to sacrifice — they sacrificed <strong>on their own terms</strong>, not as God had commanded, and the holy fire broke out from the throne. The key phrase is “unauthorized fire” — literally “strange, alien fire”: fire God had not commanded, foreign to the order of the sanctuary. The “strange/common” stands opposed to the “holy”: they carried what did not belong to the sanctuary into the holiest place, and so blurred the boundary. Moses at once states the weight of it in God’s own words:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">Leviticus 10:3</span> “Among those who approach me I will be proved holy; in the sight of all the people I will be honored.”
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4 12h16"/></svg>The Verb “Distinguish” and the Echo of Creation</div>
+  <div class="explain">
+    <p>Right after the tragedy, God himself speaks to Aaron and gives the priests their charge:</p>
+  </div>
+  <div class="verse">
+    <span class="ref">Leviticus 10:10–11</span> “... so that you can distinguish between the holy and the common, between the unclean and the clean, and so you can teach the Israelites all the decrees the Lord has given them through Moses.”
+  </div>
+  <div class="explain">
+    <p>The verb behind “distinguish” means “to separate, to divide.” It is the very word Genesis 1 uses again and again for God’s creating: God “separated” light from darkness, the waters above from the waters below, day from night (Genesis 1:4, 6, 7, 14, 18). The shared vocabulary is no accident: when the priests separate holy from common and clean from unclean in the sanctuary, they echo the separating by which God ordered creation. To blur the boundaries is to run against creation itself — back toward chaos. From this we may infer: the purity system of Leviticus is a form of participation in <strong>upholding the created order</strong>, regulating how a person draws near to God according to God’s own order.</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><path d="M12 4v16"/><path d="M5 8h4M5 16h4M15 8h4M15 16h4"/></svg>Two Boundaries: Holy and Common, Clean and Unclean</div>
+  <div class="explain">
+    <p>Leviticus 10:10 lays out two pairs of opposites — four terms (in the verse’s own order):</p>
+  </div>
+  <ul>
+    <li><strong>Holy / common</strong>: what belongs to God, set apart for his use, over against the ordinary and the everyday — the category of <strong>belonging</strong>.</li>
+    <li><strong>Clean / unclean</strong>: the condition fit for entering the sanctuary and drawing near to God, over against the condition of having to keep away for a time — the category of <strong>state</strong>.</li>
+  </ul>
+  <div class="explain" style="margin-top:14px">
+    <p>The priestly office therefore has two sides: to <strong>draw</strong> the boundary (10:10), and to <strong>teach</strong> the people to recognize it (10:11). That “separate” and “teach” stand side by side is also the warrant for Sunday school itself — teaching brothers and sisters how to serve in the house of God. Torah is instruction; Torah is teaching.</p>
+  </div>
+
+  <div class="label"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16M12 4v16"/></svg>The Map of Boundaries</div>
+  <div class="explain">
+    <p>A widely cited diagram fills out the picture: every person, thing, and time stands in one of three zones — holy, clean, or unclean. “Sanctify/profane” links the holy and the clean; “cleanse/defile” links the clean and the unclean. It makes visible the directed movement of the Levitical system: <strong>from common to holy, from unclean to clean</strong> — so that the people may draw near and the glory may remain. One common proposal adds that ritual impurity is, at its core, bound up with <strong>death</strong>.</p>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="stage" id="s5">
+  <div class="stage-head">
+    <div class="ic num">5</div>
+    <h2>Holiness as Belonging, Cleanness as the Condition of Nearness</h2>
+  </div>
+  <div class="explain">
+    <p>In Leviticus, “holy” means first of all <strong>belonging</strong>: set apart by God, belonging to God. Vessels, days, priests, and the people are called holy because God has set them apart from ordinary use for himself. So the primary meaning of holiness is a given identity — “belonging to God” — followed by the calling to live worthily of it. On this rests the book’s repeated command, “Be holy because I, the Lord your God, am holy” (Leviticus 19:2; cf. 11:44–45) — which is exactly what “a holy people” means.</p>
+    <p>“Clean,” by contrast, names a <strong>state</strong>: through death, disease, childbirth, or certain contacts a person enters impurity for a time — mostly symbolic rather than moral guilt. Leviticus provides the way back from uncleanness to cleanness, to regained nearness. The whole book thus moves toward one goal: <strong>dwelling with God</strong>.</p>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="stage" id="s6">
+  <div class="stage-head">
+    <div class="ic num">6</div>
+    <h2>Fulfillment in the New Testament</h2>
+  </div>
+  <div class="explain">
+    <p>The boundaries drawn in Leviticus are carried to their fulfillment in Christ. This first lesson sets the master link: the foundational command, “Be holy, because I ... am holy” (Leviticus 19:2), is taken over whole by Peter as the basis of the believer’s life (1 Peter 1:15–16). Romans — this course’s guide to that “fulfillment” — opens by placing every person inside Leviticus’s question: how can anyone be counted clean and accepted before the holy God?</p>
+  </div>
+  <div class="verse">
+    <span class="ref">Romans 5:10–11</span> “For if, while we were God’s enemies, we were reconciled to him through the death of his Son, how much more, having been reconciled, shall we be saved through his life! Not only is this so, but we also boast in God through our Lord Jesus Christ, through whom we have now received reconciliation.”
+  </div>
+  <div class="explain">
+    <p>And near its close the letter urges believers “to offer your bodies as a living sacrifice, holy and pleasing to God” (Romans 12:1) — the very vocabulary of sacrifice and holiness from Leviticus, answering from afar the theme of being offered as a living sacrifice.</p>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="stage" id="s7">
+  <div class="stage-head">
+    <div class="ic num">7</div>
+    <h2>Application</h2>
+  </div>
+  <ul class="apply">
+    <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.1 1 1.8l.1.5h5.8l.1-.5c.1-.7.4-1.3 1-1.8A7 7 0 0 0 12 2zm-3 16.5h6v1.2H9v-1.2zm.8 2.4h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg></span><strong>A reminder of belonging</strong>: “Setting apart” reminds us that following God involves clear belonging — certain things and certain times are recognized as “God’s,” and we treat them differently (rest, giving, gathering).</li>
+    <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.1 1 1.8l.1.5h5.8l.1-.5c.1-.7.4-1.3 1-1.8A7 7 0 0 0 12 2zm-3 16.5h6v1.2H9v-1.2zm.8 2.4h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg></span><strong>A correction of order</strong>: “Holiness = belonging” does not mean we first improve ourselves by our own strength and God then grudgingly accepts us. It is the reverse: God first sets me apart and calls me his own; then I learn to live worthy of that identity.</li>
+    <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.1 1 1.8l.1.5h5.8l.1-.5c.1-.7.4-1.3 1-1.8A7 7 0 0 0 12 2zm-3 16.5h6v1.2H9v-1.2zm.8 2.4h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg></span><strong>The way of approach</strong>: Nadab and Abihu treated the common as holy and approached God on their own terms — and it cost them their lives, confirming that “to obey is better than sacrifice.” Approaching God today likewise follows the way God has appointed (in the new covenant, through Christ), not methods invented in a moment of enthusiasm.</li>
+  </ul>
+</section>
+
+<!-- Discussion -->
+<section class="stage bookend" id="s-q">
+  <div class="stage-head">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M20 4H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4v4l4-4h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/></svg></div>
+    <h2>Discussion Questions</h2>
+  </div>
+  <div class="q">
+    <ol>
+      <li>Before reading Leviticus, what was your impression of the book? Does the angle “God moves into the camp — how can people draw near?” change how you see it?<span class="lines"></span><span class="lines"></span></li>
+      <li>This lesson sums up the book’s core message as “to obey is better than sacrifice.” Looking at Nadab and Abihu, what does that sentence say to our worship and daily life today?<span class="lines"></span><span class="lines"></span></li>
+      <li>“Holiness means being set apart by God, belonging to God.” How does that compare with the understanding you brought to this lesson?<span class="lines"></span><span class="lines"></span></li>
+      <li>The verb “separate” links God’s separating in creation with the priests’ separating in the sanctuary. What does that open up for your understanding of “holy living”?<span class="lines"></span><span class="lines"></span></li>
+      <li>“God has moved house” — from the mountain into the camp; yet what makes approach impossible has not changed. What does this say to our worship today?<span class="lines"></span><span class="lines"></span></li>
+      <li>A message grasped too quickly fades just as quickly. For a book as demanding as Leviticus, what reading pace are you willing to keep?<span class="lines"></span><span class="lines"></span></li>
+    </ol>
+  </div>
+</section>
+
+<p class="foot">Leviticus · Student Edition</p>
+
+</div>
+</body>
+</html>
