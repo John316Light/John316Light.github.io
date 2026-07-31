@@ -20,8 +20,16 @@
   }
   .wrap{max-width:860px; margin:0 auto; padding:48px 28px 80px;}
   header.hero{
-    text-align:center; padding:56px 24px 40px; border-bottom:3px double var(--gold);
+    text-align:center; padding:56px 24px 6px;
     margin-bottom:40px;
+  }
+  header.hero .rule{
+    width:120px; height:0; margin:28px auto 0;
+    border-top:1px solid var(--line); position:relative;
+  }
+  header.hero .rule::after{
+    content:"❧"; position:absolute; left:50%; top:-15px; transform:translateX(-50%);
+    background:var(--parchment); padding:0 12px; color:var(--gold); font-size:19px;
   }
   header.hero .kicker{
     letter-spacing:.35em; color:var(--purple); font-size:17px; margin-bottom:14px;
@@ -80,6 +88,7 @@
   <div class="kicker">先知書研究 · 列國預言背景</div>
   <h1>推羅：海中磐石的興衰與結局</h1>
   <div class="sub">Tyre（希伯來文 צֹר Ṣōr，「磐石」）——腓尼基的海上女王，從三千年的繁華到漁夫曬網的礁石；而在聖經的主軸裡，這座先知宣判之城，最終成了耶穌傳道之地與海灘上跪禱的教會（徒21章）</div>
+  <div class="rule"></div>
 </header>
 
 <!-- ============ 一、地理 ============ -->

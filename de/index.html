@@ -20,12 +20,12 @@
   .back .site{font-size:18px;color:var(--amber);text-decoration:none;letter-spacing:.05em;font-weight:600;}
   .back .site:hover{color:var(--purple);}
   header.hero{text-align:center;padding:40px 20px 34px;margin-bottom:20px;}
-  .hero .kicker{letter-spacing:.42em;color:var(--purple);font-size:17.5px;margin-bottom:16px;text-indent:.42em;}
-  .hero h1{font-size:46px;margin:0 0 14px;letter-spacing:.03em;font-weight:700;}
-  .hero .sub{color:var(--soft);font-size:21px;max-width:540px;margin:0 auto;}
-  .hero .verse{margin-top:20px;color:var(--purple);font-size:19.5px;max-width:560px;margin-left:auto;margin-right:auto;}
+  .hero .kicker{letter-spacing:.42em;color:var(--purple);font-size:17.5px;margin-bottom:10px;text-indent:.42em;}
+  .hero h1{font-size:46px;margin:0 0 10px;letter-spacing:.03em;font-weight:700;}
+  .hero .verse{margin-top:10px;color:var(--purple);font-size:19.5px;max-width:560px;margin-left:auto;margin-right:auto;}
   .cl{white-space:nowrap;}
-  .rule{width:60px;height:3px;background:var(--gold);margin:26px auto 0;}
+  .rule{width:120px;margin:30px auto 0;border-top:1px solid var(--line);position:relative;}
+  .rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);background:var(--parchment);padding:0 12px;color:var(--gold);font-size:19px;}
   .choose{margin-top:30px;}
   a.area{display:block;text-decoration:none;color:inherit;border-radius:16px;padding:36px 30px 30px;border:1px solid var(--line);background:var(--card);box-shadow:0 3px 14px rgba(60,40,10,.06);transition:.18s;}
   a.area:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(102,2,60,.16);}
@@ -42,7 +42,6 @@
   footer a.sitef:hover{color:var(--purple);}
   @media (max-width:480px){
     .hero h1{font-size:31px;letter-spacing:.01em;}
-    .hero .sub{font-size:19.5px;}
     a.area h2{font-size:22.5px;}
     a.area .h2sub{font-size:17px;letter-spacing:.08em;text-indent:.08em;}
     a.area .lab{letter-spacing:.16em;font-size:15px;}
@@ -62,7 +61,6 @@
 <header class="hero">
   <div class="kicker">L　I　F　E</div>
   <h1>Bibelstudium · Dienst</h1>
-  <div class="sub">Die Schrift Buch für Buch, Berichte aus dem Dienst.</div>
   <div class="verse"><span class="cl">„Dein Wort ist meines Fußes Leuchte</span> <span class="cl">und ein Licht auf meinem Wege.“</span> <span class="cl">(Psalm 119,105)</span></div>
   <div class="rule"></div>
 </header>

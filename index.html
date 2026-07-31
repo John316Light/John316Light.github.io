@@ -12,12 +12,12 @@
   body{margin:0;background:var(--parchment);color:var(--ink);font-family:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;line-height:1.9;min-height:100vh;}
   .wrap{max-width:960px;margin:0 auto;padding:60px 26px 80px;}
   header.hero{text-align:center;padding:40px 20px 34px;margin-bottom:24px;}
-  .hero .kicker{letter-spacing:.42em;color:var(--purple);font-size:17.5px;margin-bottom:16px;}
-  .hero h1{font-size:56px;margin:0 0 16px;letter-spacing:.2em;font-weight:700;}
-  .hero .sub{color:var(--soft);font-size:21px;max-width:520px;margin:0 auto;}
-  .hero .verse{margin-top:20px;color:var(--purple);font-size:20px;}
+  .hero .kicker{letter-spacing:.42em;color:var(--purple);font-size:17.5px;margin-bottom:10px;}
+  .hero h1{font-size:56px;margin:0 0 10px;letter-spacing:.2em;font-weight:700;}
+  .hero .verse{margin-top:10px;color:var(--purple);font-size:20px;}
   .cl{white-space:nowrap;}
-  .rule{width:60px;height:3px;background:var(--gold);margin:26px auto 0;}
+  .rule{width:120px;margin:30px auto 0;border-top:1px solid var(--line);position:relative;}
+  .rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);background:var(--parchment);padding:0 12px;color:var(--gold);font-size:19px;}
   .choose{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:34px;}
   @media(max-width:640px){.choose{grid-template-columns:1fr;}}
   a.area{display:block;text-decoration:none;color:inherit;border-radius:16px;padding:38px 30px 32px;border:1px solid var(--line);background:var(--card);box-shadow:0 3px 14px rgba(60,40,10,.06);transition:.18s;position:relative;overflow:hidden;}
@@ -80,7 +80,6 @@
 <header class="hero">
   <div class="kicker">L　I　F　E</div>
   <h1>研經 · 事奉</h1>
-  <div class="sub">聖經逐卷的研讀，事奉現場的分享。</div>
   <div class="verse"><span class="cl">「你的話是我腳前的燈，</span><span class="cl">是我路上的光。」</span><span class="cl">（詩 119:105）</span></div>
   <div class="rule"></div>
 </header>
