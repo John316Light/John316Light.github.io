@@ -583,5 +583,36 @@
 </footer>
 
 </div>
+<script>
+(function () {
+  try {
+    var WORKER_URL = "https://lifesite-analytics.john316light.workers.dev";
+    var path = location.pathname;
+    var isServe = path.indexOf("/serve") !== -1;
+
+    var ref = "";
+    if (!isServe && document.referrer) {
+      try {
+        ref = new URL(document.referrer).hostname;
+      } catch (e) {
+        ref = "";
+      }
+    }
+
+    var w = window.innerWidth || document.documentElement.clientWidth || 0;
+    var bucket = w < 600 ? "narrow" : w < 1024 ? "medium" : "wide";
+
+    var params =
+      "p=" + encodeURIComponent(path) +
+      "&w=" + bucket +
+      (ref ? "&r=" + encodeURIComponent(ref) : "");
+
+    var img = new Image();
+    img.src = WORKER_URL + "?" + params;
+  } catch (e) {
+    // 統計失敗不影響頁面，吞掉所有錯誤
+  }
+})();
+</script>
 </body>
 </html>
