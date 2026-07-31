@@ -43,6 +43,11 @@
   a.area.serve .enter{color:var(--deep);}
   a.area.school .enter{color:#8a6a2a;}
   a.area .note{display:block;margin-top:6px;font-size:17.5px;color:var(--soft);font-weight:400;}
+  .langbar{display:flex;justify-content:flex-end;align-items:baseline;gap:9px;font-size:17px;margin-bottom:4px;}
+  .langbar .sep{color:#cfc7b6;font-size:14px;}
+  .langbar a{text-decoration:none;color:var(--soft);}
+  .langbar a:hover{color:var(--purple);}
+  .langbar .cur{color:var(--gold);font-weight:700;}
   footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:var(--soft);font-size:17.5px;text-align:center;line-height:1.9;}
 
   @media (max-width:480px){
@@ -67,6 +72,8 @@
 </head>
 <body>
 <div class="wrap">
+
+<div class="langbar"><span class="cur">中文</span><span class="sep">·</span><a href="de/">Deutsch</a><span class="sep">·</span><a href="en/">English</a></div>
 
 <header class="hero">
   <div class="kicker">L　I　F　E</div>
