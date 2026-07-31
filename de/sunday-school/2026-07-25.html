@@ -118,6 +118,12 @@ li b{color:var(--ink);}
 .foot a.sitef{color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:.05em;}
 .back a{font-size:18.5px;color:var(--sub);text-decoration:none;letter-spacing:.04em;}
 .back a:hover{color:var(--gold);}
+.back-r{display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+.langs{display:inline-flex;align-items:baseline;gap:9px;font-size:17px;}
+.langs .sep{color:#cfc7b6;font-size:14px;}
+.langs a{font-size:17px;color:var(--sub);text-decoration:none;}
+.langs a:hover{color:var(--gold);}
+.langs .cur{color:var(--gold);font-weight:700;}
 .foot{text-align:center;color:#a89c80;font-size:16.5px;margin-top:46px;letter-spacing:.32em;text-indent:.32em;}
 @media print{
   .col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;}
@@ -167,32 +173,81 @@ li b{color:var(--ink);}
   .verse{font-size:20px;padding:13px 14px;letter-spacing:.02em;}
   .explain{font-size:19.5px;}
 }
+/* ---- 講義的拉丁語版覆寫（德／英）----
+   規格比照好文分享的 style-latin.css，同一組換算比例；
+   另補講義獨有元件（.explain / .q / .fieldtitle / .write）。
+   疊在中文講義版面之後。 */
+:root{
+  --serif:"EB Garamond",Georgia,"Times New Roman",serif;
+  --display:"EB Garamond",Georgia,"Times New Roman",serif;
+  --latin:"EB Garamond",Georgia,"Times New Roman",serif;
+}
+body{font-size:20px;line-height:1.78;}
+.verse,.explain,.q,.keynote,.col,li{-webkit-hyphens:auto;hyphens:auto;}
 
-/* ---- 拉丁語版覆寫（德／英） ---- */
-body{-webkit-hyphens:auto;hyphens:auto;}
-.kicker{letter-spacing:.26em;text-indent:.26em;}
+.kicker{letter-spacing:.34em;text-indent:.34em;font-size:15.5px;}
 h1{display:block;letter-spacing:0;text-indent:0;line-height:1.3;}
 h1 .l1,h1 .l2,h1 .l3{display:block;text-align:center;}
-h1 .l1{font-size:15.5px;letter-spacing:.26em;text-indent:.26em;margin-bottom:4px;}
-h1 .l2{font-size:29px;letter-spacing:.02em;font-weight:700;}
-h1 .l3{font-size:18.5px;letter-spacing:.24em;text-indent:.24em;margin-top:4px;}
-.subtitle{letter-spacing:.02em;text-indent:0;}
-h2{letter-spacing:.01em;text-indent:0;}
-.label{letter-spacing:.18em;}
-.verse{letter-spacing:0;line-height:1.72;}
-.col .lab{letter-spacing:.1em;}
-.foot{letter-spacing:.14em;text-indent:.14em;}
+h1 .l1{font-size:15.5px;font-weight:600;letter-spacing:.26em;text-indent:.26em;margin-bottom:4px;}
+h1 .l1 sup{font-size:.62em;letter-spacing:0;margin-left:-.1em;}
+h1 .l2{font-size:29px;font-weight:700;letter-spacing:.02em;}
+h1 .l3{font-size:18.5px;font-weight:600;letter-spacing:.24em;text-indent:.24em;margin-top:4px;}
+
+.subtitle{font-size:25px;font-weight:600;letter-spacing:.02em;text-indent:0;line-height:1.3;}
+
+.meta{font-size:19px;line-height:1.75;padding:16px 24px;}
+.meta .mi{margin-right:30px;}
+
+h2{font-size:24.5px;font-weight:700;letter-spacing:.015em;text-indent:0;line-height:1.3;}
+.label{font-size:15.5px;font-weight:700;letter-spacing:.2em;}
+
+.verse{font-size:21px;font-weight:500;letter-spacing:0;line-height:1.72;padding:16px 22px;}
+.verse .ref{letter-spacing:.02em;margin-right:.55em;}
+
+.explain{font-size:20px;letter-spacing:0;line-height:1.8;}
+.explain p{margin:0 0 13px;}
+.explain p.keynote{font-size:20.5px;letter-spacing:0;line-height:1.75;padding:14px 19px;}
+.explain p.keynote .key{letter-spacing:.005em;font-weight:700;}
+.keynote{font-size:20.5px;letter-spacing:0;line-height:1.75;padding:14px 19px;}
+.keynote .key{letter-spacing:.005em;font-weight:700;}
+
+.q{font-size:20px;letter-spacing:0;line-height:1.8;}
+.fieldtitle{font-size:20px;letter-spacing:.01em;}
+
+.col{font-size:19px;line-height:1.75;}
+.col .lab{font-size:18px;letter-spacing:.14em;}
+.col li{font-size:18.5px;}
+li{font-size:18.5px;line-height:1.75;}
+
+.foot{font-size:16px;letter-spacing:.2em;text-indent:.2em;}
+
+/* ---- 語言選單與返回列（比照分享頁） ---- */
 .back-r{display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
-.langs{display:inline-flex;align-items:baseline;gap:9px;font-size:17px;
+.langs{display:inline-flex;align-items:baseline;gap:8px;font-size:17px;
   font-family:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;}
 .langs .sep{color:#cfc7b6;font-size:14px;}
-.langs a{font-size:17px;color:var(--sub);text-decoration:none;}
-.langs a:hover{color:var(--gold);}
+.langs a{font-size:17px;color:var(--sub);text-decoration:none;letter-spacing:.02em;}
+.langs a:hover{color:var(--gold);text-decoration:underline;text-underline-offset:3px;}
 .langs .cur{color:var(--gold);font-weight:700;}
-@media(max-width:480px){
-  h1 .l2{font-size:22px;}
+
+@media (max-width:760px){
+  h1 .l2{font-size:22px;letter-spacing:.01em;}
   h1 .l1{font-size:13.5px;letter-spacing:.18em;text-indent:.18em;}
   h1 .l3{font-size:16px;letter-spacing:.16em;text-indent:.16em;}
+  .subtitle{font-size:21px;letter-spacing:.01em;text-indent:0;}
+  h2{font-size:21.5px;letter-spacing:.01em;text-indent:0;}
+  .verse{font-size:20px;letter-spacing:0;line-height:1.7;}
+  .explain{font-size:19px;line-height:1.75;}
+  .q{font-size:19px;}
+  .fieldtitle{font-size:19px;}
+  .explain p.keynote,.keynote{font-size:19.5px;}
+  .foot{letter-spacing:.14em;text-indent:.14em;}
+}
+@media (max-width:400px){
+  h1 .l2{font-size:20px;}
+  .subtitle{font-size:19.5px;}
+  h2{font-size:19.5px;}
+  .verse{font-size:18px;letter-spacing:0;}
 }
 </style>
 </head>
