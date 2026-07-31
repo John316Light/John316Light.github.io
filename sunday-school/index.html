@@ -22,6 +22,11 @@
   .langs .sep{color:#cfc7b6;font-size:14px;}
   .langs a{font-size:17px;color:var(--soft);}
   .langs .cur{color:var(--amber);font-weight:700;}
+  @media (max-width:560px){
+    .back{flex-direction:column;align-items:center;gap:7px;}
+    .back>a:first-child{white-space:nowrap;}
+    .back-r{gap:12px;flex-wrap:nowrap;}
+  }
   .back a:hover{color:var(--purple);}
   header.hero{text-align:center;padding:42px 18px 32px;border-bottom:3px double var(--gold);margin-bottom:16px;}
   .hero .kicker{letter-spacing:.38em;color:var(--amber);font-size:18px;margin-bottom:14px;}

@@ -124,6 +124,12 @@ li b{color:var(--ink);}
 .langs a{font-size:17px;color:var(--sub);text-decoration:none;}
 .langs a:hover{color:var(--gold);}
 .langs .cur{color:var(--gold);font-weight:700;}
+@media (max-width:560px){
+  .back{flex-direction:column;align-items:center;gap:7px;}
+  .back .bk,.back>a:first-child{white-space:nowrap;}
+  .back-r{gap:12px;flex-wrap:nowrap;}
+}
+
 .foot{text-align:center;color:#a89c80;font-size:16.5px;margin-top:46px;letter-spacing:.32em;text-indent:.32em;}
 @media print{
   .col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;}
