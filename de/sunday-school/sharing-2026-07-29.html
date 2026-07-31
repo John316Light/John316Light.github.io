@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMC² Düsseldorf · Ausgewählte Beiträge — Das Mandat und die Mission · Rev. Edmund Chan</title>
+<style>
+/* trilingual-core · 德文排版變數
+   拉丁襯線、收窄字距、開啟斷字（德文複合詞不斷字會撐破欄位）。 */
+:root{
+  --t-display:"EB Garamond",Georgia,"Times New Roman",serif;
+  --t-body:"EB Garamond",Georgia,"Times New Roman",serif;
+  --t-latin:"EB Garamond",Georgia,"Times New Roman",serif;
+
+  --t-track-body:0;
+  --t-track-head:.015em;
+  --t-track-display:.045em;
+  --t-track-label:.2em;
+  --t-track-kicker:.34em;
+
+  --t-size-body:19.5px;
+  --t-line-body:1.8;
+  --t-size-sub:17.5px;
+  --t-line-sub:1.62;
+
+  --t-hyphens:auto;
+  --t-quote-open:"„";
+  --t-quote-close:"“";
+}
+html{-webkit-hyphens:var(--t-hyphens);hyphens:var(--t-hyphens);}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap');
+:root{
+  --ink:#1f2831; --sub:#4d5967; --line:#c9b98f; --gold:#9c7a26;
+  --bg:#f7f4ed; --card:#fffefa; --edge:#e6dfcd; --accent:#37585d;
+  --holy:#2f5257; --common:#8d7043; --en:#77808f;
+  --serif:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --display:"Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --latin:"EB Garamond",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:var(--serif);
+  background:var(--bg); color:var(--ink); font-size:20.5px; line-height:1.95;
+  padding:56px 20px 84px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto;}
+.verse,.explain,.q,.col,li,td,.duo{overflow-wrap:break-word;word-break:break-word;line-break:strict;}
+header{text-align:center;margin-bottom:10px;}
+.kicker{letter-spacing:.5em;color:var(--gold);font-size:16.5px;margin-bottom:16px;text-indent:.5em;}
+h1{font-family:var(--display);font-size:39px;font-weight:900;letter-spacing:.18em;line-height:1.42;text-indent:.18em;}
+h1 .sq{font-family:var(--latin);font-size:.62em;font-weight:700;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.04em;color:var(--gold);}
+h1{display:inline-block;letter-spacing:0;text-indent:0;}
+h1 .l1,h1 .l2,h1 .l3{display:flex;justify-content:space-between;}
+h1 .l1{font-size:18px;font-weight:600;color:var(--gold);margin-bottom:8px;align-items:baseline;}
+h1 .l1 .imc{margin-left:12px;letter-spacing:.02em;}
+h1 .l1 .sq{font-size:14px;}
+h1 .l3{font-size:26px;margin-top:6px;color:var(--gold);font-weight:700;}
+h1 .ten{display:block;font-family:var(--latin);font-size:21.5px;font-weight:600;letter-spacing:.14em;text-indent:.14em;color:var(--accent);margin-top:8px;}
+.subtitle{font-family:var(--display);font-size:23px;color:var(--accent);margin-top:14px;letter-spacing:.16em;font-weight:500;text-indent:.16em;}
+.subtitle .sub-en-line{display:block;font-family:var(--latin);font-size:17.5px;letter-spacing:.14em;text-indent:.14em;color:var(--sub);font-weight:500;margin-top:5px;}
+.rule{width:0;height:0;margin:28px auto 34px;border-top:1px solid var(--line);width:120px;position:relative;}
+.rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);
+  background:var(--bg);padding:0 12px;color:var(--gold);font-size:19px;}
+.meta{
+  background:#fcfaf3;border:1px solid var(--edge);border-radius:14px;
+  padding:18px 26px;font-size:19.5px;color:var(--sub);margin:0 auto 36px;line-height:1.9;
+}
+.meta b{color:var(--ink);}
+.meta p{margin:3px 0;}
+.meta .mi{display:inline-block;white-space:nowrap;margin-right:26px;}
+.meta .mi:last-child{margin-right:0;}
+section.stage{
+  background:var(--card);border:1px solid var(--edge);border-radius:18px;
+  padding:30px 34px 32px;margin:0 auto 24px;
+  box-shadow:0 8px 24px rgba(60,50,20,.05);
+}
+section.stage.bookend{background:#f4f8f7;border-color:#d3e2de;}
+.stage-head{display:flex;align-items:center;gap:15px;margin-bottom:4px;}
+.stage-head .ic{
+  width:44px;height:44px;flex:0 0 44px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+}
+.bookend .stage-head .ic{background:#e8f0ed;border-color:#d3e2de;color:var(--accent);}
+.stage-head .ic svg{width:22px;height:22px;}
+h2{font-family:var(--display);font-size:26.5px;font-weight:900;letter-spacing:.13em;text-indent:.13em;}
+h2 .h2en{display:block;font-family:var(--latin);font-size:16.5px;color:var(--sub);letter-spacing:.14em;font-weight:500;margin-top:3px;text-indent:.14em;}
+.label{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--display);font-size:17.5px;font-weight:900;color:var(--gold);
+  letter-spacing:.24em;text-indent:0;margin:24px 0 13px;
+}
+.label svg{width:19px;height:19px;flex:0 0 19px;}
+.verse{
+  font-family:var(--display);
+  background:#fbf7ee;border-left:3px solid var(--line);border-radius:0 12px 12px 0;
+  padding:17px 24px;margin:0 0 14px;font-size:24px;font-weight:600;
+  line-height:2.1;letter-spacing:.07em;color:#1a222a;
+}
+.verse .ref{color:var(--gold);font-weight:700;letter-spacing:.05em;}
+.verse .en-line{display:block;font-family:var(--latin);font-size:19px;font-weight:500;
+  color:#8a7a4e;letter-spacing:.02em;line-height:1.75;margin-top:9px;padding-top:9px;border-top:1px dashed #e0d3ae;}
+.verse .note{display:block;font-family:var(--display);font-size:17px;font-weight:400;color:var(--sub);
+  letter-spacing:.03em;line-height:1.85;margin-top:8px;}
+.duo{margin:0 0 17px;}
+.duo .zh{color:var(--ink);font-size:20.5px;line-height:2.05;letter-spacing:.02em;font-family:var(--display);font-weight:400;}
+.duo .en{font-family:var(--latin);color:var(--en);font-size:19px;line-height:1.8;margin-top:7px;
+  padding-left:15px;border-left:2px solid var(--edge);}
+.keynote{background:#f4f8f7;border-left:3px solid var(--accent);border-radius:0 12px 12px 0;
+  padding:15px 20px;margin:6px 0 18px;color:#2b474b;font-size:21px;letter-spacing:.03em;line-height:2;}
+.keynote .key{font-family:var(--display);font-weight:900;color:var(--accent);letter-spacing:.09em;
+  border-bottom:2px solid #d9c68d;padding-bottom:1px;}
+.keynote .en{display:block;font-family:var(--latin);font-weight:500;font-size:19px;
+  color:#4f6a6e;margin-top:7px;line-height:1.75;}
+.split{display:flex;gap:18px;flex-wrap:wrap;margin:20px 0 8px;}
+.col{flex:1;min-width:250px;border-radius:14px;padding:19px 21px 17px;font-size:20px;line-height:2;position:relative;overflow:hidden;}
+.col.h{background:#edf4f1;border:1px solid #cfe0da;color:#28454a;box-shadow:inset 0 3px 0 var(--holy);}
+.col.c{background:#f9f1e2;border:1px solid #e6d7b8;color:#66512e;box-shadow:inset 0 3px 0 var(--common);}
+.col .lab{display:flex;align-items:center;gap:11px;font-family:var(--display);font-size:19.5px;letter-spacing:.24em;font-weight:900;margin-bottom:11px;}
+.col.h .lab{color:var(--holy);}
+.col.c .lab{color:var(--common);}
+.col .lab .ico{width:38px;height:38px;flex:0 0 38px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;}
+.col .lab .ico svg{width:22px;height:22px;}
+.col.h .lab .ico{background-color:#dcebe5;border:1px solid #c3d9d1;}
+.col.c .lab .ico{background-color:#f0e1bf;border:1px solid #e2cd9e;}
+.col.h .lab .ico{animation:bulbglow 2.8s ease-in-out infinite;will-change:box-shadow,background-color;}
+@keyframes bulbglow{
+  0%,100%{background-color:#dcebe5;color:var(--holy);border-color:#c3d9d1;box-shadow:0 0 0 0 rgba(233,196,90,0);}
+  50%{background-color:#fdf2c9;color:#a97f14;border-color:#e6c86a;box-shadow:0 0 16px 5px rgba(233,196,90,.55);}
+}
+@media (prefers-reduced-motion:reduce){.col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;color:#a97f14;box-shadow:0 0 10px 2px rgba(233,196,90,.4);}}
+.col ul{margin-top:2px;}
+.col li{padding-left:20px;margin-bottom:8px;color:inherit;font-size:19.5px;}
+.col.h li::before{content:"❖";color:#8fb3a9;}
+.col.c li::before{content:"❖";color:#cbb27c;}
+.col .sub-en{display:block;font-family:var(--latin);font-size:16.5px;letter-spacing:.05em;opacity:.75;font-weight:500;}
+.foot{text-align:center;color:#a89c80;font-size:16.5px;margin-top:46px;letter-spacing:.32em;text-indent:.32em;}
+li{position:relative;padding-left:22px;margin-bottom:12px;font-size:19.5px;color:var(--sub);line-height:1.95;list-style:none;}
+li::before{content:"❖";position:absolute;left:0;color:var(--line);font-size:16px;top:.4em;}
+li b{color:var(--ink);}
+.back{max-width:920px;margin:0 auto 18px;display:flex;justify-content:space-between;align-items:baseline;}
+.back .site{font-size:17px;color:var(--gold);text-decoration:none;letter-spacing:.05em;font-weight:600;}
+.foot a.sitef{color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:.05em;}
+.back a{font-size:18.5px;color:var(--sub);text-decoration:none;letter-spacing:.04em;}
+.back a:hover{color:var(--gold);}
+@media print{
+  .col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;}
+  body{background:#fff;padding:0;font-size:19.5px;}
+  section.stage{box-shadow:none;break-inside:avoid;margin-bottom:16px;}
+  .verse{font-size:20.5px;}
+}
+@media (max-width:760px){
+  .meta .mi{white-space:normal;display:block;margin-right:0;}
+  body{padding:34px 14px 60px;font-size:20px;}
+  .meta{padding:16px 18px;font-size:19px;}
+  section.stage{padding:24px 20px 26px;border-radius:15px;}
+  .stage-head{gap:12px;}
+  .stage-head .ic{width:38px;height:38px;flex:0 0 38px;}
+  .stage-head .ic svg{width:19px;height:19px;}
+  h1{font-size:31px;line-height:1.45;}
+  h1 .l1{font-size:15px;}
+  h1 .l3{font-size:21px;}
+  h1 .sq{font-family:var(--latin);font-size:.62em;font-weight:700;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.04em;color:var(--gold);}
+h1 .ten{font-size:19px;}
+  .subtitle{font-size:20.5px;letter-spacing:.08em;text-indent:.08em;}
+  h2{font-size:23px;letter-spacing:.06em;text-indent:.06em;}
+  h2 .h2en{font-size:16px;letter-spacing:.08em;text-indent:.08em;}
+  .kicker{font-size:16px;letter-spacing:.3em;text-indent:.3em;}
+  .label{font-size:16.5px;letter-spacing:.22em;margin:22px 0 12px;}
+  .verse{font-size:21px;padding:14px 16px;letter-spacing:.03em;line-height:2;}
+  .verse .en-line{font-size:17.5px;}
+  .duo .zh{font-size:19.5px;line-height:1.95;}
+  .duo .en{font-size:17.5px;}
+  .keynote{font-size:19.5px;padding:13px 15px;}
+  .keynote .en{font-size:17.5px;}
+  .split{gap:12px;}
+  .col{min-width:100%;flex:1 1 100%;font-size:19.5px;padding:16px 17px 15px;}
+  .col .lab{font-size:17.5px;letter-spacing:.18em;gap:9px;}
+  .col .lab .ico{width:32px;height:32px;flex:0 0 32px;}
+  .col .lab .ico svg{width:18px;height:18px;}
+}
+@media (max-width:400px){
+  body{padding:26px 10px 48px;}
+  section.stage{padding:20px 15px 22px;}
+  h1{font-size:27.5px;}
+  h1 .l1{font-size:14px;}
+  h1 .l3{font-size:19px;}
+  .subtitle{font-size:19.5px;}
+  h2{font-size:21px;}
+  .verse{font-size:20px;padding:13px 14px;letter-spacing:.02em;}
+}
+
+/* ---- Deutsche Variante: lateinische Schrift statt CJK, engerer Sperrsatz ---- */
+:root{
+  --serif:"EB Garamond",Georgia,"Times New Roman",serif;
+  --display:"EB Garamond",Georgia,"Times New Roman",serif;
+  --latin:"EB Garamond",Georgia,"Times New Roman",serif;
+}
+body{font-size:20px;line-height:1.78;}
+.duo .zh,.verse,.keynote,.col,li{-webkit-hyphens:auto;hyphens:auto;}
+
+.kicker{letter-spacing:.34em;text-indent:.34em;font-size:15.5px;}
+h1{display:block;letter-spacing:0;text-indent:0;line-height:1.3;}
+h1 .l1,h1 .l2,h1 .l3{display:block;text-align:center;}
+h1 .l1{font-size:16.5px;font-weight:600;letter-spacing:.3em;text-indent:.3em;margin-bottom:9px;}
+h1 .l1 .imc{margin-left:0;letter-spacing:.3em;}
+h1 .l1 .imc .sq{letter-spacing:0;margin-left:-.22em;}
+h1 .l2{font-size:35px;font-weight:700;letter-spacing:.045em;}
+h1 .l3{font-size:20.5px;font-weight:600;letter-spacing:.28em;text-indent:.28em;margin-top:11px;}
+
+.subtitle{font-size:25px;font-weight:600;letter-spacing:.02em;text-indent:0;line-height:1.3;}
+.subtitle .sub-en-line{font-size:17.5px;font-style:italic;letter-spacing:.03em;text-indent:0;font-weight:400;margin-top:7px;}
+
+.meta{font-size:19px;line-height:1.75;padding:16px 24px;}
+.meta .mi{margin-right:30px;}
+
+h2{font-size:24.5px;font-weight:700;letter-spacing:.015em;text-indent:0;line-height:1.3;}
+h2 .h2en{font-size:16px;font-style:italic;font-weight:400;letter-spacing:.02em;text-indent:0;margin-top:4px;}
+
+.label{font-size:15.5px;font-weight:700;letter-spacing:.2em;}
+
+.verse{font-size:21px;font-weight:500;letter-spacing:0;line-height:1.72;padding:16px 22px;}
+.verse .ref{letter-spacing:.02em;margin-right:.55em;}
+.verse .en-line{font-size:17.5px;letter-spacing:0;line-height:1.62;}
+.verse .note{font-size:16px;letter-spacing:0;line-height:1.65;}
+
+.duo .zh{font-size:20px;letter-spacing:0;line-height:1.8;}
+.duo .en{font-size:17.5px;letter-spacing:0;line-height:1.62;}
+
+.keynote{font-size:20.5px;letter-spacing:0;line-height:1.75;padding:14px 19px;}
+.keynote .key{letter-spacing:.005em;font-weight:700;}
+.keynote .en{font-size:17.5px;letter-spacing:0;line-height:1.62;}
+
+.col{font-size:19px;line-height:1.75;}
+.col .lab{font-size:18px;letter-spacing:.14em;}
+.col li{font-size:18.5px;}
+.col .sub-en{font-size:16px;font-style:italic;}
+
+.foot{font-size:16px;letter-spacing:.2em;text-indent:.2em;}
+li{font-size:18.5px;line-height:1.75;}
+
+@media (max-width:760px){
+  h1 .l2{font-size:26px;letter-spacing:.02em;}
+  h1 .l1{font-size:14px;letter-spacing:.22em;text-indent:.22em;}
+  h1 .l3{font-size:17.5px;letter-spacing:.2em;text-indent:.2em;}
+  .subtitle{font-size:21px;letter-spacing:.01em;text-indent:0;}
+  .subtitle .sub-en-line{font-size:16px;}
+  h2{font-size:21.5px;letter-spacing:.01em;text-indent:0;}
+  h2 .h2en{font-size:15.5px;letter-spacing:.02em;text-indent:0;}
+  .verse{font-size:20px;letter-spacing:0;line-height:1.7;}
+  .duo .zh{font-size:19px;line-height:1.75;}
+  .keynote{font-size:19.5px;}
+  .foot{letter-spacing:.14em;text-indent:.14em;}
+}
+@media (max-width:400px){
+  h1 .l2{font-size:22px;}
+  .subtitle{font-size:19.5px;}
+  h2{font-size:19.5px;}
+  .verse{font-size:18px;letter-spacing:0;}
+}
+
+/* ---- 語言選單（三格常駐）與返回列 ---- */
+.back{max-width:920px;margin:0 auto 18px;display:flex;justify-content:space-between;
+  align-items:baseline;gap:10px;flex-wrap:wrap;}
+.back .bk{font-size:17.5px;color:var(--sub);text-decoration:none;letter-spacing:.02em;}
+.back .bk:hover{color:var(--gold);}
+.back-r{display:inline-flex;align-items:baseline;gap:14px;white-space:nowrap;}
+.langs{display:inline-flex;align-items:baseline;gap:8px;font-size:16px;}
+.langs .sep{color:#cfc7b6;font-size:14px;}
+.langs .lg{text-decoration:none;color:var(--sub);letter-spacing:.02em;}
+.langs a.lg:hover{color:var(--gold);text-decoration:underline;text-underline-offset:3px;}
+.langs .lg.cur{color:var(--gold);font-weight:700;}
+.langs .lg.off{color:#c6bfae;cursor:default;}
+.back .site{font-size:16.5px;color:var(--gold);text-decoration:none;
+  letter-spacing:.05em;font-weight:600;}
+@media (max-width:560px){
+  .back{flex-direction:column;align-items:center;gap:7px;margin-bottom:14px;}
+  .back-r{gap:12px;}
+  .langs{font-size:15.5px;}
+  .back .site{font-size:15.5px;}
+}
+</style>
+</head>
+<body>
+<div class="back"><a class="bk" href="./">← Zurück zur Übersicht</a><span class="back-r"><span class="langs"><a class="lg" href="../../sunday-school/sharing-2026-07-29.html">中文</a><span class="sep">·</span><span class="lg cur">Deutsch</span><span class="sep">·</span><a class="lg" href="../../en/sunday-school/sharing-2026-07-29.html">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
+<div class="wrap">
+<header>
+  <div class="kicker">Deutsch – Englisch zum Mitlesen</div>
+  <h1><span class="l1">Düsseldorf <span class="imc">IMC<sup class="sq">2</sup></span></span><span class="l2">International Missionary City Church</span><span class="l3">Ausgewählte Beiträge</span></h1>
+  <p class="subtitle">Das Mandat und die Mission <span class="sub-en-line">The Mandate and the Mission</span></p>
+  <div class="rule"></div>
+</header>
+<div class="meta">
+<p><span class="mi">Prediger: <b>Rev. Edmund Chan</b></span><span class="mi">Anlass: <b>10. Chinesischer Kongress für Weltevangelisation (CCCOWE), Juli 2026</b></span></p>
+<p><span class="mi">Bibelübersetzung: Lutherbibel 2017</span><span class="mi">Englisch: Wortlaut des Predigers</span></p></div>
+<section class="stage bookend"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 6h6z"/><path d="M19 7l-3 6h6z"/><path d="M8 21h8"/></svg></div><h2>Eröffnung und Gebet<span class="h2en">Opening &amp; Prayer</span></h2></div>
+<div class="duo"><div class="zh">Moderator: Wir begrüßen Rev. Edmund Chan.</div><div class="en">Emcee: Welcome, Rev. Edmund Chan (Zeng Jinfa Mushi).</div></div>
+<div class="duo"><div class="zh">Guten Abend. Es ist eine große Freude, mit Ihnen zusammen zu sein. Ich gratuliere CCCOWE zum fünfzigjährigen Jubiläum — was für ein wunderbarer Meilenstein der Gnade und Treue Gottes.</div><div class="en">Good evening. It is such a joy to be with you, and I congratulate CCCOWE on your 50th anniversary. What an incredible, fantastic milestone of God's grace and faithfulness.</div></div>
+<div class="duo"><div class="zh">Heute Abend möchte ich mit Ihnen über etwas Wesentliches sprechen. Als Leiter müssen wir unterscheiden können, was wesentlich ist und was nicht. Beugen Sie mit mir das Haupt zum Gebet, und lassen Sie uns den Herrn bitten, diese Stunde zu segnen.</div><div class="en">I want to speak to you tonight about something that is essential. And as leaders, we must distinguish between the essentials and the non-essentials. So would you bow with me in prayer as we ask the Lord to bless this time together.</div></div>
+<div class="duo"><div class="zh">Ewiger Gott, himmlischer Vater, öffne unsere Augen, dass wir die wunderbare Wahrheit deines Wortes sehen. Hilf uns, nicht nur Hörer deines Wortes zu sein, sondern Täter, damit wir daran wachsen. Wir danken dir im wunderbaren Namen Jesu. Amen.</div><div class="en">Eternal God and Heavenly Father, open our eyes to behold wonderful truth out of your word. And help us not just to be hearers of your word, but doers also, that we might grow thereby. We thank you in Jesus' fantastic name. Amen.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div><h2>Einleitung · Leben auf der Überholspur<span class="h2en">Living in the Fast Lane</span></h2></div>
+<div class="duo"><div class="zh">Eine meiner liebsten Geschichten handelt von einem japanischen Touristen, der zum ersten Mal in die USA reiste. Er nahm vom Flughafen ein Taxi zum Hotel und war begeistert, auf den amerikanischen Straßen japanische Autos zu sehen.</div><div class="en">One of my favourite stories is of a Japanese tourist who went to the USA for the first time. He took a taxi from the airport to the hotel, and he was excited to see Japanese cars in the US.</div></div>
+<div class="duo"><div class="zh">Er sagte zum Fahrer: „Sehen Sie, sehen Sie — Toyota, made in Japan, sehr schnell! Oh, sehen Sie — Mitsubishi, made in Japan, sehr schnell!“ Um die Ecke rief er wieder: „Oh, sehen Sie — Honda, made in Japan, sehr schnell!“</div><div class="en">He said to the taxi driver, "Look, look, look—Toyota, made in Japan, very fast. Oh, look, look—Mitsubishi, made in Japan, very fast." Turned round the corner and he said, "Oh, look—Honda, made in Japan, very fast."</div></div>
+<div class="duo"><div class="zh">Am Hotel angekommen, erschrak er über den hohen Fahrpreis. Er fragte den Fahrer: „Warum ist die Fahrt so teuer?“ Und der New Yorker Taxifahrer antwortete: „Taxameter — made in Japan, sehr schnell.“</div><div class="en">By the time he reached the hotel, he was very shocked that the taxi fare was so high. And so he asked the taxi driver, "How come the taxi fare is so high?" And the New York taxi driver says, "Taxi meter—made in Japan, very fast."</div></div>
+<div class="keynote"><span class="key">Die Geschäftigkeit lässt uns das Wesentliche vergessen.</span> Wir leben so sehr auf der Überholspur, dass wir vor lauter Betriebsamkeit manchmal das Wesentliche aus den Augen verlieren.<span class="en">We live so much in the fast lane that sometimes we forget the essentials because of our busyness.</span></div>
+<div class="duo"><div class="zh">Wir leben in einer Zeit von großer strategischer Bedeutung, mit strategischen Gelegenheiten. Ja, es sind herausfordernde Zeiten. Aber gerade in solchen Zeiten öffnet Gott der Kirche wunderbare Fenster der Gelegenheit. Es sind Zeiten, in denen vieles offen ist, und Gott ruft uns in ein großes Abenteuer des Glaubens mit ihm — für sein Reich, für seine Absichten, für seine Ehre.</div><div class="en">We are living in very strategic times with strategic opportunities. Yes, they are challenging times. But there are times like these where there are wonderful strategic windows of opportunities that God is opening for the church. These are times where so much is up for grabs, and God calls us to a grand adventure of faith with Him—for His kingdom, for His purposes, for His glory.</div></div>
+<div class="duo"><div class="zh">Doch um Gottes Absichten zu ergreifen, müssen wir zum Wesentlichen zurückkehren.</div><div class="en">But in order to embrace God's purposes, we must return to the essentials.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div><h2>Bereit zum Kampf · Das unsichtbare Fundament<span class="h2en">Battle Ready: The Unseen Foundation</span></h2></div>
+<div class="duo"><div class="zh">Sehen Sie, liebe Freunde: Zum Wesentlichen zurückzukehren heißt, bereit zum Kampf zu sein. Denn wer leitet, steht mitten in einem geistlichen Kampfgebiet.</div><div class="en">You see, my friend, returning to the essential is about being battle ready, because we face a spiritual warfare zone in leadership.</div></div>
+<div class="keynote"><span class="key">Die Kirche ist kein Kreuzfahrtschiff.</span> Die Kirche ist ein Kriegsschiff — und wir dürfen den Kampf nicht vernachlässigen.<span class="en">The church is not a cruise ship. The church is a battleship. And we must not neglect the battle.</span></div>
+<div class="duo"><div class="zh">Dieser Kampf richtet sich nicht gegeneinander und nicht gegen Fleisch und Blut, sondern gegen die Mächte der Finsternis — um die Seelen der Menschen. Der geistliche Kampf ist wirklich, und wir müssen den rechten Blick behalten.</div><div class="en">The battle is not against one another. It's not against flesh and blood. It's against the principalities of darkness for the souls of men. There is a spiritual warfare, and we must keep our focus right.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Epheser 6,12</span> Denn wir haben nicht mit Fleisch und Blut zu kämpfen, sondern mit Mächtigen und Gewaltigen, mit den Herren der Welt, die über diese Finsternis herrschen, mit den bösen Geistern unter dem Himmel.<span class="en-line">“The battle is not against flesh and blood. It's against the principalities of darkness for the souls of men.”</span></div>
+<div class="duo"><div class="zh">Ich will auf Gott sehen, auf sein Reich, auf seinen Ruf, auf den Missionsbefehl, alle Völker zu Jüngern zu machen. Doch damit das geschehen kann, muss unser Fundament tragen. Und das Eigentümliche am Fundament ist: Das Fundament sieht man nicht.</div><div class="en">I'll focus upon God, I'll focus upon His kingdom, I'll focus upon His calling, I'll focus on the Great Commission to disciple the nations. But in order to do so, our foundation must be right. You see, the thing about foundation is that the foundation is unseen.</div></div>
+<div class="duo"><div class="zh">Darum ist das innere Leben so wichtig. Darum gehört die Pflege des inneren Lebens heute zu den entscheidenden Aufgaben biblischer Jüngerschaft. Wer untersucht, woran Leiter scheitern, findet im Kern immer einen Kompromiss im Inneren.</div><div class="en">And that is why the inner life is so important. That is why cultivating the inner life is a crucial agenda in biblical discipleship today. Because if you study leadership derailment, you find at the heart of it is a compromise within.</div></div>
+<div class="keynote"><span class="key">Der größte Kampf tobt nicht draußen.</span> Der größte Kampf tobt in uns.<span class="en">The greatest battle is not outside. The greatest battle is within us.</span></div>
+<div class="duo"><div class="zh">Darum spreche ich heute Abend über das Mandat und die Mission. Die Mission ist wichtig — aber die Mission muss vom Mandat getragen werden. Das Mandat geht der Mission voraus.</div><div class="en">And that is why tonight I want to share with you about the mandate and the mission. The mission is important, but the mission must be cradled by the mandate. The mandate precedes the mission.</div></div>
+<div class="duo"><div class="zh">Ich möchte Ihnen dieses Leben von innen nach außen zeigen: Das Mandat ist das Fundament, das Mandat ist das Wesentliche, das Mandat ist unser Wandel mit Gott und unsere Jüngerschaft unter Jesus. Dieser entscheidende Wechsel — von einer Jüngerschaft von außen nach innen zu einer Jüngerschaft von innen nach außen — ist der Schlüssel, um den Missionsbefehl zu erfüllen, den Jesus uns gegeben hat.</div><div class="en">What I want to do basically is to share with you this inside-out, this inner life where the mandate is the foundation, the mandate is the essential, the mandate is our walk with God and our discipleship unto Jesus. Therefore, this critical paradigm shift from outside-in to an inside-out discipleship is crucial in fulfilling the Great Commission Jesus has given to us.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16l1-9-5 3-4-6-4 6-5-3z"/><path d="M6 21h12"/></svg></div><h2>Der König mit den vier Frauen<span class="h2en">The King with Four Wives</span></h2></div>
+<div class="duo"><div class="zh">Eine lehrreiche Geschichte erzählt von einem König mit vier Frauen. Dem König wurde gesagt, er sei todkrank und niemand könne ihn heilen. Er würde sterben, und er fürchtete sich sehr. Er wollte nicht allein in das Jenseits gehen und wandte sich an seine vierte Frau, die er über alles liebte und der er jeden Wunsch erfüllt hatte.</div><div class="en">One of the instructive stories I find is about a king who has four wives. The king was told that he had a great sickness and nobody could heal him. He was going to die, and he was very frightened. He didn't want to go to the afterlife alone, so he went to the fourth wife, whom he loved very much and had given her everything she wanted.</div></div>
+<div class="duo"><div class="zh">Er sagte zu ihr: „Ich gehe in das Jenseits. Begleitest du mich?“ Die vierte Frau antwortete: „Ich liebe dich, und ich weiß, dass du mich sehr liebst. Aber begleiten kann ich dich nicht.“</div><div class="en">He said to the fourth wife, "I'm going to the afterlife, would you accompany me there?" And the fourth wife said, "I love you, and I know you love me a lot, but I cannot accompany you to the afterlife."</div></div>
+<div class="duo"><div class="zh">Er ging zur dritten Frau. Sie war von großer Schönheit, und der König zeigte sie stolz den Königen der Nachbarreiche. Er sagte: „Ich gehe in das Jenseits. Begleitest du mich?“ Die dritte Frau antwortete: „Ich kann dich nicht begleiten. Und wenn du stirbst, werde ich wieder heiraten.“ Da wurde er sehr traurig.</div><div class="en">He said to the third wife, who is very beautiful, and he was very proud to show the third wife to the neighboring kings and kingdoms, "I'm going to the afterlife, would you accompany me?" And the third wife said, "I cannot accompany you. In fact, when you die, I'm going to remarry." He was very sad.</div></div>
+<div class="duo"><div class="zh">Er ging zur zweiten Frau, die ständig an seiner Seite war: „Begleitest du mich in das Jenseits?“ Die zweite Frau sagte: „Ja, ich bin durch alle Zeiten des Lebens mit dir gegangen. Aber in das Jenseits kann ich dich nicht begleiten. Das Beste, was ich für dich tun kann, ist, dir ein würdiges Begräbnis und einen guten Abschied zu bereiten.“</div><div class="en">He went to his second wife, who was constantly with him, and said, "Would you accompany me to the afterlife?" The second wife said, "Yes, I've been with you through the seasons of life, but I cannot accompany you to the afterlife. The best I can do for you is to give you a good funeral and send-off."</div></div>
+<div class="duo"><div class="zh">Der König war tief betrübt, denn keine der drei wollte ihn begleiten. Da hörte er die Stimme seiner ersten Frau: „König, ich werde dich in das Jenseits begleiten.“ Und den König ergriff Reue und Scham, denn diese Frau hatte er all die Jahre vernachlässigt. Er sagte zu ihr: „All die Jahre habe ich dich übergangen — und du bist die Einzige, die bereit ist, mit mir zu gehen.“</div><div class="en">The king was very sad because none of these three wives would accompany him. And then he heard the voice of his first wife. And the first wife said, "King, I will accompany you to the afterlife." And the king was struck with regret and remorse, because he had neglected the first wife. And he said to the first wife, "All these years I've neglected you, but you're the only one who would be willing to accompany me to the afterlife."</div></div>
+<div class="duo"><div class="zh">In gewisser Weise sind wir alle wie dieser König mit den vier Frauen. Die vierte Frau steht für unseren Leib: Wir nähren ihn, wir geben ihm, was er verlangt — aber wenn wir sterben, begleitet uns der Leib nicht. Die dritte Frau steht für unseren Besitz, unseren Reichtum: Wenn wir sterben, können wir nichts davon mitnehmen; unser Reichtum fällt anderen zu, und was wir besaßen, werden andere besitzen — wie die Frau, die wieder heiratet. Die zweite Frau steht für die Familie: Sie geht durch alle Zeiten des Lebens mit uns, aber in das Jenseits kann sie uns nicht begleiten. Wenn wir sterben, ist das Beste, was die Familie tun kann, uns ein würdiges Begräbnis und einen guten Abschied zu bereiten.</div><div class="en">All of us, in a way, are like the king with four wives. The fourth wife represents our body—we feed it, we give it what it wants, but when we go to the afterlife, the body doesn't accompany us. The third wife represents our possessions, our wealth—when we die, we cannot take our wealth with us; in fact, our wealth will be given to somebody else. Our possessions, somebody else will possess—it is like the wife remarrying. The second wife represents the family—they have been with us through the seasons of life, but they cannot accompany us to the afterlife. When we die, the best the family can do for us is give us a good funeral and a send-off.</div></div>
+<div class="keynote"><span class="key">Die erste Frau — die vernachlässigte — steht für die Seele.</span> Die Seele begleitet uns in das Jenseits.<span class="en">The first wife, the one who is neglected, represents the soul. The soul will accompany us to the afterlife.</span></div>
+<div class="duo"><div class="zh">Darum gilt es, das Leben im Inneren zu pflegen — das Mandat, mit dem Herrn zu wandeln, damit seine Wahrheit, sein Licht, seine Absichten und seine Herrlichkeit auf uns fallen, unsere Seele nähren, unser Leben vertiefen und in Leben und Dienst ein tragfähiges Fundament legen. Die Seele, das innere Leben, ist von größter Bedeutung.</div><div class="en">And that is why cultivating that life within—the mandate of walking with the Lord so that His truth, His light, His purposes, His glory shine upon us—nourishes our soul, deepens our life, builds a strong foundation in our life and our ministry. The soul, the inner life, is so crucial.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>Fünf Dimensionen des inneren Lebens<span class="h2en">Five Dimensions of the Inner Life</span></h2></div>
+<div class="duo"><div class="zh">Liebe Freunde, wir sprechen vom inneren Leben — aber wie bestimmen wir es? Was meint das innere Leben? Ich nenne fünf wesentliche Dimensionen.</div><div class="en">My friends, we talk about the inner life, but how do we define the inner life? What is the inner life about? I have five significant dimensions of the inner life.</div></div>
+<div class="duo"><div class="zh">Die erste sind unsere inneren Antriebe. Es gibt dunkle Antriebe und Antriebe des Lichts. Die dunklen Antriebe sind die Süchte; die Antriebe des Lichts sind die Leidenschaft. Das sind die Kräfte, die uns bewegen — entweder die Sucht, die uns bindet, oder das Verlangen nach den Dingen Gottes.</div><div class="en">The first is our inner compulsions. There are dark compulsions and compulsions of the light. Dark compulsions are addictions, whereas when you come to the compulsions of the light—the passion—these are the things that drive us: either our addiction, or our aspiration in the things of God.</div></div>
+<div class="duo"><div class="zh">Die zweite ist die Überzeugung. Überzeugung ist etwas anderes als Glaubenssätze.</div><div class="en">The second is the conviction. Conviction is different from beliefs.</div></div>
+<div class="keynote"><span class="key">Glaubenssätze sind, was wir festhalten.</span> Überzeugung ist, was uns festhält. Und Gott ruft uns, tiefe Überzeugungen zu bauen.<span class="en">Beliefs are what we hold on to. Conviction is what holds on to us. And God is calling us to build deep convictions.</span></div>
+<div class="duo"><div class="zh">Die dritte ist das Gewissen — es betrifft die Art, wie wir leben. Das Gewissen kann abstumpfen. Darum ist es so wichtig, vor dem Herrn ein empfindsames Gewissen zu bewahren, kurzfristig Rechenschaft zu halten und in Sanftmut, Buße und Dankbarkeit zu gehen — das betrifft das Gewissen und ebenso das vierte: den Kompass des Lebens, die Ausrichtung von innen nach außen. Aus diesem Kompass erwächst die innere Ruhe — und diese Ruhe ist das fünfte: unsere innere Gelassenheit.</div><div class="en">The third in the inner life is our conscience—in how we live. And the conscience can be seared. That is why to have a sensitive conscience before the Lord, to keep a short account before the Lord, to walk with that sense of meekness and repentance and gratitude, is so important—in both the conscience and the fourth, the compass in life. That inner restedness comes out of the compass, and that restedness is our inner composure.</div></div>
+<div class="duo"><div class="zh">Unsere Antriebe — die Leidenschaft —, unsere Überzeugung, unser Gewissen, der Kompass unseres Lebens von innen nach außen und unsere Gelassenheit: Diese fünf bilden das innere Leben.</div><div class="en">So our compulsion—our passion—our conviction, our conscience, our compass in life from the inside out, and our restedness: they form the inner life.</div></div>
+<div class="duo"><div class="zh">Heute Abend möchte ich mit Ihnen vier biblische Gestalten betrachten. Sie lehren uns, was das Mandat ist, damit wir die Mission erfüllen können — das Mandat, mit Gott zu wandeln, damit unser inneres Leben erneuert, unterwiesen und im Herrn gestärkt wird.</div><div class="en">There are four Bible characters I want to share with you tonight that teach us about the mandate so that we can fulfill the mission—the mandate to walk with God so that our inner life is being refreshed, tutored, and strengthened in the Lord.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>I. David · Der HERR sieht das Herz an<span class="h2en">David — The LORD Looks at the Heart</span></h2></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">1. Samuel 16,7</span> Aber der HERR sprach zu Samuel: Sieh nicht an sein Aussehen und seinen hohen Wuchs; ich habe ihn verworfen. Denn es ist nicht so, wie ein Mensch es sieht: Ein Mensch sieht, was vor Augen ist; der HERR aber sieht das Herz an.<span class="en-line">“But the LORD said to Samuel, 'Do not look on his appearance or on the height of his stature, because I have rejected him. For the LORD sees not as man sees: man looks on the outward appearance, but the LORD looks on the heart.'”</span></div>
+<div class="duo"><div class="zh">Eine Frage: Was haben Eliab, Abinadab und Schamma gemeinsam? Was verbindet diese drei Gestalten des Alten Testaments? Sie sind Söhne Isais. Zusammen mit den übrigen vier Söhnen zogen sie zu siebt an Samuel vorüber. Der fromme Samuel kam in ihr Haus, denn Gott hatte ihn gesandt. Der Prophet Samuel kam mit einem Auftrag in das Haus Isais — das Haus Davids —, um einen König zu salben.</div><div class="en">Now here's the question: what do Eliab, Abinadab, and Shammah have in common? What do these three Old Testament characters have in common? They are sons of Jesse. And together with the rest of the other four sons, seven of them were paraded before Samuel. The godly Samuel came to their house for a visit because he was sent by God. So the prophet Samuel was on a mission as he came to the house of Jesse, the house of David, to anoint a king.</div></div>
+<div class="duo"><div class="zh">Doch als die Söhne einer nach dem anderen vorübergingen, sprach Gott jedes Mal: Diesen habe ich nicht erwählt, und diesen auch nicht. Schließlich fragte Samuel den Isai: Hast du noch einen Sohn? Ja — den jungen Hirten draußen auf dem Feld, David. Sie ließen ihn holen, und Samuel erkannte: Das ist der Mann, den Gott berufen hat.</div><div class="en">But as each of the sons went through, God said, "No, not this one, not this one." Until finally Samuel asked Jesse, "Do you have another son?" Yes—a young shepherd out in the field called David. They called him in, and Samuel recognized: this is the man called of God.</div></div>
+<div class="duo"><div class="zh">Beachten Sie: Es ist von größter Bedeutung, das Leben aus Gottes Blickwinkel zu bewerten. Die Schrift sagt: Der Mensch sieht auf das Äußere, Gott sieht das Herz an. Selbst Samuel — bei diesem Auswahlgespräch für das höchste Amt im Land, das wichtigste überhaupt, das Königsamt — sah auf das Äußere. Er dachte: Dieser sieht gut aus, begabt, königlich. Aber Gott sprach: Ich sehe nicht auf das Äußere; ich sehe das Herz an.</div><div class="en">Now, notice: it is very important that we evaluate life from God's perspective. The Bible says man looks at the appearance; God looks at the heart. Even Samuel himself, when he was doing this face-to-face interview for the highest office in the land, the most important job—the king—he was looking at the appearance. He was saying, "This person looks good, looks talented, looks kingly." But God says, "No, I don't look at the appearance; I look at the heart."</div></div>
+<div class="duo"><div class="zh">Diese Antwort Gottes — „Ich sehe das Herz an“ — hat unserer Jüngerschaft viel zu sagen. Denn wir leben heute in einer Welt, die von der Sichtbarkeit des Erfolgs besessen ist. Wir verwechseln Aktivität und Leistung mit Echtheit. Wir messen Erfolg fälschlich an der Weite unserer Reichweite, am Tempo unseres Fortschritts, an der Sichtbarkeit unserer Ergebnisse und an der Größe unseres Werkes.</div><div class="en">The answer given by God—"I look at the heart"—is very instructive for us in our discipleship. Because we live in a world today that is obsessed with the visibility of success. We often mistake activity and accomplishment for authenticity. We misguidedly measure success by the breadth of our reach, the speed of our progress, the visibility of our results, and the size of our ministry.</div></div>
+<div class="keynote"><span class="key">Wir müssen die Frage richtig stellen.</span> Die Frage lautet nicht bloß: „Kann ich mehr für Gott tun?“ Die Frage lautet vielmehr: „Will ich tiefer mit Gott gehen?“<span class="en">We have to get our question right. The question is not merely, "Can I do more for God?" Rather, the question is, "Will I go deeper with God?"</span></div>
+<div class="duo"><div class="zh">Ja, die Mission ist geboten. Ja, dienen Sie Gott mit Leidenschaft und Hingabe. Aber das Mandat — der Wandel mit dem Herrn — muss unsere Mission tragen. Darum sage ich Leitern, als einer, der Leiter begleitet, in aller Liebe: Wir müssen vom Podium auf die Wege hinuntersteigen.</div><div class="en">Yes, the mission is imperative. Yes, by all means, serve God with passion and with commitment. But the mandate, the walk with the Lord, must cradle our mission. That is why I lovingly tell leaders, as a leadership mentor, that we must move from the platform to the pathways.</div></div>
+<div class="duo"><div class="zh">Heute Abend spreche ich von einem Podium zu Ihnen. Das Podium ist ein Ort des Einflusses, ein Ort des Dienstes. Ich sage nicht, dass Sie das Podium geringachten sollen — der Herr hat es gegeben. Ich stehe heute Abend nicht hier, weil ich etwas sagen muss; ich stehe hier, weil ich glaube, dass Gott mir etwas zu sagen gegeben hat. Das Podium hat seinen Platz. Aber wir müssen lernen, aus dem Scheinwerferlicht des Podiums auf den Weg der Jüngerschaft zu treten — den Weg mit Jesus, den Weg mit Gott. Denn das Podium steht für Einfluss; die Wege aber bestimmen und prägen unsere Lauterkeit.</div><div class="en">Tonight, I'm speaking to you from a platform. A platform is a place of influence. A platform is a place of ministry. I'm not saying ignore the platform—it is a platform given of the Lord. Tonight I come to you not because I have to say something; I come to you because I believe God has given me something to say. There's a platform. But we must learn to move from the limelight of the platform into the pathway of discipleship, of walking with Jesus, of walking with God. Because while the platform is for influence, the pathways define and determine our integrity.</div></div>
+<div class="keynote"><span class="key">Wie wir gehen, macht den Unterschied.</span> Wie wir leben, macht den Unterschied. Viele Leiter fragen, wie sie führen. Gott fragt, wie wir leben.<span class="en">How we walk makes a difference. How we live our lives makes a difference. For many leaders, we are concerned with how we lead. God is concerned with how we live.</span></div>
+<div class="duo"><div class="zh">Zurück zur Geschichte Davids: Die Schrift sagt, Gott sieht das Herz an — und das Herz wird genährt in der Zeit, die wir allein mit Gott verbringen.</div><div class="en">And so when we come to the story of David, the Bible says God sees the heart. And the heart is nourished in that time alone with God.</div></div>
+<div class="duo"><div class="zh">Fünfundzwanzig Jahre war ich leitender Pastor; die Übergabe liegt nun etwa vierzehn Jahre zurück. Vor der Übergabe gab es viele letzte Male: die letzte Vorstandssitzung, die letzte Mitarbeitersitzung, die letzte Gebetsstunde, die letzte Predigt, das letzte Abschiedsessen — viele letzte Male. Aber das bedeutsamste Letzte, das ich als leitender Pastor der Covenant Evangelical Free Church tat, ehe ich in den Dienst der Leitung der Global Alliance of Intentional Disciple-Making Churches wechselte, war dies: Ich nahm die beiden neuen leitenden Pastoren mit auf den Berg, um zu beten.</div><div class="en">I've been a senior pastor for 25 years. I've transited in leadership for about 14 years now. Just before I transited in leadership, there were many last things: a last board meeting, last staff meeting, last prayer meeting, last sermon to preach, last farewell dinner, etc. Many last things. But the most significant last thing I did as senior pastor of Covenant Evangelical Free Church, before I transited into the ministry of leading the Global Alliance of Intentional Disciple-Making Churches, was to bring the two new senior pastors up to the mountain to pray.</div></div>
+<div class="duo"><div class="zh">Denn in meinen Jahren als leitender Pastor verließ ich jedes Jahr im Oktober für einen Monat das Büro und ging auf den Berg, um den Herrn zu suchen. Ich erinnere mich an das erste Mal. Ich sagte: „Herr, ich komme nicht herab, ehe ich dir begegnet bin.“ Und der Herr erschien.</div><div class="en">Because as a senior pastor, every October I take a month away from the office, and I go up to the mountain, and I seek the Lord. And I remember the first time I went up to the mountain, I said, "Lord, I will not come down until I've encountered You." And the Lord showed up.</div></div>
+<div class="duo"><div class="zh">Ich dachte, nach der Begegnung mit Gott würde ich stark und gesalbt vom Berg steigen. Doch als der Herr erschien, deckte er meine Sünden und mein Ungenügen auf, meinen Stolz und meine Vermessenheit. Ich weiß noch: In zehn Kapiteln des Jeremia überführte er mich zwanzig bestimmter Sünden. Ich tat Buße, eine nach der anderen. Ich weinte, bis ich dort oben zum Herrn sagte: „Herr, halt ein, halt ein — mein Herz erträgt es nicht mehr.“</div><div class="en">I thought when I encountered God, I would come out strong, I would come out anointed. Oh, when the Lord showed up, He convicted me of my sins and my inadequacies, my pride and my presumptuousness. And I still remember, in ten chapters of Jeremiah, He convicted me of twenty specific sins. I repented of them one at a time. I cried, until I said to the Lord up on the mountain, "Lord, stop, stop—my heart cannot take it anymore."</div></div>
+<div class="duo"><div class="zh">Ich stieg überführt vom Berg — und doch voller Dankbarkeit. Dankbar, dass ich den Weg der Jüngerschaft nicht aus eigener Kraft, eigener Klugheit, eigener Weisheit gehen muss. Dankbar, dass der Herr Jesus mir hilft und mich stärkt. Denn ohne sein Führen und sein Stärken ist der Weg der Jüngerschaft nicht zu gehen — nicht aus eigener Kraft und nicht aus eigener Weisheit.</div><div class="en">And I walked off the mountain convicted, but grateful. Grateful that I do not have to depend on my own strength or my own intelligence or my own wisdom to try to walk the pathway of discipleship. Grateful that the Lord Jesus helps me and strengthens me. Because without His leading and His strengthening, it is impossible to walk the pathway of discipleship—not in our own strength, not in our own wisdom.</div></div>
+<div class="keynote"><span class="key">Wichtiger als die Höhe unseres Dienstes ist die Tiefe unseres Fundaments.</span> Denn der Herr lässt sich von Äußerem und vom Podium nicht beeindrucken — er sieht das Herz an.<span class="en">Indeed, more important than the height of our ministry is the depth of our foundation. Because the Lord is not impressed by appearances, or the platform—He looks at the heart.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18L14 6l-3.5 6L8 9z"/><path d="M11 12l1.5 2"/></svg></div><h2>II. Mose · Der Weg und die Werke<span class="h2en">Moses — The Way to Walk and the Work to Do</span></h2></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">2. Mose 18,20</span> Und schärfe ihnen die Satzungen und Weisungen ein, dass du sie lehrst den Weg, auf dem sie wandeln, und die Werke, die sie tun sollen.<span class="en-line">“Then teach them the statutes and the laws, and make known to them the way in which they are to walk and the work they are to do.”</span><span class="note">※ Die Lutherfassung trägt die Pointe des Predigers in sich: erst der Weg, auf dem sie <b>wandeln</b>, dann die Werke, die sie <b>tun</b> sollen.</span></div>
+<div class="duo"><div class="zh">Vor einigen Jahren rief mich mein lieber Freund Luis Bush an: „Edmund, kannst du kommen und zu den Leitern meiner 10/40-Fenster-Bewegung sprechen?“ Ich sagte: „Luis, ich liebe dich und schätze deinen Dienst — aber ich kann nicht. Ich stecke zwischen zwei Reisen.“ Ich reise viel, und in jener Zeit reichte es einfach nicht: Mitten in seiner Konferenz stand meine nächste Reise an.</div><div class="en">Some years ago, my beloved friend Luis Bush called me up and said, "Edmund, can you come to speak to my leaders in the 10/40 Window movement?" I said, "Luis, I love you and admire your ministry, but I can't. I'm in between trips." I travel a lot, but this was a season where there was not enough time for me to come to his conference, because there was a next trip I needed to go on in the midst of it.</div></div>
+<div class="duo"><div class="zh">Er sagte: „Edmund, die Konferenz ist auf Bali — gleich neben Singapur. Flieg ein, halte den Leitern eine Plenumsbotschaft, flieg wieder aus.“ Ich sagte: „Luis, das kann ich nicht. Einfliegen, ausfliegen — so etwas machen Berühmtheiten; ich nicht.“ Und Luis sagte: „Genau das wünschen wir uns von dir. Flieg nach Bali, sprich die Botschaft, und noch am selben Tag bist du zurück in Singapur und kannst dich für die nächste Reise und Konferenz rüsten.“ Ich betete darüber — und ich flog. Denn der Herr hatte mir aufs Herz gelegt, über genau diesen Vers zu sprechen.</div><div class="en">He said, "Edmund, the conference is in Bali—it's a neighbor to Singapore. Just fly in, share one plenary message with the leaders, and fly out." I said, "Luis, I can't do that. Fly in, fly out—only celebrities do that; I can't." And Luis said, "We'd love for you to do that. Just fly in, share the message in Bali, then fly back to Singapore the same day, and be ready for your next travel and conference." I prayed about it, and I did—because the Lord gave me a burden to share from this particular verse.</div></div>
+<div class="duo"><div class="zh">Dieser Vers zeigt ihnen den Weg, auf dem sie wandeln, und die Werke, die sie tun sollen. Der Weg, auf dem sie wandeln, ist das Mandat. Die Werke, die sie tun sollen, sind die Mission.</div><div class="en">This particular verse showed them the way they are to walk and the work they are to do. The way they are to walk is the mandate. The work they are to do is the mission.</div></div>
+<div class="duo"><div class="zh">Was ich ihnen damals sagte, ist im Grunde, was ich Ihnen heute Abend sagen will: Wir haben 2. Mose 18 missverstanden. In vieler christlicher Literatur über Leiterschaft wird dieses Kapitel zitiert, und als Kernprinzip gilt dann das Delegieren — gestützt auf die Verse 21 und 22: Wähle tüchtige Männer, lass sie richten, übertrage ihnen die Sache. Aber ich sage Ihnen: Wir haben Jitros Rat an Mose falsch gelesen.</div><div class="en">And so what I shared with them is basically what I want to tell you tonight: we have misinterpreted Exodus chapter 18. In a lot of Christian literature on leadership, when Exodus 18 is quoted, it is often said that the key principle is leadership delegation—found in verses 21 and 22: you select able men and you let them judge; you delegate to them. But I'm here to tell you that we have misinterpreted Jethro's advice and counsel to Moses.</div></div>
+<div class="duo"><div class="zh">Der Schwerpunkt liegt nicht auf dem Delegieren. Was Jitro dem Mose sagte, war: Höre, Mose, was du tust, ist nicht gut. Du wirst dich aufreiben, und das Volk mit dir. Höre auf mich, ich gebe dir einen Rat, und Gott gebe dir Weisheit — bewahre deinen Blick. Auf zwei Dinge sollst du dich richten: sie den Weg zu lehren, auf dem sie wandeln, und die Werke, die sie tun sollen. Alles andere, was dich davon ablenkt, gib ab: Wähle tüchtige Männer und lass sie führen. Delegiere — aber bewahre deinen Blick.</div><div class="en">The focus is not on delegation. What Jethro was telling Moses is: "Listen, Moses, what you do is not good. You will wear yourself out; you will wear the people out. Listen to me, I want to give you advice, and the Lord give you wisdom. Keep your focus. This is what you are to focus on: you are to teach them two things—the way they are to walk and the work they are to do. Everything else that distracts you from this focus, you delegate out. You select able men and let them lead. You delegate. But you keep your focus."</div></div>
+<div class="duo"><div class="zh">Der Schwerpunkt liegt in Vers 20. Die Verse 21 und 22 — Männer wählen, delegieren — sollen Mose helfen, den Schwerpunkt von Vers 20 zu halten. Und worin besteht er? Lehre sie, unterweise sie, ermahne sie in zwei Dingen: dem Weg, auf dem sie wandeln, und den Werken, die sie tun sollen — dem Mandat und der Mission. Und die Reihenfolge ist entscheidend: Das Mandat geht der Mission voraus. Mit anderen Worten: Es geht nicht nur um die Werke; zuerst geht es um den Weg. Denn wie ein Mensch wandelt, das bestimmt sein Herz, seine Treue und seine Ergebenheit gegenüber Gott.</div><div class="en">You see, the focus is in verse 20. Verses 21 and 22—select men and delegate—are to help Moses keep the focus in verse 20. So we ask: what's the focus? You teach them, you instruct them, you exhort them on two things: the way they are to walk and the work they are to do—the mandate and the mission—and the order is important. The mandate precedes the mission. In other words, the focus is not just on the work they are to do; first, it's the way they are to walk. Because the way they walk determines their heart, their loyalty, and their allegiance to God.</div></div>
+<div class="duo"><div class="zh">Das ist ein wichtiger Grundsatz der Leiterschaft: Erst wenn wir selbst auf unseren Weg und unser Werk achten, können wir andere den Weg lehren, auf dem sie wandeln, und die Werke, die sie tun sollen.</div><div class="en">It's an important leadership principle: we keep our focus in the way we walk and the work we do, so that we can teach others the way they are to walk and the work they are to do.</div></div>
+<div class="split">
+<div class="col h"><div class="lab"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3 11.2V18h6v-3.8A6 6 0 0 0 12 3z"/></svg></span>Das Mandat</div><ul><li>unser <b>Wandel</b></li><li>unsere <b>Echtheit</b></li><li>unser <b>Sein</b></li><li>unser <b>Charakter</b></li></ul></div>
+<div class="col c"><div class="lab"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10M7 21h10"/><path d="M8 3v3.5c0 2 4 3.2 4 5.5s-4 3.5-4 5.5V21"/><path d="M16 3v3.5c0 2-4 3.2-4 5.5s4 3.5 4 5.5V21"/></svg></span>Die Mission</div><ul><li>unser <b>Werk</b></li><li>unsere <b>Leistung</b></li><li>unser <b>Tun</b></li><li>unsere <b>Begabung</b> (sie dient der Mission)</li></ul></div>
+</div>
+<div class="keynote"><span class="key">Der erste Ruf des Reiches Gottes</span>: ist nicht, das Reich auszubreiten. Der erste Ruf des Reiches ist, in Christus zu bleiben — damit das Reich sich ausbreite. Das Reich auszubreiten ist die Mission. In Christus zu bleiben ist das Mandat.<span class="en">I often say in discipleship: the first call of the kingdom is not to advance the kingdom. The first call of the kingdom is to abide in Christ, so that the kingdom might advance. Advancing the kingdom is the mission. Abiding in Christ is the mandate.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 9l-4 3.4 1.2 5.1L12 14.8 7.8 17.5 9 12.4 5 9l4.9-1.1z"/></svg></div><h2>III. Manoach · Erst der Lebenswandel, dann die Sendung<span class="h2en">Manoah — Manner of Life before Mission</span></h2></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Richter 13,12</span> Und Manoach sprach: Wenn nun eintrifft, was du gesagt hast: Wie sollen wir's mit dem Knaben halten und tun?<span class="en-line">“Now when your words come true, what is to be the child's manner of life, and what is his mission?”</span><span class="note">※ Die vom Prediger zitierte englische Fassung übersetzt: „Wie soll der <b>Lebenswandel</b> des Knaben sein, und was ist seine <b>Sendung</b>?“ — erst der Lebenswandel, dann die Sendung. Auf dieser Reihenfolge ruht das Argument der Predigt; Luther fasst beides in ein schlichtes „halten und tun“ zusammen.</span></div>
+<div class="duo"><div class="zh">Manoach war der Vater Simsons. Der Engel des HERRN erschien ihm und offenbarte, dass Simson heranwachsen und ein mächtiger Diener Gottes werden würde. Beachten Sie die Frage, die der Vater Manoach stellte. Er fragte den Engel des HERRN nicht: „Ist wahr, was du sagst?“ Er sagte: „Wenn nun eintrifft, was du gesagt hast“ — da also wahr ist, was du sagst, habe ich zwei Fragen: Wie soll der Lebenswandel des Kindes sein? Und was ist seine Sendung?</div><div class="en">Manoah was the father of Samson, and an angel of the LORD came and gave a revelation that Samson would grow up to be a mighty servant of God. And notice the question Manoah the father asked. He did not ask the angel of the LORD, "Is what you say true?" Rather, he says, "When your words come true"—in other words, since what you say is true, I have two questions: what is the child's manner of life, and what is his mission?</div></div>
+<div class="keynote"><span class="key">Wieder ist die Reihenfolge entscheidend.</span> Erst der Lebenswandel. Erst das Mandat. Erst der Wandel — und dann die Mission.<span class="en">Again, the order is important. The manner of life comes first. The mandate comes first. The walk comes first. And then the mission.</span></div>
+<div class="duo"><div class="zh">Während CCCOWE das fünfzigjährige Jubiläum feiert und in die Zukunft geht, gilt es, Mandat und Mission im Blick zu behalten. Doch vergessen Sie über der Mission das Mandat nicht — geben Sie ihm den ersten Platz. Denn das Mandat, unser Wandel, muss der Mission vorausgehen.</div><div class="en">As CCCOWE celebrates your 50th anniversary and you move forward into the future, you have to focus on the mandate and the mission. But in focusing on the mission, do not forget the mandate. Put it first. Because the mandate, our walk, must precede the mission.</div></div>
+<div class="duo"><div class="zh">Wer den Wandel vor das Werk stellt, das Mandat vor die Mission, die Echtheit vor die Leistung — der bringt seine Prioritäten in die rechte Ordnung.</div><div class="en">When he comes to order the walk before the work, the mandate before the mission, the authenticity before the accomplishment, he is setting his priorities aright.</div></div>
+<div class="keynote"><span class="key">Die gottgegebene Priorität verleiht uns die gottgegebene Vollmacht.</span> Weichen wir von dieser Priorität ab, ist unsere geistliche Vollmacht preisgegeben.<span class="en">There is a God-given priority that gives us our God-given authority. We shift from that priority, we compromise on our spiritual authority.</span></div>
+<div class="duo"><div class="zh">Die Stellung nimmt vielleicht keinen Schaden — Sie bleiben Abteilungsleiter, Pastor, Missionar. Der Dienst nimmt vielleicht keinen Schaden — Sie können weiter predigen, weiter leiten, weiter dienen. Aber die geistliche Vollmacht nimmt Schaden, wo die geistlichen Prioritäten Schaden nehmen. Unsere geistliche Vollmacht wird preisgegeben, wenn wir die Ordnung umkehren, die Gott gesetzt hat: dass das Mandat der Mission vorausgeht.</div><div class="en">Our position might not be compromised—you are still the head of your department, or the pastor, or the missionary. Your ministry is not compromised—you can still preach, you can still lead, you can still minister. But the spiritual authority is compromised when our spiritual priorities are compromised. Our spiritual authority is compromised when we reverse the order that God intended—for the mandate to precede the mission.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div><h2>IV. Paulus · Ihm ganz zu Gefallen<span class="h2en">Paul — To Please Him in All Respects</span></h2></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Kolosser 1,10</span> Dass ihr, des Herrn würdig, ihm ganz zu Gefallen lebt und Frucht bringt in jedem guten Werk und wachst in der Erkenntnis Gottes.<span class="en-line">“So that you may walk in a manner worthy of the Lord, to please Him in all respects, bearing fruit in every good work, and increasing in the knowledge of God.”</span></div>
+<div class="keynote"><span class="key">Ihm ganz zu Gefallen leben — das ist das Mandat.</span> Frucht bringen in jedem guten Werk — das ist die Mission.<span class="en">To please Him in every respect—that's the mandate. To bear fruit in every good work—that's the mission.</span></div>
+<div class="duo"><div class="zh">Heute Abend, im Blick auf die Zukunft, müssen wir zu den Grundlagen zurückkehren — zum Fundament, zum Wesentlichen, zum Mandat unseres Wandels mit dem Herrn. Daran darf nichts preisgegeben werden.</div><div class="en">Tonight we must come back to the basics as we look at the future. We must come back to the foundation, the essential, the mandate in our walk with the Lord. It cannot be compromised.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 2.6 4 5.6 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.6-4-9s1.3-6.4 4-9z"/></svg></div><h2>Der Kompromiss der weltweiten Kirche · Zwei Betriebssysteme in der Seele<span class="h2en">The Global Church's Compromise: Two Operating Systems</span></h2></div>
+<div class="duo"><div class="zh">Ich möchte Ihnen zeigen, wie wir als Kirche — nicht nur die chinesische Kirche, sondern die weltweite: Asien, Afrika, Lateinamerika, der Westen — unseren Wandel preisgegeben haben, weil wir das Mandat vernachlässigten.</div><div class="en">I want to show you how we as a church—not just the Chinese church, but the global church: Asia, Africa, Latin America, the West—how the global church has compromised our walk because we neglected the mandate.</div></div>
+<div class="duo"><div class="zh">Der Ausgangspunkt unseres Fundaments ist das Wort Gottes. Die Bibel ist unser Fundament, die Autorität, die Gott in seiner Offenbarung gegeben hat — die Autorität, an der wir uns neu ausrichten und durch die wir Gottes Herrschaft in unserem Leben neu aufrichten müssen: seinem Wort gehorchen, die Wahrheit der Schrift bejahen und danach leben. Nicht das Anhäufen von Bibelwissen verändert unser Leben, sondern das Umsetzen der Wahrheit.</div><div class="en">You see, our starting point in our foundation is the Word of God. The Bible is our foundation, the Word of God. It is the authority that God has given in His revelation—the authority by which we have to once again be realigned to and re-establish God's authority in our life: obeying His Word, affirming the truth of the Scriptures, and living by it. It is not the acquisition of knowledge of the Bible; it's the application of the truth that changes our lives.</div></div>
+<div class="keynote"><span class="key">Wahrheit verändert kein Leben.</span> Erst angewandte Wahrheit verändert das Leben. Ich habe es viele Male gesagt, und heute Abend sage ich es wieder.<span class="en">I've said it many, many times, so tonight I'm going to say it again: Truth doesn't change lives. It is truth applied that changes lives.</span></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Matthäus 7,24</span> Darum, wer diese meine Rede hört und tut sie, der gleicht einem klugen Mann, der sein Haus auf Fels baute.<span class="en-line">“Anyone who hears these sayings of mine and does them—practices them, applies them—I will liken him to a wise man who built his house upon the rock.”</span></div>
+<div class="duo"><div class="zh">Das sind die Worte Jesu: tun, halten, anwenden. Und hier liegt das Problem. Wir haben das Wort Gottes. Wir kennen seine Wahrheit, wir lieben seine Wahrheit. Aber in den Wechselfällen des Lebens, unter Druck und in Prüfungen, fällt es uns schwer, Gottes Wort zu tun. Warum? Weil wir dann denken: Wie schwer, wie mühsam. Und es tobt ein Kampf, der unser Denken von Gottes Wahrheit und Kraft weglockt.</div><div class="en">That's the words of Jesus: practice, do, apply. Now, here's the problem. We have the Word of God. We know His truth. We love His truth. But in the contingencies of life, the pressures and the trials of life, we find it difficult to practice God's Word. Why? Because now we are thinking, "Oh, it's so hard, it's so difficult." And there is a warfare that deceives our mind away from God's truth and power.</div></div>
+<div class="duo"><div class="zh">Und so treffen wir unsere Entscheidungen aus Gefühlen heraus, fern vom Wort Gottes. Aus Entscheidungen werden Gewohnheiten, und sie führen uns vom Wort Gottes weg — denn nun gründen unser Denken, unsere Gewohnheiten, unsere Entscheidungen nicht mehr in der Schrift. Wir glauben der Täuschung Satans, die sagt: Gottes Wort zu tun ist zu schwer, es fordert zu viel, Jüngerschaft ist zu mühsam, Gehorsam gegen Gottes Wort ist unmöglich. Und mit dieser Täuschung wachsen und reifen wir nicht in Gottes Wort und in seiner Kraft — was Zeit braucht —, sondern treiben langsam, kaum merklich, vom Wort Gottes ab.</div><div class="en">And so, out of our own feelings, distant from the Word of God, we make our choices. Our choices become habits, and it leads us astray from the Word of God—because now our thinking, our habits, our choices are not grounded in the Scriptures. We believe the deception of Satan that says it is hard to practice the Word of God, it is demanding, discipleship is so difficult, obeying God's Word is impossible. With this deception, rather than growing and maturing in the Word of God in His power—which takes time—we drift very slowly from God's Word.</div></div>
+<div class="duo"><div class="zh">Bald ist in unsere Seele ein anderes Programm geschrieben: eine andere Sicht, eine andere Überzeugung, eine andere Weltförmigkeit. Und hier liegt das Problem: In unserer Seele stehen nun zwei Quellcodes, zwei Autoritäten.</div><div class="en">Very soon we have another thing codified within our soul—another perspective, another conviction, another worldliness. Now, here's the problem: there are now two source codes in our soul, two authorities.</div></div>
+<div class="keynote"><span class="key">Die Seele kann nicht mit zwei Betriebssystemen laufen.</span> So wie Ihr Telefon oder Ihr Computer nicht zwei Betriebssysteme zugleich fahren kann, kann auch die menschliche Seele nicht zwei Systeme zugleich fahren: das Wort Gottes und die Werte der Welt.<span class="en">Just like your handphone or your computer system cannot operate on two operating systems, the human soul cannot operate on two systems: the Word of God, and the worldview of the values of the world.</span></div>
+<div class="duo"><div class="zh">Was also tun? In der weltweiten Kirche, unter Christen, gibt es drei Antworten. Die erste ist die Buße. Wir kommen vor den Herrn und sagen: Herr, es tut uns leid. Wir sind abgewichen. Wir wollen umkehren und deine Herrschaft in unserem Leben durch dein Wort neu aufrichten. Wir tun Buße und sagen: Herr, dir zu folgen ist schwer, denn unsere fleischliche Natur will es nicht. Aber Herr, wir wollen mit Christus gekreuzigt sein — und nun leben nicht mehr wir, sondern Christus lebt in uns. Das ist es, was wir wollen. Wir tun Buße. Das ist die erste Antwort.</div><div class="en">So what do we do? In the global church, amongst Christians, there are three responses. The first response is repentance. We come before the Lord and say, "Lord, we are sorry. We missed. We want to come back to re-establish your authority in our lives through the Word of God." We repent. And we say, "Lord, it's difficult to follow you, because our carnal nature doesn't allow for it. But Lord, we want to be crucified with Christ—nevertheless we live, yet not us; Christ lives in us. That's what we want." We repent. That's the first response.</div></div>
+<div class="duo"><div class="zh">Die zweite Antwort: Manche Christen fallen zurück und gehen von Gott weg, weil sie nicht umkehren. Gäbe es nur diese beiden Antworten, wäre die Lage klar: Entweder man gehört zu Christus und seinem Reich, oder nicht. Die Not der Jüngerschaft in der weltweiten Kirche von heute ist, dass es eine dritte Möglichkeit gibt. Sie dürfte keine sein — aber wir haben sie ergriffen.</div><div class="en">Second response: there are Christians who backslide, and they walk away from God because they don't turn back. Now, if there were only two responses, it would be quite clear: either you are for Christ and His kingdom, or you are not. The problem with discipleship today in the global church is that there's a third option. It shouldn't be an option, but we have taken the third option.</div></div>
+<div class="duo"><div class="zh">Viele Christen in der Kirche fallen nicht zurück und tun auch nicht Buße — es ist ihnen zu schwer. Was tun sie? Sie dienen Gott mit den Lippen. Sie kommen zum Gottesdienst, sie singen und beten an, sie gehen zum Bibelkreis und zum Hauskreis, sie können predigen und weitergeben. Aber in ihrem täglichen Wandel — am Arbeitsplatz, zu Hause und vor allem in der verborgenen Welt, die niemand sieht — sitzt auf dem Thron das Ich, nicht Christus. Sie ehren Christus mit den Lippen.</div><div class="en">Many Christians in the church—they don't backslide, they don't repent, because it's too hard. What do they do? They pay lip service to God. They come to church, they sing and worship God, they go to Bible study and cell group, they can preach and share. But in their daily walk—in the office space, in their home, and most importantly, in their private world—their self is enthroned, not Christ. They give lip service to Christ.</div></div>
+<div class="duo"><div class="zh">Das ist die Not der weltweiten Kirche heute: Wir haben das Mandat preisgegeben. Wir haben jenen gewaltigen Ruf Gottes verfehlt — mit ihm zu wandeln und seine Gnade und Kraft zu erfahren, sodass wir in Dankbarkeit, Freude und Hingabe gehen und seine Herrschaft in unserem Leben neu aufrichten, weil wir wissen: Er ist es wert, ganz und gar.</div><div class="en">That's the problem in the global church today: we have compromised our mandate. We have missed that tremendous call of God to walk with Him and to see His grace and His power, so that we walk with a sense of gratitude, a sense of joy, a sense of submission, where we re-establish His authority in our lives—because we know He is worth it all.</div></div>
+<div class="keynote"><span class="key">Das Mandat muss der Mission vorausgehen —</span> sonst ist unsere Mission längst preisgegeben.<span class="en">The mandate must precede the mission—otherwise we have already compromised our mission.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 1 1 21 12z"/></svg></div><h2>Die wichtigste Frage, die Jesus je gestellt hat<span class="h2en">"Do You Love Me More Than These?"</span></h2></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Johannes 21,15</span> Spricht Jesus zu Simon Petrus: Simon, Sohn des Johannes, liebst du mich mehr, als mich diese lieb haben?<span class="en-line">“Do you love me more than these?”</span><span class="note">※ Luther versteht „mehr als diese“ als „mehr, als diese Jünger mich lieben“. Der Prediger folgt der offenen englischen Fassung („more than these“) und bezieht die Frage auf die Dinge: Mission, Dienst, Erfolg. Die Anwendung der Predigt ruht auf dieser Lesart.</span></div>
+<div class="duo"><div class="zh">Darum ist die wichtigste Frage, die Jesus je gestellt hat, seine Frage an Petrus — und durch die Frage an Petrus seine Frage an uns: „Liebst du mich mehr als diese?“ Liebst du mich mehr als die Mission? Mehr als den Dienst? Mehr als den Erfolg? Mehr als dies alles? Die Liebe zu Jesus und der Wandel mit ihm — dieses Mandat muss der Mission vorausgehen. Sonst nimmt die Mission schweren Schaden.</div><div class="en">That is why the most important question Jesus ever asked is a question to Peter—and through his question to Peter, to us: "Do you love me more than these? Do you love me more than the mission? Do you love me more than the ministry? Do you love me more than the accomplishment? Do you love me more than this?" The mandate—the love for Jesus and the walk with Him—must precede the mission. Otherwise, the mission is severely compromised.</div></div>
+<div class="keynote"><span class="key">Radikale Jüngerschaft ist möglich.</span> Biblische, radikale Jüngerschaft ist in Christus möglich — nicht weil wir stark sind, sondern weil Christus treu ist. Sie ist möglich.<span class="en">I'm here tonight to tell you that radical discipleship, biblical discipleship, is possible in Christ—not because we are strong, but because Christ is faithful. It is possible.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h2>Ein Zeugnis aus Afrika<span class="h2en">A Testimony from Africa</span></h2></div>
+<div class="duo"><div class="zh">Zum Schluss ein Zeugnis aus Afrika. Vor einigen Jahren durfte ich Isaias Acerbo als Mentor begleiten, und Isaias begleitete einen Bischof namens Aloysius Arbo. Bischof Aloysius kam im August 1988 zum Glauben und wurde 1995 in den vollzeitlichen Dienst berufen. Dies ist sein Zeugnis, wie er es selbst erzählt hat; ich gebe es mit seiner Erlaubnis weiter.</div><div class="en">I want to close with a testimony from Africa. Some years ago, I had the privilege of mentoring Isaias Acerbo, and Isaias mentored a bishop called Aloysius Arbo. Bishop Aloysius was converted in August 1988, and in 1995 he was called into full-time ministry. This is his testimony as he shared it, and I share this with permission.</div></div>
+<div class="duo"><div class="zh">Er sagte: „Schwächen, von denen ich nie wusste, dass sie da waren — Stolz, schnelle Reizbarkeit, mangelndes Verständnis für meine Frau, fehlende gute Verständigung in meiner Ehe, Bibellesen nur für andere, und vieles mehr.“ 2019 schloss sich Bischof Arbo der Jüngerschaftsschulung an, die Isaias durchführte.</div><div class="en">He said: "Weaknesses I never knew were there—pride, being easily provoked, not understanding my wife, lack of good communication in my marriage, reading my Bible for others, as well as many other things." In 2019, Bishop Arbo joined the discipleship training which Isaias was conducting.</div></div>
+<div class="duo"><div class="zh">Und dann sagte er: „Es dauerte nicht lange, bis die Menschen um mich herum bezeugten, was für ein neuer Mensch ich wurde.“ Die Diözese rief die Jahre 2020 bis 2030 zum Jahrzehnt der Jüngerschaft aus. „So dringend ich mir wünschte, dass alle um mich herum diese Verwandlung erleben, stand mir der Grundsatz ‚Groß denken, klein anfangen, in die Tiefe bauen‘ frisch vor Augen. Im November 2019 begann ich mit nur vier erfahrenen Pastoren.“ Dann kamen zwölf Laienpastoren hinzu, schließlich die Archidiakone und die Laienpastoren mit ihren Frauen, in Jüngerschaftsgruppen — kleine Gruppen von jeweils mehr als fünf Pastorenehepaaren.</div><div class="en">And then he said this: "It was not long before people around me began testifying to the new person I was becoming." And the diocese declared 2020 to 2030 as a decade of discipleship. "As urgent as I wanted everyone around me to experience the transformation, the principle 'think big, start small, build deep' was fresh in my mind. I started with only four senior pastors in November 2019." Then twelve lay pastors were brought in, and it included the archdeacons and the lay pastors and their wives in discipleship groups—small groups of more than five clergy couples each.</div></div>
+<div class="duo"><div class="zh">Als sie das Mandat an die erste Stelle setzten, begann die Kirche, in ihrer geistlichen Tiefe erneuert zu werden. Die Kirche des ganzen Landes wurde auf diese Diözese und ihre Verwandlung aufmerksam, und andere Bischöfe fragten ihn: Wie machst du das? So begann er mit sieben Bischöfen, und am Ende waren es fünf Gruppen zu je sieben Bischöfen — fünfunddreißig Bischöfe, die er in der Kirche von Nigeria als Mentor begleitete.</div><div class="en">The church began to be transformed in its spiritual depth as they put the mandate first. And the national church began to notice this church and its transformation, and other bishops asked him, "How do you do it?" So he started with seven bishops, and eventually he had five cohorts of seven bishops—five groups, which means 35 bishops that he was mentoring in the Church of Nigeria.</div></div>
+<div class="duo"><div class="zh">Sein Zeugnis schloss er so: „Meine größte Freude an dieser Bewegung ist vor allem nicht, wie weit sie wächst, sondern die sichtbare Veränderung im Leben derer, die dazugehören — Zeugnisse vom Sieg über die Sünde, Heilung in Ehen und Familien, ein neuer Umgang mit Dienst und Lebensfragen, Einheit, Liebe und Verständnis füreinander — nicht nur in meiner eigenen Diözese, sondern in allen 165 Diözesen der Kirche von Nigeria.“</div><div class="en">He ended his testimony by saying this: "Above all, my greatest joy about this movement is not how wide it is growing, but the noticeable change of life demonstrated by those in the movement—the testimonies of victory over sin, healing in marriages and homes, positive change in approach to ministry and life issues, unity, love and understanding—and not just in my own diocese, but in all the 165 dioceses in the Church of Nigeria."</div></div>
+<div class="keynote"><span class="key">Jüngerschaft trägt Frucht,</span> wo das Mandat der Mission vorausgeht.<span class="en">Discipleship works when the mandate precedes the mission.</span></div>
+</section>
+<section class="stage bookend"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-6 8-6s8 2 8 6v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 11v7M15 11v7"/></svg></div><h2>Schluss · Was soll die Kirche hervorbringen?<span class="h2en">Closing — What Is the Church to Produce?</span></h2></div>
+<div class="duo"><div class="zh">Ich schließe mit einer einfachen Frage. Eine Schuhfabrik stellt Schuhe her. Eine Papierfabrik stellt Papier her. Eine Glasfabrik stellt Glas her. Was soll die Kirche hervorbringen? Die Kirche soll Jünger hervorbringen. Und die Frage lautet nicht: „Bringst du Jünger hervor?“ oder „Bringt deine Gemeinde Jünger hervor?“ Die wesentliche Frage lautet: Was für Jünger bringen wir hervor?</div><div class="en">I want to close with this simple question. A shoe factory produces shoes. A paper factory produces paper. A glass factory produces glass. What is the church to produce? The church is to produce disciples. And the question is not, "Are you producing disciples?" or "Is your church producing disciples?" The essential question is: what kind of disciples are we producing?</div></div>
+<div class="keynote"><span class="key">Meine Botschaft heute Abend:</span> Brüder und Schwestern, wir sollen Jünger hervorbringen, in deren Leben das Mandat der Mission vorausgeht — deren Wandel mit Gott ihr Werk für Gott trägt.<span class="en">Tonight, my message is: my brothers and sisters, we must produce the kind of disciples in whose lives the mandate precedes the mission. Their walk with God undergirds their work for God.</span></div>
+<div class="duo"><div class="zh">Beugen Sie mit mir das Haupt zum Gebet. Ewiger Gott, himmlischer Vater, unsere Hingabe bestimmt unsere Jüngerschaft. Führe uns zurück zu diesem Mandat — neu mit dir zu wandeln und deine Herrschaft in unserem Leben neu aufzurichten —, zu diesem Wesentlichen. Hilf uns darin, lieber Gott.</div><div class="en">Would you bow with me and pray? Eternal God and Heavenly Father, our devotion defines our discipleship. So lead us back to this mandate, the essential of walking with you afresh and re-establishing your authority in our lives. Help us in this, dear God.</div></div>
+<div class="duo"><div class="zh">Liebe Freunde, ich glaube: Sooft die Seiten der Schrift aufgeschlagen werden, ruft Gott uns zu einer Antwort. Heute Abend ist es nicht anders. Heute Abend ruft Gott uns zu einer Antwort: uns ihm neu hinzugeben, seine Herrschaft in unserem Leben neu aufzurichten und das Mandat vor die Mission zu stellen.</div><div class="en">My friends, I believe each time the pages of Scripture are opened, God summons us to a response. Tonight is no different. Tonight, God is calling us to a response: to make a fresh commitment unto Him, to re-establish His authority in our lives, to put the mandate before our mission.</div></div>
+<div class="duo"><div class="zh">Wenn Sie sagen: „Ja, Herr, ich habe dein Wort gehört. Von diesen vier biblischen Gestalten habe ich gelernt, wie wichtig es ist, den Wandel vor das Werk zu stellen, damit mein Werk von meinem Wandel getragen wird“ — wenn das Ihr Verlangen und Ihre Antwort an den Herrn ist, darf ich Sie bitten, jetzt mit mir aufzustehen?</div><div class="en">And if you say, "Yes, Lord, I hear Your Word. I learned from these four Bible characters how important it is to put our walk before our work, so that our work is cradled by our walk"—if this is your desire and your response to the Lord, can I invite you right now to stand with me?</div></div>
+<div class="duo"><div class="zh">Wo immer Sie sind — sagen Sie: Herr, ich will zum Mandat zurückkehren, ich will das Mandat hochhalten. Ich will tun können, was du Mose geboten hast: sie zu lehren den Weg, auf dem sie wandeln, und die Werke, die sie tun sollen — in dieser Ordnung. Und heute Abend, da wir an die Zukunft der chinesischen Kirche denken: Die Zukunft beginnt dort, wo das Mandat vor die Mission tritt. Heute Abend wollen wir es tun, als deine Diener. Wenn das Ihre Antwort ist, stehen Sie jetzt mit mir auf.</div><div class="en">Wherever you are, you say, "Lord, I want to return to the mandate. I want to lift up the mandate. I want to be able to do what you told Moses to do: teach them the way they are to walk and the work they are to do—in that order." And tonight, as we think about the future of the Chinese church: the future comes when we put the mandate before the mission. And tonight, we will do it as your servants. If this is your response, you stand with me right now.</div></div>
+<div class="duo"><div class="zh">Ewiger Gott, himmlischer Vater, ich bete für alle, die stehen — mich selbst eingeschlossen. Wir sind schwach, aber du bist stark. Hilf uns, das Mandat vor die Mission zu stellen: dass mein Wandel mit dir mein Werk für dich trägt und stärkt. Wir danken dir im wunderbaren Namen Jesu. Amen. Gott segne Sie.</div><div class="en">Eternal God and Heavenly Father, I pray for these ones standing, including myself. We are weak, but you are strong. Help us to put the mandate before the mission: our walk with you to cradle and empower our work for you. We thank you in Jesus' fantastic name. Amen. God bless you.</div></div>
+</section>
+<p class="foot">International Missionary City Church · Ausgewählte Beiträge · <a class="sitef" href="https://imc2.org/">IMC2.org</a></p>
+</div>
+</body>
+</html>
