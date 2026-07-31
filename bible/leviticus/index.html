@@ -19,7 +19,9 @@
     -webkit-font-smoothing:antialiased;}
   em,i,cite,address{font-style:normal;}
   .wrap{max-width:900px;margin:0 auto;padding:40px 26px 90px;}
-  header.hero{text-align:center;padding:60px 20px 44px;border-bottom:3px double var(--gold);margin-bottom:12px;}
+  header.hero{text-align:center;padding:60px 20px 6px;margin-bottom:30px;}
+  .hero .rule{width:120px;height:0;margin:28px auto 0;border-top:1px solid var(--line);position:relative;}
+  .hero .rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);background:var(--parchment);padding:0 12px;color:var(--gold);font-size:19px;}
   .hero .kicker{letter-spacing:.5em;text-indent:.5em;color:var(--purple);font-size:17.5px;margin-bottom:16px;}
   .hero h1{font-family:var(--display);font-size:41px;margin:0 0 16px;
     letter-spacing:.18em;text-indent:.18em;line-height:1.42;font-weight:900;}
@@ -56,7 +58,7 @@
   @media (max-width:760px){
     .wrap{padding:30px 18px 70px;}
     body{font-size:21px;}
-    header.hero{padding:40px 8px 32px;}
+    header.hero{padding:40px 8px 6px;}
     .hero h1{font-size:31.5px;letter-spacing:.12em;text-indent:.12em;}
     .hero .sub{font-size:20.5px;letter-spacing:.1em;text-indent:.1em;}
     .hero .kicker{font-size:17px;}
@@ -83,6 +85,7 @@
   <h1>利未記</h1>
   <div class="sub">聖潔、獻祭、祭司神學。</div>
   <div class="verse">「使你們可以將聖的、俗的，潔淨的、不潔淨的，分別出來。」（利 10:10）</div>
+  <div class="rule"></div>
 </header>
 
 <div class="intro">

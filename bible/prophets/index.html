@@ -15,7 +15,9 @@
   body{margin:0;background:var(--parchment);color:var(--ink);
     font-family:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;line-height:1.9;}
   .wrap{max-width:900px;margin:0 auto;padding:40px 26px 90px;}
-  header.hero{text-align:center;padding:60px 20px 44px;border-bottom:3px double var(--gold);margin-bottom:12px;}
+  header.hero{text-align:center;padding:60px 20px 6px;margin-bottom:30px;}
+  .hero .rule{width:120px;height:0;margin:28px auto 0;border-top:1px solid var(--line);position:relative;}
+  .hero .rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);background:var(--parchment);padding:0 12px;color:var(--gold);font-size:19px;}
   .hero .kicker{letter-spacing:.4em;color:var(--purple);font-size:18px;margin-bottom:16px;}
   .hero h1{font-size:55px;margin:0 0 16px;letter-spacing:.08em;font-weight:700;}
   .hero .sub{color:var(--soft);font-size:22px;max-width:600px;margin:0 auto;}
@@ -53,6 +55,7 @@
   <h1>先知書研究</h1>
   <div class="sub">從先知書出發，逐卷細讀、繪製地圖、放回救贖歷史的進程裡衡量——一處解經與生活長年累積的地方。</div>
   <div class="verse">「他們如同海使波浪湧上來……我也要刮淨塵土，使她成為淨光的磐石。」</div>
+  <div class="rule"></div>
 </header>
 
 <h2 class="sec">導讀系列<span></span></h2>

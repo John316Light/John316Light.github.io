@@ -22,7 +22,9 @@
   .langs .cur{color:var(--amber);font-weight:700;}
   .back .site{font-size:18px;color:var(--amber);text-decoration:none;letter-spacing:.05em;font-weight:600;}
   .back .site:hover{color:var(--purple);}
-  header.hero{text-align:center;padding:42px 18px 32px;border-bottom:3px double var(--gold);margin-bottom:16px;}
+  header.hero{text-align:center;padding:42px 18px 6px;margin-bottom:30px;}
+  .hero .rule{width:120px;height:0;margin:28px auto 0;border-top:1px solid var(--line);position:relative;}
+  .hero .rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);background:var(--parchment);padding:0 12px;color:var(--gold);font-size:19px;}
   .hero .kicker{letter-spacing:.34em;color:var(--amber);font-size:17px;margin-bottom:14px;text-indent:.34em;}
   .hero h1{font-size:34px;margin:0 0 8px;letter-spacing:.01em;font-weight:700;line-height:1.3;}
   .hero .h1sub{color:var(--amber);font-size:22px;letter-spacing:.18em;text-indent:.18em;margin-bottom:12px;font-weight:600;}
@@ -62,6 +64,7 @@
   <div class="kicker">DÜSSELDORF IMC²</div>
   <h1>International Missionary City Church</h1>
   <div class="h1sub">For the Church</div>
+  <div class="rule"></div>
 </header>
 
 <div class="tl">
