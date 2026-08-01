@@ -206,19 +206,20 @@ h1 .ten{font-size:19px;}
 .langs a.lg:hover{color:var(--gold);text-decoration:underline;text-underline-offset:3px;}
 .langs .lg.cur{color:var(--gold);font-weight:700;}
 .langs .lg.off{color:#c6bfae;cursor:default;}
-.back .site{font-size:16.5px;color:var(--gold);text-decoration:none;
+/* 與語言選單同一列，字級跟著它走（17px），不要各訂各的。 */
+.back .site{font-size:17px;color:var(--gold);text-decoration:none;
   letter-spacing:.05em;font-weight:600;}
 @media (max-width:560px){
+  /* 只改排列方向，不動字級：語言選單全站一律 17px（見發布指南第 9 項檢查）。
+     這裡曾經把它壓到 16px，手機上就跟站上其他頁對不起來。讀者多為長者，
+     窄螢幕更不該縮字——直排之後空間本來就夠。 */
   .back{flex-direction:column;align-items:center;gap:7px;margin-bottom:14px;}
   .back-r{gap:12px;}
-  .langs{font-size:16px;}
-  .langs .lg{font-size:16px;}
-  .back .site{font-size:15.5px;}
 }
 </style>
 </head>
 <body>
-<div class="back"><a class="bk" href="./">← 回列表</a><span class="back-r"><span class="langs"><span class="lg cur">中文</span><span class="sep">·</span><a class="lg" href="../de/sunday-school/sharing-2026-08-01.html">Deutsch</a><span class="sep">·</span><a class="lg" href="../en/sunday-school/sharing-2026-08-01.html">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
+<div class="back"><a class="bk" href="./">← 回主日學課程列表</a><span class="back-r"><span class="langs"><span class="lg cur">中文</span><span class="sep">·</span><a class="lg" href="../de/sunday-school/sharing-2026-08-01.html">Deutsch</a><span class="sep">·</span><a class="lg" href="../en/sunday-school/sharing-2026-08-01.html">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
 <div class="wrap">
 <header>
   <div class="kicker">與 您 分 享</div>
