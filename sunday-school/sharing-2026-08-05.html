@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>城光使命教會 IMC² 精選文章 — 福音塑造的生命 · 提摩太·凱勒牧師 ── 中英對照</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap');
+/* trilingual-core · 中文排版變數
+   只定義「語言層」的字體、字距、斷字；版面（卡片、金框、綠框）由各技能自己的 CSS 負責。
+   用法：把本檔疊在技能自己的樣式之前，技能的 CSS 用 var(--t-*) 取值。 */
+:root{
+  --t-display:"Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --t-body:"EB Garamond","Noto Serif TC","Source Han Serif TC",serif;
+  --t-latin:"EB Garamond",Georgia,serif;
+
+  --t-track-body:.02em;
+  --t-track-head:.13em;
+  --t-track-display:.18em;
+  --t-track-label:.24em;
+  --t-track-kicker:.5em;
+
+  --t-size-body:20.5px;
+  --t-line-body:2.05;
+  --t-size-sub:19px;
+  --t-line-sub:1.8;
+
+  --t-hyphens:manual;
+  --t-quote-open:"「";
+  --t-quote-close:"」";
+}
+html{-webkit-hyphens:var(--t-hyphens);hyphens:var(--t-hyphens);}
+
+
+:root{
+  --ink:#1f2831; --sub:#4d5967; --line:#c9b98f; --gold:#9c7a26;
+  --bg:#f7f4ed; --card:#fffefa; --edge:#e6dfcd; --accent:#37585d;
+  --holy:#2f5257; --common:#8d7043; --en:#77808f;
+  --serif:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --display:"Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --latin:"EB Garamond",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:var(--serif);
+  background:var(--bg); color:var(--ink); font-size:20.5px; line-height:1.95;
+  padding:56px 20px 84px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto;}
+.verse,.explain,.q,.col,li,td,.duo{overflow-wrap:break-word;word-break:break-word;line-break:strict;}
+header{text-align:center;margin-bottom:10px;}
+.kicker{letter-spacing:.5em;color:var(--gold);font-size:16.5px;margin-bottom:16px;text-indent:.5em;}
+h1{font-family:var(--display);font-size:39px;font-weight:900;letter-spacing:.18em;line-height:1.42;text-indent:.18em;}
+h1 .sq{font-family:var(--latin);font-size:.62em;font-weight:700;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.04em;color:var(--gold);}
+h1{display:inline-block;letter-spacing:0;text-indent:0;}
+h1 .l1,h1 .l2,h1 .l3{display:flex;justify-content:space-between;}
+h1 .l1{font-size:18px;font-weight:600;color:var(--gold);margin-bottom:4px;align-items:baseline;}
+h1 .l1 .imc{margin-left:12px;letter-spacing:.02em;}
+h1 .l1 .sq{font-size:14px;}
+h1 .l3{font-size:26px;margin-top:2px;color:var(--gold);font-weight:700;}
+h1 .ten{display:block;font-family:var(--latin);font-size:21.5px;font-weight:600;letter-spacing:.14em;text-indent:.14em;color:var(--accent);margin-top:8px;}
+.subtitle{font-family:var(--display);font-size:23px;color:var(--accent);margin:0 auto 12px;letter-spacing:.16em;font-weight:500;text-indent:.16em;text-align:center;}
+.subtitle .sub-en-line{display:block;font-family:var(--latin);font-size:17.5px;letter-spacing:.14em;text-indent:.14em;color:var(--sub);font-weight:500;margin-top:5px;}
+.rule{width:0;height:0;margin:26px auto 40px;border-top:1px solid var(--line);width:120px;position:relative;}
+.rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);
+  background:var(--bg);padding:0 12px;color:var(--gold);font-size:19px;}
+.meta{
+  background:#fcfaf3;border:1px solid var(--edge);border-radius:14px;
+  padding:18px 26px;font-size:19.5px;color:var(--sub);margin:0 auto 36px;line-height:1.9;
+}
+.meta b{color:var(--ink);}
+.meta p{margin:3px 0;}
+.meta .mi{display:inline-block;white-space:nowrap;margin-right:26px;}
+.meta .mi:last-child{margin-right:0;}
+section.stage{
+  background:var(--card);border:1px solid var(--edge);border-radius:18px;
+  padding:30px 34px 32px;margin:0 auto 24px;
+  box-shadow:0 8px 24px rgba(60,50,20,.05);
+}
+section.stage.bookend{background:#f4f8f7;border-color:#d3e2de;}
+.stage-head{display:flex;align-items:center;gap:15px;margin-bottom:4px;}
+.stage-head .ic{
+  width:44px;height:44px;flex:0 0 44px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+}
+.bookend .stage-head .ic{background:#e8f0ed;border-color:#d3e2de;color:var(--accent);}
+.stage-head .ic svg{width:22px;height:22px;}
+h2{font-family:var(--display);font-size:26.5px;font-weight:900;letter-spacing:.13em;text-indent:.13em;}
+h2 .h2en{display:block;font-family:var(--latin);font-size:16.5px;color:var(--sub);letter-spacing:.14em;font-weight:500;margin-top:3px;text-indent:.14em;}
+.label{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--display);font-size:17.5px;font-weight:900;color:var(--gold);
+  letter-spacing:.24em;text-indent:0;margin:24px 0 13px;
+}
+.label svg{width:19px;height:19px;flex:0 0 19px;}
+.verse{
+  font-family:var(--display);
+  background:#fbf7ee;border-left:3px solid var(--line);border-radius:0 12px 12px 0;
+  padding:17px 24px;margin:0 0 14px;font-size:24px;font-weight:600;
+  line-height:2.1;letter-spacing:.07em;color:#1a222a;
+}
+.verse .ref{color:var(--gold);font-weight:700;letter-spacing:.05em;}
+.verse .en-line{display:block;font-family:var(--latin);font-size:19px;font-weight:500;
+  color:#8a7a4e;letter-spacing:.02em;line-height:1.75;margin-top:9px;padding-top:9px;border-top:1px dashed #e0d3ae;}
+.verse .note{display:block;font-family:var(--display);font-size:17px;font-weight:400;color:var(--sub);
+  letter-spacing:.03em;line-height:1.85;margin-top:8px;}
+.duo{margin:0 0 17px;}
+.duo .zh{color:var(--ink);font-size:20.5px;line-height:2.05;letter-spacing:.02em;font-family:var(--display);font-weight:400;}
+.duo .en{font-family:var(--latin);color:var(--en);font-size:19px;line-height:1.8;margin-top:7px;
+  padding-left:15px;border-left:2px solid var(--edge);}
+.keynote{background:#f4f8f7;border-left:3px solid var(--accent);border-radius:0 12px 12px 0;
+  padding:15px 20px;margin:6px 0 18px;color:#2b474b;font-size:21px;letter-spacing:.03em;line-height:2;}
+.keynote .key{font-family:var(--display);font-weight:900;color:var(--accent);letter-spacing:.09em;
+  border-bottom:2px solid #d9c68d;padding-bottom:1px;}
+.keynote .en{display:block;font-family:var(--latin);font-weight:500;font-size:19px;
+  color:#4f6a6e;margin-top:7px;line-height:1.75;}
+.split{display:flex;gap:18px;flex-wrap:wrap;margin:20px 0 8px;}
+.col{flex:1;min-width:250px;border-radius:14px;padding:19px 21px 17px;font-size:20px;line-height:2;position:relative;overflow:hidden;}
+.col.h{background:#edf4f1;border:1px solid #cfe0da;color:#28454a;box-shadow:inset 0 3px 0 var(--holy);}
+.col.c{background:#f9f1e2;border:1px solid #e6d7b8;color:#66512e;box-shadow:inset 0 3px 0 var(--common);}
+.col .lab{display:flex;align-items:center;gap:11px;font-family:var(--display);font-size:19.5px;letter-spacing:.24em;font-weight:900;margin-bottom:11px;}
+.col.h .lab{color:var(--holy);}
+.col.c .lab{color:var(--common);}
+.col .lab .ico{width:38px;height:38px;flex:0 0 38px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;}
+.col .lab .ico svg{width:22px;height:22px;}
+.col.h .lab .ico{background-color:#dcebe5;border:1px solid #c3d9d1;}
+.col.c .lab .ico{background-color:#f0e1bf;border:1px solid #e2cd9e;}
+.col.h .lab .ico{animation:bulbglow 2.8s ease-in-out infinite;will-change:box-shadow,background-color;}
+@keyframes bulbglow{
+  0%,100%{background-color:#dcebe5;color:var(--holy);border-color:#c3d9d1;box-shadow:0 0 0 0 rgba(233,196,90,0);}
+  50%{background-color:#fdf2c9;color:#a97f14;border-color:#e6c86a;box-shadow:0 0 16px 5px rgba(233,196,90,.55);}
+}
+@media (prefers-reduced-motion:reduce){.col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;color:#a97f14;box-shadow:0 0 10px 2px rgba(233,196,90,.4);}}
+.col ul{margin-top:2px;}
+.col li{padding-left:20px;margin-bottom:8px;color:inherit;font-size:19.5px;}
+.col.h li::before{content:"❖";color:#8fb3a9;}
+.col.c li::before{content:"❖";color:#cbb27c;}
+.col .sub-en{display:block;font-family:var(--latin);font-size:16.5px;letter-spacing:.05em;opacity:.75;font-weight:500;}
+.foot{text-align:center;color:#a89c80;font-size:16.5px;margin-top:46px;letter-spacing:.32em;text-indent:.32em;}
+li{position:relative;padding-left:22px;margin-bottom:12px;font-size:19.5px;color:var(--sub);line-height:1.95;list-style:none;}
+li::before{content:"❖";position:absolute;left:0;color:var(--line);font-size:16px;top:.4em;}
+li b{color:var(--ink);}
+.back{max-width:920px;margin:0 auto 18px;display:flex;justify-content:space-between;align-items:baseline;}
+.back .site{font-size:17px;color:var(--gold);text-decoration:none;letter-spacing:.05em;font-weight:600;}
+.foot a.sitef{color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:.05em;}
+.back a{font-size:18.5px;color:var(--sub);text-decoration:none;letter-spacing:.04em;}
+.back a:hover{color:var(--gold);}
+@media print{
+  .col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;}
+  body{background:#fff;padding:0;font-size:19.5px;}
+  section.stage{box-shadow:none;break-inside:avoid;margin-bottom:16px;}
+  .verse{font-size:20.5px;}
+}
+@media (max-width:760px){
+  .meta .mi{white-space:normal;display:block;margin-right:0;}
+  body{padding:34px 14px 60px;font-size:20px;}
+  .meta{padding:16px 18px;font-size:19px;}
+  section.stage{padding:24px 20px 26px;border-radius:15px;}
+  .stage-head{gap:12px;}
+  .stage-head .ic{width:38px;height:38px;flex:0 0 38px;}
+  .stage-head .ic svg{width:19px;height:19px;}
+  h1{font-size:31px;line-height:1.45;}
+  h1 .l1{font-size:15px;}
+  h1 .l3{font-size:21px;}
+  h1 .sq{font-family:var(--latin);font-size:.62em;font-weight:700;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.04em;color:var(--gold);}
+h1 .ten{font-size:19px;}
+  .subtitle{font-size:20.5px;letter-spacing:.08em;text-indent:.08em;}
+  h2{font-size:23px;letter-spacing:.06em;text-indent:.06em;}
+  h2 .h2en{font-size:16px;letter-spacing:.08em;text-indent:.08em;}
+  .kicker{font-size:16px;letter-spacing:.3em;text-indent:.3em;}
+  .label{font-size:16.5px;letter-spacing:.22em;margin:22px 0 12px;}
+  .verse{font-size:21px;padding:14px 16px;letter-spacing:.03em;line-height:2;}
+  .verse .en-line{font-size:17.5px;}
+  .duo .zh{font-size:19.5px;line-height:1.95;}
+  .duo .en{font-size:17.5px;}
+  .keynote{font-size:19.5px;padding:13px 15px;}
+  .keynote .en{font-size:17.5px;}
+  .split{gap:12px;}
+  .col{min-width:100%;flex:1 1 100%;font-size:19.5px;padding:16px 17px 15px;}
+  .col .lab{font-size:17.5px;letter-spacing:.18em;gap:9px;}
+  .col .lab .ico{width:32px;height:32px;flex:0 0 32px;}
+  .col .lab .ico svg{width:18px;height:18px;}
+}
+@media (max-width:400px){
+  body{padding:26px 10px 48px;}
+  section.stage{padding:20px 15px 22px;}
+  h1{font-size:27.5px;}
+  h1 .l1{font-size:14px;}
+  h1 .l3{font-size:19px;}
+  .subtitle{font-size:19.5px;}
+  h2{font-size:21px;}
+  .verse{font-size:20px;padding:13px 14px;letter-spacing:.02em;}
+}
+
+/* ---- 語言選單（三格常駐）與返回列 ---- */
+.back{max-width:920px;margin:0 auto 18px;display:flex;justify-content:space-between;
+  align-items:baseline;gap:10px;flex-wrap:wrap;}
+.back .bk{font-size:17.5px;color:var(--sub);text-decoration:none;letter-spacing:.02em;}
+.back .bk:hover{color:var(--gold);}
+.back-r{display:inline-flex;align-items:baseline;gap:14px;white-space:nowrap;}
+.langs{display:inline-flex;align-items:baseline;gap:8px;font-size:17px;
+  font-family:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;}
+.langs .sep{color:#cfc7b6;font-size:14px;}
+.langs .lg{text-decoration:none;color:var(--sub);letter-spacing:.02em;font-size:17px;}
+.langs a.lg:hover{color:var(--gold);text-decoration:underline;text-underline-offset:3px;}
+.langs .lg.cur{color:var(--gold);font-weight:700;}
+.langs .lg.off{color:#c6bfae;cursor:default;}
+/* 與語言選單同一列，字級跟著它走（17px），不要各訂各的。 */
+.back .site{font-size:17px;color:var(--gold);text-decoration:none;
+  letter-spacing:.05em;font-weight:600;}
+@media (max-width:560px){
+  /* 只改排列方向，不動字級：語言選單全站一律 17px（見發布指南第 9 項檢查）。
+     這裡曾經把它壓到 16px，手機上就跟站上其他頁對不起來。讀者多為長者，
+     窄螢幕更不該縮字——直排之後空間本來就夠。 */
+  .back{flex-direction:column;align-items:center;gap:7px;margin-bottom:14px;}
+  .back-r{gap:12px;}
+}
+</style>
+</head>
+<body>
+<div class="back"><a class="bk" href="./">← 回主日學課程列表</a><span class="back-r"><span class="langs"><span class="lg cur">中文</span><span class="sep">·</span><a class="lg" href="../de/sunday-school/sharing-2026-08-05.html">Deutsch</a><span class="sep">·</span><a class="lg" href="../en/sunday-school/sharing-2026-08-05.html">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
+<div class="wrap">
+<header>
+  <div class="kicker">中 英 對 照 與 您 分 享</div>
+  <h1><span class="l1"><span>德</span><span>國</span><span>杜</span><span>塞</span><span>道</span><span>夫</span><span class="imc">IMC<sup class="sq">2</sup></span></span><span class="l2"><span>城</span><span>光</span><span>使</span><span>命</span><span>教</span><span>會</span></span><span class="l3"><span>精</span><span>選</span><span>文</span><span>章</span></span></h1>
+  <div class="rule"></div>
+</header>
+<p class="subtitle">福音塑造的生命 <span class="sub-en-line">The Gospel-Shaped Life</span></p>
+<div class="meta">
+<p><span class="mi">講員：<b>提摩太·凱勒牧師（Rev. Dr. Timothy Keller）</b></span></p>
+<p><span class="mi">經文版本：《和合本》</span><span class="mi">英文：講員原文</span></p></div>
+<section class="stage bookend"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 6h6z"/><path d="M19 7l-3 6h6z"/><path d="M8 21h8"/></svg></div><h2>四個問題<span class="h2en">Four Questions</span></h2></div>
+<div class="duo"><div class="zh">這一講的題目是「福音塑造的生命」。我看著題目，心裡想：我當初怎麼會答應講這個？福音塑造的生命，那就是基督教，那是基督教的全部。所以，我到底有多少時間？</div><div class="en">This topic is the gospel-shaped life. I'm looking at that and I'm saying, why did I ever agree to that? The gospel-shaped life — that's Christianity. That's the whole of Christianity. So, okay, how long do I have?</div></div>
+<div class="duo"><div class="zh">有時候我能做的最好的事，是給一個綜覽。不是三萬英尺的高度，是五萬英尺的高度，來看這麼大的一個題目。這樣哪一處都鑽不深，可是仍然有它的用處。</div><div class="en">I think the best thing for me to do, sometimes, is to give overviews. Sometimes not the 30,000-foot view, but maybe the 50,000-foot view of a subject as vast as this, where you can't drill down very deep into any part of it, but is nevertheless a helpful thing.</div></div>
+<div class="duo"><div class="zh">要談福音塑造的生命，得回答四個問題。我可不希望你們以為我會把哪一個徹底答完。可是光把該問的問題指出來，本身就重要。</div><div class="en">To talk about the gospel-shaped life, I think you have to actually answer four questions. I hope you don't think I'm going to answer any of them thoroughly. But even to show you what the right questions are to ask is important.</div></div>
+<div class="keynote"><span class="key">四個問題。</span>福音是什麼？福音塑不塑造生命？福音塑造的生命長什麼樣？福音又怎麼改變我們？<span class="en">Four questions. What's the gospel? Does the gospel shape a life? What does the gospel-shaped life look like? And how does the gospel change and shape our lives?</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div><h2>一、福音是消息，不是勸告<span class="h2en">I. The Gospel Is News, Not Advice</span></h2></div>
+<div class="duo"><div class="zh">要抓住福音的矛尖，最好的說法之一是：福音是消息，不是勸告。勸告是給你的建議，幫你把一件事做成。消息是一則報告，說有一件事已經替你做成了。它在歷史裡已經發生，你只能回應它。</div><div class="en">One of the best ways to understand the point of the spear of the gospel is to say the gospel is news, not advice. Advice is counsel that you get to help you get something accomplished. News is a report that something has been accomplished for you. It's already happened in history, and you must respond to it.</div></div>
+<div class="duo"><div class="zh">除了基督教以外的宗教，基本上都是勸告。而基督教是消息，是福音，是好消息。別的大宗教都由一位先知、一位智者、一個人物創立，那個人來了，說：這是尋見神的路。世界宗教裡只有基督教，是由一個人創立的，他來了，說：我就是神，我來尋見你。</div><div class="en">Essentially all religions besides Christianity are all advice. Christianity is news, gospel, good news. Every major religion was founded by a prophet, or a sage, or a figure who came and said, here's the way to find God. Only Christianity, of all the world religions, was founded by a man who came and said, I'm God, come to find you.</div></div>
+<div class="duo"><div class="zh">不是「這是通往神的路」，而是「我是神，我來了，來做你做不到的事」。別的宗教都說：這裡有些建議，教你怎麼做才能接上神。基督教反過來，是神下來說：我來尋見你。</div><div class="en">Not, here's the way to God. I'm God, come to find you. I'm God, come to do what you couldn't do. Every other religion says, here's advice on how to do what you need to do to connect to God. Christianity is the other way around. It comes down and says, I'm God, come to find you.</div></div>
+<div class="duo"><div class="zh">換個說法：福音不是藉著耶穌基督傳來的，福音就是耶穌基督。所以保羅才能說，他定了主意，除了基督並他釘十字架以外，什麼都不知道。當然那是誇張的說法，但他真正說的是：耶穌為我們成就的事，以及我們對他的倚靠，這就是福音。</div><div class="en">Another way to put it is that the gospel doesn't come through Jesus Christ. The gospel is Jesus Christ. So that Paul can say, I made it my object to know nothing except Christ and him crucified. For Paul to say that is an exaggeration, of course. But what he's actually saying is: what Jesus has accomplished for us, and our reliance on him — that's the gospel.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">哥林多前書 2:2</span>　因為我曾定了主意，在你們中間不知道別的，只知道耶穌基督並他釘十字架。<span class="en-line">“For I resolved to know nothing while I was with you except Jesus Christ and him crucified.”</span></div>
+<div class="keynote"><span class="key">勸告把擔子加上去，</span>：消息把擔子卸下來。福音卸擔子，不加擔子。<span class="en">Advice puts a burden on, news takes it off. The gospel takes burdens off. It doesn't put burdens on.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>重擔落下的那一刻<span class="h2en">The Moment the Burden Fell Off</span></h2></div>
+<div class="duo"><div class="zh">有兩段歷史記載，多年來一直幫我把這件事想清楚。威廉·賀蘭是約翰與查理·衛斯理的朋友，早期循道會的一員。他歸信的時間，跟衛斯理兄弟差不多。當時他們在做一件事：把馬丁路德的《加拉太書註釋》讀出聲來。有一天晚上，賀蘭聽懂了。這段記載收在阿諾·達里摩爾所寫的《懷特腓傳》第一卷裡。</div><div class="en">A couple of historic accounts have meant a lot to me and helped me understand this. William Holland was one of the friends of John and Charles Wesley, one of those early Methodists. He was converted at about the time the Wesleys were getting converted too. And one of the things they were doing was reading aloud from Martin Luther's commentary on Galatians. And one night William Holland got it. You can read this in Arnold Dallimore's first volume of his life of George Whitefield.</div></div>
+<div class="duo"><div class="zh">賀蘭說，查理·衛斯理把序言讀出來，讀到路德那句話——「那麼，我們豈是無事可作？是的，無事可作。只要接受他，就是神所立、為我們成了智慧、公義、聖潔、救贖的那一位。」——就在那一刻，有一股他形容不出的力量臨到他。他說，他的重擔一瞬間落下，心裡滿了平安與愛，他放聲哭了出來。事後走到街上，他幾乎感覺不到腳下的地。</div><div class="en">William Holland says Charles Wesley read the preface aloud. And at Luther's words — what, have we then nothing to do? No, nothing; but only accept of him who of God has been made unto us wisdom, and righteousness, and sanctification, and redemption — at that moment there came such a power over him as he could not well describe. His great burden fell off in an instant. His heart was so filled with peace and love that he burst into tears. When he afterwards went into the street, he could scarcely feel the ground he trod upon.</div></div>
+<div class="duo"><div class="zh">另一段是拿單·柯爾的記載。他是十八世紀四十年代康乃狄克的農夫，識字不多，聽懷特腓講道之後歸信。他寫下的東西全是大寫字母，沒有標點，讀起來有點吃力。但他歸信的那個關鍵處，寫得極準。</div><div class="en">There's an account of a man named Nathan Cole. He was a man who lived in Connecticut in the 1740s, a barely literate farmer, and he heard George Whitefield preach, and he was converted. His account is all in caps, no punctuation, a little bit hard to read. But here's the key spot where he became a Christian.</div></div>
+<div class="duo"><div class="zh">他沒有寫「我接受基督作我的救主」——那樣說也可以，只是我想那沒有抓到矛尖。他寫的是：聽他講道，我心上受了一道傷；靠神的祝福，我舊有的根基被翻開了；我看見我自己的義救不了我。</div><div class="en">He doesn't say, I accepted Christ as my Savior — though that's okay to say, it doesn't, I don't think, get the point of the spear. Here's what he said, listening to George Whitefield: my hearing him preach gave me a heart wound. By God's blessing, my old foundation was broken up. And I saw that my righteousness could not save me.</div></div>
+<div class="keynote"><span class="key">我看見我自己的義救不了我。</span>兩百多年前的兩個人，說的是同一件事：擔子是在那一刻卸下的。<span class="en">I saw that my righteousness could not save me. Two men, two and a half centuries ago, saying the same thing: that is the moment the burden came off.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div><h2>兩種律法主義<span class="h2en">Two Kinds of Legalism</span></h2></div>
+<div class="duo"><div class="zh">我強調這一點，是因為今天信聖經的基督徒太容易落進兩種「給勸告」的模式，而不是福音塑造的事奉與生命。</div><div class="en">The reason I'm stressing this is because it is extremely easy today for Bible-believing, evangelical Christians to fall into one of two forms of what I would call advice-giving rather than gospel-shaped ministries and lives.</div></div>
+<div class="duo"><div class="zh">一種是我們多半認得出來的律法主義。有些教會對聖經的看法很高，可是很律法。他們或明說、或多半是暗示，讓事奉中的每一個人都相信：你若不是好得不得了，若不守盡這些規矩——包括一大堆聖經以外的規矩——若不照這樣活、這樣做、這樣信，你就不算真基督徒。那是把擔子加上去。那是說：你把這些擔子扛住了，神才會喜悅你。這樣就把福音丟了。</div><div class="en">On the one hand, you have what most of us know as legalism. There are churches that have a high view of the Bible, but they are legalistic. And what they do is, either explicitly but usually implicitly, they make everybody in the ministry believe that unless you're incredibly good, unless you follow every one of these rules, including a lot of these extra-biblical rules, unless you live like this, and do this, and believe all these things, you're not really a Christian. They're putting burdens on. They're saying, if you bear these burdens, then God will be pleased with you — which, of course, is losing the gospel.</div></div>
+<div class="duo"><div class="zh">但還有一種，我會說是自由派福音派的律法主義。它是這樣講的：我們不太想談忿怒、寶血、贖罪那一套；我們寧可談教會是神的新子民，是一個有愛、有喜樂、有平安、有公義的群體。要作基督徒，你就加入這個群體，成為其中一分子，加入神更新世界的計劃。</div><div class="en">But there's also, I would say, a kind of liberal evangelical legalism. And it goes like this. It says, we don't want to talk too much about wrath, and blood, and atonement. We would rather talk about the church as a new people of God, a community of love, joy, peace and justice. And to become a Christian, you join the community, you become part of this community, you become part of God's program to renew the world.</div></div>
+<div class="duo"><div class="zh">這聽起來很好，可它是一種新的律法主義。為什麼？因為它又把擔子加到你身上了。你不可以有偏見，你得有包容，你得往外走，你得去愛人。</div><div class="en">And as great as that sounds, it's a new kind of legalism. Why? Because it's putting a burden on you again. You've got to not be bigoted. You've got to be inclusive. You've got to be reaching out. You've got to be loving people.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 9l-4 3.4 1.2 5.1L12 14.8 7.8 17.5 9 12.4 5 9l4.9-1.1z"/></svg></div><h2>「我的鎖鏈脫落」<span class="h2en">"My Chains Fell Off"</span></h2></div>
+<div class="duo"><div class="zh">查理·衛斯理後來終於明白了福音。他在賀蘭得著的時候還沒有明白，還不太清楚是怎麼回事，但他後來明白了。他那首偉大的詩歌裡有一句話，說的是：我的鎖鏈脫落，我的心自由了。</div><div class="en">Charles Wesley did eventually figure out the gospel. He actually didn't understand it when William Holland was getting it; he still wasn't quite sure what was going on, but he eventually got it. And there's that line in that great hymn where he says: my chains fell off, my heart was free.</div></div>
+<div class="duo"><div class="zh">這是不是你心裡的語言？如果你落進上面那兩種律法主義的任何一種，你說得出這句話嗎？如果一個人說：作基督徒就是你得愛人、得關懷人、得在世上行公義、得更新世界——他會說「我的鎖鏈脫落了」嗎？不會。他會說：很好，我很興奮，可是這是一副擔子。</div><div class="en">Now, is that the language of your heart? If you get into either of these kinds of legalism, is that it? In other words, if you say what it means to be a Christian is you have to love people, and you have to care for them, you have to do justice in the world, and you have to renew the world — does a person say, okay, my chains fell off? No. They're saying, okay, that's great, I'm excited, but it's a burden.</div></div>
+<div class="duo"><div class="zh">福音卸擔子。過去的擔子、罪疚的擔子、怕將來撐不撐得住的擔子、父母期望的擔子——全都卸下。</div><div class="en">The gospel takes burdens off. The burdens of your past, the burdens of your guilt, the burden of your fear of the future, the burdens of parental expectations — all burdens are taken off.</div></div>
+<div class="duo"><div class="zh">你若覺得自己能在這件事上再加點什麼——基督的寶血挽回了神的忿怒，把人從一切罪疚裡完全釋放出來——你若覺得這還能改良，那不管你加的是什麼，我想你都唱不出「我的鎖鏈脫落，我的心自由了」。你唱不出來。你是在把擔子加到人身上。</div><div class="en">If you feel like you can improve on the propitiation of the wrath of God through the blood of Christ, leading to complete freedom from all guilt — if you can improve on that, whatever that improvement is, I don't think you're going to be singing, my chains fell off, my heart is free. You're not. You're putting burdens on people.</div></div>
+<div class="keynote"><span class="key">那句話若是你心裡整天的背景音樂，</span>：你就會有平衡，會有喜樂，會有力量，也就能有一個福音塑造的生命。<span class="en">If that's the language of your heart all the time, the baseline background music of life, you'll have balance, you'll have joy, you'll have power, and you can have a gospel-shaped life.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 1 1 21 12z"/></svg></div><h2>二、福音塑造生命嗎？<span class="h2en">II. Does the Gospel Shape a Life?</span></h2></div>
+<div class="duo"><div class="zh">有不少人說：福音不塑造生命，塑造生命的是律法。意思是，福音歸福音，律法歸律法，兩者不可混淆——這是對的。福音救你，你信福音，安息在基督裡，你就得救了。但真正指導你怎麼活的，應該是律法。我既然得救了，就轉過身來說：主啊，我怎樣才能討你喜悅？律法在這裡，律法告訴你怎麼活，你就該那樣活。</div><div class="en">There are plenty of folks who say, the gospel doesn't shape the life; the law shapes the life. That is to say, you have gospel and you have law, and we mustn't confuse them — and that's right. The gospel saves you. You believe in the gospel, and you rest in him, and you're saved. But then, what actually directs the way in which you live should be the law. Now that I'm saved, I turn and say, Lord, how can I please you? And here's the law, and the law tells you how to live.</div></div>
+<div class="duo"><div class="zh">就這一步而言，這是真的。律法仍舊是我們的指引。作為一個改革宗長老會的人，我相信雖然我是靠恩典得救，這不表示我不想討神喜悅。我怎麼討神喜悅？我看律法。那是討神喜悅的方式，那是他的旨意。</div><div class="en">As far as it goes, that's actually true. The law is still our guide. As a good Reformed Presbyterian, I believe that though I am saved by grace, it doesn't mean that I don't want to please God. And how do I please God? I look at the law. That's how to please God. That's his will.</div></div>
+<div class="duo"><div class="zh">可是說「福音不塑造你的生命，只有律法塑造」，這話太乾淨了。它不但不合聖經——有太多經文談到從福音流出來的順服——而且我要說，它在實際上也行不通。</div><div class="en">However, it's actually too neat to say the gospel doesn't shape your life, only the law does. Not only does it not really line up — there are too many biblical texts that talk about the obedience that flows from the gospel — but I want to show you that it actually is pretty impractical, too.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 2.6 4 5.6 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.6-4-9s1.3-6.4 4-9z"/></svg></div><h2>那位替下屬頂罪的主管<span class="h2en">The Boss Who Took the Blame</span></h2></div>
+<div class="duo"><div class="zh">多年前我注意到一位年輕女子，顯然不是信徒，也不認識別人，總是進來，散會就跑掉。有一次我在散會後攔住她。她說：我進來了，我不確定我信不信你們信的那一套，但我很好奇。我就問她怎麼知道救贖主教會的。</div><div class="en">Some years ago, I saw a young woman who clearly wasn't a believer, didn't seem to know anybody else, would come in and run out at the very end of the service. One time I caught her after the service. And she says, I come in, and I'm not sure if I believe what you guys do, but I'm intrigued. So I said, how did you find out about Redeemer?</div></div>
+<div class="duo"><div class="zh">她在紐約一家電視網工作。進公司沒多久，她犯了一個嚴重的錯誤，足以斷送前途的錯誤。她以為自己會被開除，就這樣了。可是她的主管——一個在上級和同僚眼中很有分量的人——進去替她扛下來，說：我沒有訓練她，我沒有帶她，你們要生氣就氣我，不要開除她。</div><div class="en">She worked for a TV network in New York City. She hadn't been with the network very long when she made a really bad mistake, a career-ending kind of mistake. And she thought she'd get the ax, and that would be it. But her boss, who had a lot of credibility with his superiors and everyone else, went in and took the blame for her, and said, I didn't train her, I didn't prep her. If you're going to be mad at somebody, be mad at me. Don't fire her.</div></div>
+<div class="duo"><div class="zh">他這樣做，失了名聲，失了社會資本，這是毫無疑問的。而她保住了工作。她去謝他，他說不用謝。她不甘心，說：我以前的上司會把我做的事佔為己有，這常有的事。可是我從來沒有遇過一個上司替我扛下我做錯的事。那不合人的本性。人的本性是：底下的人做得好，功勞歸我；底下的人做錯了，就怪他們。你卻扛了下來。我沒見過。</div><div class="en">Now when he did that, he lost credibility. He lost social capital, no doubt about that. But she kept her job. So she went in to try to thank him, and he says, no, no, don't thank me. And she wasn't satisfied with that. She said, I've had bosses in the past take credit for things that I've done; that happened all the time. I've never had a boss take the blame for something I had done. That's not human nature. Human nature is to take credit for what the people underneath me have done, and if somebody underneath me does something wrong, then you blame them. You took the blame. I've never seen that before.</div></div>
+<div class="duo"><div class="zh">他仍舊謙讓著、推託著，可她一直追問。最後他說：好，我只說這一次，是你逼我說的。我要你知道，我是基督徒。我整個人生是建立在一個替我扛下罪責的人身上。這件事會塑造我做每一件事的方式。她說：你在哪裡聚會？</div><div class="en">And of course he still was trying to be modest. But finally she pressed him enough. And he says, okay, I'm going to say this once, and you've made me say it. I just want you to know I'm a Christian. And my whole life is based on a man who took the blame for me. And that actually tends to shape the way in which I do everything in my life. And she said, where do you go to church?</div></div>
+<div class="duo"><div class="zh">你會說，這個人不過是在做神的律法所要求的事嗎？神的律法要求他扛下罪責，甚至把自己弄到快丟掉飯碗嗎？那不是他的錯，是她的錯。神的律法要求這個嗎？我想，你若真的往深處想，順著金律往下走——己所欲，施於人——你會說有這麼一層意思。可是坦白說，他不去扛，也不算是犯罪。</div><div class="en">Would you say that that man was just doing what the law of God requires? Could you say that the law of God requires him to take the blame, maybe even get himself closer to losing his own job? It wasn't his fault, it was her fault. Does the law of God require that? I actually think that if you really think about it, yeah, if you go down deep enough into the golden rule — treat others the way you'd want to be treated. But there's a sense in which the law of God would not really require that. It wouldn't be a sin for him not to go in and take the blame.</div></div>
+<div class="keynote"><span class="key">他不是那樣想的。</span>他是被福音塑造的。透過福音的鏡片，他看進律法裡，看見了你平常看不見的東西。<span class="en">That's not how he thought about it. He was being shaped by the gospel. Through the lenses of the gospel, he looked into the law, and he saw things that you would never see otherwise.</span></div>
+<div class="keynote"><span class="key">而且他有了動力。</span>神的律法給不了你動力，它只能給你一個標準。<span class="en">Not only that, he had a motivation. The law of God cannot give you the motivation. It can only give you a standard.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></svg></div><h2>保羅責備彼得<span class="h2en">Paul Confronts Peter</span></h2></div>
+<div class="duo"><div class="zh">加拉太書二章十四節前後是個很好的例子。彼得從小是猶太人，會把外邦人看作不潔淨、不能同席。他作了基督徒，也有外邦人作了基督徒。他是猶太人，也是基督徒，可他就是過不了心裡那一關：你們大概是基督徒沒錯，可你們還是外邦人。於是他不再與他們同席。</div><div class="en">Galatians 2:14 and that area is a great example of a place where Peter, being raised as a Jewish man, would have considered the Gentiles just unclean to eat with. He becomes a Christian. There are other Gentiles that are Christians. He's a Jew and he's a Christian, and yet he can't overcome the feeling of, yeah, you guys might be Christian, but you're still Gentiles. And he stopped eating with them.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">加拉太書 2:14</span>　但我一看見他們行得不正，與福音的真理不合，就在眾人面前對磯法說：「你既是猶太人，若隨外邦人行事，不隨猶太人行事，怎麼還勉強外邦人隨猶太人呢？」<span class="en-line">“When I saw that they were not acting in line with the truth of the gospel, I said to Cephas in front of them all, "You are a Jew, yet you live like a Gentile and not like a Jew. How is it, then, that you force Gentiles to follow Jewish customs?"”</span></div>
+<div class="duo"><div class="zh">保羅責備他的時候，並沒有說：彼得，你違反了反種族歧視的律法。他說的是：你與福音的真理不合。我們這些猶太人既然知道自己是因信稱義，不是因所行的稱義，怎麼還這樣看外邦人？怎麼還把自己看得比外邦人高？</div><div class="en">But when Paul confronts him, he doesn't actually say, Peter, you're breaking the no-racism law. He confronts him and says, you're not in line with the truth of the gospel. How can we Jews, who know that we're justified by faith alone and not by anything we do — how can we look at the Gentiles like this? How can we see ourselves as superior to them?</div></div>
+<div class="duo"><div class="zh">你能不能單從律法看出，神的律法要求你不可有種族歧視？我想是可以的。聖經有很多地方講到不可按種族待人，不可有偏見，不可看人的外貌。可是福音——尤其是稱義的道理——做的是另一件事。種族歧視不只是犯了一條規矩，它背後有動機。什麼動機？是要撐起自己的優越感。你自己不安穩，你需要覺得「我是對的，他們是錯的」。</div><div class="en">First of all, can you look in the law of God, just the law, and see that the law of God requires that you not be a racist? I think, yes, actually. There are plenty of places where the Bible talks about not treating people on the basis of race, not being prejudiced, not being a respecter of persons. But what the gospel does, with justification — see, racism isn't simply a breaking of the rule. Racism is motivated by something. What's it motivated by? It's motivated by a desire to bolster your own sense of superiority. You're insecure yourself. You need to feel like, I'm right and they're wrong.</div></div>
+<div class="duo"><div class="zh">而福音說你是單單靠恩典得救的，說你不比任何人好，說你是個罪人。沒有比這更能把人拉平的東西了。雅各書第一章那一段講富足的與貧窮的：你若貧窮，如今要想自己的高位；你若富足，要想自己的卑微。福音會改變階級的態度，也會改變種族的態度。</div><div class="en">And the gospel — especially the gospel that you're saved by grace alone, that you are no better than anybody else, that you're a sinner — there's no more amazingly leveling thing than that. James chapter 1 talks about the rich and the poor: now that you're a Christian, if you're poor, you have to think about your high position; if you're rich, you have to think about your low position. There's something about the gospel that changes class attitudes and changes racial attitudes.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16l1-9-5 3-4-6-4 6-5-3z"/><path d="M6 21h12"/></svg></div><h2>他沒有把血獻上十分之一<span class="h2en">He Didn't Tithe His Blood</span></h2></div>
+<div class="duo"><div class="zh">哥林多後書八、九章讓我覺得很有意思。保羅要哥林多人為那次募捐大量地奉獻，而他說：我不想命令你們，我不要這筆奉獻只是對一道命令的回應。我不是在告訴你們你們非給不可。</div><div class="en">I find it fascinating that in 2 Corinthians 8 and 9, where Paul is trying to get the Corinthians to give lots of money to this offering, he says, I don't want to order you. I don't want this offering to simply be the response to a demand. I'm not telling you you have to give.</div></div>
+<div class="duo"><div class="zh">他其實有很多理由可以命令。我不清楚他們當時在什一奉獻上的做法，可是我想你從舊約、從新舊約合起來看，是能對基督徒說：你該獻上收入的十分之一，那是神的律法。可是保羅在這裡不走律法這條路，他自己說了。他說：我不但不訴諸律法，我連使徒的權柄都不用。我可以命令你們，可是我不命令。</div><div class="en">Now, he's got a lot of reasons why he could. I don't know where they were on tithing, but I do think you can go to the Bible, to the Old Testament and the New, and say to Christians that you should tithe, you should give ten per cent of your income away, that that's in the law of God. But Paul here isn't going to the law. He actually says it. He says, not only am I not going to the law, I'm not even going to my apostolic authority. I could order you, but I'm not going to order you.</div></div>
+<div class="duo"><div class="zh">那他做什麼呢？他說：你們知道我們主耶穌基督的恩典。</div><div class="en">Then what does he do? He says, you know the grace of our Lord Jesus Christ.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">哥林多後書 8:9</span>　你們知道我們主耶穌基督的恩典：他本來富足，卻為你們成了貧窮，叫你們因他的貧窮，可以成為富足。<span class="en-line">“For you know the grace of our Lord Jesus Christ, that though he was rich, yet for your sake he became poor, so that you through his poverty might become rich.”</span></div>
+<div class="duo"><div class="zh">他在做什麼？他把福音帶到那些人身上。所以，當有人說「福音不塑造你的生命，福音只是你所信的，塑造生命的是律法」——那保羅在做什麼？保羅知道福音會塑造。</div><div class="en">What's he doing? He's bringing the gospel to bear on those people. So when anybody says, the gospel doesn't shape your life, the gospel is just something you believe in, it's the law that shapes your life — what is Paul doing? Paul knows the gospel shapes.</div></div>
+<div class="duo"><div class="zh">還有一點。你若停在律法上，你會拿出收入的十分之一，然後說：神要我做的，我都做了。可是在福音的亮光裡，看見耶穌所給的——他給了一切。他沒有把血獻上十分之一。保羅說「耶穌的慷慨是你慷慨的根據」，這句話一下就衝過了那個十分之一。福音有非常、非常具體的倫理後果，非常實際的後果。</div><div class="en">And here's the thing. If you stick with the law, you get to ten per cent of your income, and you say, I'm doing everything God wants me to do. But in light of the gospel, and of what Jesus gave — and he gave everything. He didn't tithe his blood. And for Paul to say Jesus' generosity is the basis for your generosity blows right past that ten per cent. It's got very, very specific ethical, practical consequences, the gospel.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h2>丈夫與妻子<span class="h2en">Husbands and Wives</span></h2></div>
+<div class="duo"><div class="zh">以弗所書五章，保羅對丈夫講的話特別多。就我看得出來的，他對妻子講，可是對丈夫講得更多。這幾年我把這段經文讀得比較細。我的感覺是：他面對的是從外邦背景出來的人。我不認為保羅只是在對這些有外邦背景的男人說「要對妻子忠實」——他們大概知道這一點。他是往前多走一步，他說：你要珍惜她，你要愛她，你要看著她，問自己：我能做什麼，讓我的妻子長大、變美，在屬靈上和各方面都是？</div><div class="en">In Ephesians 5, Paul is talking especially to the husbands. He talks to wives, but he talks more to husbands as far as I can tell. In the last couple of years I've been studying the passage pretty closely, and to some degree I feel this: he was talking to people from a pagan background. I don't think Paul was just trying to say to these men, be faithful to your wives. I think they probably knew that. But he was going further, and he was saying, you need to be cherishing them, you need to be loving them, you need to be looking at them and saying, what can I do to help my wife grow and become beautiful, spiritually and every other way?</div></div>
+<div class="duo"><div class="zh">那不是外邦人對婚姻的理解，那不在他們的背景裡。婚姻常常不過是一種生意關係，你為家族娶得好。而在赤裸裸的異教裡，你有妻子，另外還有情婦。妻子不可以那樣，那是不對的；男人可以。</div><div class="en">That is not the pagan understanding of marriage. That's not in the background. Marriage was very often pretty much a business relationship. You married well for your family. And of course, in rank paganism, you had your wife, and then you had your mistress over here. The wife couldn't do that; she's not allowed to. That would be wrong. Men could.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">以弗所書 5:25</span>　你們做丈夫的，要愛你們的妻子，正如基督愛教會，為教會捨己。<span class="en-line">“Husbands, love your wives, just as Christ loved the church and gave himself up for her.”</span></div>
+<div class="duo"><div class="zh">這些話從律法裡大概也拿得出來。可是從福音裡，從基督為我們所做的事裡，去說：看基督待你如新婦的愛；把你自己想成新婦，他是丈夫，你是妻子；看他怎樣愛了你；現在，你去照樣行。這一整套倫理的重量、倫理的力道，這些關於我該怎樣與配偶同住的實際涵義，你能單從律法裡拿到嗎？拿不到。</div><div class="en">Probably you can get that from the law. But from the gospel, from what Jesus Christ did for us, to say: look at Jesus Christ's spousal love for you. Think of yourself as the bride, him as the husband. Look at how he loved you. Now go and do likewise. Could you get all of that ethical freight, all that ethical power, the practical implications of how I should live with my spouse, just from the law? No.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18L14 6l-3.5 6L8 9z"/><path d="M11 12l1.5 2"/></svg></div><h2>恩典教導我們說「不」<span class="h2en">Grace Teaches Us to Say No</span></h2></div>
+<div class="duo"><div class="zh">我相信神的律法仍舊引導我們，我相信我仍舊受神的道德律約束。可是動力在別處。再看一個例子，提多書二章。</div><div class="en">I believe that the law of God still guides us. I believe I'm still bound to the moral law of God. And yet, it's the motivation. I'll give you one more example — Titus 2.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">提多書 2:11</span>　因為神救眾人的恩典已經顯明出來，<span class="en-line">“For the grace of God has appeared that offers salvation to all people.”</span></div>
+<div class="verse"><span class="ref">提多書 2:12</span>　教訓我們除去不敬虔的心和世俗的情慾，在今世自守、公義、敬虔度日，<span class="en-line">“It teaches us to say "No" to ungodliness and worldly passions, and to live self-controlled, upright and godly lives in this present age,”</span><span class="note">※ 和合本作「教訓」，正對上凱勒在此所指的希臘文 paideia——不只是告知，而是管教、教養。</span></div>
+<div class="duo"><div class="zh">這很有意思。神的恩典教導我們說「不」。是恩典。我們會說：等一下。你告訴我，不管我怎麼活我都蒙愛、蒙赦免，這不會讓我想對不敬虔說不啊。這反而引我說：我得救了，我沒事了，我不會被定罪。不敬虔？這裡那裡來一點也無妨，反正以後會得赦免。</div><div class="en">That's interesting. The grace of God teaches us to say no. The grace. Now, wait a minute, we say. When you tell me that I'm loved and forgiven no matter how I live, that doesn't make me want to say no to ungodliness. That tempts me to say, hey, I'm saved, I'm okay, I can't be condemned. Ungodliness? Maybe a little, here or there, because I'll be forgiven later.</div></div>
+<div class="duo"><div class="zh">保羅不是這樣說的。保羅說：你若明白恩典。他講的是持續不斷的恩典。你不是抽象地想恩典，你想的是從一位被釘死的救主那裡來的恩典。</div><div class="en">That's not how Paul said it. Paul says, if you understand grace — and he's talking about constant grace. You don't just think of grace in the abstract. You think of grace coming from a crucified Savior.</div></div>
+<div class="duo"><div class="zh">對不敬虔說不有很多種說法。你可以說：不，因為我會難看。不，因為我會被我想擠進去的圈子排除。不，因為神就不給我健康、財富、快樂了。不，因為我第二天早上會恨我自己，會對自己失望，自我價值會掉下來。可是你看出這些動機是什麼了嗎？全是自私。每一個都是自私。不，因為這樣對我划不來。</div><div class="en">There are a lot of ways to say no to ungodliness. You can say, no, because I'll look bad. No, because I'll be excluded from the social circles I want to belong to. No, because then God will not give me health, wealth and happiness. No, because I'll hate myself in the morning, and disappoint myself, and I'll have low self-esteem. But do you realize what all those motives are? They're selfish. Every one of them is selfish. No, because it won't pay off for me in some way.</div></div>
+<div class="duo"><div class="zh">你若用一個自私的動機去攔住自己不去做不敬虔的事，而不敬虔說到底就是自私——那是一座紙牌屋，它會塌。你若只是對自己說「別做那個，你知道你會受罰，會出事，人家會知道」，倒不如說：耶穌基督死，就是為了我不做那件事。我去做，等於把耶穌基督的血甩回他臉上。我怎麼能這樣待我的救主？</div><div class="en">And if you use a selfish motive to try to keep yourself from being ungodly, when ungodliness is selfishness, basically it's a house of cards, and it's going to fall down. If you're trying to keep yourself from this or that temptation just by saying, don't do that, you know you'll be punished, something bad will happen, people will find out about it — instead of saying, Jesus Christ died so I wouldn't do that. For me to do that is like taking Jesus Christ's blood and throwing it back in his face. How can I treat my Savior like that?</div></div>
+<div class="keynote"><span class="key">罪失去它的吸引力。</span>只有當福音壓到你的試探上，罪才會枯掉。光是拿後果打自己的頭，告訴自己這有多危險，你只會越想越要。<span class="en">Sin loses its attractive power. It withers only when the gospel is brought to bear on your temptation. Just beating yourself over the head with bad consequences, telling yourself how dangerous it is — you're going to want it more and more.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-6 8-6s8 2 8 6v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 11v7M15 11v7"/></svg></div><h2>三、你不是自己的<span class="h2en">III. You Are Not Your Own</span></h2></div>
+<div class="duo"><div class="zh">第三個問題：福音塑造的生命長什麼樣？先給一個大的輪廓。我今年在重讀加爾文的《基督教要義》。讀到論基督徒生活的那一段，我很喜歡加爾文的簡潔。《要義》那麼龐大，他卻能極其扼要，而且是好的扼要。他說：你要知道基督徒的生活是什麼嗎？就是哥林多前書六章十九節。</div><div class="en">Third question: what does the gospel-shaped life look like? Let me give you a kind of macro look. I have been rereading Calvin's Institutes this year. And when you get to the section on the Christian life, I love Calvin's brevity. In spite of how massive the Institutes are, he can be awfully terse, in a great way. And he says, you want to know the Christian life? It's 1 Corinthians 6:19.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">哥林多前書 6:19</span>　豈不知你們的身子就是聖靈的殿嗎？這聖靈是從神而來，住在你們裡頭的。並且你們不是自己的人，<span class="en-line">“Do you not know that your bodies are temples of the Holy Spirit, who is in you, whom you have received from God? You are not your own;”</span></div>
+<div class="verse"><span class="ref">哥林多前書 6:20</span>　因為你們是重價買來的，所以要在你們的身子上榮耀神。<span class="en-line">“you were bought at a price. Therefore honor God with your bodies.”</span></div>
+<div class="duo"><div class="zh">你是重價買來的——那是恩典。所以你不是自己的。加爾文就是這樣鋪開的：對神，對你身邊的每一個人，你如今活的是一種深層的不自私。你不為自己做事，你為神活，你為別人活。</div><div class="en">You're bought with a price — that's grace. Therefore you're not your own. Which means, toward God and toward everyone around you — that's how Calvin expounds it — you now live a life of deep unselfishness. You don't do things for yourself. You're living for God. You're living for others.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div><h2>神、國家、自己<span class="h2en">God, Nation, Self</span></h2></div>
+<div class="duo"><div class="zh">安德魯·德爾班科是哥倫比亞大學的教授，寫過幾本很有意思的文化評論。他不是信徒，是一位世俗的猶太人。多年前他寫過一本書，《真正的美國夢：關於盼望的沉思》。他把美國文化的歷史分成三個時代，三章：第一章「神」，第二章「國家」，第三章「自己」。</div><div class="en">Andrew Delbanco is an academic at Columbia University. He's written some fascinating books of cultural criticism. He's not a believer; he's a secular Jewish man. Some years ago he wrote a book called The Real American Dream: A Meditation on Hope. And he traces the history of American culture through three eras, three chapters: chapter one, God; chapter two, Nation; chapter three, Self.</div></div>
+<div class="duo"><div class="zh">他說，起初來到美洲的人，大體上是被一種基督教的世界觀推動的。我們早上為什麼起床？我們為什麼工作？我們為什麼建立一個國家？為了神的榮耀。到了十九世紀初，美國逐漸世俗化，他說，美國本身被放到了神的位置上：民主會讓世界變好，我們有天定的使命一路推到太平洋，我們是世上最偉大的國家。這一段幾乎延續到二次大戰中期。人們仍舊信神，可是佔據那個位置的，是愛國心與民族自豪。而後，他說，如今人是為自己活。</div><div class="en">He says that in the beginning, the people who came to America were largely animated by a Christian understanding of things. So why do we get up in the morning? Why do we work? Why are we building a country? The glory of God. That morphs, and by the early nineteenth century America becomes somewhat secularized, and he puts it this way: the United States gets put into the place of God in the American culture. Democracy is what's going to make the world a better place. We have a manifest destiny to get to the Pacific Ocean. We're the greatest country in the world. And he says that lasts almost up into the middle of the Second World War. Though people believed in God, patriotism and national pride took the place. And then, finally, he says, now people are living for self.</div></div>
+<div class="duo"><div class="zh">他的重點很有力量。他說，盼望已經窄到只剩下自我這個消失點，所以美國的盼望史是一部縮小的歷史。自我實現的敘事造成了文化危機。若說人生的意義只是自我實現，那就給不了一個社會所需要的資源，去造出一個有凝聚力、健康的文化。一個文化的敘事必須給人一個價值的根據，一個可以為之犧牲、可以為之生、可以為之死的理由。自我實現的敘事做不到。</div><div class="en">His point, though, is a very powerful one. He says hope has narrowed to the vanishing point of the self alone, so that America's history of hope is now one of diminution. The self-fulfilment narrative has created a cultural crisis. To say that the meaning of life is mere self-fulfilment cannot give a society the resources necessary to create a cohesive, healthy culture. A cultural narrative must give people a basis for values, a reason for sacrifice, for living and dying. The self-fulfilment narrative cannot do that.</div></div>
+<div class="keynote"><span class="key">你聽見他在說什麼了嗎？</span>一個文化裡，人非得有一樣比自己的快樂與自己的利益更重要的東西不可。非得有一樣值得為它死的東西，值得為它犧牲的東西。<span class="en">You hear what he's saying? In a culture, people have got to have something more important than their own happiness and their own interest. You have to have something worth dying for, something worth sacrificing for.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 2.6 4 5.6 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.6-4-9s1.3-6.4 4-9z"/></svg></div><h2>世俗與宗教<span class="h2en">Secularism and Religion</span></h2></div>
+<div class="duo"><div class="zh">於是你會說：那就回到宗教啊，宗教就是幹這個的。可是德爾班科也點到了另一件事。宗教確實傾向於讓人比較不自私、比較樂善好施、比較有群體感。強納森·海德特——維吉尼亞大學的心理學家——寫過一本重要的書《正義之心》。他在裡面指出，世俗主義那種「除了自己的快樂沒什麼可活的」的基本看法，會讓人自私。他研究以色列的基索茲公社，有世俗的，也有宗教的；有不少研究顯示，世俗的那些撐不久，或者過得不好。</div><div class="en">So you say, whoa — religion. Religion is the way to do it. Why don't people see we need to get back to religion? Well, here's the other thing that Delbanco hints at. It is true that religion tends to make people less selfish, more charitable, more communal. Jonathan Haidt, a psychologist at the University of Virginia, has written a very important book called The Righteous Mind. And one of the things he points out is research about how secularism — the basic view that there's nothing really to live for other than my own happiness — makes people selfish. He studies the kibbutzim in Israel; there are secular ones and religious ones. And there's a lot of research that shows the secular ones don't last, or they don't do well.</div></div>
+<div class="duo"><div class="zh">宗教會造出不自私，因為宗教會說：要賙濟窮人，你必須幫助你的同胞，你得做這一切。宗教可以讓你比世俗主義更不自私，可是它讓你更部落化。這正是我們的難處之一。宗教會生出高傲，會生出「你是異教徒」那種感覺，會讓我們覺得不信我們所信的人在某種意義上不太算人。</div><div class="en">Religion creates unselfishness, because religion comes and says, let's give to the poor, you must help your fellow man or woman, you have to do all this. Religion can make you less selfish than secularism, but it makes you more tribal. That's one of our problems. Religion can create haughtiness. Religion can create the sense of, you're the infidel. Religion can make us feel that the people who don't believe what we believe are sort of subhuman in some way.</div></div>
+<div class="split">
+<div class="col h"><div class="lab"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3 11.2V18h6v-3.8A6 6 0 0 0 12 3z"/></svg></span>世俗主義</div><ul><li>使人<b>自私</b> <span class="sub-en">makes us selfish</span></li></ul></div>
+<div class="col c"><div class="lab"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10M7 21h10"/><path d="M8 3v3.5c0 2 4 3.2 4 5.5s-4 3.5-4 5.5V21"/><path d="M16 3v3.5c0 2-4 3.2-4 5.5s4 3.5 4 5.5V21"/></svg></span>宗教</div><ul><li>使人<b>排他</b> <span class="sub-en">makes us tribal</span></li></ul></div>
+</div>
+<div class="duo"><div class="zh">可是基督教不一樣。基督教一面滿足你，一面同時使你謙卑。它滿足你，因為你有一樣比自己更大的東西可以為之而活，它使你不自私；同時，福音的謙卑——就是知道自己是靠恩典得救的——會把你拉平，把那股驕傲抽掉。然後它讓你轉向外面，看著別人，把真理告訴他們，可是是在愛裡告訴，是在服事裡告訴。</div><div class="en">But Christianity fulfils you and yet humbles you at the same time. It fulfils you: you have something bigger than yourself to live for. It makes you unselfish. But at the same time, the humility of the gospel, the knowledge that you're saved by grace, levels you, pulls that pride away. And then it turns you outward, looking to others, talking to them about the truth, but doing it in love, and serving.</div></div>
+<div class="keynote"><span class="key">基督徒雖是神之城的公民，</span>：卻是人之城裡最好的公民。人應該說：他們的品格，他們對待意見不同者的態度，還有他們的不自私，令人吃驚。<span class="en">Christians, though they are citizens of the city of God, are the very best citizens of the city of man. People should say that our character, our attitude toward people who disagree with us, and our unselfishness are astonishing.</span></div>
+<div class="duo"><div class="zh">聰明人知道文化正在瓦解，也知道精靈很難再塞回瓶子裡，因為我們已經沒有道德價值的根據了。可是他們不想回到宗教，因為他們知道宗教會生出部落主義。他們看不出宗教與福音的分別。這個分別，得由我們指給他們看。</div><div class="en">Smart people know the culture is falling apart. And they also know it's hard to get the genie back in the bottle, because we have no basis for moral values any more. But they don't want to go back to religion, because they know religion creates tribalism. And they don't see the difference between religion and the gospel. And we have to show them the difference.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>三條路：消沉<span class="h2en">Three Ways: Discouragement</span></h2></div>
+<div class="duo"><div class="zh">那麼具體來說，過一個福音塑造的生命是什麼樣子？把律法主義、相對主義、福音三者擺在一起，你會看見在生活的每一個範圍裡，其實至少有三條不同的路可走。</div><div class="en">Now, what does it really mean to live a gospel-shaped life? If you take legalism, and you take relativism, and you take gospel, you'll see that there are at least three different ways to live in every area of life.</div></div>
+<div class="duo"><div class="zh">消沉或憂鬱。有人真的低落下去——我們先假定那不是生理性的；確實有不少憂鬱是有生理基礎的。可是假定不是的話，一個人真的很灰心、很消沉、很低落，有三條路。</div><div class="en">Discouragement or depression. When somebody is really cast down — let's assume it's not physiologically based; there are plenty of depressions that have a physiological basis. But assuming they're not, someone gets really discouraged, really despondent, really down. There are three ways to go.</div></div>
+<div class="duo"><div class="zh">道德主義者傾向說：你一定是哪裡做錯了，悔改吧。找出你做錯的，然後悔改。相對主義者說：你只是不喜歡你自己，你要找人陪，你要好好對自己。道德主義者只盯著行為，相對主義者直接盯著感受。</div><div class="en">The moralist tends to say, you must be doing something wrong. Repent. Let's find what you're doing wrong and repent. The relativist says, you just don't like yourself, you need to find people, you need to be good to yourself. The moralist focuses just on the behaviour. The relativist focuses directly on the feelings.</div></div>
+<div class="keynote"><span class="key">信福音的人看的是心。</span>你生命裡有一樣東西，變得比神更重要了。那是一個假救主，那是一種靠行為稱義。把它找出來。<span class="en">But the gospel-believing person focuses on the heart. Something in your life has become more important to you than God. It's a pseudo-saviour. It's a form of works righteousness. Find that thing out.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div><h2>三條路：父母<span class="h2en">Three Ways: Parents</span></h2></div>
+<div class="duo"><div class="zh">父母。你若來自比較傳統的文化，你大概永遠掙不脫那種非得活成父母所說的樣子不可的需要。多年前我跟一位年輕女子談過，她的父母要她成為世界級的小提琴獨奏家。她試了又試，一直做得不夠好。她憂鬱了，住進了機構。我記得跟她的醫生談，那位醫生是基督徒，他說：只要她能把父母從她生命的中心挪開，把耶穌放進去，她明天就可以出院。</div><div class="en">Parents. If you come from more traditional cultures, you're never going to be able to overcome your need to live up to what your parents say. I remember some years ago talking to a young woman whose parents wanted her to be a world-class concert violinist. And she tried and tried and never did a very good job. And she was depressed, and she was in an institution. And I remember talking to her doctor, who was a Christian, who said, she would be out of there tomorrow if she could get her parents out of the centre of her life and put Jesus there.</div></div>
+<div class="duo"><div class="zh">我得說——你們有些人大概猜得到——那是一位非白人。我們白人不在乎。你別想告訴我該怎麼過我的人生，別煩我。事實上我們是怕父母的期望，只是我們說：走開，離我遠一點。</div><div class="en">But I must say — as some of you may guess — that was a non-white person, because we white people, we don't care. You can't tell me how to live my life; get out of my face. The fact of the matter is we are afraid of our parents' expectations, and we've said, get away from me.</div></div>
+<div class="duo"><div class="zh">福音一面把我們從「把父母對我的看法當成一種假救恩」裡釋放出來，一面也把我們從那股怒氣裡釋放出來——西方個人主義的人常有的那股怒氣：他們沒有給我我應得的，他們沒有照我該被愛的樣子愛我，他們剪了我的翅膀。</div><div class="en">But honestly, the gospel frees us from making our parents' opinion of us into a kind of pseudo-salvation. It frees us from that, but it also frees us from the anger that individualistic Western people feel because their parents didn't give them what they deserved. They didn't love me like they should. They didn't give me the things they should. They clipped my wings.</div></div>
+<div class="keynote"><span class="key">當耶穌成了你的長兄，藉著他的恩典，神成了你的父，</span>：而神的愛成了你生命裡最要緊的那一樣，你就自由了：可以真的愛父母而不敬拜他們，可以真的饒恕父母而不恨他們。<span class="en">When Jesus becomes your brother, and through his grace God becomes your Father, and it's God's love which is the main thing in your life, that frees you either to love your parents without worshipping them, or to forgive your parents without hating them.</span></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 2.6 4 5.6 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.6-4-9s1.3-6.4 4-9z"/></svg></div><h2>三條路：文化差異<span class="h2en">Three Ways: Cultural Difference</span></h2></div>
+<div class="duo"><div class="zh">種族。福音若沒有進到深處，人很難不覺得自己在種族上高人一等。我主持過的婚禮裡，這種事我見得太多了。比方一場白人西方人與非白人的婚禮。白人那邊，尤其是歐洲來的，尤其是北歐來的，兩點的婚禮，兩點他們就坐在座位上了，他們那一側的人也都到了。而亞洲、拉美、非洲、韓國那一邊，一個都還沒到。新娘或新郎還沒到。二十分鐘以後，人才陸續進來。</div><div class="en">Race. Until you get the gospel deep, it's going to be very hard not to feel racially superior. I can't tell you how many times I've done a wedding between, say, a white Westerner and a non-white person. The white people, especially if they're from Europe, especially northern Europe, are right there in the pews. It's a two o'clock wedding; they're there at two, and everybody on their side of the church is there too. And nobody from the Asian, or Hispanic, or African, or Korean side is there. The bride or the groom is not there. And about twenty minutes later, they start filtering in.</div></div>
+<div class="duo"><div class="zh">大家都知道接下來會怎樣：所有人都開始把中性的事情道德化。他們把文化差異道德化。白人坐在那裡想：這些人不守時，難怪他們那邊問題那麼多。也就是說，他們把一種對待時間的方式，變成了一件道德的事。而另一邊的人看著他們想：這些人真緊繃，難怪他們是壓迫者。</div><div class="en">And everybody gets what happens. Everybody starts to moralise adiaphora. They moralise cultural differences. So the white people are sitting there saying, these people aren't punctual. No wonder they've got the problems they do in their part of the world. In other words, they're taking a particular approach to time and turning it into a moral thing. And meanwhile the other folks are looking at them and saying, they're so uptight. No wonder they're the oppressors.</div></div>
+<div class="duo"><div class="zh">大家都在把自己的文化差異變成道德。它不是道德。除非福音進得很深、很深，否則你會把文化的差異變成你的義。另一頭，你也可以走相對主義那條路，說：這都無所謂，所有文化都很美好，所有文化都一樣。那獻嬰孩的那些呢？福音把你從優越感裡拉出來，同時給你一個真理，讓你能真的分辨：一種文化裡有些東西是對的，有些東西是錯的。</div><div class="en">And so everybody is taking their cultural difference and turning it into a moral thing, when it's not. Unless the gospel goes in really, really deep, you turn cultural differences into righteousness. On the other hand, you can be a relativist and say, oh, it doesn't really matter, all cultures are wonderful, all cultures are the same. You mean the ones that do child sacrifice? And the gospel pulls you out of your paternalism and gives you a truth by which you can judge cultural differences — some things about a culture are right, some things about it are wrong.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 9l-4 3.4 1.2 5.1L12 14.8 7.8 17.5 9 12.4 5 9l4.9-1.1z"/></svg></div><h2>三條路：幽默<span class="h2en">Three Ways: Humour</span></h2></div>
+<div class="duo"><div class="zh">幽默。你怎麼看得出一個人沒有抓到福音？他很虔誠，很懂聖經，很在乎教義——可是他沒有幽默感。多年前有人說：我認得出法利賽人的方法是這樣——他們四處看著人說：這不好笑。</div><div class="en">Humour. One of the ways you can tell a person doesn't get the gospel — they're very religious, they really know their Bible, they're big into doctrine, and they don't have a good sense of humour. Some years ago somebody said, the way I can tell a Pharisee is this: they go around looking at people, saying, that's not funny.</div></div>
+<div class="duo"><div class="zh">另有一種我會叫做相對主義的幽默，很憤世，很懷疑，很苦，而且有時候對他們不喜歡的人下手很重。這正好顯出，說到底每一個人都是自以為義的，連所謂「開放」的人也是。他們說：我很開放，我恨偏執的人，我受不了自以為義的人，我覺得自己比他們高多了，我可不想我女兒嫁一個那樣的人。</div><div class="en">There's another kind of humour I would call relativist humour, which is actually very cynical, very skeptical, very bitter, but also sometimes very cutting to people they don't like — which shows that in the end everybody is actually self-righteous, even the so-called open-minded people. They say, oh, I'm open-minded. I hate bigots. I hate self-righteous people, I can't stand them, I feel much superior to them. I wouldn't want my daughter to marry one.</div></div>
+<div class="duo"><div class="zh">福音把這一整套拿走，因為福音使你能笑你自己。那是唯一好笑的幽默，也是唯一能醫治人的幽默。你可以笑自己而不割傷人。有些人拿自己開玩笑，你聽得出來他們是苦的，是氣的，是在自我厭惡——那當然不是福音。福音使你不把自己看得太高，也不把自己看得太低；它只是讓你比較少想到自己，因為你是滿的。你不擔心，你不必從別人的評價裡去偷來一點自我接納。</div><div class="en">And so the gospel takes that all away, because the gospel makes you able to laugh at yourself. And it's the only kind of humour that's funny. It's the only kind of humour that's healing. And you can laugh at yourself without cutting. There are people who make fun of themselves and you can tell that they're bitter, they're upset, they're kind of into self-loathing. That's not the gospel. The gospel makes you not think too much of yourself or too little of yourself. It just makes you think of yourself less often, because you're full. You're not worried. You're not having to steal self-acceptance from what everybody else says.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16l1-9-5 3-4-6-4 6-5-3z"/><path d="M6 21h12"/></svg></div><h2>四、新情感的驅逐力<span class="h2en">IV. The Expulsive Power of a New Affection</span></h2></div>
+<div class="duo"><div class="zh">最後一個問題：福音怎麼改變、怎麼塑造我們？查麥士有一篇講章叫〈新情感的驅逐力〉。當然，他說這話的時候是在承接愛德華茲。</div><div class="en">Here's the fourth question: how does the gospel change and shape us? Thomas Chalmers has a sermon called "The Expulsive Power of a New Affection." Chalmers, of course, was channelling Jonathan Edwards when he said this.</div></div>
+<div class="keynote"><span class="key">沒有哪一種真正的改變，</span>：是叫心裡空著、沒有一個至美至樂的對象的。心對某一個特定對象的渴望可以被勝過，可是心「要有一個對象」的渴望勝不過。<span class="en">There is not one personal transformation in which the heart is left without an object of ultimate beauty and joy. The heart's desire for one particular object can be conquered, but its desire to have some object is unconquerable.</span></div>
+<div class="keynote"><span class="key">所以，要把一份舊情感從心裡趕出去，只有一條路：</span>：讓一份新的情感把它驅逐出去。<span class="en">The only way to dispossess the heart of an old affection: is by the expulsive power of a new one.</span></div>
+<div class="duo"><div class="zh">你想改變自己嗎？你想被塑造成另一個樣子嗎？你想成為一個新的人嗎？光在意志上使力是不夠的。光是打自己、對自己說「我非改不可，不然我會叫人失望，我會出問題」，這不夠。你要真的改，只能透過敬拜——不是抽象地愛耶穌，而是把愛給出去，並且經歷基督的愛，看見他是那至美。</div><div class="en">You want to transform yourself? You want to be shaped differently? You want to become a new kind of person? It's not enough just to work on the will. It's not enough just to beat on yourself and say, I've got to change because I'm going to disappoint people, I'm going to have a problem. The only way you can really change is through worship — not just loving Jesus in the abstract, but giving love and experiencing the love of Christ, seeing him as an ultimate beauty.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 1 1 21 12z"/></svg></div><h2>拖車營裡的那位婦人<span class="h2en">The Woman in the Trailer Park</span></h2></div>
+<div class="duo"><div class="zh">我二十多歲牧會的時候，離教會四條街有一個拖車營，裡面有不少人是我教會的會友不願意來往的。我認識了其中一位婦人，大概四十來歲。她年輕的時候非常漂亮。因為漂亮，她成了老電影裡所謂的「槍手的女人」——跟著一夥搶銀行的人在北卡羅萊納一帶跑，有點像邦妮與克萊德那種。</div><div class="en">Some years ago I learned a tremendous amount from one woman who was living about four blocks away from my church when I was in my late twenties. It was a trailer park, and there were a lot of people in there that the folks in my church didn't want to have anything to do with. But I got to know a woman, probably in her forties. She had been very beautiful as a younger woman. And because of that she had become what they used to call in the old gangster films a gun moll — a girl who drove around North Carolina with criminals as they robbed banks, almost a Bonnie and Clyde kind of person.</div></div>
+<div class="duo"><div class="zh">問題之一是，她年輕的時候一直是漂亮的，結果她變得離不開男人。她非得有人愛她不可，非得有個男人照顧她不可。到了某個時候，她染上毒癮，進了監獄，人生差不多毀了。等她落腳在維吉尼亞州霍普韋爾一個拖車場、靠食物券過日子的時候，她開始去見一位輔導，也開始去一間教會。那不是我的教會，但她在那裡聽見了福音，並且開始相信。</div><div class="en">One of the problems was that she'd always been pretty when she was younger, and as a result she became essentially addicted to men. She had to have some man loving her, some man taking care of her. At a certain point she became a drug addict. She went to jail. Her life was kind of ruined. And when she ended up in a trailer court in Hopewell, Virginia, on food stamps, she started going to a counsellor, and she also started going to a church. It wasn't my church, but it was a church where she did hear the gospel and started to believe the gospel.</div></div>
+<div class="duo"><div class="zh">那位輔導不是基督徒，可是把她的偶像認得很準：她拜男人。輔導說：你不可以把身分建立在男人身上，你不可以把自我價值、把你的分量建立在男人身上。她問：那我該怎麼辦？輔導說：你要把書唸完，找一份工作，成為一個經濟獨立的女性，一個為自己是獨立職業女性而自豪的人。把你的身分安在那上面。</div><div class="en">The counsellor she was going to wasn't a Christian, but she rightly identified her idol, her idolatry of men. The counsellor said, you mustn't base your identity in men. You mustn't base your self-worth and your significance in men. And she said, what should I do? And here's what the counsellor said: you need to finish your education and get a job and become a financially independent career woman who's proud of the fact that you're independent. Then let your identity rest in that.</div></div>
+<div class="duo"><div class="zh">她想了一陣子。她後來告訴我，有一次她對輔導說：所以你要我把一種女性的偶像換成一種男性的偶像。你要我不再那麼脆弱地把救恩押在男人身上——男人一走，我整個人就垮；你要我改成把救恩押在事業和賺錢上——生意一出事，我整個人就垮。是這樣嗎？換句話說，你只是要我在不同的事情上垮掉。你要我把我的脆弱轉移到一個政治上比較正確的地方。</div><div class="en">She thought this out. And at one point she told me she said to the counsellor: so you want me to get rid of a female idolatry and adopt a male idolatry. You want me to stop being so fragile by basing my salvation, as it were, on men, so that if a man drops me, my life falls apart. Instead you want me to base my salvation on my career and making money, so that if anything goes wrong with my business, I'll fall apart. Is that it? In other words, you just want me to fall apart over different things. You want me to transfer my fragility to a more politically correct place.</div></div>
+<div class="duo"><div class="zh">最後她自己找到了一條把福音用到生命裡的路。她把它建立在歌羅西書三章上。</div><div class="en">Eventually she figured out a way of taking the gospel and applying it to her life. And she based it on Colossians 3.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">歌羅西書 3:3</span>　因為你們已經死了，你們的生命與基督一同藏在神裡面。<span class="en-line">“For you died, and your life is now hidden with Christ in God.”</span></div>
+<div class="verse"><span class="ref">歌羅西書 3:4</span>　基督是我們的生命，他顯現的時候，你們也要與他一同顯現在榮耀裡。<span class="en-line">“When Christ, who is your life, appears, then you also will appear with him in glory.”</span><span class="note">※ 和合本作「基督是我們的生命」，正是這位婦人心裡反覆對自己說的那一句；NIV 作「你的生命」。</span></div>
+<div class="duo"><div class="zh">她說，她開始在看見一個男人打量她的時候默想這段話。她會感覺到從前那股東西起來，然後她說：我停住自己，我對我的心說話。我看著他，在心裡悄悄地說：也許我很想結婚，我很想嫁一個好男人，也許你是個好男人，誰知道呢。可是有一件事我可以告訴你：你不是我的生命。基督是我的生命。男人不再是我的生命了，基督是我的生命。</div><div class="en">And she said she started meditating on this when she would see a guy looking at her. She would feel that old thing rise up, and she says, I stopped myself. I would talk to my heart, and I would say this. I would look at him, and quietly inside I would say: maybe I would love to be married. I'd love to be married to a great guy. Maybe you're a great guy, who knows. But I can tell you one thing. You are not my life. Christ is my life. Men are not my life any more. Christ is my life.</div></div>
+<div class="keynote"><span class="key">她說，當她這樣對自己說的時候，</span>：她得著了自由，可以真的去認識那個人，而不是一頭栽下去。<span class="en">And when she would tell herself that, she said she got the freedom to actually explore the guy rather than just fall for him.</span></div>
+</section>
+<section class="stage bookend"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-6 8-6s8 2 8 6v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 11v7M15 11v7"/></svg></div><h2>你去照樣行<span class="h2en">Go and Do Likewise</span></h2></div>
+<div class="duo"><div class="zh">這就是一個福音塑造的生命。你去照樣行。</div><div class="en">It's a gospel-shaped life. Go and do likewise.</div></div>
+<div class="duo"><div class="zh">我們禱告。父啊，謝謝你向我們顯明了福音的偉大，顯明福音確實塑造我們的生命；也讓我們稍微看見，若讓福音塑造我們，我們會過的是何等的一種生命。那會對我們的社會有影響，會改變我們身邊的人，而最要緊的是，那會榮耀你，那會是喜樂。</div><div class="en">Let's pray. Thank you, Father, for showing us the greatness of the gospel, that the gospel does shape our lives, and a little about the greatness of the kind of lives we would have if we let the gospel shape our lives. It would have an effect on our society. It would change the lives of the people around us. But most of all, it would glorify you. And it would be a joy.</div></div>
+<div class="duo"><div class="zh">父啊，我們求你幫助我們，在每一方面明白這些事，實行這些事，並且一同去做。求你造就我們，激發我們行善。我們奉耶穌的名求。阿們。</div><div class="en">We pray, Father, that you would help us in every way to understand these things, practise these things, and do them together. Edify us, stir us up to loving good works. We pray this in Jesus' name. Amen.</div></div>
+</section>
+<p class="foot">城 光 使 命 教 會 · 精 選 文 章 · <a class="sitef" href="https://imc2.org/">IMC2.org</a></p>
+</div>
+<script>
+(function () {
+  try {
+    var WORKER_URL = "https://lifesite-analytics.john316light.workers.dev";
+    var path = location.pathname;
+    var isServe = path.indexOf("/serve") !== -1;
+
+    var ref = "";
+    if (!isServe && document.referrer) {
+      try {
+        ref = new URL(document.referrer).hostname;
+      } catch (e) {
+        ref = "";
+      }
+    }
+
+    var w = window.innerWidth || document.documentElement.clientWidth || 0;
+    var bucket = w < 600 ? "narrow" : w < 1024 ? "medium" : "wide";
+
+    var params =
+      "p=" + encodeURIComponent(path) +
+      "&w=" + bucket +
+      (ref ? "&r=" + encodeURIComponent(ref) : "");
+
+    var img = new Image();
+    img.src = WORKER_URL + "?" + params;
+  } catch (e) {
+    // 統計失敗不影響頁面，吞掉所有錯誤
+  }
+})();
+</script>
+</body>
+</html>
