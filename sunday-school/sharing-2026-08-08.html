@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>城光使命教會 IMC² 精選文章 — 你們要歸我作祭司的國度：利未記第二課 · 鄧凱光弟兄</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap');
+/* trilingual-core · 中文排版變數
+   只定義「語言層」的字體、字距、斷字；版面（卡片、金框、綠框）由各技能自己的 CSS 負責。
+   用法：把本檔疊在技能自己的樣式之前，技能的 CSS 用 var(--t-*) 取值。 */
+:root{
+  --t-display:"Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --t-body:"EB Garamond","Noto Serif TC","Source Han Serif TC",serif;
+  --t-latin:"EB Garamond",Georgia,serif;
+
+  --t-track-body:.02em;
+  --t-track-head:.13em;
+  --t-track-display:.18em;
+  --t-track-label:.24em;
+  --t-track-kicker:.5em;
+
+  --t-size-body:20.5px;
+  --t-line-body:2.05;
+  --t-size-sub:19px;
+  --t-line-sub:1.8;
+
+  --t-hyphens:manual;
+  --t-quote-open:"「";
+  --t-quote-close:"」";
+}
+html{-webkit-hyphens:var(--t-hyphens);hyphens:var(--t-hyphens);}
+
+
+:root{
+  --ink:#1f2831; --sub:#4d5967; --line:#c9b98f; --gold:#9c7a26;
+  --bg:#f7f4ed; --card:#fffefa; --edge:#e6dfcd; --accent:#37585d;
+  --holy:#2f5257; --common:#8d7043; --en:#77808f;
+  --serif:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --display:"Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --latin:"EB Garamond",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:var(--serif);
+  background:var(--bg); color:var(--ink); font-size:20.5px; line-height:1.95;
+  padding:56px 20px 84px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto;}
+.verse,.explain,.q,.col,li,td,.duo{overflow-wrap:break-word;word-break:break-word;line-break:strict;}
+header{text-align:center;margin-bottom:10px;}
+.kicker{letter-spacing:.5em;color:var(--gold);font-size:16.5px;margin-bottom:16px;text-indent:.5em;}
+h1{font-family:var(--display);font-size:39px;font-weight:900;letter-spacing:.18em;line-height:1.42;text-indent:.18em;}
+h1 .sq{font-family:var(--latin);font-size:.62em;font-weight:700;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.04em;color:var(--gold);}
+h1{display:inline-block;letter-spacing:0;text-indent:0;}
+h1 .l1,h1 .l2,h1 .l3{display:flex;justify-content:space-between;}
+h1 .l1{font-size:18px;font-weight:600;color:var(--gold);margin-bottom:4px;align-items:baseline;}
+h1 .l1 .imc{margin-left:12px;letter-spacing:.02em;}
+h1 .l1 .sq{font-size:14px;}
+h1 .l3{font-size:26px;margin-top:2px;color:var(--gold);font-weight:700;}
+h1 .ten{display:block;font-family:var(--latin);font-size:21.5px;font-weight:600;letter-spacing:.14em;text-indent:.14em;color:var(--accent);margin-top:8px;}
+.subtitle{font-family:var(--display);font-size:23px;color:var(--accent);margin:0 auto 12px;letter-spacing:.16em;font-weight:500;text-indent:.16em;text-align:center;}
+.subtitle .sub-en-line{display:block;font-family:var(--latin);font-size:17.5px;letter-spacing:.14em;text-indent:.14em;color:var(--sub);font-weight:500;margin-top:5px;}
+.rule{width:0;height:0;margin:26px auto 40px;border-top:1px solid var(--line);width:120px;position:relative;}
+.rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);
+  background:var(--bg);padding:0 12px;color:var(--gold);font-size:19px;}
+.meta{
+  background:#fcfaf3;border:1px solid var(--edge);border-radius:14px;
+  padding:18px 26px;font-size:19.5px;color:var(--sub);margin:0 auto 36px;line-height:1.9;
+}
+.meta b{color:var(--ink);}
+.meta p{margin:3px 0;}
+.meta .mi{display:inline-block;white-space:nowrap;margin-right:26px;}
+.meta .mi:last-child{margin-right:0;}
+section.stage{
+  background:var(--card);border:1px solid var(--edge);border-radius:18px;
+  padding:30px 34px 32px;margin:0 auto 24px;
+  box-shadow:0 8px 24px rgba(60,50,20,.05);
+}
+section.stage.bookend{background:#f4f8f7;border-color:#d3e2de;}
+.stage-head{display:flex;align-items:center;gap:15px;margin-bottom:4px;}
+.stage-head .ic{
+  width:44px;height:44px;flex:0 0 44px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+}
+.bookend .stage-head .ic{background:#e8f0ed;border-color:#d3e2de;color:var(--accent);}
+.stage-head .ic svg{width:22px;height:22px;}
+h2{font-family:var(--display);font-size:26.5px;font-weight:900;letter-spacing:.13em;text-indent:.13em;}
+h2 .h2en{display:block;font-family:var(--latin);font-size:16.5px;color:var(--sub);letter-spacing:.14em;font-weight:500;margin-top:3px;text-indent:.14em;}
+.label{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--display);font-size:17.5px;font-weight:900;color:var(--gold);
+  letter-spacing:.24em;text-indent:0;margin:24px 0 13px;
+}
+.label svg{width:19px;height:19px;flex:0 0 19px;}
+.verse{
+  font-family:var(--display);
+  background:#fbf7ee;border-left:3px solid var(--line);border-radius:0 12px 12px 0;
+  padding:17px 24px;margin:0 0 14px;font-size:24px;font-weight:600;
+  line-height:2.1;letter-spacing:.07em;color:#1a222a;
+}
+.verse .ref{color:var(--gold);font-weight:700;letter-spacing:.05em;}
+.verse .en-line{display:block;font-family:var(--latin);font-size:19px;font-weight:500;
+  color:#8a7a4e;letter-spacing:.02em;line-height:1.75;margin-top:9px;padding-top:9px;border-top:1px dashed #e0d3ae;}
+.verse .note{display:block;font-family:var(--display);font-size:17px;font-weight:400;color:var(--sub);
+  letter-spacing:.03em;line-height:1.85;margin-top:8px;}
+.duo{margin:0 0 17px;}
+.duo .zh{color:var(--ink);font-size:20.5px;line-height:2.05;letter-spacing:.02em;font-family:var(--display);font-weight:400;}
+.duo .en{font-family:var(--latin);color:var(--en);font-size:19px;line-height:1.8;margin-top:7px;
+  padding-left:15px;border-left:2px solid var(--edge);}
+.keynote{background:#f4f8f7;border-left:3px solid var(--accent);border-radius:0 12px 12px 0;
+  padding:15px 20px;margin:6px 0 18px;color:#2b474b;font-size:21px;letter-spacing:.03em;line-height:2;}
+.keynote .key{font-family:var(--display);font-weight:900;color:var(--accent);letter-spacing:.09em;
+  border-bottom:2px solid #d9c68d;padding-bottom:1px;}
+.keynote .en{display:block;font-family:var(--latin);font-weight:500;font-size:19px;
+  color:#4f6a6e;margin-top:7px;line-height:1.75;}
+.split{display:flex;gap:18px;flex-wrap:wrap;margin:20px 0 8px;}
+.col{flex:1;min-width:250px;border-radius:14px;padding:19px 21px 17px;font-size:20px;line-height:2;position:relative;overflow:hidden;}
+.col.h{background:#edf4f1;border:1px solid #cfe0da;color:#28454a;box-shadow:inset 0 3px 0 var(--holy);}
+.col.c{background:#f9f1e2;border:1px solid #e6d7b8;color:#66512e;box-shadow:inset 0 3px 0 var(--common);}
+.col .lab{display:flex;align-items:center;gap:11px;font-family:var(--display);font-size:19.5px;letter-spacing:.24em;font-weight:900;margin-bottom:11px;}
+.col.h .lab{color:var(--holy);}
+.col.c .lab{color:var(--common);}
+.col .lab .ico{width:38px;height:38px;flex:0 0 38px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;}
+.col .lab .ico svg{width:22px;height:22px;}
+.col.h .lab .ico{background-color:#dcebe5;border:1px solid #c3d9d1;}
+.col.c .lab .ico{background-color:#f0e1bf;border:1px solid #e2cd9e;}
+.col.h .lab .ico{animation:bulbglow 2.8s ease-in-out infinite;will-change:box-shadow,background-color;}
+@keyframes bulbglow{
+  0%,100%{background-color:#dcebe5;color:var(--holy);border-color:#c3d9d1;box-shadow:0 0 0 0 rgba(233,196,90,0);}
+  50%{background-color:#fdf2c9;color:#a97f14;border-color:#e6c86a;box-shadow:0 0 16px 5px rgba(233,196,90,.55);}
+}
+@media (prefers-reduced-motion:reduce){.col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;color:#a97f14;box-shadow:0 0 10px 2px rgba(233,196,90,.4);}}
+.col ul{margin-top:2px;}
+.col li{padding-left:20px;margin-bottom:8px;color:inherit;font-size:19.5px;}
+.col.h li::before{content:"❖";color:#8fb3a9;}
+.col.c li::before{content:"❖";color:#cbb27c;}
+.col .sub-en{display:block;font-family:var(--latin);font-size:16.5px;letter-spacing:.05em;opacity:.75;font-weight:500;}
+.foot{text-align:center;color:#a89c80;font-size:16.5px;margin-top:46px;letter-spacing:.32em;text-indent:.32em;}
+li{position:relative;padding-left:22px;margin-bottom:12px;font-size:19.5px;color:var(--sub);line-height:1.95;list-style:none;}
+li::before{content:"❖";position:absolute;left:0;color:var(--line);font-size:16px;top:.4em;}
+li b{color:var(--ink);}
+.back{max-width:920px;margin:0 auto 18px;display:flex;justify-content:space-between;align-items:baseline;}
+.back .site{font-size:17px;color:var(--gold);text-decoration:none;letter-spacing:.05em;font-weight:600;}
+.foot a.sitef{color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:.05em;}
+.back a{font-size:18.5px;color:var(--sub);text-decoration:none;letter-spacing:.04em;}
+.back a:hover{color:var(--gold);}
+@media print{
+  .col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;}
+  body{background:#fff;padding:0;font-size:19.5px;}
+  section.stage{box-shadow:none;break-inside:avoid;margin-bottom:16px;}
+  .verse{font-size:20.5px;}
+}
+@media (max-width:760px){
+  .meta .mi{white-space:normal;display:block;margin-right:0;}
+  body{padding:34px 14px 60px;font-size:20px;}
+  .meta{padding:16px 18px;font-size:19px;}
+  section.stage{padding:24px 20px 26px;border-radius:15px;}
+  .stage-head{gap:12px;}
+  .stage-head .ic{width:38px;height:38px;flex:0 0 38px;}
+  .stage-head .ic svg{width:19px;height:19px;}
+  h1{font-size:31px;line-height:1.45;}
+  h1 .l1{font-size:15px;}
+  h1 .l3{font-size:21px;}
+  h1 .sq{font-family:var(--latin);font-size:.62em;font-weight:700;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.04em;color:var(--gold);}
+h1 .ten{font-size:19px;}
+  .subtitle{font-size:20.5px;letter-spacing:.08em;text-indent:.08em;}
+  h2{font-size:23px;letter-spacing:.06em;text-indent:.06em;}
+  h2 .h2en{font-size:16px;letter-spacing:.08em;text-indent:.08em;}
+  .kicker{font-size:16px;letter-spacing:.3em;text-indent:.3em;}
+  .label{font-size:16.5px;letter-spacing:.22em;margin:22px 0 12px;}
+  .verse{font-size:21px;padding:14px 16px;letter-spacing:.03em;line-height:2;}
+  .verse .en-line{font-size:17.5px;}
+  .duo .zh{font-size:19.5px;line-height:1.95;}
+  .duo .en{font-size:17.5px;}
+  .keynote{font-size:19.5px;padding:13px 15px;}
+  .keynote .en{font-size:17.5px;}
+  .split{gap:12px;}
+  .col{min-width:100%;flex:1 1 100%;font-size:19.5px;padding:16px 17px 15px;}
+  .col .lab{font-size:17.5px;letter-spacing:.18em;gap:9px;}
+  .col .lab .ico{width:32px;height:32px;flex:0 0 32px;}
+  .col .lab .ico svg{width:18px;height:18px;}
+}
+@media (max-width:400px){
+  body{padding:26px 10px 48px;}
+  section.stage{padding:20px 15px 22px;}
+  h1{font-size:27.5px;}
+  h1 .l1{font-size:14px;}
+  h1 .l3{font-size:19px;}
+  .subtitle{font-size:19.5px;}
+  h2{font-size:21px;}
+  .verse{font-size:20px;padding:13px 14px;letter-spacing:.02em;}
+}
+
+/* ---- 語言選單（三格常駐）與返回列 ---- */
+.back{max-width:920px;margin:0 auto 18px;display:flex;justify-content:space-between;
+  align-items:baseline;gap:10px;flex-wrap:wrap;}
+.back .bk{font-size:17.5px;color:var(--sub);text-decoration:none;letter-spacing:.02em;}
+.back .bk:hover{color:var(--gold);}
+.back-r{display:inline-flex;align-items:baseline;gap:14px;white-space:nowrap;}
+.langs{display:inline-flex;align-items:baseline;gap:8px;font-size:17px;
+  font-family:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;}
+.langs .sep{color:#cfc7b6;font-size:14px;}
+.langs .lg{text-decoration:none;color:var(--sub);letter-spacing:.02em;font-size:17px;}
+.langs a.lg:hover{color:var(--gold);text-decoration:underline;text-underline-offset:3px;}
+.langs .lg.cur{color:var(--gold);font-weight:700;}
+.langs .lg.off{color:#c6bfae;cursor:default;}
+/* 與語言選單同一列，字級跟著它走（17px），不要各訂各的。 */
+.back .site{font-size:17px;color:var(--gold);text-decoration:none;
+  letter-spacing:.05em;font-weight:600;}
+@media (max-width:560px){
+  /* 只改排列方向，不動字級：語言選單全站一律 17px（見發布指南第 9 項檢查）。
+     這裡曾經把它壓到 16px，手機上就跟站上其他頁對不起來。讀者多為長者，
+     窄螢幕更不該縮字——直排之後空間本來就夠。 */
+  .back{flex-direction:column;align-items:center;gap:7px;margin-bottom:14px;}
+  .back-r{gap:12px;}
+}
+</style>
+</head>
+<body>
+<div class="back"><a class="bk" href="./">← 回列表</a><span class="back-r"><span class="langs"><span class="lg cur">中文</span><span class="sep">·</span><a class="lg" href="../de/sunday-school/sharing-2026-08-08.html">Deutsch</a><span class="sep">·</span><a class="lg" href="../en/sunday-school/sharing-2026-08-08.html">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
+<div class="wrap">
+<header>
+  <div class="kicker">與 您 分 享</div>
+  <h1><span class="l1"><span>德</span><span>國</span><span>杜</span><span>塞</span><span>道</span><span>夫</span><span class="imc">IMC<sup class="sq">2</sup></span></span><span class="l2"><span>城</span><span>光</span><span>使</span><span>命</span><span>教</span><span>會</span></span><span class="l3"><span>精</span><span>選</span><span>文</span><span>章</span></span></h1>
+  <div class="rule"></div>
+</header>
+<p class="subtitle">你們要歸我作祭司的國度：利未記第二課</p>
+<div class="meta">
+<p><span class="mi">講員：<b>鄧凱光弟兄</b></span><span class="mi">場合：<b>2026 年 8 月 8 日 · 城光使命教會週六查經</b></span></p>
+<p><span class="mi">經文版本：《和合本》</span></p></div>
+<section class="stage bookend"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 6h6z"/><path d="M19 7l-3 6h6z"/><path d="M8 21h8"/></svg></div><h2>開場 · 鐵板一塊，寧可放慢</h2></div>
+<div class="duo"><div class="zh">早上跟弟兄姊妹問候過了，手上最好有一本聖經，因為利未記不太容易讀。上個禮拜我們講了一些我覺得蠻重要的觀念，應該對弟兄姊妹有些幫助。我先坦白一件事：我原來想把利未記限制在八堂講完，後來發現是高估了自己的能力，可能需要多一點的時間。</div></div>
+<div class="duo"><div class="zh">一方面大家對利未記不熟，這卷書就是所謂的鐵板一塊，所以我寧可放慢，把幾個重要的概念安靜地想清楚：聖經的意思是什麼，我們人頭腦裡的意思又是什麼。這樣對我們在知識上比較有益處。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18L14 6l-3.5 6L8 9z"/><path d="M11 12l1.5 2"/></svg></div><h2>十六章：贖罪日</h2></div>
+<div class="duo"><div class="zh">請先翻到第十六章。我請幾位弟兄姊妹讀出各自版本的標題：有的版本作「獻贖罪祭的規矩」，有的版本沒有標題，也有的印的是亞倫進聖所的條例。這一章當然講亞倫，但實質講的是贖罪日。你看二十九、三十節。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">利未記 16:29</span>　每逢七月初十日，你們要刻苦己心，無論是本地人，是寄居在你們中間的外人，甚麼工都不可做；這要作你們永遠的定例。</div>
+<div class="verse"><span class="ref">利未記 16:30</span>　因在這日要為你們贖罪，使你們潔淨。你們要在耶和華面前得以潔淨，脫盡一切的罪愆。</div>
+<div class="duo"><div class="zh">所以十六章最重要的是講贖罪日，而贖罪日在猶太人的節期當中，算是最重要的一個。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h2>上山與下山：全卷的圖畫</h2></div>
+<div class="duo"><div class="zh">不同的聖經學者，不同的牧者對利未記的分法都不太一樣，有的分得細，有的分得粗。對我們週六查經班來講，我用一個簡單、容易記的分法：十六章的贖罪日是高峰，是分水嶺。一到十五章像在爬坡，重點主題是潔淨的狀況；到了贖罪日，潔淨的禮儀達到最高峰；十七到二十七章則像從山上慢慢走下來，要把山上的領受帶到山下的生活，成為成聖的事實。</div></div>
+<div class="duo"><div class="zh">前面多講罪，以及罪帶來的種種不潔；經過贖罪日代罪羊的概念之後，十七章以下講的多半是：一個屬神的人，在成聖的狀況之下要怎樣生活。我這樣描述，大家腦中有這幅圖畫嗎？</div></div>
+<div class="keynote"><span class="key">十六章是高峰。</span>一到十五章上山，主題是潔淨；十七到二十七章下山，主題是成聖。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div><h2>潔淨的條例：幾個例子</h2></div>
+<div class="duo"><div class="zh">頭腦裡要先有潔淨與成聖這兩個概念。看第十一章，標題是食物的條例：我們要在食物上分辨什麼是潔、什麼是不潔。第十三章是皮膚病的條例：人都可能生病，大祭司亞倫也可能生病，生病跟他的聖職沒有關係；不潔了，就要潔淨，可能要洗澡、要等待，這不關乎這個人是不是歸耶和華為聖。第十四章講痲瘋患者，三十三節以下講房屋沾染黴菌之類的東西，連地方也要潔淨。潔淨的條例跟成聖的條例，是可以互相參照的。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>成聖的生活：幾個例子</h2></div>
+<div class="duo"><div class="zh">不過我更要弟兄姊妹注意的重點，在贖罪日之後的十七到二十七章，那部分更直接影響我們的生活。舉個例子，十八章已在贖罪日之後了，講什麼？你們不要淫亂。淫亂是得罪上帝的，跟成聖的生活有關聯。再看二十三章，講節期：在這日什麼工都不可以做，因為時間是屬於耶和華的。你若在這日做工，已經不是潔不潔的問題，是干犯上帝命令的問題，關乎聖潔。所以安息日在猶太人的節期中才那麼重要。</div></div>
+<div class="duo"><div class="zh">再看一個蠻有趣的例子，我昨天特地找的。上次有位姊妹講到愛人如己，在十九章十八節；我們從十七節看起。你會發現這跟潔不潔淨沒有關係了，這是聖不聖潔的問題，是我們心裡意念的問題。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">利未記 19:17</span>　不可心裏恨你的弟兄；總要指摘你的鄰舍，免得因他擔罪。</div>
+<div class="verse"><span class="ref">利未記 19:18</span>　不可報仇，也不可埋怨你本國的子民，卻要愛人如己。我是耶和華。</div>
+<div class="duo"><div class="zh">句尾是「我是耶和華」：愛人如己跟耶和華的本性有關係，跟聖有關聯。愛人如己是聖不聖潔的問題，是歸耶和華為聖的問題。</div></div>
+<div class="keynote"><span class="key">愛人如己不是潔不潔淨的問題。</span>是聖不聖潔的問題，是歸耶和華為聖的問題。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 1 1 21 12z"/></svg></div><h2>刺青（上）：兒子的問題</h2></div>
+<div class="duo"><div class="zh">還有十九章二十八節。為什麼特別講這一節？因為我的小兒子安德烈，兩三年前問過我一個問題：爸爸，我可不可以學我的同學去刺青、去 Tattoo？我真的沒有直接回答他。你若一口禁止他說：「不要學你同學」，這好像就把他跟同儕的那種關係剝奪了；我也深知，硬性禁止不能達到好的效果。當然我心裡想：「一個十多歲的孩子，白白淨淨的，為什麼要在自己身上刻字呢？」</div></div>
+<div class="duo"><div class="zh">所以我給他出了一個題目說：「仔仔，這個答案藏在利未記當中，我們花一個月的時間，你把它找出來，回答我這個問題。」我一方面藉著這件事請他讀利未記，一方面解決他信仰與生活如何結合的問題。於是他很認真地去翻看利未記，後來跑來跟我說：Daddy，這個好像不太可以哦。我問為什麼，他就指出十九章二十八節的經文。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">利未記 19:28</span>　不可為死人用刀劃身，也不可在身上刺花紋。我是耶和華。</div>
+<div class="duo"><div class="zh">他當然還不懂這是什麼意思，我再跟他解釋：這跟異教的崇拜是有關聯的。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></svg></div><h2>刺青（下）：異教的脈絡</h2></div>
+<div class="duo"><div class="zh">今天教會中有些弟兄姊妹是有刺青的；若是在信耶穌以前刺的，受了洗、真心歸主，一切就都過去，都成了新的，我一點都不會拿這個去 argue。若教會的年輕人問我這個問題，我也不太敢直接給答案，通常用剛剛的方式，請他們自己去找；等上帝感動他們找到經文、開始想各種可能性的時候，我再跟他們講。</div></div>
+<div class="duo"><div class="zh">因為從二十八節的前言後語看，這一段講的是異教的風俗。二十六節：「不可用法術，也不可觀兆」。二十七節說頭的周圍不可剃：大家看過埃及祭司的樣子嗎？埃及的祭司基本上是光頭的。二十九節不可辱沒女兒使她為娼。三十節：「你們要守我的安息日，敬我的聖所」。三十一節：「不可偏向那些交鬼的和行巫術的」。刺青這一節，就卡在異教崇拜的脈絡中間。</div></div>
+<div class="duo"><div class="zh">講了這麼多，請問：刺青是代表個人生活習慣的問題？還是與上帝的屬性相關的問題？是潔不潔淨的問題，還是成不成聖的問題？答案是後者。潔不潔淨好比長皮膚病：藉著人為的清洗、時間的等待，它自然會恢復到潔淨的狀態；可是若牽涉到成不成聖、屬不屬上帝的心意而帶出人裡面敬拜的對象是誰，就沒有辦法這麼簡單來處理問題了。</div></div>
+<div class="keynote"><span class="key">潔淨會自然恢復，</span>：成聖沒有這麼簡單——它問的是你裡面敬拜的對象是誰。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16l1-9-5 3-4-6-4 6-5-3z"/><path d="M6 21h12"/></svg></div><h2>祝福與管教：約的架構</h2></div>
+<div class="duo"><div class="zh">這樣分段之後，再看利未記最後的二十六、二十七章，那裡有祝福與處罰的條例：人若按著上帝的心意去行，祝福就臨到；不按著上帝的心意去行，上帝的懲罰就臨到。有人會問：上帝不是愛嗎，為什麼要懲罰？因為祂的公義，這是祂的屬性。我們既然在約的狀態之下，是屬上帝的百姓、上帝的子民，要承受上帝的祝福，同樣也要被上帝的話限制、被祂管教。基督徒不要有一種概念：只要上帝的祝福，不要上帝的管教。這不是聖經上講的話。</div></div>
+<div class="duo"><div class="zh">就像簽合約：我跟一家公司做生意，合約若沒有處罰條款，這合約還算合約嗎？絕對不算。因為人性敗壞，人一定汲汲營營爭取自己的好處；沒有 penalty 的條約，人常常就會破壞它。所以利未記後面清楚告訴我們什麼是上帝喜悅的事：行上帝喜悅的事，就承受從上帝來的祝福；不行上帝喜悅的事，就承受從上帝來的管教。以上是全卷的鳥瞰；之後我們會以十六章為軸，慢慢往前後看。</div></div>
+<div class="keynote"><span class="key">只要祝福、不要管教，</span>：這不是聖經上講的話。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div><h2>複習：三卷書是連著的</h2></div>
+<div class="duo"><div class="zh">接下來複習上個禮拜的內容。上個禮拜會不會太難？這卷書不容易，我希望能深入淺出。我們談過：出埃及記跟利未記不是兩卷各自獨立的書，因為利未記開頭有一個連接詞，就是希伯來文的 waw，「和、又」的意思；我再多說一點，民數記的開頭也有這個字。按道理，這三卷書是可以連起來一起讀的。時間定在摩西帶領百姓過紅海、出埃及地以後，停在西乃山下；按前後日期推算（聖經沒有明確講），大約一年多的時間。摩西上山領受律法，百姓造了金牛犢；上帝再次呼召摩西上山，頒布律法；百姓順服摩西的帶領建造會幕，上帝的榮光就顯現在會幕當中。這是上個禮拜講過的。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 9l-4 3.4 1.2 5.1L12 14.8 7.8 17.5 9 12.4 5 9l4.9-1.1z"/></svg></div><h2>雲柱火柱：二十四小時的神蹟</h2></div>
+<div class="duo"><div class="zh">我在預備的時候，有一個概念要跟弟兄姊妹講。上帝的榮光顯現在會幕當中，聖經用的字是雲柱跟火柱。大家看利未記前面一點點的經文，出埃及記四十章。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">出埃及記 40:34</span>　當時，雲彩遮蓋會幕，耶和華的榮光就充滿了帳幕。</div>
+<div class="verse"><span class="ref">出埃及記 40:38</span>　日間，耶和華的雲彩是在帳幕以上；夜間，雲中有火，在以色列全家的眼前。在他們所行的路上都是這樣。</div>
+<div class="duo"><div class="zh">我突然想到一個概念：以色列人是二十四小時看得見上帝神蹟的。榮光既然降下來，雲柱就總不離開，白天是雲柱，晚上變成火柱，在以色列的營中晝夜不斷顯現在百姓當中。</div></div>
+<div class="duo"><div class="zh">大家去過巴黎嗎？看過巴黎鐵塔從白天轉到晚上、亮起七彩奪目燈光的樣子嗎？每次遊客都在等夜幕低垂，原本鐵灰色的塔身忽然換上金黃的燈光；塔身的金黃泛光照明自 1985 年啟用，2000 年起每晚整點還有閃爍的燈光。我覺得這個比喻蠻好的：巴黎市民抬頭就看得見鐵塔，知道那是城市的象徵。以色列人也一樣，往營地中央一望，就知道上帝的同在就在那個地方。上帝的同在不像我們想像中那樣忽隱忽現、若有若無；上帝是隨時與百姓同在的。</div></div>
+<div class="keynote"><span class="key">以色列人是二十四小時</span>：看得見上帝神蹟的。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-6 8-6s8 2 8 6v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 11v7M15 11v7"/></svg></div><h2>呼叫、獻祭與會幕</h2></div>
+<div class="duo"><div class="zh">因此我們上禮拜提到呼叫的概念，這非常重要。「耶和華從會幕中呼叫摩西」（利未記 1:1）。利未記的另外一個名字，就是它開頭的第一個字「祂呼叫」，上帝從會幕當中呼叫百姓過來。我們也談過獻祭的意思：獻祭就是要靠近上帝、親近上帝；獻祭與親近在希伯來文是同一個字根（qrb）。同樣，供物的意思，就是帶著可以親近耶和華的那個禮物。出埃及記也一直不斷講要建造會幕，會幕是上帝與人相遇的地方。</div></div>
+<div class="duo"><div class="zh">螢幕上這張會幕的圖，弟兄姊妹應該不陌生，我們之前花了很多精神在這裡。會幕其實不太大，重要的是裡面有上帝所要求設立的器具：銅祭壇、洗濯盆，還有會幕（也叫帳幕）的本體。帳幕本體再分為聖所與至聖所。這是示意圖，用透視的方式把裡面的構造顯給我們看：上帝的榮耀與百姓隨時同在，百姓圍繞著帳幕居住，正中央就好像立著一座巴黎鐵塔，晚上還會自動變色，因為晚上是火柱、白天是雲柱。他們舉頭一看，就看見上帝與他們的同在，也知道約櫃就在至聖所，有層層帷幔擋住。</div></div>
+<div class="duo"><div class="zh">我們那時候提過很重要的一點：上帝的恩典要從裡面出來，人要從外面進去與上帝相遇，兩邊相遇的第一個地方，就是銅祭壇。為什麼獻祭那麼重要，從這裡就可以幫助我們看見。</div></div>
+<div class="keynote"><span class="key">獻祭就是親近。</span>恩典從裡面出來，人從外面進去，相遇的第一站是銅祭壇。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></svg></div><h2>分別：利未記的鑰匙動詞</h2></div>
+<div class="duo"><div class="zh">上個禮拜我們講到十章十節，剛好雙十，蠻好記的。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">利未記 10:10</span>　使你們可以將聖的、俗的，潔淨的、不潔淨的，分別出來。</div>
+<div class="duo"><div class="zh">整卷利未記就是教導我們什麼是聖的、什麼是俗的（或者說平常的），什麼是潔淨的、不潔淨的，動詞叫「分別出來」。我們在世上生活最大的學習，就是「如何分別」。一生學習「分別」的功課會不會很辛苦？的確非常不容易喔。然而「分別」是我們每天在做的事：分別這個時間該做什麼，分別今天要吃什麼、用什麼、穿什麼。生活大大小小的事上，每做一個決定都不容易，每個人都在做：要搭公車還是叫 Uber，吃中餐還是吃西餐，待在家裡還是出去走走，所有的事都是分別。上個禮拜最後我們說，上帝管得非常多，因為祂要從所有生活的事上，教導我們如何分別祂的心意。</div></div>
+<div class="duo"><div class="zh">世上的人有沒有教我們分別？當然是有的：學校老師教我們分別很多的事，人類歷史也教我們分別，我們從歷史、從人物的品格學習分別。而在聖經的處境裡，百姓剛從為奴之家、從充滿異教敬拜的埃及文化出來，他們心中滿了過去的經驗，就是異教崇拜的經驗；而且他們即將進入迦南，迦南人的異教崇拜更是琳瑯滿目：殺嬰孩獻祭的、把嬰孩放進火裡燒的、行淫亂之事的。聖經記載迦南人的異教崇拜是最惡的，甚至比埃及的文化還要邪惡。在這個條件之下，上帝要從方方面面教導他們學習分別的功課。</div></div>
+<div class="keynote"><span class="key">人生最大的學習，</span>：就是如何分別。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 2.6 4 5.6 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.6-4-9s1.3-6.4 4-9z"/></svg></div><h2>創世記的「分開」</h2></div>
+<div class="duo"><div class="zh">接下來有一點點重要了：分別這個字，跟創世記那個字基本上是一樣的。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">創世記 1:1–4</span>　起初，神創造天地。地是空虛混沌，淵面黑暗；神的靈運行在水面上。神說：要有光，就有了光。神看光是好的，就把光暗分開了。</div>
+<div class="duo"><div class="zh">看到這個字嗎？分開了。我們現在來查一點創世記。其實創世記蠻重要，可惜大家常把它當故事書讀一讀就過去了。請問上帝在創世記這裡分開了什麼？從上下文其實很容易找：天與地，白天與晚上，還有最重要的，光與暗、晝與夜。</div></div>
+<div class="duo"><div class="zh">其中有個詞叫空虛混沌：一切混雜在一起，沒有秩序，沒有秩序帶出來的是黑暗。弟兄姊妹，我們在德國開車是不是很舒服？我一回到台灣開車，那可叫一個痛苦：大家不遵守秩序，摩托車鑽來鑽去，我整天提心吊膽；雖然有交通法則，可是大家沒有秩序。所以對我來講，台灣的交通叫做空虛混沌、淵面黑暗，混雜在一起，沒有規矩。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div><h2>水面上：從約拿到心思甦醒</h2></div>
+<div class="duo"><div class="zh">這裡還講到「水面上」，也蠻有趣的。水在聖經的預表當中是邪惡的象徵，所以耶穌履海有特別的象徵：祂勝過那邪惡的權勢。約拿書講到約拿被海吞滅、進了大魚的肚腹，那是陰間的權勢；有聖經學者認為那時約拿已經死了，是神的恩典與能力使他重新活過來，所以福音書裡耶穌用約拿的神蹟作比喻，指向三日後的復活。神的靈運行在水面上，除了得勝黑暗權勢的意涵以外，也預示祂要在空虛荒涼之上帶出秩序與生命。</div></div>
+<div class="duo"><div class="zh">這跟我們的生活有沒有關係？我們會不會覺得生活一團混亂？有的時候會，我們必須承認。所以為什麼要讀上帝的律法：律法使我們的心思能夠甦醒，使我們知道上帝的法則。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">詩篇 119:18</span>　求你開我的眼睛，使我看出你律法中的奇妙。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div><h2>律法是聖潔的</h2></div>
+<div class="duo"><div class="zh">基督徒比較喜歡讀上帝的恩典，不太喜歡讀律法。很大的原因，上個禮拜稍微提過：把保羅的概念讀偏頗了，因為律法是叫人死的，只有恩典叫人活。但保羅自己講過一句重要的話，羅馬書七章十二節。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">羅馬書 7:12</span>　這樣看來，律法是聖潔的，誡命也是聖潔、公義、良善的。</div>
+<div class="duo"><div class="zh">弟兄姊妹，我們不要誤會：有罪的是我們的肉體，不是律法。「律法既因肉體軟弱，有所不能行的」（羅馬書 8:3）；問題出在肉體的軟弱，罪藉著肉體行出惡來，並非上帝的律法不好。因此回到利未記：整卷書都在教我們學習上帝的心意，像創世記那樣，把光與暗、混沌與秩序、晝與夜分別出來；十章十節講的，就是教導我們把聖的、俗的，潔淨的、不潔淨的，分別出來。</div></div>
+<div class="keynote"><span class="key">有罪的是我們的肉體，</span>：不是律法。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 1 1 21 12z"/></svg></div><h2>什麼叫做聖潔：大家的回答</h2></div>
+<div class="duo"><div class="zh">我要先把幾把重要的鑰匙一步一步交給大家，大家之後自己看聖經就比較快。我問大家一個問題：什麼叫做聖潔？各位頭腦裡的聖潔，到底是什麼樣的圖畫？</div></div>
+<div class="duo"><div class="zh">有位弟兄說：跟神有關係的；神的同在叫做聖潔。有位姊妹說：分別為聖，從屬世的當中分別出來、歸屬神。我再問：人有沒有聖潔的可能？有弟兄說：不可能百分之百，因為老祖宗亞當在伊甸園犯了罪，我們承接了罪的性情；不過我們都需要聖潔，上帝也要求「你們要聖潔，因為我是聖潔的」。又有人說：照世俗的眼光，一個人很乾淨、沒有瑕疵，就算聖潔，照神的眼光，「聖」帶著分別的意味。聖經的觀念是：「神就是聖潔，因此祂的憐憫、慈愛、溫柔也是聖潔的。」</div></div>
+<div class="duo"><div class="zh">我為什麼提這個問題？因為教會其實不太討論它；可是若不把這概念弄清楚，我們就不知道什麼叫上帝的愛、上帝的公義、上帝的良善、上帝的能力；因為所有這一切，都是從上帝的聖潔出來的。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16l1-9-5 3-4-6-4 6-5-3z"/><path d="M6 21h12"/></svg></div><h2>聖潔是上帝的屬性</h2></div>
+<div class="duo"><div class="zh">聖潔就是上帝的屬性。聖潔不只是上帝所喜悅的某種狀態，祂的本質就是聖潔的。這句話請弟兄姊妹寫下來：聖潔是上帝的屬性。這也意味著，除了上帝以外，沒有任何受造物是聖潔的，也沒有一件事物本身是聖潔的。</div></div>
+<div class="duo"><div class="zh">一般人對聖潔的想像是這樣：孝順的最高極致，叫做聖潔；人的美德的最高表現，叫做聖潔。華人不是常講己所不欲、勿施於人嗎？好像把愛的表現不斷發展到極致，就會到達聖潔的境界；人的品格不斷往上推，頂上會出現光環。後來我在正式的學術文字當中，果然看見了這樣的表述。德國哲學家康德（Immanuel Kant, 1724–1804）說，「聖」好比人類意志當中最高的表現：你的美德發展到最好的境地，你愛護家人的愛發揮到最高的程度，就是進入聖潔的表現，成為人不斷要追求的目標。康德在《實踐理性批判》（1788）裡，把「神聖」界定為意志與道德法則的完全相合，又說這是活在感官世界的人任何時刻都達不到的。弟兄姊妹，他是從人的角度看的，不是從聖經的角度。</div></div>
+<div class="keynote"><span class="key">聖潔是上帝的屬性。</span>除了上帝以外，沒有任何受造物是聖潔的。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 9l-4 3.4 1.2 5.1L12 14.8 7.8 17.5 9 12.4 5 9l4.9-1.1z"/></svg></div><h2>獨立的聖潔與不獨立的聖潔</h2></div>
+<div class="duo"><div class="zh">聖經並沒有這樣的啟示。聖經的啟示是：耶和華的本質是聖潔的，這種聖潔專屬於耶和華。學術上稱它為獨立的聖潔（independent holiness）：不倚靠他者、自有永有、獨立存在的聖潔。既然有獨立的，就暗示有不獨立的：人的聖潔需要倚靠上帝的聖潔，叫做不獨立的聖潔（dependent holiness），它必須反映上帝的聖潔。我講得有點學術性，但聖經講的就是這樣。那位永遠的自有永有者，與受造的宇宙截然不同；人要回到上帝的聖潔當中，需要與上帝之間有美好的關係。</div></div>
+<div class="duo"><div class="zh">所以聖經才講「你們要分別為聖」：分別是一個動作，但如何「為聖」呢？我們這些被分別的人，一定要「歸回」到上帝的聖潔裡面，好叫上帝的聖潔成為我們的聖潔。人裡面的聖潔沒有辦法獨立存在，它需要依附在上帝的聖潔中；聖經用的字叫反映、反射，大家會常常聽到這個字。</div></div>
+<div class="duo"><div class="zh">也就是說，人若離開了上帝，或者用保羅的話，不在基督裡面，我們就沒有上帝的聖潔。所以我們一生就是要學習如何活在基督裡面；舊約的講法，是活在與上帝的同在中。若上帝不與我同在，我就沒有從聖潔出來的任何表現。聖潔出來的表現是什麼？公義、憐憫、慈愛、能力、和平、良善，所有的一切。我們若離開上帝，就沒有從上帝出來那榮耀、聖潔的慈愛；我的愛就變成自私的愛、出於人慾望當中的愛，我雖然有愛，可是不帶著聖潔。同樣，我的公義若不在上帝裡面，就變成暴政，我就變成酷吏。因為上帝的聖潔帶著祂一切的屬性，而人自己沒有。</div></div>
+<div class="keynote"><span class="key">人的聖潔是不獨立的聖潔，</span>：它必須反映上帝的聖潔。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18L14 6l-3.5 6L8 9z"/><path d="M11 12l1.5 2"/></svg></div><h2>祭司的國度、聖潔的國民</h2></div>
+<div class="duo"><div class="zh">回到利未記一開始：所有獻祭的條例，都是幫助我們能夠回到上帝的裡面。上帝從會幕中呼叫摩西進前來，因為人沒有辦法帶著罪在上帝面前與祂相合；利未記講的一切，就是要我們與上帝面對面的時候，「可以在耶和華面前蒙悅納」（利未記 1:3）。這裡我不得不講出埃及記十九章，這是最重要的經文。當以色列人在西乃山下，上帝說出祂整個舊約要做的一件事，這是整個舊約的精神所在。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">出埃及記 19:3–6</span>　摩西到神那裏，耶和華從山上呼喚他說：你要這樣告訴雅各家，曉諭以色列人說：我向埃及人所行的事，你們都看見了，且看見我如鷹將你們背在翅膀上，帶來歸我。如今你們若實在聽從我的話，遵守我的約，就要在萬民中作屬我的子民，因為全地都是我的。你們要歸我作祭司的國度，為聖潔的國民。</div>
+<div class="duo"><div class="zh">查過出埃及記的弟兄姊妹應該有印象，我們不斷講這句話；還沒有記下來的，這句話一定要記下來，所有聖經都出自這裡。歸誰？歸「我」。這個「我」是誰？我們籠統講上帝，但這裡一定要把耶和華講出來，因為世上有叫摩洛的神、有叫巴力的神；我們是歸耶和華作祭司的國度、為聖潔的國民。整卷舊約就往這個方向走，不斷教導我們如何作祭司的國度、如何作聖潔的國民。</div></div>
+<div class="duo"><div class="zh">之後上帝才頒布律法，就是大家都知道的十誡：除了我以外，不可有別的神。但週六班的弟兄姊妹一定要知道，十誡是從第二節出來的。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">出埃及記 20:2</span>　我是耶和華－你的神，曾將你從埃及地為奴之家領出來。</div>
+<div class="duo"><div class="zh">律法是從恩典之下、從愛的前提之下頒布的，目的是要百姓作祭司的國度、為聖潔的國民。這一段我們查出埃及記時已經花了很多時間，就不再多講。所以回到利未記第一章講的蒙悅納：在耶和華面前蒙悅納，就是學習如何作祭司的國度、如何作聖潔的國民。上帝的聖潔是獨立的聖潔，祂不需要誰來反映；人本來沒有這個聖潔，可是當我們在上帝面前蒙祂悅納的時候，上帝的聖潔就成為我們的聖潔，上帝的一切屬性就成為我們的屬性。這正是利未記要教導我們的：學習上帝的形像與樣式。</div></div>
+<div class="duo"><div class="zh">弟兄姊妹，我們一生好像活在人的道德標準上。道德標準是非常好的：你在路上因著愛的緣故照顧殘障的人、扶助有需要的人，這絕對是人的道德至好的表現，絕對是美善的。可是我們要知道，人裡面有太多內在的動機與慾望，連自己都不知道自己裡面的動機到底是什麼，因此我們需要有上帝的話語來引導，好反映出上帝的聖潔。這是我們不容易學的功課，所以利未記才不斷用禮儀來教導我們：藉著禮儀，怎樣反映出上帝的標準。我們慢慢講下去，會遇到一些我沒有辦法解釋的條例；你問我，我也沒有辦法說，因為那些條例是按著當時以色列人能理解的方式，向他們講述的。</div></div>
+<div class="keynote"><span class="key">律法是從恩典之下、</span>：從愛的前提之下頒布的。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div><h2>三千五百年前：把頭腦調回那個時代</h2></div>
+<div class="duo"><div class="zh">我帶大家再從比較高的視角，看這卷書書寫的年代。摩西五經的年代距離現在大約三千五百年，也就是摩西的時代約在主前一千五百年左右，相當於中國的商朝。讀利未記，一定要把頭腦調回那個時代；從華人的歷史來看，商朝是最好的對照表。不能把時間對在 2026 年，不然一切通通對不上。</div></div>
+<div class="duo"><div class="zh">讀出埃及記的時候，我常給弟兄姊妹看一本書，李碩的《翦商：殷周之變與華夏新生》（廣西師範大學出版社，2022）。作者從考古的發掘知道，中國商朝是獻人的，是獻嬰兒的：出土的甕棺與祭祀坑當中一再發現人骨，不只一次，是不斷出現的事實。所以你就知道，在那個對應的時代，獻祭是普遍而重要的。當然我們更清楚知道，現在不需要牽牛宰羊了，因為基督已經在十字架上完成了獻祭的所有動作；讀利未記，就更明白上帝當年為什麼對百姓說這樣的話。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 9l-4 3.4 1.2 5.1L12 14.8 7.8 17.5 9 12.4 5 9l4.9-1.1z"/></svg></div><h2>五祭：與上帝相交的五條路</h2></div>
+<div class="duo"><div class="zh">這卷書大家的程度不太一樣，我頗費思量該用什麼方式來講。我不能講得太深，要教大家從觀察的角度慢慢看，先給大家幾把鑰匙：怎麼看聖潔，怎麼看蒙神悅納，怎麼看與神相遇，怎麼看神的榮耀與我們的本質；遇到問題的時候，我們再一步一步來。你們有任何問題請隨時打岔，你們的問題也能幫助我調整講話的深度跟速度；不然我會不知不覺講進學術裡面去，跟你們講什麼叫獨立的聖潔、不獨立的聖潔，哪個學者又有什麼不同的見解，那就不太好了。</div></div>
+<div class="duo"><div class="zh">現在請大家手上翻開聖經，這一段要求大家背起來。剛剛講十六章是高峰，重點是「贖罪日」；前面的部分是潔淨的條例。看利未記一章到六章前段，這裡講了五個祭：五個與上帝相交的祭。藉著這五個祭，我可以跟上帝重新恢復關係。請問是哪五個祭？查利未記一定要把它們背下來；不背下來，利未記就白查了。標題上都看得到：第一個叫燔祭，請畫下來；第二個叫素祭；第三個叫平安祭；再來有贖罪祭；第五章還有一個贖愆祭。在華人的文化當中，通常只有一個祭的概念，叫做贖罪祭：我在神明面前就是贖罪祭。沒有燔祭的概念，沒有素祭的概念，沒有平安祭的概念，也沒有贖愆祭的概念。</div></div>
+<div class="duo"><div class="zh">這五個祭各有別名，弟兄姊妹既然來了，就花點時間把它們寫在旁邊。燔祭可以叫「全獻的祭、完全的祭、全然獻上的祭」。平安祭也可以叫「團契祭」，英文作 Peace 或 Fellowship；它源自一個重要的希伯來字 Shalom，就是平安。贖罪祭也可以稱為潔淨祭。贖愆祭可以在旁邊寫賠償祭，Reparation。所以是五個祭：燔祭、素祭、平安祭、贖罪祭、贖愆祭。弟兄姊妹有沒有想過，我們與上帝相交，可以獻五個不同的祭呢？我看有位姊妹聽得一直點頭，代表教會平常教得很好；因為大家平常只會講：我要在上帝面前獻贖罪祭。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>素祭與平安祭：日常的鹽與愛筵</h2></div>
+<div class="duo"><div class="zh">素祭是五祭當中最平常的祭，是用平常生活所吃的東西來獻的。很簡單，「要用細麵澆上油」（利未記 2:1）；其中最重要的：不可以有酵，而且要有鹽。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">利未記 2:13</span>　凡獻為素祭的供物都要用鹽調和，在素祭上不可缺了你神立約的鹽。一切的供物都要配鹽而獻。</div>
+<div class="duo"><div class="zh">好像在日常生活當中，藉著鹽與上帝立約。素祭是最平常的祭：你吃飯的時候，就要有這樣的祭。意思是，在平常的日常生活當中，藉著日常的一切，提醒我們上帝就在我們當中。</div></div>
+<div class="duo"><div class="zh">平安祭也叫 Fellowship，因為這個祭要與大家一同分享。教會平常的愛筵，就是從平安祭出來的。弟兄姊妹知不知道？我們平常的愛筵就是從這裡來的，因為它另外一個名字叫團契祭。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div><h2>贖罪祭與贖愆祭：與神和好，向人賠償</h2></div>
+<div class="duo"><div class="zh">贖罪祭大家就比較熟了。贖罪的意思是什麼，我們之後會講；先說一個概念：贖罪不只是要使我們潔淨，而且要平息上帝的憤怒，最主要的目的是與上帝恢復和好的關係。非常重要。所以它也可以叫潔淨祭：你的罪要被洗淨了，我們才能夠來到上帝的面前。</div></div>
+<div class="duo"><div class="zh">然而同樣在罪的這個方面，我們若得罪了弟兄、得罪了姊妹，怎麼辦呢？我們只知道得罪上帝要獻祭；可是人與人彼此有虧負，要不要負上責任？聖經說要，這裡才有贖愆祭。你要賠償。有人傷害了人，好比刺人家一刀就走了，然後跟上帝認罪，好像什麼事情都沒有了；聖經不這樣講。你還要向那位弟兄、那位姊妹付上你的代價，要跟他和好。這是賠償祭的概念。</div></div>
+<div class="duo"><div class="zh">所以燔祭、素祭、平安祭、贖罪祭、贖愆祭，五個祭，我們要在上帝面前常常向祂獻上。弟兄姊妹有沒有這個概念呢？拿素祭來說：我們平常的日常生活當中，需要有與上帝立約的那個鹽在；不然我們到教會是一個面孔，私生活又是另外一個面孔。素祭是在平常的日常生活當中就要獻的，如同飯前的禱告；可是飯前的禱告並不能完全代表素祭，更要緊的是日常生活的方方面面，都要有與上帝立約的鹽，而且不可以有一點酵。你看，這些條例是非常細緻的。我也拿這個問自己：我到教會是一個面孔，私底下無人看見的時候，是不是另外一個面孔？</div></div>
+<div class="keynote"><span class="key">到教會是一個面孔，私生活又是另外一個面孔？</span>素祭問的正是這件事。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-6 8-6s8 2 8 6v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 11v7M15 11v7"/></svg></div><h2>燔祭壇：一切祭的根本</h2></div>
+<div class="duo"><div class="zh">那燔祭呢？今天必須稍微談一下這個詞。燔祭在五祭當中列為第一個祭是有道理的。先看出埃及記三十章二十八節，那裡把祭壇稱作「燔祭壇」；再往後翻，三十八章一節：「他用皂莢木做燔祭壇」。所以院子裡的銅祭壇，也稱為燔祭壇，它是一切祭壇當中最重要的一個。弟兄姊妹會不會覺得奇怪：為什麼第一個祭不是講贖罪祭，而是講燔祭？大家有沒有這種思考？摩西被上帝呼叫，若有人要獻祭，第一個講的就是燔祭。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">利未記 6:13</span>　在壇上必有常常燒着的火，不可熄滅。</div>
+<div class="duo"><div class="zh">燔祭是一切祭當中最根本的，因為聖經講，壇上的火從日到夜不斷地燒。其他四個祭獻上的時候，燔祭一直不斷地在銅祭壇上燒著。燔祭也可以叫完全獻上的祭，代表人順服上帝：我的一切都給了你。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 6h6z"/><path d="M19 7l-3 6h6z"/><path d="M8 21h8"/></svg></div><h2>把第一章從頭到尾讀一遍</h2></div>
+<div class="duo"><div class="zh">按照我們的慣例，我把利未記第一章從頭到尾念一遍，大家聽一聽，也考考大家整合的能力。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">利未記 1:1–9</span>　耶和華從會幕中呼叫摩西，對他說：你曉諭以色列人說：你們中間若有人獻供物給耶和華，要從牛羣羊羣中獻牲畜為供物。他的供物若以牛為燔祭，就要在會幕門口獻一隻沒有殘疾的公牛，可以在耶和華面前蒙悅納。他要按手在燔祭牲的頭上，燔祭便蒙悅納，為他贖罪。他要在耶和華面前宰公牛；亞倫子孫作祭司的，要奉上血，把血灑在會幕門口、壇的周圍。那人要剝去燔祭牲的皮，把燔祭牲切成塊子。祭司亞倫的子孫要把火放在壇上，把柴擺在火上。亞倫子孫作祭司的，要把肉塊和頭並脂油擺在壇上火的柴上。但燔祭的臟腑與腿要用水洗。祭司就要把一切全燒在壇上，當作燔祭，獻與耶和華為馨香的火祭。</div>
+<div class="verse"><span class="ref">利未記 1:10–13</span>　人的供物若以綿羊或山羊為燔祭，就要獻上沒有殘疾的公羊。要把羊宰於壇的北邊，在耶和華面前；亞倫子孫作祭司的，要把羊血灑在壇的周圍。要把燔祭牲切成塊子，連頭和脂油，祭司就要擺在壇上火的柴上；但臟腑與腿要用水洗，祭司就要全然奉獻，燒在壇上。這是燔祭，是獻與耶和華為馨香的火祭。</div>
+<div class="verse"><span class="ref">利未記 1:14–17</span>　人奉給耶和華的供物，若以鳥為燔祭，就要獻斑鳩或是雛鴿為供物。祭司要把鳥拿到壇前，揪下頭來，把鳥燒在壇上；鳥的血要流在壇的旁邊；又要把鳥的嗉子和髒物除掉，丟在壇的東邊倒灰的地方。要拿着鳥的兩個翅膀，把鳥撕開，只是不可撕斷；祭司要在壇上、在火的柴上焚燒。這是燔祭，是獻與耶和華為馨香的火祭。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 2.6 4 5.6 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.6-4-9s1.3-6.4 4-9z"/></svg></div><h2>觀察：牛、羊、鳥</h2></div>
+<div class="duo"><div class="zh">讀完了，我們來觀察：有幾種動物可以作燔祭牲的代表？有公牛；有綿羊或山羊，要獻公羊；還有鳥，斑鳩或是雛鴿。所以我們可以知道，路加福音裡耶穌的父母抱著孩子上聖殿獻祭的時候，他們是以鳥來獻的，代表他們的經濟能力與狀況是不好的。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">路加福音 2:24</span>　又要照主的律法上所說，或用一對斑鳩，或用兩隻雛鴿獻祭。</div>
+<div class="duo"><div class="zh">各人的經濟狀況不同：有人可以用牛，有人用羊，有人用鳥；上帝並不要求每個人都獻牛這樣高價值的牲畜。從路加福音可以看出，耶穌的家境並不寬裕，但他們依然按著聖經的條例獻上。</div></div>
+<div class="duo"><div class="zh">還有一個觀察，弟兄姊妹要放在心裡：獻祭可不可以用錢來替代？基本上不可能。一定要用生命來替代，不可以用無生命的東西來替代。這是獻祭很重要的條例。所以不要想說，我到教會奉獻幾塊錢，或是許多錢，就能換取生命當中的平安；你若沒有把你自己的生命獻在裡面，是沒有辦法的。</div></div>
+<div class="keynote"><span class="key">獻祭不能用錢替代，</span>：一定要用生命替代。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h2>沒有殘疾：獻上品質好的</h2></div>
+<div class="duo"><div class="zh">順著經文往上講。「就要在會幕門口獻一隻沒有殘疾的公牛」（利未記 1:3）。什麼叫沒有殘疾？就是健康的、沒有殘缺的、完整的，是要求品質好的，要用最好的來獻上。聖經自己有定義，利未記二十二章二十二節。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">利未記 22:22</span>　瞎眼的、折傷的、殘廢的、有瘤子的、長癬的、長疥的都不可獻給耶和華，也不可在壇上作為火祭獻給耶和華。</div>
+<div class="duo"><div class="zh">這些有病、有狀況的，你自己都不要吃了，怎麼還拿來獻呢？意思是：獻給耶和華的，要是完整的、完全的、好的，是品質好的。</div></div>
+<div class="duo"><div class="zh">弟兄姊妹，我們可以回頭思想一下：我們在教會獻的這些東西，到底有沒有殘疾？是品質好的嗎？還是自己不要的，才給耶和華？我年輕的時候常有一些討論：大家覺得送傳道人東西是好事，就常把家裡不要的東西給傳道人，家裡剛好不用的、有點壞掉的，說修一修你可以用。有的時候我看了蠻難過的。傳道人不是垃圾回收場，真的不是。你真的要對他好、對弟兄姊妹好的話，就把品質好的給他們。當然現在世風不太一樣了，有些傳道人的生活條件非常好，跟我們當年王明道（1900–1991）、倪柝聲（1903–1972）的那個年代已經有很大的不一樣。</div></div>
+<div class="duo"><div class="zh">可是想想看：我們對人與人之間尚且有這樣的考量，那我們來到上帝面前，獻給上帝的到底是什麼樣的呢？我講真的：有的時候教會點奉獻，看到的鈔票張張皺皺的。我一方面感謝主，有弟兄姊妹連這樣的光景也願意奉獻，他們很辛苦，這不是一個絕對的標準；另一方面我也難過：我們在上帝面前是不是可以重新調整一下，不一定是隨手抽的那一張？我們奉獻給上帝的時候，有沒有更謹慎的思維？我覺得大家可以想一想。無論如何，這提醒我們：獻給上帝的，要沒有殘疾。</div></div>
+<div class="keynote"><span class="key">獻給上帝的，</span>：要沒有殘疾。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>按手：這祭牲代表了我</h2></div>
+<div class="duo"><div class="zh">第四節是蠻重要的一句話：「他要按手在燔祭牲的頭上，燔祭便蒙悅納，為他贖罪」（利未記 1:4）。什麼叫按手？按手表達出人與這祭牲深處的聯結：這牲畜在上帝面前代替了他；同時也反映出，這個人好像把全人都投進了這祭牲裡，他跳進去這祭牲裡面。牠不僅代表我被獻在上帝面前，同時我也從心裡認定：這祭牲就是我。懂我的意思嗎？牲畜本來沒有辦法代替人，除非人與牠有聯結。從希伯來書我們更清楚知道。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">希伯來書 10:3–4</span>　但這些祭物是叫人每年想起罪來；因為公牛和山羊的血，斷不能除罪。</div>
+<div class="duo"><div class="zh">祭牲真的沒有辦法代替人，所以我們才知道福音的大能往哪裡去：耶穌代替了一切的祭牲，耶穌道成肉身，就代表了我。舊約的啟示還沒有這麼顯明耶穌基督福音的救恩，就先以當時人的文化能夠理解的方式表達：按手在燔祭牲的頭上，牠代表了他，燔祭便蒙悅納，為他贖罪。</div></div>
+<div class="duo"><div class="zh">這裡出現了「贖罪」兩個字，請弟兄姊妹把它圈起來。我要拋一個問題，這個問題卡了我非常非常久：既然燔祭這裡已經能贖罪，我們為什麼還要有贖罪祭、還要有贖愆祭？用一個燔祭不就好了嗎？我先把問題拋出來就好，為此找了非常多的資料，容我講到贖罪祭的時候再講。</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 1 1 21 12z"/></svg></div><h2>獻祭者親手宰殺：血是有溫度的</h2></div>
+<div class="duo"><div class="zh">今天大概停在第五節，這是蠻重要的一句話：「他要在耶和華面前宰公牛」（利未記 1:5）。請問這個「他」是誰？答案是獻祭者。弟兄姊妹，這是很重要的概念：不是祭司幫你宰，是獻祭者自己宰。亞倫子孫作祭司的，是把流出的血承接起來、奉上血，再做灑血獻祭的動作。我們一直以為是祭司幫我們宰公牛，事實是：你要宰。</div></div>
+<div class="duo"><div class="zh">你們有沒有親手殺過雞、殺過鴨？我問了一圈，看來今天的週六查經，只有我親手殺過。我年輕的時候幫我的阿嬤殺過。我們家住在頭份比較深山的地方，我大概國中，看阿嬤忙進忙出，就說：阿嬤，我幫你殺個雞好了。她一直說不要不要，小孩子不要碰這個東西。我覺得好玩，看大人殺雞很容易，就堅持要幫。我真的去殺了：把雞的脖子壓住，毛弄一弄，一刀割下去。割下去以後，我就後悔了。弟兄姊妹，結束一條生命，我真的後悔了。為什麼我到現在記得這麼清楚？因為那一幕讓我太震撼了。我看見那隻雞在那邊掙扎，血就開始噴，噴到我的手上，沾滿了手。第一次嘛，我不懂，還拿起來聞聞看：怎麼感覺溫溫的、鹹鹹的。我第一次知道，血是有溫度的，是有味道的。然後我就看著那隻雞的生命，在我面前一點一點地消失。</div></div>
+<div class="duo"><div class="zh">為什麼我要特別提這個？獻祭不是一件好玩的事情，它代表生命的完全獻上；尤其講到贖罪的概念時，要知道我們在上帝面前，需要付上多大的代價，是生命流逝的代價，才能彌補罪的後果。不要覺得到教會來奉獻一下、跟牧師禱告一下，就已經得潔淨了。從上帝的恩典來講，祂悅納任何一個真誠的悔改，這真的沒有錯；但是要提醒弟兄姊妹：罪最不好玩。它代表生命的流逝，需要付上生命的代價。牛跟羊其實沒有辦法代替，即便上帝讓你親眼看到，代表說：你就要這樣，生命被罪侵蝕，一點一點不斷地流出來。他要在上帝面前親手宰這隻公牛，是要他自己承受罪的恐怖。不是我們到教會做個禱告，心裡就獲得平安。之前查出埃及記講過，亞倫獻了金牛犢，他雖然免受了上帝的責罰，罪的後果仍然要承擔。所以燔祭要蒙悅納，獻祭者要在上帝面前宰殺公牛，亞倫的子孫奉上血、灑血。</div></div>
+<div class="duo"><div class="zh">我們今天只能停在這個地方。之後會從這裡講下去：他要在耶和華面前宰公牛，而上帝讓耶穌基督在十字架上不斷流出寶血，正有這樣的意義，因為耶穌基督就是代替了你和我。本來應該我死的，反而是耶穌代替了你我的罪，獻上祂自己的生命。到了贖罪祭，我們會再解釋一次：這裡的贖罪，跟那裡的贖罪，有什麼不一樣。</div></div>
+<div class="keynote"><span class="key">不是祭司幫你宰，</span>：是獻祭者自己宰——血是有溫度的。</div>
+<div class="keynote"><span class="key">罪最不好玩。</span>它代表生命的流逝，需要付上生命的代價。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div><h2>問答（上）：把身體獻上，當作活祭</h2></div>
+<div class="duo"><div class="zh">停在這裡，有位年長的弟兄提問。他說：我們以前常講的把人獻為活祭，這要怎麼理解？如果用燔祭來想，殺一隻跟了自己十幾年、很有感情的老牛，親手把牠殺掉，內心會痛苦好幾個月；這段時間他大概不會做什麼太壞的事，好像罪被贖到了，人變得善良，但期限大概一年左右。那像耶穌為我們流血、贖我們的罪，「把人獻為活祭」總不是照亞伯拉罕對以撒那樣，拿起刀來一刀獻上吧？這該怎麼解釋？</div></div>
+<div class="duo"><div class="zh">我先處理亞伯拉罕獻以撒。大家對創世記二十二章那段故事熟嗎？那是特例，不是常例。我們不能拿亞伯拉罕獻他兒子以撒的這件事，當作聖經要人把人獻上。聖經講得很清楚，那單單是要試驗亞伯拉罕；上帝已經知道他有這樣的信心，反倒早已為他預備了羊羔。最重要的是結論。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">創世記 22:14</span>　亞伯拉罕給那地方起名叫「耶和華以勒」（就是耶和華必預備的意思），直到今日人還說：「在耶和華的山上必有預備。」</div>
+<div class="duo"><div class="zh">耶和華看見了亞伯拉罕的需要，以至於山上有了預備。這位大哥講的，其實是羅馬書的經文。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">羅馬書 12:1</span>　所以，弟兄們，我以神的慈悲勸你們，將身體獻上，當作活祭，是聖潔的，是神所喜悅的；你們如此事奉乃是理所當然的。</div>
+<div class="duo"><div class="zh">這是一種比喻的講法。首先要很清楚：耶和華不叫人獻活人為祭。那是異教的崇拜，很清楚，是摩洛的崇拜，把活的嬰孩丟在火裡；耶和華厭惡這樣的事情，厭惡以人獻為祭。保羅講將身體獻上成為活祭，意思不是回到舊約律法、以人來獻上；他是用獻祭這個儀式裡面的內容，來表示我們要完完全全把生命的主權交託給神，以至於為上帝所喜悅。這裡的事奉，講的就是敬拜。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">羅馬書 12:2</span>　不要效法這個世界，只要心意更新而變化，叫你們察驗何為神的善良、純全、可喜悅的旨意。</div>
+<div class="duo"><div class="zh">最好的回應，就是不被這個世界所形塑。我反問大家：世界上有沒有獻祭的儀式？有的，世界有許多的獻祭儀式。當然不是說現在世上還有人把人殺了獻給神明；而是好多人把生命的主權獻給了某些東西：獻給了華爾街，獻給了生意，獻給了黑道，獻給了世上的一切。他生命的主權就在那裡。所以保羅鼓勵我們，把生命的主權交託給神：我們要將身體獻給這一位神，為祂而死，為祂而活。我們獻上主權以後，生命的主權就不再是自己擁有的了。因此，主啊，你要叫我做什麼，我就要做什麼；求你幫助我心意更新而變化，叫我們察驗你如何帶領我們。這是保羅講的基督裡的新生活，所以接著才有屬神百姓生活的表現：「愛人不可虛假。惡，要厭惡；善，要親近」（羅馬書 12:9）。若生命的主權在我自己手上，我就模糊、混沌，沒有辦法分別什麼是聖潔良善、什麼是潔與不潔；有了上帝的性情以後，上帝的性情就成為我們的性情。</div></div>
+<div class="keynote"><span class="key">世界有許多的獻祭：</span>：好多人把生命的主權，獻給了華爾街、生意，與世上的一切。</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></svg></div><h2>問答（下）：信心的試驗與唯一的祭物</h2></div>
+<div class="duo"><div class="zh">最後容我多說一點，免得大家誤會創世記二十二章。那是一次性的事件，是專為亞伯拉罕量身定做的試驗，聖經再也沒有出現其他的例子；而且亞伯拉罕最終也沒有獻上兒子為祭物。這一章的重點是：「亞伯拉罕的信心。」希伯來書十一章這樣講。</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>聖經經文 · Scripture</div>
+<div class="verse"><span class="ref">希伯來書 11:17–19</span>　亞伯拉罕因着信，被試驗的時候，就把以撒獻上；這便是那歡喜領受應許的，將自己獨生的兒子獻上。論到這兒子，曾有話說：「從以撒生的才要稱為你的後裔。」他以為神還能叫人從死裏復活；他也彷彿從死中得回他的兒子來。</div>
+<div class="duo"><div class="zh">「從以撒生的才要稱為你的後裔」，指的是後裔要從以撒而出，不是從以實瑪利。亞伯拉罕的信心到了一個地步：他相信即便獻上了，上帝依然能叫以撒從死裡復活，因為祂是使無變有、叫死人復活的神；他也彷彿從死中得回了他的兒子。經文並沒有說他真的獻上了兒子；是他的信心被證實到了這個程度。</div></div>
+<div class="duo"><div class="zh">絕對要記得：聖經反對用活人獻祭，上帝視之為大惡、極惡的事情。從這一點來看，耶和華的良善比中國商朝的文明更有恩典、更有慈愛；商朝是真的獻人的，歷史學者已經告訴我們了，而獻人正是上帝所禁止的。整本聖經沒有耶和華要人獻人的信息。我們的信仰裡，唯一一位以自己為祭物獻上的，是耶穌基督：祂為人的罪自願走上十字架，擔當了我們的罪，成為那個祭物，寶血流下來，洗淨我們的罪。</div></div>
+<div class="keynote"><span class="key">唯一一位以自己為祭物獻上的，</span>：是耶穌基督。</div>
+</section>
+<section class="stage bookend"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-6 8-6s8 2 8 6v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 11v7M15 11v7"/></svg></div><h2>結語</h2></div>
+<div class="duo"><div class="zh">福音正在這裡：耶穌基督代替了你我，在十字架上獻上自己，寶血洗淨我們的罪，使我們得以在耶和華面前蒙悅納，叫上帝的聖潔成為我們的聖潔。弟兄姊妹，我們在利未記當中一起加油。下個禮拜暫停一次，下下個禮拜見。願上帝祝福大家。</div></div>
+</section>
+<p class="foot">城 光 使 命 教 會 · 精 選 文 章 · <a class="sitef" href="https://imc2.org/">IMC2.org</a></p>
+</div>
+<script>
+(function () {
+  try {
+    var WORKER_URL = "https://lifesite-analytics.john316light.workers.dev";
+    var path = location.pathname;
+    var isServe = path.indexOf("/serve") !== -1;
+
+    var ref = "";
+    if (!isServe && document.referrer) {
+      try {
+        ref = new URL(document.referrer).hostname;
+      } catch (e) {
+        ref = "";
+      }
+    }
+
+    var w = window.innerWidth || document.documentElement.clientWidth || 0;
+    var bucket = w < 600 ? "narrow" : w < 1024 ? "medium" : "wide";
+
+    var params =
+      "p=" + encodeURIComponent(path) +
+      "&w=" + bucket +
+      (ref ? "&r=" + encodeURIComponent(ref) : "");
+
+    var img = new Image();
+    img.src = WORKER_URL + "?" + params;
+  } catch (e) {
+    // 統計失敗不影響頁面，吞掉所有錯誤
+  }
+})();
+</script>
+</body>
+</html>

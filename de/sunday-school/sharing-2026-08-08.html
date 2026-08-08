@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMC² Düsseldorf · Ausgewählte Beiträge — Ihr sollt mir ein Königreich von Priestern sein: 3. Mose, Lektion 2 · Kai.K Teng</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap');
+/* trilingual-core · 德文排版變數
+   拉丁襯線、收窄字距、開啟斷字（德文複合詞不斷字會撐破欄位）。 */
+:root{
+  --t-display:"EB Garamond",Georgia,"Times New Roman",serif;
+  --t-body:"EB Garamond",Georgia,"Times New Roman",serif;
+  --t-latin:"EB Garamond",Georgia,"Times New Roman",serif;
+
+  --t-track-body:0;
+  --t-track-head:.015em;
+  --t-track-display:.045em;
+  --t-track-label:.2em;
+  --t-track-kicker:.34em;
+
+  --t-size-body:19.5px;
+  --t-line-body:1.8;
+  --t-size-sub:17.5px;
+  --t-line-sub:1.62;
+
+  --t-hyphens:auto;
+  --t-quote-open:"„";
+  --t-quote-close:"“";
+}
+html{-webkit-hyphens:var(--t-hyphens);hyphens:var(--t-hyphens);}
+
+
+:root{
+  --ink:#1f2831; --sub:#4d5967; --line:#c9b98f; --gold:#9c7a26;
+  --bg:#f7f4ed; --card:#fffefa; --edge:#e6dfcd; --accent:#37585d;
+  --holy:#2f5257; --common:#8d7043; --en:#77808f;
+  --serif:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --display:"Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;
+  --latin:"EB Garamond",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:var(--serif);
+  background:var(--bg); color:var(--ink); font-size:20.5px; line-height:1.95;
+  padding:56px 20px 84px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto;}
+.verse,.explain,.q,.col,li,td,.duo{overflow-wrap:break-word;word-break:break-word;line-break:strict;}
+header{text-align:center;margin-bottom:10px;}
+.kicker{letter-spacing:.5em;color:var(--gold);font-size:16.5px;margin-bottom:16px;text-indent:.5em;}
+h1{font-family:var(--display);font-size:39px;font-weight:900;letter-spacing:.18em;line-height:1.42;text-indent:.18em;}
+h1 .sq{font-family:var(--latin);font-size:.62em;font-weight:700;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.04em;color:var(--gold);}
+h1{display:inline-block;letter-spacing:0;text-indent:0;}
+h1 .l1,h1 .l2,h1 .l3{display:flex;justify-content:space-between;}
+h1 .l1{font-size:18px;font-weight:600;color:var(--gold);margin-bottom:4px;align-items:baseline;}
+h1 .l1 .imc{margin-left:12px;letter-spacing:.02em;}
+h1 .l1 .sq{font-size:14px;}
+h1 .l3{font-size:26px;margin-top:2px;color:var(--gold);font-weight:700;}
+h1 .ten{display:block;font-family:var(--latin);font-size:21.5px;font-weight:600;letter-spacing:.14em;text-indent:.14em;color:var(--accent);margin-top:8px;}
+.subtitle{font-family:var(--display);font-size:23px;color:var(--accent);margin:0 auto 12px;letter-spacing:.16em;font-weight:500;text-indent:.16em;text-align:center;}
+.subtitle .sub-en-line{display:block;font-family:var(--latin);font-size:17.5px;letter-spacing:.14em;text-indent:.14em;color:var(--sub);font-weight:500;margin-top:5px;}
+.rule{width:0;height:0;margin:26px auto 40px;border-top:1px solid var(--line);width:120px;position:relative;}
+.rule::after{content:"❧";position:absolute;left:50%;top:-15px;transform:translateX(-50%);
+  background:var(--bg);padding:0 12px;color:var(--gold);font-size:19px;}
+.meta{
+  background:#fcfaf3;border:1px solid var(--edge);border-radius:14px;
+  padding:18px 26px;font-size:19.5px;color:var(--sub);margin:0 auto 36px;line-height:1.9;
+}
+.meta b{color:var(--ink);}
+.meta p{margin:3px 0;}
+.meta .mi{display:inline-block;white-space:nowrap;margin-right:26px;}
+.meta .mi:last-child{margin-right:0;}
+section.stage{
+  background:var(--card);border:1px solid var(--edge);border-radius:18px;
+  padding:30px 34px 32px;margin:0 auto 24px;
+  box-shadow:0 8px 24px rgba(60,50,20,.05);
+}
+section.stage.bookend{background:#f4f8f7;border-color:#d3e2de;}
+.stage-head{display:flex;align-items:center;gap:15px;margin-bottom:4px;}
+.stage-head .ic{
+  width:44px;height:44px;flex:0 0 44px;border-radius:50%;
+  background:#f4ede0;border:1px solid var(--edge);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+}
+.bookend .stage-head .ic{background:#e8f0ed;border-color:#d3e2de;color:var(--accent);}
+.stage-head .ic svg{width:22px;height:22px;}
+h2{font-family:var(--display);font-size:26.5px;font-weight:900;letter-spacing:.13em;text-indent:.13em;}
+h2 .h2en{display:block;font-family:var(--latin);font-size:16.5px;color:var(--sub);letter-spacing:.14em;font-weight:500;margin-top:3px;text-indent:.14em;}
+.label{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--display);font-size:17.5px;font-weight:900;color:var(--gold);
+  letter-spacing:.24em;text-indent:0;margin:24px 0 13px;
+}
+.label svg{width:19px;height:19px;flex:0 0 19px;}
+.verse{
+  font-family:var(--display);
+  background:#fbf7ee;border-left:3px solid var(--line);border-radius:0 12px 12px 0;
+  padding:17px 24px;margin:0 0 14px;font-size:24px;font-weight:600;
+  line-height:2.1;letter-spacing:.07em;color:#1a222a;
+}
+.verse .ref{color:var(--gold);font-weight:700;letter-spacing:.05em;}
+.verse .en-line{display:block;font-family:var(--latin);font-size:19px;font-weight:500;
+  color:#8a7a4e;letter-spacing:.02em;line-height:1.75;margin-top:9px;padding-top:9px;border-top:1px dashed #e0d3ae;}
+.verse .note{display:block;font-family:var(--display);font-size:17px;font-weight:400;color:var(--sub);
+  letter-spacing:.03em;line-height:1.85;margin-top:8px;}
+.duo{margin:0 0 17px;}
+.duo .zh{color:var(--ink);font-size:20.5px;line-height:2.05;letter-spacing:.02em;font-family:var(--display);font-weight:400;}
+.duo .en{font-family:var(--latin);color:var(--en);font-size:19px;line-height:1.8;margin-top:7px;
+  padding-left:15px;border-left:2px solid var(--edge);}
+.keynote{background:#f4f8f7;border-left:3px solid var(--accent);border-radius:0 12px 12px 0;
+  padding:15px 20px;margin:6px 0 18px;color:#2b474b;font-size:21px;letter-spacing:.03em;line-height:2;}
+.keynote .key{font-family:var(--display);font-weight:900;color:var(--accent);letter-spacing:.09em;
+  border-bottom:2px solid #d9c68d;padding-bottom:1px;}
+.keynote .en{display:block;font-family:var(--latin);font-weight:500;font-size:19px;
+  color:#4f6a6e;margin-top:7px;line-height:1.75;}
+.split{display:flex;gap:18px;flex-wrap:wrap;margin:20px 0 8px;}
+.col{flex:1;min-width:250px;border-radius:14px;padding:19px 21px 17px;font-size:20px;line-height:2;position:relative;overflow:hidden;}
+.col.h{background:#edf4f1;border:1px solid #cfe0da;color:#28454a;box-shadow:inset 0 3px 0 var(--holy);}
+.col.c{background:#f9f1e2;border:1px solid #e6d7b8;color:#66512e;box-shadow:inset 0 3px 0 var(--common);}
+.col .lab{display:flex;align-items:center;gap:11px;font-family:var(--display);font-size:19.5px;letter-spacing:.24em;font-weight:900;margin-bottom:11px;}
+.col.h .lab{color:var(--holy);}
+.col.c .lab{color:var(--common);}
+.col .lab .ico{width:38px;height:38px;flex:0 0 38px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;}
+.col .lab .ico svg{width:22px;height:22px;}
+.col.h .lab .ico{background-color:#dcebe5;border:1px solid #c3d9d1;}
+.col.c .lab .ico{background-color:#f0e1bf;border:1px solid #e2cd9e;}
+.col.h .lab .ico{animation:bulbglow 2.8s ease-in-out infinite;will-change:box-shadow,background-color;}
+@keyframes bulbglow{
+  0%,100%{background-color:#dcebe5;color:var(--holy);border-color:#c3d9d1;box-shadow:0 0 0 0 rgba(233,196,90,0);}
+  50%{background-color:#fdf2c9;color:#a97f14;border-color:#e6c86a;box-shadow:0 0 16px 5px rgba(233,196,90,.55);}
+}
+@media (prefers-reduced-motion:reduce){.col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;color:#a97f14;box-shadow:0 0 10px 2px rgba(233,196,90,.4);}}
+.col ul{margin-top:2px;}
+.col li{padding-left:20px;margin-bottom:8px;color:inherit;font-size:19.5px;}
+.col.h li::before{content:"❖";color:#8fb3a9;}
+.col.c li::before{content:"❖";color:#cbb27c;}
+.col .sub-en{display:block;font-family:var(--latin);font-size:16.5px;letter-spacing:.05em;opacity:.75;font-weight:500;}
+.foot{text-align:center;color:#a89c80;font-size:16.5px;margin-top:46px;letter-spacing:.32em;text-indent:.32em;}
+li{position:relative;padding-left:22px;margin-bottom:12px;font-size:19.5px;color:var(--sub);line-height:1.95;list-style:none;}
+li::before{content:"❖";position:absolute;left:0;color:var(--line);font-size:16px;top:.4em;}
+li b{color:var(--ink);}
+.back{max-width:920px;margin:0 auto 18px;display:flex;justify-content:space-between;align-items:baseline;}
+.back .site{font-size:17px;color:var(--gold);text-decoration:none;letter-spacing:.05em;font-weight:600;}
+.foot a.sitef{color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:.05em;}
+.back a{font-size:18.5px;color:var(--sub);text-decoration:none;letter-spacing:.04em;}
+.back a:hover{color:var(--gold);}
+@media print{
+  .col.h .lab .ico{animation:none;background-color:#fdf2c9;border-color:#e6c86a;}
+  body{background:#fff;padding:0;font-size:19.5px;}
+  section.stage{box-shadow:none;break-inside:avoid;margin-bottom:16px;}
+  .verse{font-size:20.5px;}
+}
+@media (max-width:760px){
+  .meta .mi{white-space:normal;display:block;margin-right:0;}
+  body{padding:34px 14px 60px;font-size:20px;}
+  .meta{padding:16px 18px;font-size:19px;}
+  section.stage{padding:24px 20px 26px;border-radius:15px;}
+  .stage-head{gap:12px;}
+  .stage-head .ic{width:38px;height:38px;flex:0 0 38px;}
+  .stage-head .ic svg{width:19px;height:19px;}
+  h1{font-size:31px;line-height:1.45;}
+  h1 .l1{font-size:15px;}
+  h1 .l3{font-size:21px;}
+  h1 .sq{font-family:var(--latin);font-size:.62em;font-weight:700;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.04em;color:var(--gold);}
+h1 .ten{font-size:19px;}
+  .subtitle{font-size:20.5px;letter-spacing:.08em;text-indent:.08em;}
+  h2{font-size:23px;letter-spacing:.06em;text-indent:.06em;}
+  h2 .h2en{font-size:16px;letter-spacing:.08em;text-indent:.08em;}
+  .kicker{font-size:16px;letter-spacing:.3em;text-indent:.3em;}
+  .label{font-size:16.5px;letter-spacing:.22em;margin:22px 0 12px;}
+  .verse{font-size:21px;padding:14px 16px;letter-spacing:.03em;line-height:2;}
+  .verse .en-line{font-size:17.5px;}
+  .duo .zh{font-size:19.5px;line-height:1.95;}
+  .duo .en{font-size:17.5px;}
+  .keynote{font-size:19.5px;padding:13px 15px;}
+  .keynote .en{font-size:17.5px;}
+  .split{gap:12px;}
+  .col{min-width:100%;flex:1 1 100%;font-size:19.5px;padding:16px 17px 15px;}
+  .col .lab{font-size:17.5px;letter-spacing:.18em;gap:9px;}
+  .col .lab .ico{width:32px;height:32px;flex:0 0 32px;}
+  .col .lab .ico svg{width:18px;height:18px;}
+}
+@media (max-width:400px){
+  body{padding:26px 10px 48px;}
+  section.stage{padding:20px 15px 22px;}
+  h1{font-size:27.5px;}
+  h1 .l1{font-size:14px;}
+  h1 .l3{font-size:19px;}
+  .subtitle{font-size:19.5px;}
+  h2{font-size:21px;}
+  .verse{font-size:20px;padding:13px 14px;letter-spacing:.02em;}
+}
+
+/* ---- Deutsche Variante: lateinische Schrift statt CJK, engerer Sperrsatz ---- */
+:root{
+  --serif:"EB Garamond",Georgia,"Times New Roman",serif;
+  --display:"EB Garamond",Georgia,"Times New Roman",serif;
+  --latin:"EB Garamond",Georgia,"Times New Roman",serif;
+}
+body{font-size:20px;line-height:1.78;}
+.duo .zh,.verse,.keynote,.col,li{-webkit-hyphens:auto;hyphens:auto;}
+
+.kicker{letter-spacing:.34em;text-indent:.34em;font-size:15.5px;}
+h1{display:block;letter-spacing:0;text-indent:0;line-height:1.3;}
+h1 .l1,h1 .l2,h1 .l3{display:block;text-align:center;}
+h1 .l1{font-size:15.5px;font-weight:600;letter-spacing:.26em;text-indent:.26em;margin-bottom:4px;}
+h1 .l1 .imc{margin-left:0;letter-spacing:.3em;}
+h1 .l1 .imc .sq{letter-spacing:0;margin-left:-.22em;}
+h1 .l2{font-size:29px;font-weight:700;letter-spacing:.02em;}
+h1 .l3{font-size:18.5px;font-weight:600;letter-spacing:.24em;text-indent:.24em;margin-top:4px;}
+
+.subtitle{font-size:25px;font-weight:600;letter-spacing:.02em;text-indent:0;line-height:1.3;}
+.subtitle .sub-en-line{font-size:17.5px;font-style:italic;letter-spacing:.03em;text-indent:0;font-weight:400;margin-top:7px;}
+
+.meta{font-size:19px;line-height:1.75;padding:16px 24px;}
+.meta .mi{margin-right:30px;}
+
+h2{font-size:24.5px;font-weight:700;letter-spacing:.015em;text-indent:0;line-height:1.3;}
+h2 .h2en{font-size:16px;font-style:italic;font-weight:400;letter-spacing:.02em;text-indent:0;margin-top:4px;}
+
+.label{font-size:15.5px;font-weight:700;letter-spacing:.2em;}
+
+.verse{font-size:21px;font-weight:500;letter-spacing:0;line-height:1.72;padding:16px 22px;}
+.verse .ref{letter-spacing:.02em;margin-right:.55em;}
+.verse .en-line{font-size:17.5px;letter-spacing:0;line-height:1.62;}
+.verse .note{font-size:16px;letter-spacing:0;line-height:1.65;}
+
+.duo .zh{font-size:20px;letter-spacing:0;line-height:1.8;}
+.duo .en{font-size:17.5px;letter-spacing:0;line-height:1.62;}
+
+.keynote{font-size:20.5px;letter-spacing:0;line-height:1.75;padding:14px 19px;}
+.keynote .key{letter-spacing:.005em;font-weight:700;}
+.keynote .en{font-size:17.5px;letter-spacing:0;line-height:1.62;}
+
+.col{font-size:19px;line-height:1.75;}
+.col .lab{font-size:18px;letter-spacing:.14em;}
+.col li{font-size:18.5px;}
+.col .sub-en{font-size:16px;font-style:italic;}
+
+.foot{font-size:16px;letter-spacing:.2em;text-indent:.2em;}
+li{font-size:18.5px;line-height:1.75;}
+
+@media (max-width:760px){
+  h1 .l2{font-size:22px;letter-spacing:.01em;}
+  h1 .l1{font-size:14px;letter-spacing:.18em;text-indent:.18em;}
+  h1 .l3{font-size:16px;letter-spacing:.16em;text-indent:.16em;}
+  .subtitle{font-size:21px;letter-spacing:.01em;text-indent:0;}
+  .subtitle .sub-en-line{font-size:16px;}
+  h2{font-size:21.5px;letter-spacing:.01em;text-indent:0;}
+  h2 .h2en{font-size:15.5px;letter-spacing:.02em;text-indent:0;}
+  .verse{font-size:20px;letter-spacing:0;line-height:1.7;}
+  .duo .zh{font-size:19px;line-height:1.75;}
+  .keynote{font-size:19.5px;}
+  .foot{letter-spacing:.14em;text-indent:.14em;}
+}
+@media (max-width:400px){
+  h1 .l2{font-size:20px;}
+  .subtitle{font-size:19.5px;}
+  h2{font-size:19.5px;}
+  .verse{font-size:18px;letter-spacing:0;}
+}
+
+/* ---- 語言選單（三格常駐）與返回列 ---- */
+.back{max-width:920px;margin:0 auto 18px;display:flex;justify-content:space-between;
+  align-items:baseline;gap:10px;flex-wrap:wrap;}
+.back .bk{font-size:17.5px;color:var(--sub);text-decoration:none;letter-spacing:.02em;}
+.back .bk:hover{color:var(--gold);}
+.back-r{display:inline-flex;align-items:baseline;gap:14px;white-space:nowrap;}
+.langs{display:inline-flex;align-items:baseline;gap:8px;font-size:17px;
+  font-family:"EB Garamond","Noto Serif TC","Source Han Serif TC","Songti TC","STSong",serif;}
+.langs .sep{color:#cfc7b6;font-size:14px;}
+.langs .lg{text-decoration:none;color:var(--sub);letter-spacing:.02em;font-size:17px;}
+.langs a.lg:hover{color:var(--gold);text-decoration:underline;text-underline-offset:3px;}
+.langs .lg.cur{color:var(--gold);font-weight:700;}
+.langs .lg.off{color:#c6bfae;cursor:default;}
+/* 與語言選單同一列，字級跟著它走（17px），不要各訂各的。 */
+.back .site{font-size:17px;color:var(--gold);text-decoration:none;
+  letter-spacing:.05em;font-weight:600;}
+@media (max-width:560px){
+  /* 只改排列方向，不動字級：語言選單全站一律 17px（見發布指南第 9 項檢查）。
+     這裡曾經把它壓到 16px，手機上就跟站上其他頁對不起來。讀者多為長者，
+     窄螢幕更不該縮字——直排之後空間本來就夠。 */
+  .back{flex-direction:column;align-items:center;gap:7px;margin-bottom:14px;}
+  .back-r{gap:12px;}
+}
+</style>
+</head>
+<body>
+<div class="back"><a class="bk" href="./">← Zurück zur Übersicht</a><span class="back-r"><span class="langs"><a class="lg" href="../../sunday-school/sharing-2026-08-08.html">中文</a><span class="sep">·</span><span class="lg cur">Deutsch</span><span class="sep">·</span><a class="lg" href="../../en/sunday-school/sharing-2026-08-08.html">English</a></span><a class="site" href="https://imc2.org/">IMC2.org</a></span></div>
+<div class="wrap">
+<header>
+  <div class="kicker">Für Sie auf Deutsch</div>
+  <h1><span class="l1">Düsseldorf <span class="imc">IMC<sup class="sq">2</sup></span></span><span class="l2">International Missionary City Church</span><span class="l3">Ausgewählte Beiträge</span></h1>
+  <div class="rule"></div>
+</header>
+<p class="subtitle">Ihr sollt mir ein Königreich von Priestern sein: 3. Mose, Lektion 2</p>
+<div class="meta">
+<p><span class="mi">Prediger: <b>Kai.K Teng</b></span><span class="mi">Anlass: <b>8. August 2026 · Samstäglicher Bibelkreis, International Missionary City Church</b></span></p>
+<p><span class="mi">Bibelübersetzung: Lutherbibel 2017</span><span class="mi">Aus dem chinesischen Original übersetzt</span></p></div>
+<section class="stage bookend"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 6h6z"/><path d="M19 7l-3 6h6z"/><path d="M8 21h8"/></svg></div><h2>Eröffnung · Ein harter Brocken — lieber langsam</h2></div>
+<div class="duo"><div class="zh">Guten Morgen, liebe Geschwister. Am besten haben Sie eine Bibel zur Hand, denn das dritte Buch Mose liest sich nicht leicht. Letzte Woche haben wir einige Gedanken besprochen, die ich für wichtig halte und die uns hoffentlich weiterhelfen. Zuerst ein Geständnis: Ich wollte das dritte Buch Mose ursprünglich in acht Lektionen unterbringen. Inzwischen weiß ich, dass ich mich damit überschätzt habe; wir werden wohl etwas mehr Zeit brauchen.</div></div>
+<div class="duo"><div class="zh">Hinzu kommt: Dieses Buch ist uns nicht vertraut — es gilt als harter Brocken. Darum gehe ich lieber langsamer und denke mit Ihnen die wichtigen Begriffe in Ruhe durch: Was meint die Schrift damit — und was meinen wir in unseren Köpfen? So gewinnen wir am meisten.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18L14 6l-3.5 6L8 9z"/><path d="M11 12l1.5 2"/></svg></div><h2>Kapitel 16 · Der Versöhnungstag</h2></div>
+<div class="duo"><div class="zh">Schlagen Sie zuerst Kapitel 16 auf. Ich habe einige Geschwister die Überschrift ihrer Ausgabe vorlesen lassen: Manche Ausgaben schreiben „Die Ordnung des Sündopfers", manche haben gar keine Überschrift, andere drucken die Ordnung, wie Aaron ins Heiligtum gehen soll. Natürlich handelt das Kapitel von Aaron — in der Sache aber handelt es vom Versöhnungstag. Sehen Sie die Verse 29 und 30.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">3. Mose 16,29</span> Auch soll euch dies eine ewige Ordnung sein: Am zehnten Tage des siebenten Monats sollt ihr fasten und keine Arbeit tun, weder ein Einheimischer noch ein Fremdling unter euch.<span class="note">※ Luther sagt „fasten", die vom Prediger benutzte chinesische Übersetzung wie auch das Hebräische sagen wörtlich „euch selbst demütigen / kasteien" — das Fasten ist die konkrete Gestalt dieser Selbstdemütigung.</span></div>
+<div class="verse"><span class="ref">3. Mose 16,30</span> Denn an diesem Tage geschieht eure Entsühnung, dass ihr gereinigt werdet; von allen euren Sünden werdet ihr gereinigt vor dem HERRN.</div>
+<div class="duo"><div class="zh">Das Wichtigste an Kapitel 16 ist also der Versöhnungstag — und unter den Festzeiten des jüdischen Volkes gilt der Versöhnungstag als die wichtigste.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h2>Bergauf und bergab · Das Bild des ganzen Buches</h2></div>
+<div class="duo"><div class="zh">Bibelwissenschaftler und Prediger gliedern das dritte Buch Mose ganz unterschiedlich, mal feiner, mal gröber. Für unseren Samstagskreis nehme ich eine einfache, leicht zu merkende Gliederung: Der Versöhnungstag in Kapitel 16 ist der Gipfel, die Wasserscheide. Die Kapitel 1 bis 15 sind wie ein Aufstieg; ihr Leitthema ist die Reinheit. Am Versöhnungstag erreicht der Ritus der Reinigung seinen Höhepunkt. Und die Kapitel 17 bis 27 sind wie der langsame Abstieg vom Berg: Was oben empfangen wurde, soll unten ins Leben getragen werden und zur gelebten Heiligung werden.</div></div>
+<div class="duo"><div class="zh">Der vordere Teil redet viel von der Sünde und von den vielen Unreinheiten, die sie mit sich bringt. Nach dem Versöhnungstag mit seinem Sündenbock reden die Kapitel ab 17 überwiegend davon, wie ein Mensch, der Gott gehört, im Stand der Heiligung leben soll. Haben Sie dieses Bild jetzt vor Augen?</div></div>
+<div class="keynote"><span class="key">Kapitel 16 ist der Gipfel.</span> Kapitel 1–15 führen bergauf: Reinheit. Kapitel 17–27 führen bergab: Heiligung.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div><h2>Ordnungen der Reinheit · Einige Beispiele</h2></div>
+<div class="duo"><div class="zh">Behalten Sie diese zwei Begriffe im Kopf: Reinheit und Heiligung. Kapitel 11 trägt die Überschrift der Speisegebote: Beim Essen sollen wir unterscheiden, was rein ist und was unrein. Kapitel 13 ordnet die Hautkrankheiten: Jeder Mensch kann krank werden, auch der Hohepriester Aaron konnte krank werden — Krankheit hat mit seinem heiligen Amt nichts zu tun. Wer unrein geworden ist, muss gereinigt werden: sich waschen, eine Frist abwarten. Das sagt nichts darüber, ob dieser Mensch dem HERRN geheiligt ist oder nicht. Kapitel 14 handelt vom Aussätzigen, und ab Vers 33 von Häusern, die etwas wie Schimmel befallen hat — selbst der Ort muss gereinigt werden. Die Ordnungen der Reinheit und die Ordnungen der Heiligung lassen sich also nebeneinanderlegen und vergleichen.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>Das Leben der Heiligung · Einige Beispiele</h2></div>
+<div class="duo"><div class="zh">Worauf ich Sie aber vor allem hinweisen möchte, das sind die Kapitel 17 bis 27 nach dem Versöhnungstag — sie greifen unmittelbar in unser Leben. Ein Beispiel: Kapitel 18 steht schon nach dem Versöhnungstag. Wovon redet es? Ihr sollt keine Unzucht treiben. Unzucht ist Sünde gegen Gott; sie betrifft das Leben der Heiligung. Oder Kapitel 23, die Festzeiten: An diesem Tag darf keinerlei Arbeit getan werden, denn die Zeit gehört dem HERRN. Wer an diesem Tag arbeitet, für den ist das keine Frage von rein oder unrein mehr — er übertritt Gottes Gebot, und das betrifft die Heiligkeit. Darum wiegt der Sabbat unter den Festzeiten Israels so schwer.</div></div>
+<div class="duo"><div class="zh">Noch ein Beispiel, das ich gestern eigens herausgesucht habe. Letztes Mal sprach eine Schwester über die Nächstenliebe in Kapitel 19, Vers 18; wir lesen ab Vers 17. Sie werden sehen: Mit rein oder unrein hat das nichts mehr zu tun. Es ist eine Frage der Heiligkeit — eine Frage der Gedanken unseres Herzens.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">3. Mose 19,17</span> Du sollst deinen Bruder nicht hassen in deinem Herzen, sondern du sollst deinen Nächsten zurechtweisen, damit du nicht seinetwegen Schuld auf dich lädst.</div>
+<div class="verse"><span class="ref">3. Mose 19,18</span> Du sollst dich nicht rächen noch Zorn bewahren gegen die Kinder deines Volks. Du sollst deinen Nächsten lieben wie dich selbst; ich bin der HERR.</div>
+<div class="duo"><div class="zh">Der Satz endet mit „ich bin der HERR": Die Nächstenliebe hängt am Wesen des HERRN selbst, sie gehört zur Heiligkeit. Den Nächsten zu lieben wie sich selbst ist keine Frage von rein oder unrein — es ist die Frage, ob wir dem HERRN geheiligt sind.</div></div>
+<div class="keynote"><span class="key">Nächstenliebe ist keine Frage der Reinheit,</span> sondern der Heiligkeit — ob wir dem HERRN gehören.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 1 1 21 12z"/></svg></div><h2>Die Tätowierung I · Die Frage meines Sohnes</h2></div>
+<div class="duo"><div class="zh">Und dann Kapitel 19, Vers 28. Warum greife ich gerade diesen Vers heraus? Mein jüngerer Sohn Andreas hat mich vor zwei, drei Jahren etwas gefragt: „Papa, darf ich mir wie meine Mitschüler ein Tattoo stechen lassen?" Ich habe ihm nicht direkt geantwortet. Verbietet man es rundweg — „mach deinen Mitschülern das nicht nach" —, dann nimmt man ihm gleichsam das Band zu seinen Altersgenossen; und ich weiß genau: Ein hartes Verbot erreicht nichts Gutes. Natürlich dachte ich bei mir: „Ein Junge von gut zehn Jahren, makellos und heil — warum will er sich Zeichen in die Haut ritzen lassen?"</div></div>
+<div class="duo"><div class="zh">Also stellte ich ihm eine Aufgabe: „Mein Junge, die Antwort liegt irgendwo im dritten Buch Mose. Nimm dir einen Monat Zeit, such sie heraus und beantworte mir die Frage selbst." So brachte ich ihn zum einen dazu, das dritte Buch Mose zu lesen, und zum anderen löste sich die Frage, wie Glaube und Leben zusammengehören. Er machte sich ernsthaft ans Blättern und kam später zu mir: „Daddy, das geht wohl eher nicht." Ich fragte: „Warum?" Da zeigte er mir Kapitel 19, Vers 28.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">3. Mose 19,28</span> Ihr sollt um eines Toten willen an eurem Leibe keine Einschnitte machen noch euch Zeichen einritzen; ich bin der HERR.</div>
+<div class="duo"><div class="zh">Was das bedeutet, verstand er natürlich noch nicht; ich erklärte es ihm: Es hängt mit heidnischem Kult zusammen.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></svg></div><h2>Die Tätowierung II · Der heidnische Zusammenhang</h2></div>
+<div class="duo"><div class="zh">Es gibt heute in den Gemeinden Geschwister mit Tätowierungen. Sind sie aus der Zeit vor dem Glauben, und der Mensch ist getauft und hat sich von Herzen dem Herrn zugewandt, dann ist das alles vergangen, alles ist neu geworden — darüber streite ich keinen Augenblick. Und wenn junge Leute aus der Gemeinde mich das fragen, wage ich auch keine direkte Antwort; ich mache es meist wie eben erzählt und lasse sie selbst suchen. Erst wenn Gott sie die Verse finden lässt und sie anfangen, die Möglichkeiten zu bedenken, rede ich mit ihnen weiter.</div></div>
+<div class="duo"><div class="zh">Denn liest man Vers 28 im Zusammenhang, so redet der ganze Abschnitt von heidnischen Bräuchen. Vers 26: „Ihr sollt nicht Wahrsagerei noch Zauberei treiben." Vers 27 sagt, man solle das Haar am Haupt nicht rundherum abschneiden — haben Sie einmal einen ägyptischen Priester gesehen? Die Priester Ägyptens waren in der Regel kahlgeschoren. Vers 29: Du sollst deine Tochter nicht zur Hurerei anhalten. Vers 30: „Meine Feiertage haltet und fürchtet mein Heiligtum." Vers 31: „Ihr sollt euch nicht den Totenbeschwörern und Wahrsagern zuwenden." Der Vers über die Tätowierung steckt mitten in diesem Zusammenhang des heidnischen Kults.</div></div>
+<div class="duo"><div class="zh">Nach alledem frage ich Sie: Ist die Tätowierung eine Sache der persönlichen Lebensgewohnheit — oder eine Sache, die Gottes Wesen berührt? Eine Frage von rein oder unrein — oder eine Frage der Heiligung? Die Antwort ist das Letztere. Rein oder unrein ist wie eine Hautkrankheit: Durch Waschung und Wartezeit kehrt der Zustand der Reinheit von selbst zurück. Geht es aber um Heiligung, darum, ob etwas Gottes Willen entspricht — und damit um die Frage, wen der Mensch in seinem Innersten anbetet —, dann lässt sich die Sache nicht mehr so einfach erledigen.</div></div>
+<div class="keynote"><span class="key">Reinheit kehrt von selbst zurück,</span> Heiligung nicht — sie fragt, wen Sie im Innersten anbeten.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16l1-9-5 3-4-6-4 6-5-3z"/><path d="M6 21h12"/></svg></div><h2>Segen und Züchtigung · Der Rahmen des Bundes</h2></div>
+<div class="duo"><div class="zh">Nach dieser Gliederung sehen Sie noch die letzten Kapitel 26 und 27: Dort stehen die Ordnungen von Segen und Strafe. Wer nach Gottes Willen handelt, über den kommt der Segen; wer nicht nach Gottes Willen handelt, über den kommt Gottes Strafe. Mancher fragt: Ist Gott nicht Liebe — warum straft er? Um seiner Gerechtigkeit willen; sie ist sein Wesen. Stehen wir im Bund, sind wir Gottes Volk und Gottes Kinder, dann empfangen wir Gottes Segen — und ebenso werden wir durch Gottes Wort begrenzt und von ihm erzogen. Christen dürfen nicht auf den Gedanken kommen: Gottes Segen ja, Gottes Züchtigung nein. So redet die Schrift nicht.</div></div>
+<div class="duo"><div class="zh">Es ist wie beim Vertragsschluss: Wenn ich mit einer Firma Geschäfte mache und der Vertrag keine Strafklausel enthält — ist das dann noch ein Vertrag? Gewiss nicht. Denn die menschliche Natur ist verdorben; der Mensch jagt unermüdlich dem eigenen Vorteil nach, und einen Vertrag ohne Sanktion bricht man eben. Darum sagt uns der Schluss des dritten Buches Mose klar, was Gott gefällt: Wer tut, was Gott gefällt, empfängt Segen von Gott; wer es nicht tut, empfängt Züchtigung von Gott. So weit der Überblick über das ganze Buch; von Kapitel 16 als Achse aus werden wir nach vorn und nach hinten weiterlesen.</div></div>
+<div class="keynote"><span class="key">Segen ohne Züchtigung —</span> so redet die Schrift nicht.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div><h2>Zur Erinnerung · Drei Bücher, ein Zusammenhang</h2></div>
+<div class="duo"><div class="zh">Nun zur Wiederholung der letzten Woche. War es zu schwer? Dieses Buch ist nicht leicht; ich hoffe, es gelingt uns gründlich und zugleich verständlich. Wir sagten: Das zweite und das dritte Buch Mose sind keine zwei voneinander unabhängigen Bücher, denn das dritte Buch Mose beginnt mit einem Bindewort, dem hebräischen waw — „und". Und ich füge hinzu: Auch das vierte Buch Mose beginnt mit diesem Wort. Eigentlich kann man diese drei Bücher in einem Zug lesen. Die Zeit: nachdem Mose das Volk durch das Schilfmeer aus Ägypten geführt hat, lagert es am Sinai — nach der Rechnung der Daten (die Schrift sagt es nicht ausdrücklich) etwa ein gutes Jahr. Mose steigt auf den Berg und empfängt das Gesetz; das Volk macht das goldene Kalb; Gott ruft Mose erneut auf den Berg und gibt das Gesetz; das Volk folgt Moses Führung und baut die Stiftshütte, und die Herrlichkeit des HERRN erscheint in der Stiftshütte. So weit die letzte Woche.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 9l-4 3.4 1.2 5.1L12 14.8 7.8 17.5 9 12.4 5 9l4.9-1.1z"/></svg></div><h2>Wolkensäule und Feuersäule · Ein Wunder rund um die Uhr</h2></div>
+<div class="duo"><div class="zh">Beim Vorbereiten kam mir ein Gedanke, den ich Ihnen weitergeben will. Die Herrlichkeit Gottes erscheint in der Stiftshütte, und die Schrift redet von der Wolkensäule und der Feuersäule. Sehen Sie die Verse kurz vor dem dritten Buch Mose, im zweiten Buch Mose, Kapitel 40.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">2. Mose 40,34</span> Da bedeckte die Wolke die Stiftshütte, und die Herrlichkeit des HERRN erfüllte die Wohnung.</div>
+<div class="verse"><span class="ref">2. Mose 40,38</span> Denn die Wolke des HERRN war bei Tage über der Wohnung, und bei Nacht ward sie voll Feuers vor den Augen des ganzen Hauses Israel, solange die Wanderung währte.</div>
+<div class="duo"><div class="zh">Da kam mir der Gedanke: Israel sah Gottes Wunder rund um die Uhr. Als die Herrlichkeit herabkam, wich die Wolkensäule nicht mehr — bei Tag die Wolke, bei Nacht das Feuer, Tag und Nacht mitten im Lager Israels, vor den Augen des Volkes.</div></div>
+<div class="duo"><div class="zh">Waren Sie schon in Paris? Haben Sie gesehen, wie der Eiffelturm vom Tag in die Nacht wechselt und in strahlendem Licht aufleuchtet? Die Besucher warten jedes Mal auf die Dämmerung, bis der eisengraue Turm auf einmal sein goldenes Licht anlegt — die goldene Anstrahlung gibt es seit 1985, und seit dem Jahr 2000 funkelt er zusätzlich zu jeder vollen Stunde. Ich finde, das Bild taugt: Die Pariser heben den Kopf und sehen ihren Turm, das Wahrzeichen der Stadt. So auch Israel — ein Blick zur Mitte des Lagers, und man wusste: Dort ist die Gegenwart Gottes. Gottes Gegenwart ist nicht, wie wir sie uns oft vorstellen, ein Kommen und Verschwinden, ein Vielleicht; Gott ist allezeit bei seinem Volk.</div></div>
+<div class="keynote"><span class="key">Israel sah Gottes Wunder</span>: rund um die Uhr.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-6 8-6s8 2 8 6v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 11v7M15 11v7"/></svg></div><h2>Der Ruf, das Opfer und die Stiftshütte</h2></div>
+<div class="duo"><div class="zh">Darum sprachen wir letzte Woche vom Rufen — das ist sehr wichtig. „Und der HERR rief Mose und redete mit ihm aus der Stiftshütte" (3. Mose 1,1). Der andere Name des dritten Buches Mose ist sein erstes Wort: „Er rief". Gott ruft sein Volk aus der Stiftshütte zu sich heran. Wir sprachen auch über den Sinn des Opferns: Opfern heißt, Gott nahe kommen, sich ihm nahen — Opfer und Nahen haben im Hebräischen dieselbe Wurzel (qrb). Ebenso die Opfergabe: Sie ist das Geschenk, mit dem man sich dem HERRN nahen darf. Und das zweite Buch Mose redet unablässig vom Bau der Stiftshütte — die Stiftshütte ist der Ort, wo Gott dem Menschen begegnet.</div></div>
+<div class="duo"><div class="zh">Das Schaubild der Stiftshütte auf dem Bildschirm kennen Sie; wir haben früher viel Mühe darauf verwandt. Die Stiftshütte ist gar nicht groß. Entscheidend sind die Geräte darin, die Gott angeordnet hat: der Brandopferaltar, das Becken, und das Zelt selbst — die Wohnung. Das Zelt gliedert sich in das Heilige und das Allerheiligste. Es ist eine Schnittzeichnung, die uns das Innere im Durchblick zeigt: Gottes Herrlichkeit wohnt allezeit beim Volk, das Volk lagert rings um die Wohnung, und in der Mitte steht gleichsam ein Eiffelturm, der nachts von selbst die Farbe wechselt — nachts die Feuersäule, tags die Wolkensäule. Ein Blick nach oben, und sie sahen die Gegenwart Gottes bei ihnen; und sie wussten: Die Bundeslade steht im Allerheiligsten, verborgen hinter Vorhang um Vorhang.</div></div>
+<div class="duo"><div class="zh">Einen Punkt haben wir damals betont: Gottes Gnade tritt von innen heraus, der Mensch geht von außen hinein, Gott zu begegnen — und die erste Stelle, an der sich beide treffen, ist der Brandopferaltar. Warum das Opfer so wichtig ist, wird von hier aus sichtbar.</div></div>
+<div class="keynote"><span class="key">Opfern heißt sich nahen.</span> Die Gnade tritt heraus, der Mensch geht hinein — die erste Begegnung ist der Altar.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></svg></div><h2>Unterscheiden · Das Schlüsselwort des Buches</h2></div>
+<div class="duo"><div class="zh">Letzte Woche kamen wir zu Kapitel 10, Vers 10 — zweimal die Zehn, leicht zu merken.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">3. Mose 10,10</span> Ihr sollt unterscheiden, was heilig und unheilig, was unrein und rein ist.<span class="note">※ Luther setzt „unheilig"; das Hebräische (ḥol) und die vom Prediger benutzte chinesische Übersetzung meinen das Gewöhnliche, Alltägliche.</span></div>
+<div class="duo"><div class="zh">Das ganze dritte Buch Mose lehrt uns, was heilig ist und was gewöhnlich, was rein und was unrein — und das Verb dazu heißt „unterscheiden". Das größte Lernstück unseres Lebens in dieser Welt ist das Unterscheiden. Ist es mühsam, ein Leben lang unterscheiden zu lernen? Allerdings, sehr. Und doch unterscheiden wir jeden Tag: was in diese Stunde gehört; was wir heute essen, gebrauchen, anziehen. In den großen und kleinen Dingen des Lebens ist keine Entscheidung leicht, und jeder trifft sie: Bus oder Uber? Chinesisch oder europäisch essen? Zu Hause bleiben oder hinausgehen? Alles ist Unterscheidung. Letzte Woche endeten wir mit dem Satz: Gott regelt erstaunlich viel — weil er uns an allen Dingen des Lebens lehren will, seinen Willen zu unterscheiden.</div></div>
+<div class="duo"><div class="zh">Lehrt uns auch die Welt das Unterscheiden? Gewiss: Die Lehrer in der Schule lehren uns vieles unterscheiden, die Geschichte der Menschheit ebenso — an der Geschichte, am Charakter ihrer Gestalten lernen wir unterscheiden. In der Lage der Schrift aber kommt das Volk gerade aus dem Sklavenhaus, aus der ägyptischen Kultur voller Götzendienst; ihre Herzen sind voll von den alten Erfahrungen, eben den Erfahrungen heidnischer Anbetung. Und sie stehen im Begriff, nach Kanaan hineinzugehen — und der Götzendienst der Kanaaniter ist noch schillernder: Kinder werden geopfert, Säuglinge ins Feuer gelegt, Unzucht getrieben. Die Schrift bezeugt, dass der Götzendienst Kanaans der schlimmste war, böser noch als die Kultur Ägyptens. Unter diesen Umständen will Gott sie von allen Seiten das Unterscheiden lehren.</div></div>
+<div class="keynote"><span class="key">Das größte Lernstück des Lebens</span>: ist das Unterscheiden.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 2.6 4 5.6 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.6-4-9s1.3-6.4 4-9z"/></svg></div><h2>Das „Scheiden" der Schöpfung</h2></div>
+<div class="duo"><div class="zh">Jetzt wird es ein wenig wichtig: Dieses Wort „unterscheiden" ist im Grunde dasselbe Wort wie im Schöpfungsbericht.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">1. Mose 1,1–4</span> Am Anfang schuf Gott Himmel und Erde. Und die Erde war wüst und leer, und Finsternis lag auf der Tiefe; und der Geist Gottes schwebte über dem Wasser. Und Gott sprach: Es werde Licht! Und es ward Licht. Und Gott sah, dass das Licht gut war. Da schied Gott das Licht von der Finsternis.</div>
+<div class="duo"><div class="zh">Sehen Sie das Wort? Geschieden. Schauen wir kurz in das erste Buch Mose. Es ist ein gewichtiges Buch — schade, dass man es oft wie ein Geschichtenbuch durchblättert und weiterzieht. Was also scheidet Gott hier? Aus dem Zusammenhang ist es leicht zu finden: Himmel und Erde, Tag und Nacht — und vor allem: Licht und Finsternis.</div></div>
+<div class="duo"><div class="zh">Da steht das Wort „wüst und leer": alles ineinander vermengt, ohne Ordnung — und wo keine Ordnung ist, da ist Finsternis. Liebe Geschwister, ist Autofahren in Deutschland nicht angenehm? Kaum bin ich wieder in Taiwan am Steuer, ist es eine Qual: Niemand hält sich an die Ordnung, die Motorroller schlängeln sich von allen Seiten heran, ich sitze den ganzen Tag mit klopfendem Herzen im Auto. Verkehrsregeln gibt es wohl — aber keine Ordnung. Für mich ist der Verkehr in Taiwan darum „wüst und leer, und Finsternis lag auf der Tiefe": alles durcheinander, ohne Regel.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div><h2>Über dem Wasser · Von Jona zum erwachten Sinn</h2></div>
+<div class="duo"><div class="zh">Interessant ist auch das „über dem Wasser". Das Wasser steht in der Vorbildsprache der Schrift für das Böse; darum hat es besondere Bedeutung, dass Jesus über das Meer geht: Er triumphiert über die böse Macht. Das Buch Jona erzählt, wie Jona vom Meer verschlungen wird und in den Bauch des großen Fisches gerät — das ist die Macht des Totenreichs. Manche Bibelwissenschaftler meinen, Jona sei da bereits tot gewesen, und Gottes Gnade und Kraft habe ihn wieder lebendig gemacht; darum nimmt Jesus in den Evangelien das Zeichen des Jona zum Gleichnis für die Auferstehung am dritten Tag. Dass der Geist Gottes über dem Wasser schwebt, heißt also nicht nur Sieg über die Macht der Finsternis — es kündigt auch an, dass er über dem Wüsten und Leeren Ordnung und Leben hervorbringen wird.</div></div>
+<div class="duo"><div class="zh">Hat das mit unserem Leben zu tun? Kommt uns das Leben nicht manchmal wie ein einziges Durcheinander vor? Manchmal ja — geben wir es zu. Darum lesen wir Gottes Gesetz: Das Gesetz macht unseren Sinn wach und lässt uns Gottes Ordnungen erkennen.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Psalm 119,18</span> Öffne mir die Augen, dass ich sehe die Wunder an deinem Gesetz.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div><h2>Das Gesetz ist heilig</h2></div>
+<div class="duo"><div class="zh">Christen lesen lieber von Gottes Gnade als vom Gesetz. Ein Hauptgrund, letzte Woche schon angedeutet: Man hat Paulus schief gelesen — als sei das Gesetz nur da, um zu töten, und allein die Gnade mache lebendig. Aber Paulus selbst hat einen gewichtigen Satz gesagt, Römer 7,12.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Römer 7,12</span> So ist also das Gesetz heilig, und das Gebot ist heilig, gerecht und gut.</div>
+<div class="duo"><div class="zh">Geschwister, verstehen wir es nicht falsch: Sündig ist unser Fleisch, nicht das Gesetz. „Was dem Gesetz unmöglich war, weil es durch das Fleisch geschwächt war" (Römer 8,3) — das Problem liegt in der Schwäche des Fleisches; die Sünde wirkt das Böse durch das Fleisch, nicht Gottes Gesetz ist schlecht. Kehren wir also zum dritten Buch Mose zurück: Das ganze Buch lehrt uns Gottes Sinn — wie im Schöpfungsbericht Licht und Finsternis, Chaos und Ordnung, Tag und Nacht zu scheiden; und Kapitel 10, Vers 10 lehrt uns, das Heilige vom Gewöhnlichen und das Reine vom Unreinen zu unterscheiden.</div></div>
+<div class="keynote"><span class="key">Sündig ist unser Fleisch,</span> nicht das Gesetz.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 1 1 21 12z"/></svg></div><h2>Was ist Heiligkeit? · Die Antworten der Runde</h2></div>
+<div class="duo"><div class="zh">Ich will Ihnen Schritt für Schritt ein paar wichtige Schlüssel in die Hand geben; danach kommen Sie beim eigenen Bibellesen schneller voran. Ich habe in die Runde gefragt: Was ist Heiligkeit? Welches Bild steht in Ihren Köpfen, wenn Sie „heilig" hören?</div></div>
+<div class="duo"><div class="zh">Ein Bruder sagte: Es hat mit Gott zu tun — Gottes Gegenwart ist Heiligkeit. Eine Schwester sagte: ausgesondert zur Heiligkeit, aus dem Weltlichen herausgenommen und Gott zugehörig. Ich fragte weiter: Kann der Mensch heilig sein? Ein Bruder: Nicht hundertprozentig — unser Stammvater Adam hat im Garten gesündigt, und wir haben die sündige Natur geerbt; aber Heiligkeit brauchen wir alle, und Gott verlangt sie ja auch: „Ihr sollt heilig sein, denn ich bin heilig." Ein anderer: Nach weltlichem Maßstab gilt einer als heilig, der sauber und ohne Makel ist; nach Gottes Maßstab trägt „heilig" den Sinn des Ausgesonderten. Der Begriff der Schrift aber lautet: Gott selbst ist heilig — darum sind auch sein Erbarmen, seine Liebe, seine Sanftmut heilig.</div></div>
+<div class="duo"><div class="zh">Warum stelle ich diese Frage? Weil die Gemeinde in Wahrheit selten darüber redet. Solange dieser Begriff aber nicht klar ist, wissen wir nicht, was Gottes Liebe ist, Gottes Gerechtigkeit, Gottes Güte, Gottes Kraft — denn all das entspringt Gottes Heiligkeit.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16l1-9-5 3-4-6-4 6-5-3z"/><path d="M6 21h12"/></svg></div><h2>Heiligkeit ist Gottes Wesen</h2></div>
+<div class="duo"><div class="zh">Heiligkeit ist Gottes Wesen. Heiligkeit ist nicht bloß irgendein Zustand, an dem Gott Gefallen hat — sein Sein selbst ist heilig. Schreiben Sie sich diesen Satz auf: Heiligkeit ist Gottes Wesenseigenschaft. Das heißt zugleich: Außer Gott ist kein Geschöpf heilig, und kein Ding ist aus sich selbst heilig.</div></div>
+<div class="duo"><div class="zh">Die landläufige Vorstellung von Heiligkeit sieht anders aus: Die höchste Vollendung der Kindespflicht — das nenne man heilig; die höchste Entfaltung menschlicher Tugend — das sei Heiligkeit. Sagt man unter Chinesen nicht gern: Was du nicht willst, das man dir tu, das füg auch keinem andern zu? Als führte die Liebe, immer weiter gesteigert, zuletzt in den Stand der Heiligkeit; als stiege der Charakter höher und höher, bis oben der Heiligenschein erscheint. Später fand ich genau diese Auffassung in der akademischen Literatur wieder. Der deutsche Philosoph Immanuel Kant (1724–1804) fasste das Heilige als die höchste Verfassung des menschlichen Willens: die Tugend auf ihrer besten Höhe, die Liebe zu den Deinen in ihrer vollen Entfaltung — das sei der Eintritt ins Heilige, das Ziel, dem der Mensch unablässig nachjagt. In der „Kritik der praktischen Vernunft" (1788) bestimmt Kant die Heiligkeit als die völlige Angemessenheit des Willens an das moralische Gesetz — und fügt hinzu, kein Wesen der Sinnenwelt erreiche sie je in irgendeinem Augenblick. Geschwister: Das ist der Blick vom Menschen her, nicht der Blick der Schrift.</div></div>
+<div class="keynote"><span class="key">Heiligkeit ist Gottes Wesen.</span> Außer Gott ist kein Geschöpf heilig.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 9l-4 3.4 1.2 5.1L12 14.8 7.8 17.5 9 12.4 5 9l4.9-1.1z"/></svg></div><h2>Unabhängige und abhängige Heiligkeit</h2></div>
+<div class="duo"><div class="zh">Die Schrift offenbart es anders. Ihre Offenbarung lautet: Das Wesen des HERRN ist heilig, und diese Heiligkeit gehört dem HERRN allein. Die Theologie nennt sie die unabhängige Heiligkeit (independent holiness): eine Heiligkeit, die auf niemanden angewiesen ist, die aus sich selbst und von Ewigkeit her besteht. Gibt es aber eine unabhängige, so ist damit eine abhängige angedeutet: Die Heiligkeit des Menschen muss sich auf Gottes Heiligkeit stützen — die abhängige Heiligkeit (dependent holiness); sie kann nur Gottes Heiligkeit widerspiegeln. Das klingt akademisch, aber genau das sagt die Schrift. Der ewig aus sich selbst Seiende ist vom geschaffenen Weltall gänzlich verschieden; und soll der Mensch in Gottes Heiligkeit zurückkehren, braucht er eine heile Beziehung zu Gott.</div></div>
+<div class="duo"><div class="zh">Darum sagt die Schrift: „Sondert euch aus und seid heilig." Das Aussondern ist eine Handlung — aber wie wird man „heilig"? Wir Ausgesonderten müssen in Gottes Heiligkeit heimkehren, damit Gottes Heiligkeit unsere Heiligkeit wird. Die Heiligkeit im Menschen kann nicht für sich bestehen; sie muss sich an Gottes Heiligkeit halten. Das Wort der Schrift dafür heißt widerspiegeln, zurückstrahlen — Sie werden ihm noch oft begegnen.</div></div>
+<div class="duo"><div class="zh">Das heißt: Trennt sich der Mensch von Gott — oder mit Paulus gesprochen: ist er nicht in Christus —, dann haben wir Gottes Heiligkeit nicht. Unser Leben lang lernen wir darum dies eine: in Christus zu bleiben; das Alte Testament sagt dafür: in Gottes Gegenwart zu leben. Ist Gott nicht mit mir, so bringe ich nichts hervor, was aus der Heiligkeit käme. Und was kommt aus der Heiligkeit? Gerechtigkeit, Barmherzigkeit, Liebe, Kraft, Friede, Güte — alles. Verlassen wir Gott, dann fehlt die herrliche, heilige Liebe, die von Gott ausgeht; meine Liebe wird zur selbstsüchtigen Liebe, zur Liebe aus menschlicher Begierde — Liebe habe ich wohl, doch ohne Heiligkeit. Ebenso meine Gerechtigkeit: Steht sie nicht in Gott, wird sie zur Tyrannei, und ich werde zum unbarmherzigen Vollstrecker. Denn Gottes Heiligkeit trägt alle seine Eigenschaften in sich — der Mensch aus sich selbst hat sie nicht.</div></div>
+<div class="keynote"><span class="key">Des Menschen Heiligkeit ist abhängige Heiligkeit,</span> sie kann Gottes Heiligkeit nur widerspiegeln.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18L14 6l-3.5 6L8 9z"/><path d="M11 12l1.5 2"/></svg></div><h2>Ein Königreich von Priestern, ein heiliges Volk</h2></div>
+<div class="duo"><div class="zh">Zurück zum Anfang des dritten Buches Mose: Alle Opferordnungen sind dazu da, uns den Rückweg in Gott hinein zu bahnen. Gott ruft Mose aus der Stiftshütte zu sich heran, denn mit der Sünde behaftet kann kein Mensch vor Gott bestehen und mit ihm eins sein. Alles, was dieses Buch sagt, zielt darauf, dass wir, wenn wir Gott von Angesicht begegnen, „ihn wohlgefällig machen vor dem HERRN" (3. Mose 1,3). Hier muss ich das zweite Buch Mose, Kapitel 19, aufschlagen — die wichtigste Stelle. Als Israel am Sinai lagert, spricht Gott aus, was er im ganzen Alten Testament vorhat; hier liegt der Geist des ganzen Alten Testaments.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">2. Mose 19,3–6</span> Und Mose stieg hinauf zu Gott. Und der HERR rief ihm vom Berge zu und sprach: So sollst du sagen zu dem Hause Jakob und den Israeliten verkündigen: Ihr habt gesehen, was ich an den Ägyptern getan habe und wie ich euch getragen habe auf Adlerflügeln und euch zu mir gebracht. Werdet ihr nun meiner Stimme gehorchen und meinen Bund halten, so sollt ihr mein Eigentum sein vor allen Völkern; denn die ganze Erde ist mein. Und ihr sollt mir ein Königreich von Priestern und ein heiliges Volk sein.</div>
+<div class="duo"><div class="zh">Wer das zweite Buch Mose mit uns durchgearbeitet hat, erinnert sich — wir haben diesen Satz unablässig wiederholt. Wer ihn noch nicht notiert hat: Schreiben Sie ihn auf, die ganze Schrift entspringt hier. Wem gehören wir? „Mir." Und wer ist dieses „Ich"? Wir sagen pauschal „Gott" — hier aber muss der Name „der HERR" ausgesprochen werden, denn die Welt kennt auch einen Gott namens Moloch und einen namens Baal. Wir gehören dem HERRN als ein Königreich von Priestern, als ein heiliges Volk. Das ganze Alte Testament läuft in diese Richtung und lehrt uns ohne Unterlass, wie man ein Königreich von Priestern und ein heiliges Volk ist.</div></div>
+<div class="duo"><div class="zh">Erst danach gibt Gott das Gesetz — die Zehn Gebote, die jeder kennt: Du sollst keine anderen Götter haben neben mir. Aber unser Samstagskreis soll wissen: Die Zehn Gebote wachsen aus Vers 2 hervor.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">2. Mose 20,2</span> Ich bin der HERR, dein Gott, der ich dich aus Ägyptenland, aus der Knechtschaft, geführt habe.</div>
+<div class="duo"><div class="zh">Das Gesetz wird unter der Gnade gegeben, unter dem Vorzeichen der Liebe — damit das Volk ein Königreich von Priestern und ein heiliges Volk sei. Diesen Abschnitt haben wir beim zweiten Buch Mose ausführlich behandelt; ich lasse es dabei. Zurück also zum „Wohlgefallen" in Kapitel 1: Vor dem HERRN wohlgefällig zu werden heißt, zu lernen, wie man ein Königreich von Priestern und ein heiliges Volk ist. Gottes Heiligkeit ist die unabhängige; er braucht niemanden, der sie spiegelt. Der Mensch hat diese Heiligkeit von Haus aus nicht — aber wenn wir vor Gott sein Wohlgefallen finden, wird Gottes Heiligkeit unsere Heiligkeit, und alle seine Eigenschaften werden unsere Eigenschaften. Genau das will uns das dritte Buch Mose lehren: Gottes Bild und Gleichnis zu erlernen.</div></div>
+<div class="duo"><div class="zh">Geschwister, unser Leben spielt sich gleichsam auf der Ebene menschlicher Moral ab. Moralische Maßstäbe sind etwas sehr Gutes: Wer unterwegs aus Liebe den Behinderten beisteht und den Bedürftigen hilft, zeigt Menschenmoral von ihrer besten Seite — das ist ohne Frage gut und schön. Aber wir müssen wissen: Im Menschen wohnen zu viele innere Antriebe und Begierden; wir kennen ja unsere eigenen Motive nicht. Darum brauchen wir die Führung von Gottes Wort, damit Gottes Heiligkeit sich in uns spiegeln kann. Das lernt sich schwer — und eben darum lehrt uns das dritte Buch Mose beharrlich durch Riten: durch den Ritus Gottes Maßstab widerzuspiegeln. Im Weitergehen werden uns Ordnungen begegnen, die ich nicht erklären kann; fragen Sie mich, ich kann es auch nicht sagen — denn jene Ordnungen wurden den Israeliten damals so gesagt, wie sie es fassen konnten.</div></div>
+<div class="keynote"><span class="key">Das Gesetz ist unter der Gnade gegeben,</span> unter dem Vorzeichen der Liebe.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div><h2>Vor 3500 Jahren · Den Kopf zurückstellen</h2></div>
+<div class="duo"><div class="zh">Nun noch einmal der Blick aus größerer Höhe: auf die Zeit, in der dieses Buch geschrieben wurde. Die fünf Bücher Mose liegen etwa 3500 Jahre zurück; die Zeit des Mose fällt ungefähr in das 15. Jahrhundert vor Christus — das entspricht der Shang-Dynastie in China. Wer das dritte Buch Mose liest, muss den Kopf in jene Zeit zurückstellen; für uns aus chinesischer Geschichte ist die Shang-Zeit die beste Vergleichstafel. Man darf die Uhr nicht auf das Jahr 2026 stellen, sonst passt gar nichts mehr zusammen.</div></div>
+<div class="duo"><div class="zh">Beim zweiten Buch Mose habe ich Ihnen oft ein Buch gezeigt: Li Shuo, „Zhan Shang" — über den Umbruch von der Shang- zur Zhou-Zeit (Guangxi Normal University Press, 2022). Aus den archäologischen Grabungen weiß der Verfasser: Die Shang opferten Menschen, opferten Säuglinge — in den ausgegrabenen Urnengräbern und Opfergruben finden sich immer wieder menschliche Knochen, nicht ein einzelnes Mal, sondern als wiederkehrender Befund. Daran sehen Sie: In jener Vergleichszeit war das Opfer allgegenwärtig und gewichtig. Freilich wissen wir noch klarer: Wir müssen heute keine Rinder und Schafe mehr herbeiführen, denn Christus hat am Kreuz alle Handlungen des Opfers vollendet. Wer das dritte Buch Mose liest, versteht umso besser, warum Gott damals so zu seinem Volk redete.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 9l-4 3.4 1.2 5.1L12 14.8 7.8 17.5 9 12.4 5 9l4.9-1.1z"/></svg></div><h2>Die fünf Opfer · Fünf Wege der Gemeinschaft mit Gott</h2></div>
+<div class="duo"><div class="zh">Wir bringen für dieses Buch sehr unterschiedliche Voraussetzungen mit, und ich habe lange überlegt, wie ich es angehen soll. Zu tief darf ich nicht gehen; ich will Sie vom Beobachten her langsam hineinführen und Ihnen zuerst ein paar Schlüssel geben: wie man auf die Heiligkeit schaut, auf das Wohlgefallen Gottes, auf die Begegnung mit Gott, auf Gottes Herrlichkeit und unser eigenes Wesen. Auf die Fragen gehen wir dann Schritt für Schritt ein. Unterbrechen Sie mich jederzeit — Ihre Fragen helfen mir, Tiefe und Tempo anzupassen; sonst gerate ich unversehens ins Akademische und rede Ihnen von unabhängiger und abhängiger Heiligkeit und davon, welcher Gelehrte welche Ansicht vertritt — und das wäre nicht gut.</div></div>
+<div class="duo"><div class="zh">Schlagen Sie jetzt bitte die Bibel auf — diesen Abschnitt sollen Sie auswendig können. Kapitel 16, sagten wir, ist der Gipfel, sein Kern der Versöhnungstag; davor stehen die Ordnungen der Reinheit. Sehen Sie die Kapitel 1 bis zum Anfang von Kapitel 6: Dort stehen fünf Opfer — fünf Opfer der Gemeinschaft mit Gott. Durch diese fünf Opfer kann ich die Beziehung zu Gott neu aufnehmen. Welche fünf? Wer das dritte Buch Mose studiert, muss sie auswendig wissen; sonst war das Studium umsonst. Die Überschriften zeigen sie: erstens das Brandopfer — unterstreichen Sie es; zweitens das Speisopfer; drittens das Dankopfer, das Friedensopfer; dann das Sündopfer; und in Kapitel 5 noch das Schuldopfer. Die chinesische Kultur kennt gewöhnlich nur einen einzigen Opferbegriff: das Sühnen der Schuld — vor der Gottheit stehe ich immer nur als einer, der Schuld abträgt. Ein Brandopfer kennt sie nicht, ein Speisopfer nicht, ein Friedensopfer nicht, ein Schuldopfer nicht.</div></div>
+<div class="duo"><div class="zh">Jedes dieser Opfer trägt Beinamen — nehmen Sie sich die Zeit und schreiben Sie sie an den Rand. Das Brandopfer heißt auch „das Ganzopfer, das vollständige, das gänzlich dargebrachte Opfer". Das Friedensopfer heißt auch „Gemeinschaftsopfer", englisch Peace oder Fellowship; es wurzelt in dem großen hebräischen Wort Schalom — Friede. Das Sündopfer kann man auch Reinigungsopfer nennen. Beim Schuldopfer schreiben Sie daneben: Wiedergutmachungsopfer, Reparation. Fünf Opfer also: Brandopfer, Speisopfer, Friedensopfer, Sündopfer, Schuldopfer. Haben Sie je bedacht, dass wir in der Gemeinschaft mit Gott fünf verschiedene Opfer darbringen können? Ich sehe eine Schwester unentwegt nicken — das spricht für den Unterricht ihrer Gemeinde; die meisten von uns sagen ja sonst nur: Ich will vor Gott mein Sündopfer bringen.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>Speisopfer und Friedensopfer · Das Salz des Alltags und das Liebesmahl</h2></div>
+<div class="duo"><div class="zh">Das Speisopfer ist das alltäglichste der fünf: Man bringt dar, was man im gewöhnlichen Leben isst. Ganz schlicht — „es soll von feinem Mehl sein, und er soll Öl daraufgießen" (3. Mose 2,1). Das Wichtigste dabei: kein Sauerteig — und Salz muss dabei sein.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">3. Mose 2,13</span> Alle deine Speisopfer sollst du salzen, und dein Speisopfer soll niemals ohne Salz des Bundes deines Gottes sein; bei allen deinen Opfern sollst du Salz darbringen.</div>
+<div class="duo"><div class="zh">Als schlösse man mitten im Alltag, beim Salz, den Bund mit Gott. Das Speisopfer ist das gewöhnlichste Opfer: Schon beim Essen soll es dieses Opfer geben. Das heißt: Mitten im täglichen Leben soll uns alles Alltägliche daran erinnern — Gott ist mitten unter uns.</div></div>
+<div class="duo"><div class="zh">Das Friedensopfer heißt auch Fellowship, denn dieses Opfer wird mit allen geteilt. Das Liebesmahl, das wir in der Gemeinde halten, stammt aus dem Friedensopfer. Wussten Sie das? Unser gewohntes Liebesmahl kommt von hier — darum trägt es den zweiten Namen Gemeinschaftsopfer.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div><h2>Sündopfer und Schuldopfer · Versöhnt mit Gott, Wiedergutmachung am Menschen</h2></div>
+<div class="duo"><div class="zh">Das Sündopfer ist uns vertrauter. Was Sühne genau bedeutet, kommt später; vorerst nur ein Gedanke: Sühne soll uns nicht nur reinigen, sie soll auch Gottes Zorn stillen — ihr eigentliches Ziel ist, die Versöhnung mit Gott wiederherzustellen. Das ist sehr wichtig. Darum kann man es auch Reinigungsopfer nennen: Erst wenn die Sünde abgewaschen ist, können wir vor Gott treten.</div></div>
+<div class="duo"><div class="zh">Aber ebenso im Bereich der Sünde: Was ist, wenn wir an einem Bruder, an einer Schwester schuldig geworden sind? Wir wissen nur, dass man für Sünde gegen Gott opfert. Doch wo Menschen aneinander schuldig werden — tragen wir da keine Verantwortung? Die Schrift sagt: doch. Dafür steht das Schuldopfer. Du musst wiedergutmachen. Da verletzt einer einen Menschen — sticht ihm, sagen wir, ein Messer in den Leib und geht davon —, bekennt es Gott, und alles scheint erledigt. So redet die Schrift nicht. Du musst auch jenem Bruder, jener Schwester deinen Preis zahlen und dich mit ihm versöhnen. Das ist der Gedanke des Wiedergutmachungsopfers.</div></div>
+<div class="duo"><div class="zh">Brandopfer also, Speisopfer, Friedensopfer, Sündopfer, Schuldopfer — fünf Opfer, die wir Gott beständig darbringen sollen. Ist Ihnen das gegenwärtig? Nehmen Sie das Speisopfer: In unserem Alltag braucht es dieses Salz des Bundes mit Gott — sonst tragen wir in der Gemeinde das eine Gesicht und im Privatleben ein anderes. Das Speisopfer wird mitten im gewöhnlichen Leben dargebracht, etwa wie das Tischgebet; doch das Tischgebet deckt das Speisopfer nicht ab. Entscheidend ist, dass alle Bereiche des täglichen Lebens das Salz des Bundes tragen — und nicht ein Krümel Sauerteig darin ist. Sehen Sie, wie fein diese Ordnungen gearbeitet sind. Ich frage mich selbst damit: Trage ich in der Gemeinde das eine Gesicht — und wenn niemand mich sieht, ein anderes?</div></div>
+<div class="keynote"><span class="key">Ein Gesicht in der Gemeinde, ein anderes zu Hause?</span> Genau danach fragt das Speisopfer.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-6 8-6s8 2 8 6v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 11v7M15 11v7"/></svg></div><h2>Der Brandopferaltar · Wurzel aller Opfer</h2></div>
+<div class="duo"><div class="zh">Und das Brandopfer? Über dieses Wort müssen wir heute noch reden. Dass das Brandopfer unter den fünf Opfern an erster Stelle steht, hat seinen Grund. Sehen Sie zuerst das zweite Buch Mose 30,28 — dort heißt der Altar „Brandopferaltar"; und weiter hinten, 38,1: „Und er machte den Brandopferaltar aus Akazienholz." Der bronzene Altar im Vorhof heißt also Brandopferaltar, und er ist der wichtigste unter allen Altären. Wundert Sie das nicht: Warum beginnt die Reihe nicht mit dem Sündopfer, sondern mit dem Brandopfer? Haben Sie sich das je gefragt? Gott ruft Mose — und wenn jemand opfern will, wird als Erstes das Brandopfer genannt.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">3. Mose 6,6</span> Ständig soll das Feuer auf dem Altar brennen und nie verlöschen.<span class="note">※ Zählung: Luthers 3. Mose 6,6 entspricht 6,13 der chinesischen und englischen Zählung.</span></div>
+<div class="duo"><div class="zh">Das Brandopfer ist die Wurzel aller Opfer, denn die Schrift sagt: Das Feuer auf dem Altar brennt Tag und Nacht. Während die anderen vier Opfer dargebracht werden, brennt das Brandopfer ununterbrochen auf dem Brandopferaltar weiter. Man nennt es auch das Opfer der völligen Hingabe; es steht für den Gehorsam des Menschen gegen Gott: Alles, was ich habe, gebe ich dir.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 6h6z"/><path d="M19 7l-3 6h6z"/><path d="M8 21h8"/></svg></div><h2>Kapitel 1, von Anfang bis Ende gelesen</h2></div>
+<div class="duo"><div class="zh">Nach unserer Gewohnheit lese ich das erste Kapitel des dritten Buches Mose einmal ganz vor. Hören Sie zu — und prüfen Sie dabei Ihr Auge für das Ganze.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">3. Mose 1,1–9</span> Und der HERR rief Mose und redete mit ihm aus der Stiftshütte und sprach: Rede mit den Israeliten und sprich zu ihnen: Wer unter euch dem HERRN ein Opfer darbringen will, der bringe es von dem Vieh, von Rindern oder von Schafen und Ziegen. Will er ein Brandopfer darbringen von Rindern, so opfere er ein männliches Tier, das ohne Fehler ist. An den Eingang der Stiftshütte soll er es bringen, damit es ihn wohlgefällig mache vor dem HERRN. Und er lege seine Hand auf den Kopf des Brandopfers, damit es ihn wohlgefällig mache und für ihn Sühne schaffe. Dann soll er das Rind schlachten vor dem HERRN, und die Priester, Aarons Söhne, sollen das Blut herzubringen und ringsum an den Altar sprengen. Und er soll dem Brandopfer das Fell abziehen und es in seine Stücke zerlegen. Und die Söhne Aarons, des Priesters, sollen ein Feuer auf dem Altar machen und Holz oben darauflegen und sollen die Stücke samt dem Kopf und dem Fett auf das Holz legen, das über dem Feuer auf dem Altar liegt. Die Eingeweide aber und die Schenkel soll er mit Wasser waschen, und der Priester soll das alles auf dem Altar in Rauch aufgehen lassen. Das ist ein Brandopfer, ein Feueropfer zum lieblichen Geruch für den HERRN.</div>
+<div class="verse"><span class="ref">3. Mose 1,10–13</span> Will er aber von Schafen oder Ziegen ein Brandopfer darbringen, so opfere er ein männliches Tier, das ohne Fehler ist. Und er schlachte es an der Seite des Altars nach Norden zu vor dem HERRN. Und die Priester, Aarons Söhne, sollen das Blut ringsum an den Altar sprengen. Und er zerlege es in seine Stücke, und der Priester soll sie samt dem Kopf und dem Fett auf das Holz über dem Feuer legen, das auf dem Altar ist. Aber die Eingeweide und die Schenkel soll er mit Wasser waschen, und der Priester soll das alles auf dem Altar opfern und in Rauch aufgehen lassen. Das ist ein Brandopfer, ein Feueropfer zum lieblichen Geruch für den HERRN.</div>
+<div class="verse"><span class="ref">3. Mose 1,14–17</span> Will er aber von Vögeln dem HERRN ein Brandopfer darbringen, so bringe er's von Turteltauben oder andern Tauben. Und der Priester soll's zum Altar bringen und ihm den Kopf abkneifen und auf dem Altar in Rauch aufgehen lassen. Sein Blut aber soll er ausbluten lassen an der Wand des Altars. Und den Kropf mit seinem Inhalt soll man neben dem Altar nach Osten zu auf den Aschehaufen werfen und soll seine Flügel einreißen, aber nicht abtrennen. Und so soll's der Priester auf dem Altar in Rauch aufgehen lassen auf dem Holz über dem Feuer. Das ist ein Brandopfer, ein Feueropfer zum lieblichen Geruch für den HERRN.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 2.6 4 5.6 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.6-4-9s1.3-6.4 4-9z"/></svg></div><h2>Beobachtung · Rind, Schaf, Vogel</h2></div>
+<div class="duo"><div class="zh">Nun die Beobachtung: Welche Tiere können als Brandopfertier stehen? Das Rind — der junge Stier; Schaf oder Ziege — ein männliches Tier; und der Vogel — Turteltauben oder junge Tauben. Daran erkennen wir: Als Jesu Eltern im Lukasevangelium das Kind zum Tempel brachten, um zu opfern, opferten sie Vögel — ein Zeichen, dass ihre wirtschaftliche Lage schwach war.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Lukas 2,24</span> und um das Opfer darzubringen, wie es gesagt ist im Gesetz des Herrn: »ein Paar Turteltauben oder zwei junge Tauben«.<span class="note">※ Nach 3. Mose 12,8 ist dies die Ordnung für den, der sich kein Lamm leisten kann: ein Vogel zum Brandopfer, einer zum Sündopfer.</span></div>
+<div class="duo"><div class="zh">Die wirtschaftlichen Verhältnisse sind verschieden: Der eine kann ein Rind bringen, der andere ein Schaf, der Dritte einen Vogel. Gott verlangt nicht von jedem ein so kostbares Tier wie das Rind. Am Lukasevangelium sieht man: Jesu Elternhaus war nicht wohlhabend — und dennoch opferten sie genau nach der Ordnung der Schrift.</div></div>
+<div class="duo"><div class="zh">Noch eine Beobachtung, die Sie im Herzen behalten sollen: Kann Geld das Opfer ersetzen? Grundsätzlich nein. Ersetzen kann nur Leben; Lebloses kann nicht eintreten. Das ist eine Grundregel des Opfers. Denken Sie also nicht: Ich gebe in der Gemeinde ein paar Euro — oder auch viel Geld — und erkaufe mir damit den Frieden meines Lebens. Wenn Sie nicht Ihr eigenes Leben mit hineinlegen, geht es nicht.</div></div>
+<div class="keynote"><span class="key">Geld kann das Opfer nicht ersetzen,</span> nur Leben kann eintreten.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h2>Ohne Fehler · Das Beste darbringen</h2></div>
+<div class="duo"><div class="zh">Gehen wir am Text entlang. „So opfere er ein männliches Tier, das ohne Fehler ist" (3. Mose 1,3). Was heißt ohne Fehler? Gesund, unversehrt, ganz — gefordert ist gute Qualität; das Beste soll dargebracht werden. Die Schrift definiert es selbst, 3. Mose 22,22.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">3. Mose 22,22</span> Ist es blind oder hat es ein gebrochenes Glied oder eine Wunde oder ein Geschwür oder Krätze oder Flechten, so sollt ihr es dem HERRN nicht opfern und davon kein Feueropfer bringen auf den Altar des HERRN.</div>
+<div class="duo"><div class="zh">Was krank ist und Schaden hat, das essen Sie ja selbst nicht mehr — wie käme es dann auf den Altar? Der Sinn ist: Was dem HERRN dargebracht wird, soll ganz sein, vollkommen, gut — von guter Qualität.</div></div>
+<div class="duo"><div class="zh">Geschwister, halten wir inne und denken zurück: Hat das, was wir in der Gemeinde darbringen, „Fehler" — oder ist es von guter Qualität? Oder geben wir dem HERRN erst, was wir selbst nicht mehr wollen? In meiner Jugend gab es solche Szenen oft: Man hielt es für ein gutes Werk, dem Prediger etwas zu schenken — und schenkte ihm, was zu Hause übrig war, das leicht Beschädigte: „Wenn man es repariert, kannst du es noch gebrauchen." Manchmal tat mir das in der Seele weh. Ein Prediger ist keine Altwarensammelstelle, wahrhaftig nicht. Wer ihm — und den Geschwistern — wirklich Gutes tun will, der gebe das Gute. Freilich sind die Zeiten anders geworden; manche Prediger leben heute in sehr guten Verhältnissen, ganz anders als damals in den Tagen von Wang Mingdao (1900–1991) und Watchman Nee (1903–1972).</div></div>
+<div class="duo"><div class="zh">Aber bedenken Sie: Wenn wir schon unter Menschen solche Rücksicht kennen — was bringen wir dann Gott dar, wenn wir vor ihn treten? Ich sage es offen: Beim Zählen der Kollekte sieht man mitunter lauter zerknitterte Scheine. Einerseits danke ich dem Herrn — da geben Geschwister selbst in solcher Lage noch ihr Opfer, sie haben es schwer, und ein absoluter Maßstab ist das nicht. Andererseits schmerzt es mich: Könnten wir uns vor Gott nicht neu ausrichten — dass es eben nicht der zufällig gegriffene Schein ist? Denken wir beim Geben an Gott mit mehr Sorgfalt? Ich meine, das ist des Nachdenkens wert. Wie auch immer: Es mahnt uns — was Gott dargebracht wird, sei ohne Fehler.</div></div>
+<div class="keynote"><span class="key">Was Gott dargebracht wird,</span> sei ohne Fehler.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><h2>Die Handauflegung · Dieses Tier steht für mich</h2></div>
+<div class="duo"><div class="zh">Vers 4 wiegt schwer: „Und er lege seine Hand auf den Kopf des Brandopfers, damit es ihn wohlgefällig mache und für ihn Sühne schaffe" (3. Mose 1,4). Was ist die Handauflegung? Sie drückt die tiefe Verbindung zwischen dem Menschen und diesem Opfertier aus: Das Tier tritt vor Gott an seine Stelle. Und zugleich zeigt sie: Der Mensch legt sich gleichsam ganz in dieses Tier hinein, er springt in das Opfertier hinein. Es vertritt nicht nur mich vor Gott — ich bekenne auch von Herzen: Dieses Opfertier bin ich. Verstehen Sie? Ein Tier kann den Menschen von sich aus nicht vertreten — es sei denn, der Mensch ist mit ihm verbunden. Der Hebräerbrief macht es uns vollends klar.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Hebräer 10,3–4</span> Vielmehr geschieht durch die Opfer alle Jahre eine Erinnerung an die Sünden. Denn es ist unmöglich, durch das Blut von Stieren und Böcken Sünden wegzunehmen.</div>
+<div class="duo"><div class="zh">Das Opfertier kann den Menschen wirklich nicht ersetzen — und eben daran erkennen wir, wohin die Kraft des Evangeliums zielt: Jesus ist an die Stelle aller Opfertiere getreten; Jesus, das fleischgewordene Wort, steht für mich. Das Alte Testament hatte das Heil des Evangeliums Jesu Christi noch nicht so offen gezeigt; es sprach zunächst so, wie die Kultur jener Menschen es fassen konnte: Die Hand auf den Kopf des Brandopfertiers gelegt — es steht für ihn, und das Brandopfer wird angenommen und schafft ihm Sühne.</div></div>
+<div class="duo"><div class="zh">Hier steht das Wort „Sühne" — kreisen Sie es ein. Und ich werfe eine Frage auf, an der ich sehr, sehr lange gehangen habe: Wenn schon das Brandopfer hier Sühne schafft — wozu brauchen wir dann noch das Sündopfer und das Schuldopfer? Genügte nicht ein einziges Brandopfer? Ich stelle die Frage vorerst nur in den Raum; ich habe viel Material dazu gesammelt — erlauben Sie mir, beim Sündopfer darauf zurückzukommen.</div></div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 1 1 21 12z"/></svg></div><h2>Der Opfernde schlachtet selbst · Blut ist warm</h2></div>
+<div class="duo"><div class="zh">Heute halten wir etwa bei Vers 5, und der hat es in sich: „Dann soll er das Rind schlachten vor dem HERRN" (3. Mose 1,5). Wer ist dieser „er"? Der Opfernde. Geschwister, das ist ein wichtiger Gedanke: Nicht der Priester schlachtet für Sie — der Opfernde schlachtet selbst. Die Priester, Aarons Söhne, fangen das fließende Blut auf, bringen es herzu und vollziehen das Sprengen des Blutes. Wir haben immer gemeint, der Priester schlachte den Stier für uns; in Wahrheit gilt: Du selbst musst schlachten.</div></div>
+<div class="duo"><div class="zh">Haben Sie je mit eigener Hand ein Huhn geschlachtet, eine Ente? Ich habe herumgefragt — in unserem Samstagskreis habe offenbar nur ich es selbst getan. In meiner Jugend half ich meiner Großmutter dabei. Wir wohnten in Toufen, ziemlich tief in den Bergen; ich war etwa in der Mittelschule, sah die Großmutter geschäftig hin- und herlaufen und sagte: „Ahma, lass mich das Huhn für dich schlachten." Sie wehrte ab, immer wieder: „Nein, nein, Kinder fassen so etwas nicht an." Mir schien es spannend — bei den Erwachsenen sah das Schlachten so leicht aus —, und ich bestand darauf. Und ich tat es wirklich: den Hals des Huhns niedergedrückt, die Federn beiseite, ein Schnitt. Kaum war der Schnitt getan, bereute ich. Geschwister — ein Leben zu beenden: Ich habe es wahrhaftig bereut. Warum weiß ich es bis heute so genau? Weil jener Augenblick mich zutiefst erschütterte. Ich sah das Huhn dort ringen, und das Blut begann zu spritzen, auf meine Hand, die Hand war voll davon. Es war das erste Mal, ich wusste nichts, ich hob die Hand und roch daran: warum so warm, so salzig? Zum ersten Mal begriff ich: Blut hat Wärme, Blut hat Geschmack. Und dann sah ich zu, wie das Leben dieses Huhns vor meinen Augen Stück um Stück erlosch.</div></div>
+<div class="duo"><div class="zh">Warum erzähle ich das eigens? Opfern ist kein Spiel. Es bedeutet die völlige Hingabe eines Lebens; und vollends beim Gedanken der Sühne müssen wir wissen, welchen Preis es vor Gott kostet — den Preis verrinnenden Lebens —, um die Folgen der Sünde zu decken. Meinen Sie nicht, mit einer Gabe in der Gemeinde und einem Gebet mit dem Pastor sei man schon rein. Von Gottes Gnade her gilt: Er nimmt jede aufrichtige Umkehr an, das ist wahr. Aber ich muss es den Geschwistern einschärfen: Mit der Sünde ist am wenigsten zu spaßen. Sie bedeutet verrinnendes Leben und fordert den Preis des Lebens. Rind und Schaf können in Wahrheit nicht ersetzen — selbst wenn Gott es dich mit eigenen Augen sehen lässt, heißt das: So würdest du enden; das Leben, von der Sünde zerfressen, rinnt aus, Tropfen um Tropfen. Er soll den Stier vor dem HERRN mit eigener Hand schlachten — damit er selbst das Grauen der Sünde trägt. Nicht: Wir sprechen in der Gemeinde ein Gebet, und das Herz hat seinen Frieden. Beim zweiten Buch Mose sahen wir: Aaron machte das goldene Kalb; der Strafe Gottes entging er, die Folgen der Sünde aber musste er tragen. Soll also das Brandopfer wohlgefällig sein, schlachtet der Opfernde vor dem HERRN das Rind, und Aarons Söhne bringen das Blut herzu und sprengen es.</div></div>
+<div class="duo"><div class="zh">Hier müssen wir heute abbrechen. Von hier aus geht es weiter: Er soll das Rind schlachten vor dem HERRN — und dass Gott Jesus Christus am Kreuz sein kostbares Blut vergießen ließ, trägt eben diesen Sinn: Jesus Christus ist an deine und meine Stelle getreten. Sterben hätte ich müssen; statt dessen trat Jesus für deine und meine Sünde ein und gab sein eigenes Leben dahin. Beim Sündopfer erklären wir dann noch einmal, worin sich die Sühne hier von der Sühne dort unterscheidet.</div></div>
+<div class="keynote"><span class="key">Nicht der Priester schlachtet für dich,</span> du selbst — und Blut ist warm.</div>
+<div class="keynote"><span class="key">Mit der Sünde ist nicht zu spaßen.</span> Sie bedeutet verrinnendes Leben und fordert den Preis des Lebens.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div><h2>Fragen und Antworten I · Den Leib als lebendiges Opfer</h2></div>
+<div class="duo"><div class="zh">An dieser Stelle meldete sich ein älterer Bruder mit einer Frage: „Wir sagen doch oft, man solle sich als lebendiges Opfer darbringen — wie ist das zu verstehen? Denke ich vom Brandopfer her: Wer einen alten Ochsen schlachtet, der ihn fünfzehn Jahre begleitet hat und an dem er hängt — mit eigener Hand —, den schmerzt es monatelang; in dieser Zeit wird er kaum etwas Böses tun, als wäre die Schuld abgetragen und der Mensch gütig geworden, aber die Frist währt vielleicht ein Jahr. Wenn nun Jesus sein Blut für uns vergossen und uns losgekauft hat — ‚sich als lebendiges Opfer darbringen' kann doch nicht heißen, wie Abraham bei Isaak das Messer zu nehmen und zuzustoßen? Wie erklärt sich das?"</div></div>
+<div class="duo"><div class="zh">Zuerst zu Abraham und Isaak. Kennen Sie die Geschichte in 1. Mose 22? Sie ist die Ausnahme, nicht die Regel. Man darf aus Abrahams Opfergang mit seinem Sohn nicht machen, die Schrift verlange Menschenopfer. Die Schrift sagt es deutlich: Es geschah einzig, um Abraham zu prüfen; Gott wusste um seinen Glauben — und hatte das Lamm längst bereitet. Das Wichtigste ist der Schluss.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">1. Mose 22,14</span> Und Abraham nannte die Stätte »Der HERR sieht«. Daher man noch heute sagt: Auf dem Berge, da der HERR sich sehen lässt.<span class="note">※ Luther übersetzt den Namen „Jahwe-Jire" mit „Der HERR sieht"; die chinesische und die englische Übersetzung geben ihn mit „Der HERR wird versehen/vorsorgen" wieder — auf diesem „Vorsorgen" liegt der Ton des Predigers.</span></div>
+<div class="duo"><div class="zh">Der HERR sah Abrahams Not — und auf dem Berg war vorgesorgt. Was der Bruder meinte, steht in Wahrheit im Römerbrief.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Römer 12,1</span> Ich ermahne euch nun, Brüder und Schwestern, durch die Barmherzigkeit Gottes, dass ihr euren Leib hingebt als ein Opfer, das lebendig, heilig und Gott wohlgefällig sei. Das sei euer vernünftiger Gottesdienst.</div>
+<div class="duo"><div class="zh">Das ist bildliche Rede. Zuerst muss ganz klar sein: Der HERR lässt keine Menschen als Opfer darbringen. Das ist heidnischer Kult — der Kult des Moloch, der lebende Säuglinge ins Feuer wirft; der HERR verabscheut solches, verabscheut das Menschenopfer. Wenn Paulus sagt, wir sollen den Leib als lebendiges Opfer hingeben, heißt das nicht, zum alten Gesetz zurückzukehren und Menschen zu opfern. Er nimmt den inneren Gehalt des Opferritus, um zu sagen: Wir sollen die Herrschaft über unser Leben ganz und gar Gott übergeben, damit es Gott wohlgefalle. Der „Gottesdienst" hier meint die Anbetung.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Römer 12,2</span> Und stellt euch nicht dieser Welt gleich, sondern ändert euch durch Erneuerung eures Sinnes, auf dass ihr prüfen könnt, was Gottes Wille ist, nämlich das Gute und Wohlgefällige und Vollkommene.</div>
+<div class="duo"><div class="zh">Die beste Antwort ist, sich von dieser Welt nicht formen zu lassen. Ich fragte in die Runde zurück: Gibt es in der Welt Opferriten? O ja, viele. Nicht dass heute noch Menschen geschlachtet und den Göttern dargebracht würden — aber wie viele legen die Herrschaft über ihr Leben auf irgendeinen Altar: auf den der Wall Street, auf den des Geschäfts, auf den der Unterwelt, auf den Altar von allem, was die Welt bietet. Dort liegt dann die Herrschaft über ihr Leben. Darum ermutigt uns Paulus, die Herrschaft unseres Lebens Gott anzuvertrauen: den Leib diesem Gott darzubringen, für ihn zu sterben und für ihn zu leben. Haben wir die Herrschaft übergeben, gehört sie nicht mehr uns. Also: Herr, was du mich tun heißt, das will ich tun; hilf mir, mich durch Erneuerung meines Sinnes zu ändern, damit wir prüfen, wie du uns führst. Das ist das neue Leben in Christus, von dem Paulus redet — und darum folgt gleich darauf das Verhalten des Volkes Gottes: „Die Liebe sei ohne Falsch. Hasst das Böse, hängt dem Guten an" (Römer 12,9). Liegt die Herrschaft meines Lebens in meiner eigenen Hand, bleibe ich trüb und wirr und kann nicht scheiden, was heilig und gut, was rein und unrein ist; habe ich aber Gottes Wesen empfangen, dann wird Gottes Art zu unserer Art.</div></div>
+<div class="keynote"><span class="key">Die Welt ist voller Opferaltäre,</span> viele legen ihr Leben auf den Altar der Wall Street und der Geschäfte.</div>
+</section>
+<section class="stage"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></svg></div><h2>Fragen und Antworten II · Die Prüfung des Glaubens und das eine Opfer</h2></div>
+<div class="duo"><div class="zh">Zuletzt noch ein Wort, damit niemand 1. Mose 22 missversteht. Es war ein einmaliges Ereignis, eine eigens für Abraham zugeschnittene Prüfung; die Schrift kennt kein zweites Beispiel. Und am Ende hat Abraham seinen Sohn nicht als Opfer dargebracht. Der Kern des Kapitels heißt: Abrahams Glaube. So sagt es der Hebräerbrief, Kapitel 11.</div></div>
+<div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>Bibelwort · Scripture</div>
+<div class="verse"><span class="ref">Hebräer 11,17–19</span> Durch den Glauben hat Abraham den Isaak dargebracht, als er versucht wurde, und gab den einzigen Sohn dahin, als er schon die Verheißungen empfangen hatte, von dem gesagt worden war: »Nach Isaak wird dein Geschlecht genannt werden.« Er dachte: Gott kann auch von den Toten erwecken; als ein Gleichnis dafür bekam er ihn auch wieder.</div>
+<div class="duo"><div class="zh">„Nach Isaak wird dein Geschlecht genannt werden" — die Nachkommenschaft sollte aus Isaak hervorgehen, nicht aus Ismael. Abrahams Glaube war so weit gelangt: Er vertraute, dass Gott Isaak selbst dann von den Toten erwecken könnte, wenn er ihn dargebracht hätte — denn er ist der Gott, der aus dem Nichts ruft und die Toten lebendig macht; und gleichsam aus dem Tod bekam er den Sohn zurück. Der Text sagt nicht, dass er den Sohn wirklich geopfert hat; sein Glaube wurde bis zu diesem Maß erwiesen.</div></div>
+<div class="duo"><div class="zh">Halten Sie unbedingt fest: Die Schrift verwirft das Menschenopfer; Gott sieht es als große, als äußerste Bosheit an. Von hier aus gesehen ist die Güte des HERRN gnädiger und barmherziger als die Kultur der Shang-Zeit in China — die Shang haben wirklich Menschen geopfert, die Historiker haben es uns gezeigt; und eben das Menschenopfer ist es, was Gott verbietet. In der ganzen Schrift gibt es keine Botschaft, der HERR wolle Menschenopfer. In unserem Glauben hat nur ein Einziger sich selbst als Opfer dargebracht: Jesus Christus. Für die Sünde der Menschen ging er freiwillig ans Kreuz, trug unsere Sünde, wurde selbst das Opfer — und sein kostbares Blut floss herab und wäscht unsere Sünden rein.</div></div>
+<div class="keynote"><span class="key">Nur ein Einziger hat sich selbst als Opfer dargebracht,</span> Jesus Christus.</div>
+</section>
+<section class="stage bookend"><div class="stage-head"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-6 8-6s8 2 8 6v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 11v7M15 11v7"/></svg></div><h2>Schluss</h2></div>
+<div class="duo"><div class="zh">Genau hier liegt das Evangelium: Jesus Christus trat an deine und meine Stelle, gab sich selbst am Kreuz dahin, und sein Blut wäscht unsere Sünden rein — damit wir vor dem HERRN Wohlgefallen finden und Gottes Heiligkeit unsere Heiligkeit wird. Geschwister, bleiben wir im dritten Buch Mose miteinander dran. Nächste Woche setzen wir einmal aus — bis übernächste Woche. Gott segne Sie alle.</div></div>
+</section>
+<p class="foot">International Missionary City Church · Ausgewählte Beiträge · <a class="sitef" href="https://imc2.org/">IMC2.org</a></p>
+</div>
+<script>
+(function () {
+  try {
+    var WORKER_URL = "https://lifesite-analytics.john316light.workers.dev";
+    var path = location.pathname;
+    var isServe = path.indexOf("/serve") !== -1;
+
+    var ref = "";
+    if (!isServe && document.referrer) {
+      try {
+        ref = new URL(document.referrer).hostname;
+      } catch (e) {
+        ref = "";
+      }
+    }
+
+    var w = window.innerWidth || document.documentElement.clientWidth || 0;
+    var bucket = w < 600 ? "narrow" : w < 1024 ? "medium" : "wide";
+
+    var params =
+      "p=" + encodeURIComponent(path) +
+      "&w=" + bucket +
+      (ref ? "&r=" + encodeURIComponent(ref) : "");
+
+    var img = new Image();
+    img.src = WORKER_URL + "?" + params;
+  } catch (e) {
+    // 統計失敗不影響頁面，吞掉所有錯誤
+  }
+})();
+</script>
+</body>
+</html>
